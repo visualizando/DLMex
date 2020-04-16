@@ -1,0 +1,439 @@
+<!DOCTYPE html>
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="cache-control" content="no-cache" />
+
+</head>
+<style>
+
+  body{
+    overflow: hidden;
+  }
+
+  #tooltip { 
+    position: absolute;     
+    text-align: center;     
+    width: 350px;          
+    padding: 8px 6px;
+    min-height: 130px;       
+    font: 12px sans-serif;    
+    background: white; 
+    border: 1px solid black;    
+    border-radius: 0 8px 8px 8px;     
+  -webkit-box-shadow: 1px 5px 6px 0px rgba(0,0,0,0.31);
+  -moz-box-shadow: 1px 5px 6px 0px rgba(0,0,0,0.31);
+  box-shadow: 1px 5px 6px 0px rgba(0,0,0,0.31);
+  opacity: 0;
+  }
+
+.states {
+  stroke: #fff;
+  stroke-width: 0.5px;
+  stroke-linejoin: round;
+  stroke-linecap: round;
+  pointer-events: none;
+  
+}
+
+.circulos{
+    cursor: pointer; 
+    stroke-width:0px;
+ -webkit-transition: stroke-width 0.2s; /* Safari */
+    transition: stroke-width 0.2s;
+    transition: fill 0.2s;
+}
+
+.circulos.selected{
+    stroke: #fff;
+    stroke-width: 2px;
+}
+
+.circulos.unselected{
+    fill: none;
+    stroke: silver;
+    stroke-width: 1px;
+}
+
+.circulos.hovered{
+    stroke: #000;
+    stroke-width: 2px;
+}
+
+
+
+.cells path {
+  fill: none;
+  stroke: #000;
+    stroke-width:0px;
+  pointer-events: all;
+   cursor: pointer;
+}
+
+
+
+svg text {
+    font-family: "Roboto";
+
+}
+
+.legendSize{
+  fill:silver;
+}
+
+.legendTitle{
+  font-size: 12px;
+  fill:gray;
+
+}
+
+.label{
+  fill:gray;
+  font-family: "Roboto";
+  font-size: 10px;
+}
+
+div#tooltip {
+  font-family: "Roboto";
+    padding: 0px;
+}
+
+div#tooltip h3 {
+    margin-top: 0;
+    background-color: #c0c0c06b;
+    width: 100%;
+    border-radius: 0px 7px 0px 0px;
+    padding: 1px 0px;        margin-bottom: 2px;
+    height: 50px;
+      display: inline-block;
+        line-height: 50px;
+
+
+}
+
+div#tooltip #title {
+line-height: 18px;
+    display: inline-block;
+    vertical-align: middle;
+    padding: 0px 10px;
+
+
+}
+
+div#tooltip h4 {
+    margin: 5px 0px;
+    display: inline-flex;
+     font-size: 12px;
+    font-weight: 500;
+}
+
+div#tooltip #presencia {
+    font-weight: 500;
+}
+
+
+div#tooltip #tamanio,  div#tooltip #link{
+    margin: 2px 0px;
+    font-weight: 500;
+    font-size: 12px;
+}
+
+
+</style>
+<svg ></svg>
+<div id="tooltip">
+  <h3 ><span id="title"></span></h3>
+  <h4 id="pais"></h4>
+  <h4 id="presencia"></h4>
+  <h5 id="link"></h5>
+
+</div> 
+<script src="https://d3js.org/d3.v4.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/d3-legend/2.25.6/d3-legend.min.js"></script>
+
+<script src="https://d3js.org/topojson.v2.min.js"></script>
+  <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+
+<script>
+
+
+var paises = {'Antigua y Barbuda':'AG','Argentina':'AR','Belice':'BZ','Bolivia':'BO','Brasil':'BR','Chile':'CL','Colombia':'CO','Costa Rica':'CR','Cuba':'CU','Dominica':'DM','Ecuador':'EC','El Salvador':'SV','Guatemala':'GT','Guayana Francesa':'GF','Guyana':'GY','Haití':'HT','Honduras':'HN','México':'MX','Nicaragua':'NI','Otros':'','Panamá':'PA','Paraguay':'PY','Perú':'PE','Puerto Rico':'PR','República Dominicana':'DO','Trinidad y Tobago':'TT','Uruguay':'UY','Venezuela':'VE'};
+
+var path = d3.geoPath();
+
+var padding = 1;
+
+var height = 900, width=1000;
+var distanceLimit = 70;
+
+var colorScale = d3.scaleOrdinal()
+    .domain(["Sí", "No", "Sin Datos"])
+    .range(['#43af7b', '#e03f6f', 'gray']);
+
+var radiusScale = d3.scaleOrdinal()
+    .domain(["1 a 50", "151 a 300", "51 a 150", "Más de 300"])
+    .range([4,8,12,18]);
+
+
+
+
+
+d3.queue()
+    .defer(d3.json, "map.topo.json")
+    .defer(d3.csv, "respuestas.csv")
+    .awaitAll(ready);
+
+// Define the div for the tooltip
+let div = d3.select("#tooltip")
+.style("opacity",0)
+.style("left", width*0.6 + "px")
+.style("top", height * 0.6 + "px")
+;
+
+var svg = d3.select("svg")
+            .attr("height",height)
+            .attr("width",width);
+
+
+function ready (error, results){
+
+    var mapTopoJson = results[0]; // acá esta el mapa
+    var respuestas = results[1]; // acá las respuestas en csv
+// --------- MAPA
+
+    var mapa = topojson.feature(mapTopoJson, mapTopoJson.objects.collection);  
+
+      path.projection(d3.geoMercator()
+                .fitHeight(height*0.8, mapa));
+
+        svg.append("g")
+            .attr("class", "states")
+          .selectAll("path")
+          .data(mapa.features)
+          .enter().append("path")
+          .attr("class","paisVector")
+          .attr("fill","rgba(0,0,0,0.1")
+            .attr("d", path)
+            .attr("id",function(d){ return d.properties.iso_a2})
+            ;
+
+        var centroids = {};
+        mapa.features.map(function (feature){
+            centroids[feature.properties.iso_a2] = path.centroid(feature);
+          });
+
+
+// --------- BUBBLES
+
+    var nodes = respuestas.map(function(d, i) {
+        var centroide;
+          if (d.localizacion != "Otros"){
+            centroide = [centroids[paises[d.localizacion]][0],centroids[paises[d.localizacion]][1]];
+          } else {
+            centroide = [width*0.2,height*0.65]
+          }
+
+       var presencia = trimArray(d.presencia.split(","));
+
+          presencia = presencia.map(function(e){
+                  return paises[e];
+
+          })
+
+        return {
+          id: d.id,
+          nombre: d.nombre,
+          pais: d.localizacion,
+          presencia: presencia,
+          radius: radiusScale(d.cantMiembrosNormalizado),
+          tamanio: d.cantMiembrosNormalizado,
+          link: d.sitio,
+          categoria: d.vinculoNDC,
+          centroide:  centroide,
+          x: centroide[0],
+          y: centroide[1],
+        }
+      });
+
+
+
+      
+        var nodos = svg.append('g').attr("id","bubbles")
+              .datum(nodes)
+            .selectAll('.nodes')
+              .data(d => d)
+            .enter().append('g')
+            .attr('id',(d) =>d.id)
+          .attr("transform",function(d){ return "translate(" + d.x + "," + d.y +")"})
+            ;
+
+
+      var simulation = d3.forceSimulation(nodes)
+        .force('charge', d3.forceManyBody().strength(1))
+         .force('x', d3.forceX().x(function(d) {
+            return d.centroide[0]
+           }).strength(1))
+        .force('y', d3.forceY().y(function(d) {
+           return d.centroide[1];}).strength(0.5))
+        .force('collision', d3.forceCollide().radius(function(d) {
+                    return d.radius+padding;   }))
+       //.on('tick', ticked);
+     .stop();
+
+      for (var i = 0; i < 270; ++i) simulation.tick(); // evalua la simulacion
+        ticked(); //actualiza posiciones.
+
+
+     let circles = nodos.append('circle')
+        .attr('r', (d) => d.radius)
+        .attr('class','circulos')
+        .attr('fill', (d) => colorScale(d.categoria))
+     
+        ;
+
+// --------- voronoi zone
+
+var cell = svg.append("g")
+      .attr("class", "cells")
+    .selectAll("g").data(d3.voronoi()
+        .extent([[0, 0], [width, height]])
+        .x(function(d) { return d.x; })
+        .y(function(d) { return d.y; })
+      .polygons(nodes)).enter().append("g")
+     // add tooltips to each circle
+         .on("click", function(d) {
+           d3.selectAll(".circulos")
+                          .classed("unselected", false)
+                          .classed("selected", false);  
+
+            d3.selectAll(".paisVector")
+                .transition()    
+                 .duration(200)    
+                 .style("fill", "rgba(0,0,0,0.1")
+
+
+          if(getDistance(d3.mouse(this), [d.data.x, d.data.y])<distanceLimit){
+            div.transition()    
+                 .duration(200)    
+                 .style("opacity", .9);    
+
+                 div.select("#title").html(d.data.nombre);
+                 div.select("#pais").html("Secretaría:&nbsp;<b>"+d.data.pais+"</b>");
+                 d.data.presencia.length > 1 ? div.select("#presencia").html("(Presencia en "+ d.data.presencia.length+" países)") : div.select("#presencia").html("");
+                 div.select("#link").html('<a href="http://' + d.data.link + '" target="_blank">' + d.data.link + '</a>');
+
+            d3.selectAll(".circulos").filter(function(e){
+              return e.id != d.data.id})
+                          .classed("unselected", true); 
+
+            d3.selectAll(".circulos").filter(function(e){return e.id == d.data.id})
+                          .classed("selected", true); 
+
+            d3.selectAll(".paisVector").filter(function(e){
+              if(e.hasOwnProperty('properties')){
+                                if(d.data.presencia.indexOf(e.properties.iso_a2)>=0) return 1}
+                  })
+                .transition()    
+                 .duration(100)    
+                 .style("fill", "rgba(0,0,0,0.3")
+             }else{
+               div.transition()
+              .duration(200)
+              .style("opacity", 0);    
+
+             }
+           })          
+          .on("mousemove", function (d) {
+            d3.selectAll(".circulos")
+            .classed("hovered", false);
+            if (getDistance(d3.mouse(this), [d.data.x, d.data.y]) < distanceLimit) {
+            d3.selectAll(".circulos").filter(function (e) { 
+              return e.id == d.data.id })
+                        .classed("hovered", true); 
+            }
+          })
+         
+         ;
+
+ cell.append("path")
+      .attr("d", function(d) { return "M" + d.join("L") + "Z"; });
+
+  function ticked() {
+          nodos.attr("transform", function(d){ 
+            return "translate(" + d.x + "," + d.y +")"});
+  }
+
+
+var linearSize = d3.scaleLinear().domain([0,10]).range([10, 30]);
+
+
+
+/// LEYENDAS
+
+var leyenda = svg.append("g")
+    .attr("class", "leyenda")
+  
+  .attr("transform", "translate("+(width-220)+", 40)");
+
+  leyenda.append("g").attr("class", "legendSize");
+
+var legendSize = d3.legendSize()
+  .cells(4)
+  .scale(radiusScale)
+  .shape('circle')
+  .shapePadding(40)
+  .labelOffset(10)
+  .title("Tamaño de la red")
+  .orient('horizontal');
+
+svg.select(".legendSize")
+  .call(legendSize);
+
+  leyenda.append("g")
+    .attr("transform", "translate(0, 80)")
+  .attr("class", "legendOrdinal");
+  
+
+var legendOrdinal = d3.legendColor()
+  .shape("path", d3.symbol().type(d3.symbolCircle).size(150)())
+  .shapePadding(40)
+    .labelOffset(10)
+   .title("Vinculo con NDC")
+    .orient('horizontal')
+  .scale(colorScale);
+
+svg.select(".legendOrdinal")
+  .call(legendOrdinal);
+
+
+function trimArray(arr)
+{
+    for(i=0;i<arr.length;i++)
+    {
+        arr[i] = arr[i].replace(/^\s\s*/, '').replace(/\s\s*$/, '');
+    }
+    return arr;
+}
+
+function getDistance(point1, point2) {
+    var xs = 0;
+    var ys = 0;
+
+    xs = point2[0] - point1[0];
+    xs = xs * xs;
+
+    ys = point2[1] - point1[1];
+    ys = ys * ys;
+
+    return Math.sqrt(xs + ys);
+  }
+
+
+
+
+} // fin de Ready;
+
+
+
+
+
+</script>
