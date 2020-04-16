@@ -1,0 +1,138 @@
+html{
+    background-color: #f8f9fb
+    ;
+}
+
+
+.title {
+    color: #232B34;
+    font-family: 'DM Serif Display', serif;
+    font-size: 2rem;
+    font-weight: 400;
+    line-height: 1.125;
+}
+
+
+.hero.is-info, .hero.is-info .container {
+    background-color: #10B09B;
+    
+}
+
+.hero.is-info .title,.hero.is-info .subtitle{
+color: #060B18;
+}
+
+#nav-container-top {
+    height: 1px;
+  }
+
+ #nav-container {
+     position: sticky;
+    top: 0;
+    padding:10px;
+
+    transition: 0.15s all ease;
+  }
+
+  #nav-container #title{
+    transform: scale(1);
+  }
+
+
+  .nav-container-sticky #title{
+    transform: scale(0) !important;
+    display: none;
+  }
+
+
+  .nav-container-sticky {
+    z-index: 10;
+    background-color: white;
+    padding: 2px;
+  }
+
+  .box {
+     box-shadow: 0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23);
+  }
+
+  .card{
+    box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
+  }
+
+  .box, .card{
+    background-color: white;
+  }
+
+  .is-paddingless h2.subtitle {
+padding: 11px 19px 0px 19px;
+}
+
+.level {
+align-items: baseline;
+
+}
+
+.steps.is-horizontal.is-narrow .steps-segment:not(:last-child),    .steps.is-horizontal.is-narrow.has-content-centered .steps-segment:last-child {
+    min-width: 2.5em;
+}
+
+.subtitle{
+  line-height: 1.5;
+}
+
+@media screen and (min-width: 769px){
+            
+        .steps.is-horizontal.is-narrow .steps-segment:not(:last-child),    .steps.is-horizontal.is-narrow.has-content-centered .steps-segment:last-child {
+            min-width: 6em;
+        }
+
+
+        
+}
+
+@media screen and (min-width: 1024px){
+        .section.is-medium {
+            padding: 6rem 1.5rem;
+        }
+        .container {
+            padding-top: 50px;
+        }
+}
+
+
+html {
+scroll-behavior: smooth;
+}
+
+td.google-visualization-orgchart-node{
+    border:none;
+    text-align: center !important;
+    vertical-align: middle;
+    font-family:  'Karla', sans-serif;
+    cursor: default;
+    -moz-border-radius: 4px;
+    -webkit-border-radius: 4px;
+    -webkit-box-shadow:none;
+    -moz-box-shadow:none;
+    background-color: #FFEDCC;
+    background: #FFEDCC;
+
+}
+
+.notification{
+    background-color: #f8f9fb ;
+}
+
+.container {
+    background-color: white;
+}
+
+#organigramas h2.title {
+    margin-top: 50PX;
+}
+
+#organigramas .box {
+    box-shadow: 0 4px 10px rgba(0,0,0,0.19), 0 3px 3px rgba(0,0,0,0.23);
+    margin: 50px 30px;
+}
+

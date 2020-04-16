@@ -1,0 +1,130 @@
+glossary = {
+    "items": [
+            {
+            "term": "camdip",
+            "title": "Cámara de Diputados",
+            "definition": "el proyecto debe ingresar siempre por esta Cámara."
+            },
+            {
+            "term": "compres",
+            "title": "Comisión de Presupuesto y Hacienda",
+            "definition": "Las comisiones legislativas son órganos de asesoramiento existentes en ambas Cámaras del Congreso de la Nación.Están integradas por legisladores, asesores y personal de planta(empleados no funcionarios).Su función es estudiar los proyectos de ley respecto de un tema en particular y producir dictámenes sobre los mismos.Las comisiones pueden ser permanentes o especiales, conformadas para casos concretos."
+            },
+            {
+            "term": "ordendeldia",
+            "title": "Orden del día",
+            "definition": "es el listado de proyectos a ser tratados en una determinada sesión."
+            },
+            {
+            "term": "mayoriasimple",
+            "title": "Mayoría Simple",
+            "definition": "Más de la mitad de los miembros presentes(en número suficiente para formar quórum)."
+            },
+            {
+            "term": "mayoriacalif",
+            "title": "Mayoría Calificada",
+            "definition": "son mayorías especiales, en este caso una mayoría de las dos terceras partes de los miembros presentes(en número suficiente para formar quórum)."
+            },
+            {
+            "term": "promulg",
+            "title": "Promulgación",
+            "definition": "Es la “aprobación” de la ley por parte del Presidente de la Nación.Esto lo puede hacer por medio de un decreto o bien mediante la “promulgación de hecho”, ya que si el presidente no se pronuncia pasados diez días hábiles desde que se le comunicó la norma, ésta se promulga automáticamente.En ambos casos, la ley se publica luego en el Boletín Oficial y entra en vigencia en el plazo establecido."
+            },
+            {
+            "term": "an",
+            "title": "Administración Nacional",
+            "definition": "La Administración Pública es el conjunto de organismos e instituciones estatales que realizan las funciones administrativas del Estado nacional.No incluye los poderes ejecutivos provinciales y de la Ciudad Autónoma de Buenos Aires, así como las administraciones municipales."
+            },
+            {
+            "term": "ac",
+            "title": "Administración Central",
+            "definition": "engloba a las instituciones de los poderes Ejecutivo, Legislativo y Judicial junto con el Ministerio Público."
+            },
+            {
+            "term": "minhacienda",
+            "title": "Ministerio de Hacienda",
+            "definition": "Es el Ministerio que se ocupa de todo lo relacionado con la política económica, presupuestaria y financiera, y de las relaciones económicas, financieras y fiscales de la Nación con las Provincias y la Ciudad Autónoma de Buenos Aires."
+            },
+            {
+            "term": "gastos",
+            "title": "Gastos",
+            "definition": "El gasto público consiste en el desembolso o empleo de dinero que realiza el Estado para comprar bienes y servicios y así atender las necesidades públicas.Estos gastos pueden ser corrientes cuando se destinan para el funcionamiento normal del aparato estatal, o de capital cuando contribuyen a aumentar el capital del Estado(compra de cosas) "
+            },
+            {
+            "term": "Recursos",
+            "title": "Recursos",
+            "definition": "los recursos públicos son los ingresos que percibe el Estado de cualquier naturaleza(impuestos, tasas, contribuciones, venta de bienes, etc.) que tengan como finalidad financiar los gastos públicos."
+            },
+            {
+            "term": "Actividades",
+            "title": "Actividades",
+            "definition": "..."
+            },
+            {
+            "term": "Anteproyecto",
+            "title": "Anteproyecto de presupuesto",
+            "definition": "es una estimación preliminar de la cantidad de dinero(gastos) que planea utilizarse el año entrante y de la cantidad de ingresos que se planea percibir."
+            },
+            {
+            "term": "Subprograma",
+            "title": "Subprograma",
+            "definition": "..."
+            },
+            {
+            "term": "UdP",
+            "title": "Unidad de Presupuesto",
+            "definition": "suele tratarse de una dirección dentro de una entidad de la Administración Pública que tiene como función la de formular y  proponer  directivas  y  lineamientos para  la  gestión presupuestaria del órgano o entidad a la que pertenece."
+            },
+            {
+            "term": "ONP",
+            "title": "Oficina Nacional de Presupuesto(ONP)",
+            "definition": "Es el órgano rector del Sistema Presupuestario y de los Sistemas de Control del Sector Público Nacional.Interviene en la formulación, programación de la ejecución, modificaciones y evaluación de los Presupuestos de la Administración Pública Nacional."
+            },
+            {
+            "term": "Jurisdiccion",
+            "title": "Jurisdicción",
+            "definition": "La Administración Pública Nacional se divide en jurisdicciones, subjurisdicciones y entidades(Ministerios y Agencias Públicas), que son aquellas organizaciones públicas del Estado Nacional."
+            },
+            {
+            "term": "Programa",
+            "title": "Programa",
+            "definition": "..."
+            },
+            {
+            "term": "Cuotas",
+            "title": "Cuotas presupuestarias",
+            "definition": "son cuotas dinero para ejecutar, que orientan la ejecución del presupuesto en función de los recursos esperados."
+            },
+            {
+            "term": "Reasignaciones",
+            "title": "Reasignaciones presupuestarias",
+            "definition": "modificaciones en la distribución prevista.Se quitan fondos de un programa / subprograma / actividad y se los asignan a otro."
+            },
+            {
+            "term": "CGN",
+            "title": "Contaduría General de la Nación",
+            "definition": "es el órgano que lleva adelante el sistema de contabilidad gubernamental."
+            },
+            {
+            "term": "Ejercicio",
+            "title": "Ejercicio",
+            "definition": "es el período de doce meses en el que se ejecuta el presupuesto y sobre el cual debe efectuarse la cuenta de inversión.Coincide con el año calendario. "
+            },
+            {
+            "term": "AGN",
+            "title": "Auditoría General de la Nación",
+            "definition": "La Auditoría General de la Nación es el organismo que asiste técnicamente al Congreso de la Nación Argentina en el control del estado de las cuentas del sector público."
+            },
+            {
+            "term": "vinculante",
+            "title": "No vinculante",
+            "definition": "no es obligatorio ni condiciona de ninguna manera al Congreso."
+            },
+            {
+            "term": "CPMRC",
+            "title": "Comisión Parlamentaria Mixta Revisora de Cuentas",
+            "definition": "es una comisión bicameral(la integran diputados y senadores) y permanente.Su función principal consiste en analizar los informes que elabora y aprueba la Auditoría General de la Nación, para luego someterlos al tratamiento del pleno de ambas Cámaras."
+            }
+    
+    ]
+}

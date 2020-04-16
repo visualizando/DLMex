@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Directorio Legislativo México - Extras</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Karla:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="css/bulma.css">
+    <link rel="stylesheet" href="css/custom.css">
+    <link rel="stylesheet" href="css/bulma-steps.css">
+    <link rel="stylesheet" href="css/instant-definitions.css">
+    <link href="css/featherlight.css" type="text/css" rel="stylesheet" />
+
+
+    <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/d3/5.15.1/d3.min.js"></script>
+
+
+
+
+    <script type="text/javascript">
+      var nested;
+    
+      d3.csv('data/organigramas.csv')
+                  .then(function(imported) {
+                      
+                      nested = d3.nest()
+                            .key(function(d) { return d.Camara; })
+                            .key(function(d) { return d.Seccion; })
+                            .entries(imported);
+                      
+                  })
+                  .catch(function(error){
+                      // handle error   
+                  })
+    
+        google.charts.load('current', {packages:["orgchart"]});
+        google.charts.setOnLoadCallback(dibujaGraficos);
+  
+        
+        function dibujaGraficos() {
+          nested.forEach(function(d){
+                  d3.select("#organigramas").append("div").attr("id",d.key)
+                                  .append("h2").attr("class","title").html(d.key);
+    
+                  d.values.forEach(function(e){
+                    var subArea = d3.select("#"+d.key).append("div").attr("class","box");
+                              subArea.append("h3").attr("class","subtitle").html(e.key);
+                              subArea.append("div").attr("id",e.values[0].idSlug);
+                          ;
+                          var tablaContent = e.values.map(function(f){
+                              return [{'v':f.idSlug,'f':f.area+":<br><b>"+f.titular+"</b>"},f['depende de'],f.direccion+" "+f.telefono];
+                            })
+                           drawChart(tablaContent,e.values[0].idSlug)
+                          })                                 
+                    })
+        }
+   
+        function drawChart(tablaContent,id) {
+          var tabla = new google.visualization.DataTable();
+          tabla.addColumn('string', 'Name');
+          tabla.addColumn('string', 'Manager');
+          tabla.addColumn('string', 'ToolTip');
+    
+          tabla.addRows(tablaContent);
+          var chart = new google.visualization.OrgChart(document.getElementById(id));
+          chart.draw(tabla, {'allowHtml':true,'size':'small'});
+        }
+     </script>
+
+
+  </head>
+
+
+  <body>
+    <section class="hero is-info is-fullheight">
+      <!-- Hero head: will stick at the top -->
+      <div class="hero-head">
+        <header class="navbar">
+          <div class="container">
+            <div class="navbar-brand">
+              <a class="navbar-item">
+                <!-- <img src="images/DL_LogoHablemosv01.png" alt="Logo"> -->
+              </a>
+              <span class="navbar-burger burger" data-target="navbarMenuHeroC">
+                <span></span>
+                <span></span>
+                <span></span>
+              </span>
+            </div>
+            <div id="navbarMenuHeroC" class="navbar-menu">
+              <div class="navbar-end">
+                <a class="navbar-item is-active" disabled>
+                  Inicio
+                </a>
+                <a class="navbar-item" href="https://directoriolegislativo.org" target="_blank">
+                  Directorio Legislativo
+                </a>
+                <a class="navbar-item" href="https://directoriolegislativo.org/contacto/" target="_blank">
+                  Contacto
+                </a>
+              </div>
+            </div>
+          </div>
+        </header>
+      </div>
+    
+
+
+      <!-- Hero content: will be in the middle -->
+      <div class="hero-body">
+        <div class="container has-text-centered">
+          <div class="columns is-mobile is-centered">
+            <div class="column is-four-fifths-tablet is-half-desktop has-text-left	">
+                <!-- <figure class="image is-centered" >
+                  <img src="images/DL_LogoHablemosv01.png" style="padding-right: 9%;">
+                </figure> -->
+
+            <h2 class="title">
+            Informacion complementaria del Directorio Legislativo Mexico
+            </h2><h2 class="subtitle">
+            A partir de toda la información que procesamos, analizamos las diferentes iniciativas regulatorias en función del grado de impacto que pueden tener sobre un sector particular de la sociedad, sea privado, de la sociedad civil y/o del Estado. 
+            </h2>
+            </div>
+          </div>
+          
+      
+        </div>
+      </div>
+   
+    </section>
+
+
+    <section  class="section is-medium">
+      <div class="container is-widescreen">
+        <div class="columns is-mobile is-centered">
+          <div class="column is-fullwidth has-text-centered	">
+            <h2 class="title is-1">
+              Organigramas
+            </h2>
+            <p>
+            Breve descripcion Breve descripcion Breve descripcion Breve descripcion Breve descripcion Breve descripcion 
+            </p>
+              <br>
+              <div id="organigramas">
+                <!-- Aqui entra el d3 a meter organigramas -->
+              </div>
+          </div>
+        </div>
+     </div>
+    </section>
+
+    <section  class="section is-medium">
+      <div class="container is-widescreen">
+        <div class="columns is-mobile is-centered">
+          <div class="column is-fullwidth has-text-centered	">
+            <h2 class="title is-1">
+              Distribución de Bancas
+            </h2>
+            <p>
+            Breve descripcion Breve descripcion Breve descripcion Breve descripcion Breve descripcion Breve descripcion 
+            </p>
+              <br>
+              <img alt="Mapa de México dividido por estados" src="//upload.wikimedia.org/wikipedia/commons/thumb/8/8d/Circunscripciones_2006.svg/700px-Circunscripciones_2006.svg.png" decoding="async" width="700" height="476" srcset="//upload.wikimedia.org/wikipedia/commons/thumb/8/8d/Circunscripciones_2006.svg/1050px-Circunscripciones_2006.svg.png 1.5x, //upload.wikimedia.org/wikipedia/commons/thumb/8/8d/Circunscripciones_2006.svg/1400px-Circunscripciones_2006.svg.png 2x" data-file-width="1000" data-file-height="680">
+          </div>
+        </div>
+     </div>
+    </section>
+
+
+   
+      
+
+
+
+<footer class="footer has-background-grey-lighter">
+  <div class="container has-text-centered">
+    <nav class="level">
+      <div class="level-item has-text-centered">
+        <p>
+    <strong>Directorio Legislativo Mexico</strong> es un proyecto de <a href="https://directoriolegislativo.org" target="_blank">Directorio
+      Legislativo</a>.
+      </p>
+      </div>
+      <div class="level-item has-text-centered">
+<div class="field is-grouped is-grouped-multiline">
+  <div class="control">
+    <div class="tags is-large">
+      <a href="https://www.facebook.com/DireLegislativo/" class="tag " target="_blank"><i class="fa fa-facebook"></i></a>
+    </div>
+  </div>
+
+  <div class="control">
+    <div class="tags is-large">
+      <a href="https://twitter.com/DireLegislativo" class="tag " target="_blank"><i class="fa fa-twitter"></i></a>
+    </div>
+  </div>
+
+  <div class="control">
+    <div class="tags is-large">
+      <a href="mailto:info@directoriolegislativo.org" class="tag " target="_blank"><i class="fa fa-envelope"></i></a>
+    </div>
+  </div>
+</div>
+      </div>
+    
+    
+    </nav>
+    
+     
+    <nav class="level">
+     
+      <div class="level-item has-text-centered">
+      <figure class="image is-centered">
+        <img src="images/DL_LOGO_DL_2020v01.png" style="max-width:200px ;">
+      </figure>
+      </div>
+      
+      
+    </nav>
+  </div>
+</footer>
+
+  <script src="//code.jquery.com/jquery-latest.js"></script>
+  <!-- <script src="js/terms.js"></script>
+  <script src="js/instant-definitions.js"></script>
+
+     -->
+
+
+<!-- Global site tag (gtag.js) - Google Analytics -->
+<!-- <script async src="https://www.googletagmanager.com/gtag/js?id=UA-139861808-5"></script> -->
+<!-- <script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag() { dataLayer.push(arguments); }
+  gtag('js', new Date());
+
+  gtag('config', 'UA-139861808-5');
+</script> -->
+
+
+  <script src="js/featherlight.js" type="text/javascript" charset="utf-8"></script>
+
+  </body>
+</html>

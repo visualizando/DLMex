@@ -1,0 +1,96 @@
+{
+    "sass_files": [
+        "utilities/initial-variables.sass",
+        "utilities/functions.sass",
+        "utilities/derived-variables.sass",
+        "utilities/animations.sass",
+        "utilities/mixins.sass",
+        "utilities/controls.sass",
+        "base/minireset.sass",
+        "base/generic.sass",
+        "base/helpers.sass",
+        "elements/box.sass",
+        "elements/button.sass",
+        "elements/container.sass",
+        "elements/content.sass",
+        "elements/icon.sass",
+        "elements/image.sass",
+        "elements/notification.sass",
+        "elements/progress.sass",
+        "elements/table.sass",
+        "elements/tag.sass",
+        "elements/title.sass",
+        "elements/other.sass",
+        "form/shared.sass",
+        "form/input-textarea.sass",
+        "form/checkbox-radio.sass",
+        "form/select.sass",
+        "form/file.sass",
+        "form/tools.sass",
+        "components/breadcrumb.sass",
+        "components/card.sass",
+        "components/dropdown.sass",
+        "components/level.sass",
+        "components/list.sass",
+        "components/media.sass",
+        "components/menu.sass",
+        "components/message.sass",
+        "components/modal.sass",
+        "components/navbar.sass",
+        "components/pagination.sass",
+        "components/panel.sass",
+        "components/tabs.sass",
+        "grid/columns.sass",
+        "grid/tiles.sass",
+        "layout/hero.sass",
+        "layout/section.sass",
+        "layout/footer.sass"
+    ],
+    "extensions": [
+        "Wikiki/bulma-divider/divider.sass",
+        "Wikiki/bulma-steps/steps.sass",
+        "Wikiki/bulma-timeline/timeline.sass",
+        "Wikiki/bulma-tooltip/tooltip.sass"
+    ],
+    "variables": {
+        "bulma": {
+            "utilities/initial-variables.sass": {
+                "$black": "#232B34",
+                "$black-bis": "#060B18",
+                "$black-ter": "#05313f",
+                "$white": "#f8f9fb",
+                "$orange": "#FF6B00",
+                "$yellow": "#FFB766",
+                "$green": "#10B09B",
+                "$turquoise": "#69E7BF",
+                "$cyan": "#034054",
+                "$purple": "#FFEDCC",
+                "$red": "#f7534f",
+                "$family-sans-serif": "\\'Karla\\', serif"
+            },
+            "utilities/derived-variables.sass": {
+                "$primary": "$orange",
+                "$info": "$green",
+                "$text": "$black",
+                "$link": "$orange",
+                "$link-hover": "$black",
+                "$family-primary": "\\'DM Serif Display\\', serif"
+            },
+            "base/generic.sass": {
+                "$body-background-color": "$white",
+                "$body-family": "$family-secondary"
+            },
+            "elements/title.sass": {
+                "$title-color": "$black",
+                "$title-family": "$family-primary",
+                "$title-weight": "400",
+                "$title-strong-weight": "600",
+                "$subtitle-family": "$family-secondary"
+            }
+        }
+    },
+    "output_style": "nested",
+    "download_bundle": "on",
+    "include_sourcemap": "on",
+    "_created": 1587015862
+}
