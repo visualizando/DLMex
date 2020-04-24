@@ -178,7 +178,7 @@ var radiusScale = d3.scaleOrdinal()
 
 
 d3.queue()
-    .defer(d3.json, "map.topo.json")
+    .defer(d3.json, "mexico.topo.json")
     .defer(d3.csv, "respuestas.csv")
     .awaitAll(ready);
 
@@ -198,12 +198,12 @@ function ready (error, results){
 
     var mapTopoJson = results[0]; // acá esta el mapa
     var respuestas = results[1]; // acá las respuestas en csv
-// --------- MAPA
 
-    var mapa = topojson.feature(mapTopoJson, mapTopoJson.objects.collection);  
+// --------- MAPA
+    var mapa = topojson.feature(mapTopoJson, mapTopoJson.objects.mexico);  
 
       path.projection(d3.geoMercator()
-                .fitHeight(height*0.8, mapa));
+                .fitWidth(width, mapa));
 
         svg.append("g")
             .attr("class", "states")
@@ -240,12 +240,12 @@ function ready (error, results){
           })
 
         return {
-          id: d.id,
+          id: d.idDirectorio,
           nombre: d.nombre,
-          pais: d.localizacion,
+          pais: d.Entidad,
           presencia: presencia,
-          radius: radiusScale(d.cantMiembrosNormalizado),
-          tamanio: d.cantMiembrosNormalizado,
+          radius: 5,
+          tamanio: 5,
           link: d.sitio,
           categoria: d.vinculoNDC,
           centroide:  centroide,
