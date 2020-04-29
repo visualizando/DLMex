@@ -142,9 +142,9 @@ div#tooltip #tamanio,  div#tooltip #link{
 <svg ></svg>
 <div id="tooltip">
   <h3 ><span id="title"></span></h3>
-  <h4 id="pais"></h4>
-  <h4 id="presencia"></h4>
-  <h5 id="link"></h5>
+  <h4 id="estado"></h4>
+  <h4 id="distrito"></h4>
+  <h5 id="partido"></h5>
 
 </div> 
 <script src="https://d3js.org/d3.v4.min.js"></script>
@@ -156,9 +156,54 @@ div#tooltip #tamanio,  div#tooltip #link{
 <script>
 
 
-var paises = {'Antigua y Barbuda':'AG','Argentina':'AR','Belice':'BZ','Bolivia':'BO','Brasil':'BR','Chile':'CL','Colombia':'CO','Costa Rica':'CR','Cuba':'CU','Dominica':'DM','Ecuador':'EC','El Salvador':'SV','Guatemala':'GT','Guayana Francesa':'GF','Guyana':'GY','Haití':'HT','Honduras':'HN','México':'MX','Nicaragua':'NI','Otros':'','Panamá':'PA','Paraguay':'PY','Perú':'PE','Puerto Rico':'PR','República Dominicana':'DO','Trinidad y Tobago':'TT','Uruguay':'UY','Venezuela':'VE'};
+var estadosCode = {
+  'Aguascalientes':'MEX-2717',
+'Baja California':'MEX-2706',
+'Baja California Sur':'MEX-2707',
+'Campeche':'MEX-2722',
+'Chiapas':'MEX-2735',
+'Chihuahua':'MEX-2709',
+'Ciudad De México':'MEX-2727',
+'Coahuila':'MEX-2708',
+'Colima':'MEX-2718',
+'Durango':'MEX-2710',
+'Guanajuato':'MEX-2728',
+'Guerrero':'MEX-2729',
+'Hidalgo':'MEX-2730',
+'Jalisco':'MEX-2719',
+'México':'MEX-2731',
+'Michoacán':'MEX-2720',
+'Morelos':'MEX-2732',
+'Nayarit':'MEX-2721',
+'Nuevo León':'MEX-2714',
+'Oaxaca':'MEX-2723',
+'Puebla':'MEX-2724',
+'Querétaro':'MEX-2733',
+'Quintana Roo':'MEX-2736',
+'San Luis Potosí':'MEX-2715',
+'Sinaloa':'MEX-2711',
+'Sonora':'MEX-2712',
+'Tabasco':'MEX-2725',
+'Tamaulipas':'MEX-2716',
+'Tlaxcala':'MEX-2726',
+'Veracruz':'MEX-2734',
+'Yucatán':'MEX-2737',
+'Zacatecas':'MEX-2713'
+};
+
+var circunscripciones={
+'I Circunscripción':[-112.1924,23.2010],
+'II Circunscripción':[-96.0425,25.8988],
+'III Circunscripción':[-93.3618,21.2894],
+'IV Circunscripción':[-102.4146,16.2358],
+'V Circunscripción':[-107.0508,19.2074],
+}
+
 
 var path = d3.geoPath();
+
+var proyeccionMapa = d3.geoMercator()
+                ;
 
 var padding = 1;
 
@@ -166,12 +211,8 @@ var height = 900, width=1000;
 var distanceLimit = 70;
 
 var colorScale = d3.scaleOrdinal()
-    .domain(["Sí", "No", "Sin Datos"])
-    .range(['#43af7b', '#e03f6f', 'gray']);
+    .range(["#1f77b4","#ff7f0e","#2ca02c","#d62728","#9467bd","#8c564b","#e377c2","#7f7f7f","#bcbd22","#17becf"]);
 
-var radiusScale = d3.scaleOrdinal()
-    .domain(["1 a 50", "151 a 300", "51 a 150", "Más de 300"])
-    .range([4,8,12,18]);
 
 
 
@@ -179,14 +220,14 @@ var radiusScale = d3.scaleOrdinal()
 
 d3.queue()
     .defer(d3.json, "mexico.topo.json")
-    .defer(d3.csv, "respuestas.csv")
+    .defer(d3.csv, "diputados.csv")
     .awaitAll(ready);
 
 // Define the div for the tooltip
 let div = d3.select("#tooltip")
 .style("opacity",0)
-.style("left", width*0.6 + "px")
-.style("top", height * 0.6 + "px")
+.style("left", width*0.7 + "px")
+.style("top", height * 0.1 + "px")
 ;
 
 var svg = d3.select("svg")
@@ -197,57 +238,52 @@ var svg = d3.select("svg")
 function ready (error, results){
 
     var mapTopoJson = results[0]; // acá esta el mapa
-    var respuestas = results[1]; // acá las respuestas en csv
+    var personas = results[1]; // acá las personas en csv
 
 // --------- MAPA
     var mapa = topojson.feature(mapTopoJson, mapTopoJson.objects.mexico);  
 
-      path.projection(d3.geoMercator()
-                .fitWidth(width, mapa));
+      proyeccionMapa.fitWidth(width, mapa)
+      path.projection(proyeccionMapa);
 
         svg.append("g")
             .attr("class", "states")
           .selectAll("path")
           .data(mapa.features)
           .enter().append("path")
-          .attr("class","paisVector")
+          .attr("class","estadoVector")
           .attr("fill","rgba(0,0,0,0.1")
             .attr("d", path)
-            .attr("id",function(d){ return d.properties.iso_a2})
+            .attr("id",function(d){ return d.properties.adm1_code})
             ;
 
-        var centroids = {};
+        var centroids = {}; // tomo los centroides de cada estado.
         mapa.features.map(function (feature){
-            centroids[feature.properties.iso_a2] = path.centroid(feature);
+            centroids[feature.properties.adm1_code] = path.centroid(feature);
           });
+
 
 
 // --------- BUBBLES
 
-    var nodes = respuestas.map(function(d, i) {
+    var nodes = personas.map(function(d, i) {
         var centroide;
-          if (d.localizacion != "Otros"){
-            centroide = [centroids[paises[d.localizacion]][0],centroids[paises[d.localizacion]][1]];
+          if (d.distrito){
+            centroide = [centroids[estadosCode[d.Entidad]][0],centroids[estadosCode[d.Entidad]][1]];
           } else {
-            centroide = [width*0.2,height*0.65]
+            
+            centroide = proyeccionMapa(circunscripciones[d.Entidad]);
           }
 
-       var presencia = trimArray(d.presencia.split(","));
-
-          presencia = presencia.map(function(e){
-                  return paises[e];
-
-          })
-
+       
         return {
           id: d.idDirectorio,
           nombre: d.nombre,
-          pais: d.Entidad,
-          presencia: presencia,
+          estado: d.Entidad,
+          partido: d.partido,
+          genero: d.genero,
           radius: 5,
-          tamanio: 5,
-          link: d.sitio,
-          categoria: d.vinculoNDC,
+          distrito: d.distrito,
           centroide:  centroide,
           x: centroide[0],
           y: centroide[1],
@@ -286,7 +322,7 @@ function ready (error, results){
      let circles = nodos.append('circle')
         .attr('r', (d) => d.radius)
         .attr('class','circulos')
-        .attr('fill', (d) => colorScale(d.categoria))
+        .attr('fill', (d) => colorScale(d.partido))
      
         ;
 
@@ -305,7 +341,7 @@ var cell = svg.append("g")
                           .classed("unselected", false)
                           .classed("selected", false);  
 
-            d3.selectAll(".paisVector")
+            d3.selectAll(".estadoVector")
                 .transition()    
                  .duration(200)    
                  .style("fill", "rgba(0,0,0,0.1")
@@ -317,9 +353,9 @@ var cell = svg.append("g")
                  .style("opacity", .9);    
 
                  div.select("#title").html(d.data.nombre);
-                 div.select("#pais").html("Secretaría:&nbsp;<b>"+d.data.pais+"</b>");
-                 d.data.presencia.length > 1 ? div.select("#presencia").html("(Presencia en "+ d.data.presencia.length+" países)") : div.select("#presencia").html("");
-                 div.select("#link").html('<a href="http://' + d.data.link + '" target="_blank">' + d.data.link + '</a>');
+                 div.select("#estado").html("Estado:&nbsp;<b>"+d.data.estado+"</b>");
+                 div.select("#distrito").html("Distrito:&nbsp;<b>"+d.data.distrito+"</b>");
+                 div.select("#partido").html("Partido:&nbsp;<b>"+d.data.partido+"</b>");
 
             d3.selectAll(".circulos").filter(function(e){
               return e.id != d.data.id})
@@ -328,9 +364,9 @@ var cell = svg.append("g")
             d3.selectAll(".circulos").filter(function(e){return e.id == d.data.id})
                           .classed("selected", true); 
 
-            d3.selectAll(".paisVector").filter(function(e){
+            d3.selectAll(".estadoVector").filter(function(e){
               if(e.hasOwnProperty('properties')){
-                                if(d.data.presencia.indexOf(e.properties.iso_a2)>=0) return 1}
+                     if(estadosCode[d.data.estado] == e.properties.adm1_code) return 1}
                   })
                 .transition()    
                  .duration(100)    
@@ -376,17 +412,17 @@ var leyenda = svg.append("g")
 
   leyenda.append("g").attr("class", "legendSize");
 
-var legendSize = d3.legendSize()
-  .cells(4)
-  .scale(radiusScale)
-  .shape('circle')
-  .shapePadding(40)
-  .labelOffset(10)
-  .title("Tamaño de la red")
-  .orient('horizontal');
+// var legendSize = d3.legendSize()
+//   .cells(4)
+//   .scale(radiusScale)
+//   .shape('circle')
+//   .shapePadding(40)
+//   .labelOffset(10)
+//   .title("Tamaño de la red")
+//   .orient('horizontal');
 
-svg.select(".legendSize")
-  .call(legendSize);
+// svg.select(".legendSize")
+//   .call(legendSize);
 
   leyenda.append("g")
     .attr("transform", "translate(0, 80)")
@@ -395,10 +431,10 @@ svg.select(".legendSize")
 
 var legendOrdinal = d3.legendColor()
   .shape("path", d3.symbol().type(d3.symbolCircle).size(150)())
-  .shapePadding(40)
+  .shapePadding(6)
     .labelOffset(10)
-   .title("Vinculo con NDC")
-    .orient('horizontal')
+   .title("Partido")
+    .orient('vertical')
   .scale(colorScale);
 
 svg.select(".legendOrdinal")
