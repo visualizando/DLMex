@@ -1,0 +1,384 @@
+<!DOCTYPE html>
+<meta charset="utf-8">
+<meta http-equiv="cache-control" content="max-age=0" />
+<meta http-equiv="cache-control" content="no-cache" />
+<meta http-equiv="expires" content="0" />
+<meta http-equiv="expires" content="Tue, 01 Jan 1980 1:00:00 GMT" />
+<meta http-equiv="pragma" content="no-cache" />
+<head>
+<link rel="shortcut icon" href="">
+  <link rel="stylesheet" href="styles.css">
+  <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/d3/4.9.1/d3.min.js"></script>
+  <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+  <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery.tipsy/1.0.3/jquery.tipsy.js"></script>
+  <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/tabletop.js/1.5.2/tabletop.min.js"></script>
+</head>
+
+
+<body>
+
+  <h2>GEN Summit 2017 participants</h2><h3>Grouped by continent, country and company.</h3>
+<!--   <input type="text" id="text-box-id" style="width: 100%" />
+ -->  <h3 id="continentes"></h3>
+<div id="chart" class="svg-container">
+      <svg preserveAspectRatio="xMinYMin meet" viewBox="-150 120 1500 1150" class="svg-content-responsive" ><g id="main"></g></svg>
+</div>
+<script>
+
+
+
+/// Functions
+function UrlExists(url)
+{
+    var http = new XMLHttpRequest();
+    http.open('HEAD', url, false);
+    http.send();
+    return http.status!=404;
+}
+
+function getUnique(arr) {
+    var a = [], b = [], prev;
+
+    arr.sort();
+    for ( var i = 0; i < arr.length; i++ ) {
+        if ( arr[i] !== prev ) {
+            a.push(arr[i]);
+            b.push(1);
+        } else {
+            b[b.length-1]++;
+        }
+        prev = arr[i];
+    }
+
+    return [a, b];
+}
+
+
+
+function camelize(str) {
+  if(str) return str.replace(/(?:^\w|[A-Z]|\b\w|\s+)/g, function(match, index) {
+    if (+match === 0) return ""; // or if (/\s+/.test(match)) for white spaces
+    return index == 0 ? match.toLowerCase() : match.toUpperCase();
+  });
+}
+
+
+// DATALOAD -Tabletop.js
+
+ var publicSpreadsheetUrl = 'https://docs.google.com/spreadsheets/d/11qVkdNbtitc6x32qDOfnLhq9n9dFs1RPdP1TVh8fSro/pubhtml?gid=0&single=true';
+
+      
+        Tabletop.init( { key: publicSpreadsheetUrl,
+                         callback: showInfo,
+                         simpleSheet: true } )
+      
+
+
+
+var updated = 0;
+
+
+var svg = d3.select("svg"),
+    width = 1200,
+    height = 750;
+
+var color = d3.scaleSequential(d3.interpolateMagma)
+    .domain([-4, 4]);
+
+var continentesTotal = [];
+
+var groups = ["varon","mujer"];
+var arco = d3.arc()
+      ;
+
+var colorea =  d3.scaleOrdinal(d3.schemeCategory10);
+
+var pie = d3.pie()
+      .sort(null);
+
+var pack = d3.pack()
+    .size([width - 2, width - 2])
+    .padding(function(d) {
+    if (d.height == 4 ) return 15;
+    if (d.height == 3 ) return 10;
+    if (d.height == 2 ) return 5;
+    if (d.height == 1 ) return 3;
+
+
+});
+
+var selectedOptions = [];
+
+var missingImages = []
+
+var imageUrl = "images/";
+
+// DATA ADQUISITION 
+
+function showInfo(data, tabletop) {
+
+
+    //====CHECKS IF IMAGE EXISTS AND LOGS IT TO THE CONSOLE
+
+      // data.forEach(function(d){
+      //   if(d.Image && !UrlExists(imageUrl+d.Image))  missingImages.push(d.Image)  ;
+      // })
+
+      //====
+
+    updated = 1;
+    drawChart(data);
+};
+
+
+ 
+function updateOptions(){
+    var order =  d3.select(this).attr("order");
+    selectedOptions[order] = this.value;
+    }
+
+
+function drawChart(data){
+  if(updated){
+    var nest = d3.nest()
+          .key(function(d) { return d.Continent; })
+          .key(function(d) { return d.Country; })
+          .key(function(d) { return d.Company; })
+          .key(function(d) { return d.Fullname; })
+
+
+      .rollup(function(v) { return {
+          count: d3.sum(v, function(d) {
+            return 100 ;/*parseFloat(d["Grand Total"]);*/}),
+          others: v
+        }; })
+      .entries(data);
+
+
+      var root = d3.hierarchy({values: nest}, function(d) {return d.values; })
+        .sum(function(d) {
+
+           return 100;
+          
+        })
+        .sort(function(a, b) { 
+            if(a.height == 0) {
+               return d3.ascending(a.data.Fullname, b.data.Fullname);
+            }else if(a.height > 3) {
+             return b.key - a.key;
+              }
+             else{
+            return b.value - a.value; 
+          }
+
+            
+        });
+    pack(root);
+
+
+
+//~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+// Start drawing
+
+
+     var node = svg.select("g")
+        .selectAll("g")
+        .data(root.descendants().filter(function(d) { return d.depth > 0}))
+        .enter().append("g")
+          .attr("transform", function(d) { return "translate(" + d.x + "," + d.y + ")"; })
+          .attr("class", function(d) { 
+
+            if (d.depth==3){
+                        var clase = "node noText depth" + d.depth ;
+                        if (d.children.length == 1) clase = clase + " nodisplay";  
+            }else if (d.depth!=2) {
+
+                        var clase = "node noText depth" + d.depth ;
+                        if (!d.height) {
+                          continentesTotal.push(d.data.value.others[0]["Continent"]);
+                          clase += " continentes" + d.data.value.others[0]["Continent"];
+                        } 
+
+
+            }else if (d.depth==2) {
+                      var clase = "country " + camelize(d.parent.data.key) ;
+            }else{
+                       var clase =  "node depth" + d.depth;
+
+            }
+
+            return clase;
+          })
+          .attr("id", function(d) {
+                      return camelize(d.data.key);
+          })
+          
+          .each(function(d) { d.node = this; })
+          .on("mouseover", hovered(true))
+          .on("mouseout", hovered(false))
+          ;
+
+
+  var circlesParents = node.filter(function(d) { return d.depth < 3}).append("circle")
+        .attr("id", function(d, i) { return "node-" + camelize(d.data.key) })
+        .attr("r", function(d) { 
+          return d.r; })  
+
+ var circles = node.filter(function(d) { return d.depth >= 3}).append("circle")
+        .attr("id", function(d, i) { return "node-" + camelize(d.data.key) })
+        .attr("r", function(d) { 
+          return d.r; })
+        // TO ADD COLORS OF PEOPLE BASED ON SOMETHING
+        // .attr("fill",function(d) { 
+        //     if (d.parent.height==1) {
+
+        //                return colorea(d.data.value.others[0]["Rubro Principal"]);
+
+        //     }})
+        ;
+
+
+
+
+ var leaf = node.filter(function(d) { return d.depth < 3});
+
+    leaf.append("clipPath")
+        .attr("id", function(d, i) { return "clip-" + camelize(d.data.key); })
+      .append("use")
+        .attr("xlink:href", function(d, i) { return "#node-" + camelize(d.data.key) + ""; });
+
+
+
+  var textos = svg.append('g').attr("id", "texts").selectAll("g")
+        .data(root.descendants().filter(function(d) { return d.depth ==2}))
+        .enter().append("g")
+          .attr("transform", function(d) { return "translate(" + d.x + "," + d.y + ")"; })
+          .attr("class", function(d) {
+                      return "country"})
+          .attr("id", function(d){ return  'textCountry'+ camelize(d.data.key)   ;})
+        .append("text")
+        .style("font-size", function(d) { return Math.sqrt(d.r) * 2.5 + "px"; })
+        .attr("clip-path", function(d, i) { return "url(#clip-" + camelize(d.data.key) + ")"; })
+      .selectAll("tspan")
+        .data(function(d) { 
+          var words = d.data.key.split(/\s+/g);
+          return words })
+      .enter().append("tspan")
+        .attr("x", 0)
+        .attr("y", function(d, i, nodes) { return 1.3 + (i - nodes.length / 2 - 0.5) + "em"; })
+        .text(function(d) { return d; });
+
+
+
+
+// ADDS COUNTER TAGS
+
+     var continentesSelector = d3.select("#continentes");
+     var continentesTotalUnique = [];
+
+       continentesTotal = getUnique(continentesTotal);
+
+       continentesTotal[0].forEach(function(d,k){
+        continentesTotalUnique.push({'name':d,'value':continentesTotal[1][k]});
+       })
+
+        continentesTotalUnique.sort(function(x, y){
+                   return d3.descending(x.value, y.value);
+                })
+
+
+     continentesSelector.html(function (d) {
+        var xx= "";
+        for (i = 0; i < continentesTotalUnique.length; i++) {
+         xx += '<a class="selectors '+ camelize(continentesTotalUnique[i].name) +'">' + continentesTotalUnique[i].name +"&nbsp"+ continentesTotalUnique[i].value + '</a>';
+        }
+        return xx;  
+      })
+     
+
+
+   // $("#text-box-id").keyup(function() {
+   //     var value = camelize($(this).val());
+   //      $(".depth4").each(function(index, elem) {
+   //          var $elem = $(elem);
+   //          if (value.length > 0 && camelize($elem.attr('id')).indexOf(value) != -1) {
+   //              $elem.css('fill', 'red');
+   //          }
+   //          else {
+   //              $elem.css('fill', ''); 
+   //          }
+   //      });
+   //  });
+
+
+
+         $('circle').tipsy({ 
+                gravity: 'n', 
+                html: true, 
+                opacity: 1, 
+                title: function() {
+                 var d = this.__data__, c;
+                  var texto  = '<b style="font-size:14px">'+d.data.key+'</b>';
+                  if(d.depth==1) texto += "<br>Countries: " + d.children.length ;      
+                  if(d.depth==2) texto += "<br>Participants: " + d.children.length ;
+                  if(d.height==0) texto += "<br>"+ d.data.value.others[0]["JobTitle"] + "<br>" + d.data.value.others[0]["Company"] + " (" + d.data.value.others[0]["Country"] + ")";
+                  if(d.height==0 && d.data.value.others[0]["Image"] && UrlExists(imageUrl+ d.data.value.others[0]["Image"])) texto += '<br><img src="' + imageUrl +  d.data.value.others[0]["Image"] + '"/>';
+                  return texto;        }
+          });
+
+
+         var div = d3.select("body").append("div")
+              .attr("class", "tooltip")
+              .style("opacity", 1e-6);
+
+
+
+  }
+
+}
+
+// function mouseover() {
+//             div.transition()
+//                 .duration(500)
+//                 .style("opacity", 1);
+//           }
+
+
+//           function mousemove() {
+//             div
+//              .html("<span style='color:red'><h1>Tombouctou Region</h1><br><ahref='http://en.wikipedia.org/wiki/Tombouctou_Region'><img src='http://upload.wikimedia.org/wikipedia/commons/b/b3/Mali_Tombouctou.png'></ahref></span> <span style='color:blue'><h2>Mali !!!!!!! </h2></span>")
+//                 .style("left", (d3.event.pageX - 34) + "px")
+//                 .style("top", (d3.event.pageY - 12) + "px");
+//           }
+
+          
+//           function mouseout() {
+//             div.transition()
+//                 .duration(500)
+//                 .style("opacity", 1e-6);
+//           }
+
+
+function hovered(hover) {
+  return function(d) {
+    if(d.depth ==2 ){
+      d3.select('#textCountry'+ camelize(d.data.key))
+      .classed("hovered", hover);
+    }else if (d.depth ==3 ){
+      d3.select('#textCountry'+ camelize(d.parent.data.key))
+      .classed("hovered", hover);
+    }else if (d.depth ==4 ){
+      d3.select('#textCountry'+ camelize(d.parent.parent.data.key))
+      .classed("hovered", hover);
+    }
+  
+  
+  };
+}
+
+</script>
+<h3>
+If you want to search by name, country, company or job position, go <a href="https://www.gensummit2017.org/participants/" target="_blank">here</a><br>
+Data provided by <a href="http://www.globaleditorsnetwork.org/" target="_blank">Global Editors Network</a> (GEN)| Back to the <a href="http://www.gensummit.org/" target="_blank">GEN Summit website</a> <br>Designed and coded by <a href="https://www.soviet.com.ar" target="_blank">Andres Snitcofsky</h3>
+<br><br>
+</body>

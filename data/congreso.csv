@@ -1,0 +1,629 @@
+camara,Entidad,orden,distrito,partido,nombre,tipo,idDirectorio,Género
+diputados,Aguascalientes,1,Jesús María,PAN,Luévano Núñez Francisco Javier,distrito,495,Varón
+diputados,Aguascalientes,2,Aguascalientes,PES,Torres Díaz Elba Lorena,distrito,44,Mujer
+diputados,Aguascalientes,3,Aguascalientes,PAN,González Estrada Martha Elisa,distrito,554,Mujer
+diputados,Baja California,1,Mexicali,MORENA,Minor Mora Jesús Salvador,distrito,535,Varón
+diputados,Baja California,2,Mexicali,MORENA,Noriega Galaz Martha Lizeth,distrito,518,Mujer
+diputados,Baja California,3,Ensenada,PT,Reyes Ledesma Armando,distrito,140,Varón
+diputados,Baja California,4,Tijuana,MORENA,Andazola Gómez Socorro Irma,distrito,396,Mujer
+diputados,Baja California,5,Tijuana,MORENA,Moreno Gil Mario Ismael,distrito,511,Varón
+diputados,Baja California,6,Tijuana,MORENA,Areizaga Uribe Erwin Jorge,distrito,2421,Varón
+diputados,Baja California,7,Mexicali,MORENA,Morales Elvira Erik Isaac,distrito,507,Varón
+diputados,Baja California,8,Tijuana,PES,Cruz Aparicio Héctor René,distrito,315,Varón
+diputados,Baja California Sur,1,La Paz,PT,García Grande Ana Ruth,distrito,566,Mujer
+diputados,Baja California Sur,2,San José Del Cabo,PT,Porras Domínguez Alfredo,distrito,96,Varón
+diputados,Campeche,1,San Francisco De Campeche,MORENA,Martínez Aké Carlos Enrique,distrito,467,Varón
+diputados,Campeche,2,Ciudad Del Carmen,PES,Buenfil Díaz Irasema del Carmen,distrito,438,Mujer
+diputados,Chiapas,1,Palenque,MORENA,Obrador Narváez Manuela del Carmen,distrito,308,Mujer
+diputados,Chiapas,2,Bochil,MORENA,Gordillo Moreno Alfredo Antonio,distrito,2080,Varón
+diputados,Chiapas,3,Ocosingo,MORENA,Vazquez Vazquez Alfredo,distrito,157,Varón
+diputados,Chiapas,4,Pichucalco,MORENA,Rabelo Velasco Roque Luis,distrito,142,Varón
+diputados,Chiapas,5,San Cristóbal De Las Casas,PT,Dekker Gómez Clementina Marta,distrito,324,Mujer
+diputados,Chiapas,6,Tuxtla Gutiérrez,MORENA,Bonifaz Moedano Raúl Eduardo,distrito,432,Varón
+diputados,Chiapas,7,Tonalá,MORENA,Prado de los Santos Miguel,distrito,117,Varón
+diputados,Chiapas,8,Comitán De Domínguez,PT,Jiménez Pérez María Roselia,distrito,597,Mujer
+diputados,Chiapas,9,Tuxtla Gutiérrez,MORENA,Aguilar Molina Leticia Arlett,distrito,415,Mujer
+diputados,Chiapas,10,Villaflores,MORENA,Farrera Esponda Juan Enrique,distrito,352,Varón
+diputados,Chiapas,11,Las Margaritas,PVEM,Rubio Montejo Roberto Antonio,distrito,19,Varón
+diputados,Chiapas,12,Tapachula,MORENA,Elorza Flores José Luis,distrito,377,Varón
+diputados,Chiapas,13,Huehuetán,PT,Roblero Gordillo Maricruz,distrito,120,Varón
+diputados,Chihuahua,1,Juárez,MORENA,Mejía Cruz Maria Esther,distrito,528,Mujer
+diputados,Chihuahua,2,Juárez,MORENA,Vargas Meraz Teresita de Jesús,distrito,57,Mujer
+diputados,Chihuahua,3,Juárez,PT,Lastra Muñoz Claudia Elena,distrito,488,Mujer
+diputados,Chihuahua,4,Juárez,MORENA,García Soto Ulises,distrito,575,Varón
+diputados,Chihuahua,5,Delicias,PAN,Mata Carrasco Mario,distrito,482,Varón
+diputados,Chihuahua,6,Chihuahua,PAN,Riggs Baeza Miguel Alonso,distrito,121,Varón
+diputados,Chihuahua,7,Cuauhtémoc,MORENA,Rodríguez Gómez Eraclio,distrito,99,Varón
+diputados,Chihuahua,8,Chihuahua,MC,Falomir Saenz Alan Jesús,distrito,367,Varón
+diputados,Chihuahua,9,Hidalgo Del Parral,PAN,Gutiérrez Valdez María de los Angeles,distrito,601,Mujer
+diputados,Ciudad De México,1,Gustavo A. Madero,MORENA,Del Castillo Ibarra Erika Vanessa,distrito,326,Mujer
+diputados,Ciudad De México,2,Gustavo A. Madero,PES,González Escoto Armando,distrito,553,Varón
+diputados,Ciudad De México,3,Azcapotzalco,MORENA,Jáuregui Montes de Oca Miguel Ángel,distrito,593,Varón
+diputados,Ciudad De México,4,Iztapalapa,PT,Fernández Noroña José Gerardo Rodolfo,distrito,356,Varón
+diputados,Ciudad De México,5,Tlalpan,MORENA,López Rayón Claudia,distrito,498,Mujer
+diputados,Ciudad De México,6,La Magdalena Contreras,MORENA,Mayer Bretón Sergio,distrito,505,Varón
+diputados,Ciudad De México,7,Gustavo A. Madero,MORENA,Rojas Martínez Beatriz,distrito,26,Mujer
+diputados,Ciudad De México,8,Cuauhtémoc,PES,Rosete Sánchez María de Jesús,distrito,30,Mujer
+diputados,Ciudad De México,9,Tláhuac,MORENA,Espinosa de los Monteros García Adriana María Guadalupe,distrito,383,Mujer
+diputados,Ciudad De México,10,Miguel Hidalgo,MORENA,Hidalgo Ponce Javier Ariel,distrito,585,Varón
+diputados,Ciudad De México,11,Venustiano Carranza,MORENA,Barrera Badillo Rocío,distrito,459,Mujer
+diputados,Ciudad De México,12,Cuauhtémoc,MORENA,Padierna Luna María de los Dolores,distrito,111,Mujer
+diputados,Ciudad De México,13,Iztacalco,MORENA,Delgado Carrillo Mario Martín,distrito,347,Varón
+diputados,Ciudad De México,14,Tlalpan,MORENA,Aguirre Valenciana Javier Uriel,distrito,2419,Varón
+diputados,Ciudad De México,15,Benito Juárez,PAN,Mendoza Acevedo Luis Alberto,distrito,530,Varón
+diputados,Ciudad De México,16,Álvaro Obregón,MORENA,Villavicencio Ayala Silvia Lorena,distrito,267,Mujer
+diputados,Ciudad De México,17,Cuajimalpa De Morelos,PES,Saldivar Camacho Francisco Javier,distrito,8,Varón
+diputados,Ciudad De México,18,Iztapalapa,MORENA,Rodríguez Ruiz Ana María,distrito,22,Mujer
+diputados,Ciudad De México,19,Iztapalapa,MORENA,Alavez Ruiz Aleida,distrito,420,Mujer
+diputados,Ciudad De México,20,Iztapalapa,PT,Rojo Pimentel Ana Karina,distrito,27,Mujer
+diputados,Ciudad De México,21,Xochimilco,MORENA,Audiffred Fernández Karen Ivette,distrito,2081,Mujer
+diputados,Ciudad De México,22,Iztapalapa,MORENA,Varela López Víctor Gabriel,distrito,54,Varón
+diputados,Ciudad De México,23,Coyoacán,MORENA,Gómez Álvarez Pablo,distrito,544,Varón
+diputados,Ciudad De México,24,Coyoacán,MORENA,Ramos Sotelo Guadalupe,distrito,150,Mujer
+diputados,Coahuila,1,Piedras Negras,SG,Pérez Rivera Evaristo Lenin,distrito,80,Varón
+diputados,Coahuila,2,San Pedro,MORENA,Borrego Adame Francisco Javier,distrito,435,Varón
+diputados,Coahuila,3,Monclova,MORENA,Farías Zambrano Melba Nelia,distrito,351,Mujer
+diputados,Coahuila,4,Saltillo,PRI,Garay Cadena Martha Hortencia,distrito,363,Mujer
+diputados,Coahuila,5,Torreón,MORENA,Salazar Fernández Luis Fernando,distrito,6,Varón
+diputados,Coahuila,6,Torreón,PES,Pérez Hernández José Ángel,distrito,83,Varón
+diputados,Coahuila,7,Saltillo,PRI,De las Fuentes Hernández Fernando Donato,distrito,323,Varón
+diputados,Colima,1,Colima,MORENA,Yáñez Centeno y Cabrera Claudia Valeria,distrito,254,Mujer
+diputados,Colima,2,Manzanillo,MORENA,Bayardo Cabrera Rosa María,distrito,445,Mujer
+diputados,Durango,1,Victoria De Durango,MORENA,García Vidaña Martha Olivia,distrito,576,Mujer
+diputados,Durango,2,Gómez Palacio,MORENA,Montes Hernández María de Lourdes,distrito,523,Mujer
+diputados,Durango,3,Guadalupe Victoria,MORENA,Aguilera Chairez Maribel,distrito,418,Mujer
+diputados,Durango,4,Victoria De Durango,MORENA,Ortega Nájera Hilda Patricia,distrito,108,Mujer
+diputados,Guanajuato,1,San Luis De La Paz,MC,Rodríguez Vázquez Ariel,distrito,23,Varón
+diputados,Guanajuato,2,San Miguel De Allende,PAN,Villarreal García Ricardo,distrito,264,Varón
+diputados,Guanajuato,3,León,PAN,Ayala Díaz Ma. de los Ángeles,distrito,451,Mujer
+diputados,Guanajuato,4,Guanajuato,PAN,Romero Hicks Juan Carlos,distrito,29,Varón
+diputados,Guanajuato,5,León,PAN,Ramírez Barba Éctor Jaime,distrito,143,Varón
+diputados,Guanajuato,6,León,PAN,Ortega Martínez Ma. del Pilar,distrito,100,Mujer
+diputados,Guanajuato,7,San Francisco Del Rincón,PAN,González Márquez Karen Michel,distrito,556,Mujer
+diputados,Guanajuato,8,Salamanca,PAN,Arriaga Rojas Justino Eugenio,distrito,465,Varón
+diputados,Guanajuato,9,Irapuato,PAN,Murillo Chávez Janet Melanie,distrito,515,Mujer
+diputados,Guanajuato,10,Uriangato,PVEM,Villafuerte Zavala Lilia,distrito,261,Mujer
+diputados,Guanajuato,11,León,PAN,Espadas Galván Jorge Arturo,distrito,379,Varón
+diputados,Guanajuato,12,Celaya,PAN,Núñez Cerón Sarai,distrito,79,Mujer
+diputados,Guanajuato,13,Valle De Santiago,MORENA,Reyes Carmona Emmanuel,distrito,154,Varón
+diputados,Guanajuato,14,Acámbaro,PAN,Espinosa Rivas Ma. Eugenia Leticia,distrito,382,Mujer
+diputados,Guanajuato,15,Irapuato,PAN,Ascencio Barba Sergio Fernando,distrito,426,Varón
+diputados,Guerrero,1,Cd. Altamirano,MORENA,Mojica Wences Víctor Adolfo,distrito,538,Varón
+diputados,Guerrero,2,Iguala,MORENA,Ocampo Manzanares Araceli,distrito,101,Mujer
+diputados,Guerrero,3,Zihuatanejo,PES,Cabrera Lagunas Ma. del Carmen,distrito,441,Mujer
+diputados,Guerrero,4,Acapulco,MORENA,López Rodríguez Abelina,distrito,499,Mujer
+diputados,Guerrero,5,Tlapa,MORENA,Manzano Salazar Javier,distrito,470,Varón
+diputados,Guerrero,6,Chilapa,PRD,García Gutiérrez Raymundo,distrito,568,Varón
+diputados,Guerrero,7,Chilpancingo,MORENA,Sánchez Barrios Carlos,distrito,14,Varón
+diputados,Guerrero,8,Ayutla De Los Libres,MORENA,Cayetano García Rubén,distrito,344,Varón
+diputados,Guerrero,9,Acapulco,MORENA,Merlín García María del Rosario,distrito,533,Mujer
+diputados,Hidalgo,1,Huejutla De Reyes,MORENA,Rivera Castillo Fortunato,distrito,124,Varón
+diputados,Hidalgo,2,Ixmiquilpan,MORENA,Callejas Romero Gustavo,distrito,2422,Varón
+diputados,Hidalgo,3,Actopan,MORENA,Olvera Bautista Sandra Simey,distrito,104,Mujer
+diputados,Hidalgo,4,Tulancingo De Bravo,MORENA,Alfaro Morales María Isabel,distrito,398,Mujer
+diputados,Hidalgo,5,Tula De Allende,MORENA,Angeles Mendoza Julio César,distrito,397,Varón
+diputados,Hidalgo,6,Pachuca De Soto,MORENA,García Anaya Lidia,distrito,464,Mujer
+diputados,Hidalgo,7,Tepeapulco,MORENA,Tellez Infante Jannet,distrito,76,Mujer
+diputados,Jalisco,1,Tequila,MC,Ron Ramos Eduardo,distrito,34,Varón
+diputados,Jalisco,2,Lagos De Moreno,PAN,Romo Cuéllar Martha Estela,distrito,32,Mujer
+diputados,Jalisco,3,Tepatitlán De Morelos,PAN,Romo Romo Guadalupe,distrito,33,Varón
+diputados,Jalisco,4,Zapopan,MC,Rodríguez Carrillo Mario Alberto,distrito,136,Varón
+diputados,Jalisco,5,Puerto Vallarta,MORENA,Jiménez Andrade Lorena del Socorro,distrito,594,Mujer
+diputados,Jalisco,6,Zapopan,MC,Loya Hernández Fabiola Raquel Guadalupe,distrito,500,Mujer
+diputados,Jalisco,7,Tonalá,MC,Villarreal Salazar Juan Carlos,distrito,266,Varón
+diputados,Jalisco,8,Guadalajara,PRD,Alcalá Padilla Abril,distrito,421,Mujer
+diputados,Jalisco,9,Guadalajara,MC,Prudencio González Carmen Julia,distrito,119,Mujer
+diputados,Jalisco,10,Zapopan,MC,Herrera Vega Geraldina Isabel,distrito,584,Mujer
+diputados,Jalisco,11,Guadalajara,MC,Ku Escalante Kehila Abigail,distrito,540,Mujer
+diputados,Jalisco,12,Santa Cruz De Las Flores,MC,Medina Ortíz Adriana Gabriela,distrito,526,Mujer
+diputados,Jalisco,13,Tlaquepaque,MC,Contreras González Lourdes Celenia,distrito,312,Mujer
+diputados,Jalisco,14,Guadalajara,MC,Ramírez Salcido Juan Francisco,distrito,147,Varón
+diputados,Jalisco,15,La Barca,PAN,García Ochoa Absalón,distrito,572,Varón
+diputados,Jalisco,16,Tlaquepaque,MORENA,Pérez Segura Laura Imelda,distrito,90,Mujer
+diputados,Jalisco,17,Jocotepec,MC,Espinoza Cárdenas Juan Martín,distrito,384,Varón
+diputados,Jalisco,18,Autlán De Navarro,PRD,Almeida López Mónica,distrito,391,Mujer
+diputados,Jalisco,19,Ciudad Guzmán,MC,Del Toro Pérez Higinio,distrito,327,Varón
+diputados,Jalisco,20,Tonalá,MC,González García Ana Priscila,distrito,555,Mujer
+diputados,Estado De México,1,Jilotepec De Andrés Molina Enríquez,PRI,Aguilar Castillo Ricardo,distrito,413,Varón
+diputados,Estado De México,2,Santa Maria Tultepec,PT,Vázquez García Dionicia,distrito,156,Mujer
+diputados,Estado De México,3,Atlacomulco De Fabela,PT,Marú Mejía María Teresa,distrito,481,Mujer
+diputados,Estado De México,4,Nicolás Romero,MORENA,Carrasco Godínez Nelly Minerva,distrito,334,Mujer
+diputados,Estado De México,5,Teotihuacán De Arista,PT,Favela Peñuñuri Francisco,distrito,353,Varón
+diputados,Estado De México,6,Coacalco De Berriozábal,PES,García Aguilar Carolina,distrito,366,Mujer
+diputados,Estado De México,7,Cuautitlán Izcalli,MORENA,Guerra Navarro Laura Mónica,distrito,2426,Mujer
+diputados,Estado De México,8,Tultitlán De Mariano Escobedo,MORENA,Contreras Montes Gustavo,distrito,313,Varón
+diputados,Estado De México,9,San Felipe Del Progreso,PRI,Zarzosa Sánchez Eduardo,distrito,238,Varón
+diputados,Estado De México,10,Ecatepec De Morelos,MORENA,Navarrete Rivera Alma Delia,distrito,516,Mujer
+diputados,Estado De México,11,Ecatepec De Morelos,MORENA,Hernández Pérez María Eugenia,distrito,616,Mujer
+diputados,Estado De México,12,Ixtapaluca,MORENA,Arvizu De La Luz Felipe Rafael,distrito,425,Varón
+diputados,Estado De México,13,Ecatepec De Morelos,MORENA,Diaz García María Elizabeth,distrito,359,Mujer
+diputados,Estado De México,14,Ciudad Adolfo López Mateos,PT,Domínguez Vázquez Claudia Angélica,distrito,374,Mujer
+diputados,Estado De México,15,Ciudad Adolfo López Mateos,MORENA,Sánchez Barrales Zavalza Raúl Ernesto,distrito,13,Varón
+diputados,Estado De México,16,Ecatepec De Morelos,PT,Manzanilla Téllez Emilio,distrito,469,Varón
+diputados,Estado De México,17,Ecatepec De Morelos,MORENA,Román Ávila María Guadalupe,distrito,28,Mujer
+diputados,Estado De México,18,Huixquilucan De Degollado,PRD,Reyes Montiel Claudia,distrito,137,Mujer
+diputados,Estado De México,19,Tlalnepantla De Baz,MORENA,Murguía Soto Ulises,distrito,514,Varón
+diputados,Estado De México,20,Cd. Nezahualcóyotl,MORENA,Sánchez Rodríguez Juan Pablo,distrito,39,Varón
+diputados,Estado De México,21,Amecameca De Juárez,MORENA,Sánchez Ortiz Graciela,distrito,38,Mujer
+diputados,Estado De México,22,Naucalpan De Juárez,MORENA,Mora Ríos María Teresa Rebeca Rosa,distrito,521,Mujer
+diputados,Estado De México,23,Lerma De Villada,MORENA,Orihuela Nava David,distrito,106,Varón
+diputados,Estado De México,24,Naucalpan De Juárez,MORENA,Huerta del Río María de los Ángeles,distrito,588,Mujer
+diputados,Estado De México,25,Chimalhuacán,MORENA,López Aparicio Delfino,distrito,491,Varón
+diputados,Estado De México,26,Toluca De Lerdo,PES,Moreno Medina Esmeralda de los Angeles,distrito,512,Mujer
+diputados,Estado De México,27,Metepec,PT,González Yáñez Óscar,distrito,580,Varón
+diputados,Estado De México,28,Zumpango De Ocampo,MORENA,Domínguez Rodríguez Roberto Ángel,distrito,373,Varón
+diputados,Estado De México,29,Cd. Nezahualcóyotl,MORENA,Robles Ortiz Martha,distrito,131,Mujer
+diputados,Estado De México,30,Chimalhuacán,MORENA,Hernández Pérez César Agustín,distrito,615,Varón
+diputados,Estado De México,31,Cd. Nezahualcóyotl,MORENA,Bautista Bravo Juan Angel,distrito,462,Varón
+diputados,Estado De México,32,Valle De Chalco Solidaridad,PT,Martínez Ventura Luis Enrique,distrito,480,Varón
+diputados,Estado De México,33,Chalco De Díaz Covarrubias,MORENA,Onofre Vázquez Vicente Alberto,distrito,105,Varón
+diputados,Estado De México,34,Toluca De Lerdo,MORENA,Díaz Avilez María Guadalupe,distrito,2425,Mujer
+diputados,Estado De México,35,Tenancingo De Degollado,MORENA,Hernández Tapia Arturo Roberto,distrito,608,Varón
+diputados,Estado De México,36,Tejupilco De Hidalgo,PRI,Roa Sánchez Cruz Juvenal,distrito,126,Varón
+diputados,Estado De México,37,Cuautitlán,MORENA,Arenas Madrigal Edgar Eduardo,distrito,401,Varón
+diputados,Estado De México,38,Texcoco De Mora,MORENA,Almazán Burgos Karla Yuritzi,distrito,390,Mujer
+diputados,Estado De México,39,Los Reyes Acaquilpan,PT,Montalvo Luna José Luis,distrito,524,Varón
+diputados,Estado De México,40,San Miguel Zinacantepec,MORENA,Reyes Colín Marco Antonio,distrito,155,Varón
+diputados,Estado De México,41,Ojo De Agua,PES,Reséndiz Hernández Nancy Claudia,distrito,153,Mujer
+diputados,Michoacán,1,Lázaro Cárdenas,MORENA,Flores Anguiano Feliciano,distrito,357,Varón
+diputados,Michoacán,2,Puruándiro,MORENA,Barajas Barajas Esteban,distrito,458,Varón
+diputados,Michoacán,3,Heroica Zitácuaro,PT,Bernal Martínez Mary Carmen,distrito,430,Mujer
+diputados,Michoacán,4,Jiquilpan De Juárez,PAN,Tejeda Cid Armando,distrito,75,Varón
+diputados,Michoacán,5,Zamora De Hidalgo,MORENA,Guerrero Barrera Yolanda,distrito,600,Mujer
+diputados,Michoacán,6,Ciudad Hidalgo,MORENA,Sánchez Castro Anita,distrito,15,Mujer
+diputados,Michoacán,7,Zacapu,MORENA,Herrera Pérez Gonzalo,distrito,583,Varón
+diputados,Michoacán,8,Morelia,MORENA,Guillén Quiroz Ana Lilia,distrito,605,Mujer
+diputados,Michoacán,9,Uruapan Del Progreso,MORENA,Campos Equihua Ignacio Benjamín,distrito,387,Varón
+diputados,Michoacán,10,Morelia,PES,Pérez Negrón Ruiz Iván Arturo,distrito,91,Varón
+diputados,Michoacán,11,Pátzcuaro,PRD,Aguilera Rojas José Guadalupe,distrito,419,Varón
+diputados,Michoacán,12,Apatzingán De La Constitución,PT,Huacus Esquivel Francisco Javier,distrito,586,Varón
+diputados,Morelos,1,Cuernavaca,MORENA,Mojica Toledo Alejandro,distrito,537,Varón
+diputados,Morelos,2,Jiutepec,MORENA,Pani Barragán Alejandra,distrito,114,Mujer
+diputados,Morelos,3,Cuautla,MORENA,Guerra Mena Juanita,distrito,607,Mujer
+diputados,Morelos,4,Jojutla,PES,Argüelles Victorero Jorge Arturo,distrito,402,Varón
+diputados,Morelos,5,Yautepec,MORENA,Ambrocio Gachuz José Guadalupe,distrito,395,Varón
+diputados,Nayarit,1,Santiago Ixcuintla,MORENA,Jarero Velázquez Miguel Pavel,distrito,592,Varón
+diputados,Nayarit,2,Tepic,MORENA,Ponce Méndez María Geraldine,distrito,94,Mujer
+diputados,Nayarit,3,Compostela,MORENA,Villalvazo Amaya Mirtha Iliana,distrito,262,Mujer
+diputados,Nuevo León,1,Santa Catarina,PAN,Salinas Wolberg Hernán,distrito,10,Varón
+diputados,Nuevo León,2,Apodaca,MORENA,Alvarado Moreno María Guillermina,distrito,393,Mujer
+diputados,Nuevo León,3,Gral. Escobedo,PT,García Duque José Luis,distrito,519,Varón
+diputados,Nuevo León,4,San Nicolás De Los Garza,PAN,Flores Suárez Ricardo,distrito,360,Varón
+diputados,Nuevo León,5,Monterrey,PT,González Soto Santiago,distrito,552,Varón
+diputados,Nuevo León,6,Monterrey,PAN,Gómez Cárdenas Annia Sarahí,distrito,545,Mujer
+diputados,Nuevo León,7,García,PES,Garza Gutiérrez Laura Erika de Jesús,distrito,560,Mujer
+diputados,Nuevo León,8,Guadalupe,PES,Vargas Contreras Ernesto,distrito,55,Varón
+diputados,Nuevo León,9,Linares,PRI,Espinoza Eguia Juan Francisco,distrito,385,Varón
+diputados,Nuevo León,10,Monterrey,PAN,López Cisneros José Martín,distrito,496,Varón
+diputados,Nuevo León,11,Guadalupe,PAN,Robledo Leal Ernesto Alfonso,distrito,127,Varón
+diputados,Nuevo León,12,Benito Juárez,MORENA,González Castañeda Sandra Paola,distrito,543,Mujer
+diputados,Oaxaca,1,San Juan Bautista Tuxtepec,MORENA,Molina Espinoza Irineo,distrito,539,Varón
+diputados,Oaxaca,2,Teotitlán De Flores Magón,MORENA,Juan Carlos Irma,distrito,564,Varón
+diputados,Oaxaca,3,Heroica Ciudad De Huajuapan De León,PT,García García Margarita,distrito,563,Mujer
+diputados,Oaxaca,4,Tlacolula De Matamoros,MORENA,Santiago Chepi Azael,distrito,62,Varón
+diputados,Oaxaca,5,Salina Cruz,MORENA,Antonio Altamirano Carol,distrito,400,Varón
+diputados,Oaxaca,6,Heroica Ciudad De Tlaxiaco,MORENA,Pérez López Beatriz Dominga,distrito,85,Mujer
+diputados,Oaxaca,7,Ciudad Ixtepec,MORENA,Domínguez Flores Rosalinda,distrito,372,Mujer
+diputados,Oaxaca,8,Oaxaca De Juárez,PT,Robles Montoya Ángel Benjamín,distrito,130,Varón
+diputados,Oaxaca,9,Puerto Escondido,MORENA,Bautista Peláez Maria del Carmen,distrito,463,Mujer
+diputados,Oaxaca,10,Miahuatlán De Porfirio Díaz,MORENA,Gutiérrez Gutiérrez Daniel,distrito,606,Varón
+diputados,Puebla,1,Huauchinango De Degollado,PES,Acundo González Miguel,distrito,409,Varón
+diputados,Puebla,2,Cuautilulco Barrio,MC,Gómez Maldonado Maiella Martha Gabriela,distrito,546,Mujer
+diputados,Puebla,3,Teziutlán,PES,Báez Ruiz Claudia,distrito,455,Mujer
+diputados,Puebla,4,Ajalpan,MORENA,Parra Juárez Inés,distrito,115,Mujer
+diputados,Puebla,5,San Martín Texmelucan De Labastida,PT,Huerta Hernández Martha,distrito,2056,Mujer
+diputados,Puebla,6,Heroica Puebla De Zaragoza,MORENA,Carvajal Hidalgo Alejandro,distrito,331,Varón
+diputados,Puebla,7,Tepeaca,PES,Guzmán Valdéz Edgar,distrito,613,Varón
+diputados,Puebla,8,Ciudad Serdán,MORENA,Vences Valencia Julieta Kristal,distrito,256,Mujer
+diputados,Puebla,9,Heroica Puebla De Zaragoza,MORENA,Pérez Arroyo Alfonso,distrito,2074,Varón
+diputados,Puebla,10,Cholula De Rivadavia,PES,Salvatori Bojalil Nayeli,distrito,12,Mujer
+diputados,Puebla,11,Heroica Puebla De Zaragoza,MORENA,Huerta Corona Benjamín Saúl,distrito,587,Varón
+diputados,Puebla,12,Heroica Puebla De Zaragoza,PES,Morales Flores Eudoxio,distrito,508,Varón
+diputados,Puebla,13,Atlixco,MORENA,Jiménez y Meneses Héctor Guillermo de Jesús,distrito,595,Varón
+diputados,Puebla,14,Acatlán De Osorio,PT,Maceda Carrera Nelly,distrito,484,Mujer
+diputados,Puebla,15,Tehuacán,MORENA,Barroso Chávez Alejandro,distrito,461,Varón
+diputados,Querétaro,1,Cadereyta De Montes,PAN,Rocha Acosta Sonia,distrito,132,Mujer
+diputados,Querétaro,2,San Juan Del Río,MORENA,Montes Nieves Jorge Luis,distrito,541,Varón
+diputados,Querétaro,3,Santiago De Querétaro,MORENA,Robles Gutiérrez Beatriz Silvia,distrito,128,Mujer
+diputados,Querétaro,4,Santiago De Querétaro,PAN,Macías Olvera Felipe Fernando,distrito,475,Varón
+diputados,Querétaro,5,El Pueblito,PAN,López Birlain Ana Paola,distrito,492,Mujer
+diputados,Quintana Roo,1,Playa Del Carmen,PES,Teissier Zavala Adriana Paulina,distrito,74,Mujer
+diputados,Quintana Roo,2,Chetumal,MORENA,Palma Olvera Carmen Patricia,distrito,113,Mujer
+diputados,Quintana Roo,3,Cancún,MORENA,Avila Vera Mildred Concepción,distrito,449,Mujer
+diputados,Quintana Roo,4,Cancún,MORENA,Pool Moo Jesús de los Ángeles,distrito,95,Varón
+diputados,San Luis Potosí,1,Matehuala,PRI,Rocha Medina Ma. Sara,distrito,133,Mujer
+diputados,San Luis Potosí,2,Soledad De Graciano Sánchez,PVEM,Gallardo Cardona José Ricardo,distrito,362,Varón
+diputados,San Luis Potosí,3,Rioverde,PVEM,Bautista Villegas Oscar,distrito,446,Varón
+diputados,San Luis Potosí,4,Ciudad Valles,MORENA,Delsol Estrada José Ricardo,distrito,348,Varón
+diputados,San Luis Potosí,5,San Luis Potosí,PAN,Salazar Báez Josefina,distrito,5,Mujer
+diputados,San Luis Potosí,6,San Luis Potosí,PRD,Almaguer Pardo Ma. Guadalupe,distrito,405,Mujer
+diputados,San Luis Potosí,7,Tamazunchale,PAN,Rivera Hernández Marcelino,distrito,125,Varón
+diputados,Sinaloa,1,Mazatlán,PT,Osuna Medina José Mario,distrito,2428,Varón
+diputados,Sinaloa,2,Los Mochis,MORENA,Ayala Bobadilla Carlos Iván,distrito,450,Varón
+diputados,Sinaloa,3,Guamúchil,PT,García Hernández Jesús Fernando,distrito,569,Varón
+diputados,Sinaloa,4,Guasave,MORENA,Zamora Valdéz Casimiro,distrito,236,Varón
+diputados,Sinaloa,5,Culiacán De Rosales,MORENA,Santiago Marcos Nancy Yadira,distrito,64,Mujer
+diputados,Sinaloa,6,Mazatlán,MORENA,Carrazco Macías Olegaria,distrito,335,Mujer
+diputados,Sinaloa,7,Culiacán De Rosales,MORENA,Villegas Sánchez Merary,distrito,255,Mujer
+diputados,Sonora,1,San Luis Río Colorado,PES,Baldenebro Arredondo Manuel de Jesus,distrito,457,Varón
+diputados,Sonora,2,Nogales,PT,Bernal Camarena Ana Laura,distrito,429,Mujer
+diputados,Sonora,3,Hermosillo,MORENA,Valles Sampedro Lorenia Iveth,distrito,53,Mujer
+diputados,Sonora,4,Guaymas,MORENA,Aguilar Castillo Heriberto Marcelo,distrito,412,Varón
+diputados,Sonora,5,Hermosillo,MORENA,Briceño Zuloaga María Wendy,distrito,436,Mujer
+diputados,Sonora,6,Cd. Obregón,MORENA,Lamarque Cano Carlos Javier,distrito,487,Varón
+diputados,Sonora,7,Navojoa,PT,González Morales Hildelisa,distrito,557,Mujer
+diputados,Tabasco,1,Macuspana,MORENA,Núñez Alvarez Estela,distrito,310,Mujer
+diputados,Tabasco,2,Heroica Cárdenas,MORENA,Burelo Cortazar Teresa,distrito,440,Mujer
+diputados,Tabasco,3,Comalcalco,MORENA,Espadas Méndez Gregorio Efraín,distrito,380,Varón
+diputados,Tabasco,4,Villahermosa,MORENA,Rodríguez González Manuel,distrito,78,Varón
+diputados,Tabasco,5,Paraíso,MORENA,Avalos Magaña Laura Patricia,distrito,437,Mujer
+diputados,Tabasco,6,Villahermosa,PES,De la Peña Marshall Ricardo,distrito,322,Varón
+diputados,Tamaulipas,1,Nuevo Laredo,PAN,Rosas Quintanilla José Salvador,distrito,36,Varón
+diputados,Tamaulipas,2,Reynosa,PT,Elizondo Guerra Olga Juliana,distrito,376,Mujer
+diputados,Tamaulipas,3,Río Bravo,PES,Villegas González Héctor Joel,distrito,269,Varón
+diputados,Tamaulipas,4,H. Matamoros,PES,Lozano Rodríguez Adriana,distrito,502,Mujer
+diputados,Tamaulipas,5,Ciudad Victoria,PAN,Ramos Tamez Mario Alberto,distrito,151,Varón
+diputados,Tamaulipas,6,Ciudad Mante,PAN,Verastegui Ostos Vicente Javier,distrito,257,Varón
+diputados,Tamaulipas,7,Ciudad Madero,MORENA,González Robledo Erasmo,distrito,578,Varón
+diputados,Tamaulipas,8,Tampico,PES,Sosa Ruíz Olga Patricia,distrito,71,Mujer
+diputados,Tamaulipas,9,Reynosa,PT,Zertuche Zuani Armando Javier,distrito,240,Varón
+diputados,Tlaxcala,1,Apizaco,PT,Sosa Salinas José de la Luz,distrito,72,Varón
+diputados,Tlaxcala,2,Tlaxcala De Xicohténcatl,MORENA,Terán Águila Rubén,distrito,59,Varón
+diputados,Tlaxcala,3,Zacatelco,MORENA,Pérez Rodríguez Claudia,distrito,88,Mujer
+diputados,Veracruz,1,Pánuco,PAN,García Escalante Ricardo,distrito,565,Varón
+diputados,Veracruz,2,Tantoyuca,PAN,Guzmán Avilés Jesús,distrito,610,Varón
+diputados,Veracruz,3,Tuxpam De Rodríguez Cano,MORENA,Espinoza Segura María Bertha,distrito,369,Mujer
+diputados,Veracruz,4,Veracruz,MORENA,Exsome Zapata Ricardo Francisco,distrito,368,Varón
+diputados,Veracruz,5,Poza Rica De Hidalgo,MORENA,Bonilla Herrera Raquel,distrito,433,Mujer
+diputados,Veracruz,6,Papantla De Olarte,MORENA,Pérez Bernabe Jaime Humberto,distrito,81,Varón
+diputados,Veracruz,7,Martínez De La Torre,MORENA,Calderón Salas Rodrigo,distrito,443,Varón
+diputados,Veracruz,8,Xalapa,MORENA,Tello Espinosa Claudia,distrito,61,Mujer
+diputados,Veracruz,9,Coatepec,MORENA,Mora García Carmen,distrito,522,Mujer
+diputados,Veracruz,10,Xalapa,MORENA,Hernández Villalpando Rafael,distrito,590,Varón
+diputados,Veracruz,11,Coatzacoalcos,MORENA,Cruz Santos Flora Tania,distrito,316,Mujer
+diputados,Veracruz,12,Veracruz,PAN,García Rojas Mariana Dunyaska,distrito,573,Mujer
+diputados,Veracruz,13,Huatusco,MORENA,Arrieta Sánchez Eleuterio,distrito,404,Varón
+diputados,Veracruz,14,Minatitlán,MORENA,Medel Palma Carmen,distrito,513,Mujer
+diputados,Veracruz,15,Orizaba,MORENA,Villegas Guarneros Dulce María Corina,distrito,270,Mujer
+diputados,Veracruz,16,Córdoba,MORENA,Martínez Flores Juan,distrito,474,Varón
+diputados,Veracruz,17,Cosamaloapan,MORENA,Reyes López Valentín,distrito,139,Varón
+diputados,Veracruz,18,Zongolica,MORENA,Aguilar Linda Bonifacio,distrito,414,Varón
+diputados,Veracruz,19,San Andrés Tuxtla,MORENA,Tenorio Adame Paola,distrito,60,Mujer
+diputados,Veracruz,20,Cosoleacaque,MORENA,Ríos Fararoni Eulalio Juan,distrito,123,Varón
+diputados,Yucatán,1,Valladolid,PVEM,Vidal Peniche Jesús Carlos,distrito,258,Varón
+diputados,Yucatán,2,Progreso,PRI,Alonzo Morales María Ester,distrito,392,Mujer
+diputados,Yucatán,3,Mérida,MORENA,Interian Gallegos Limbert Iván de Jesús,distrito,591,Varón
+diputados,Yucatán,4,Mérida,PAN,Lixa Abimerhi José Elías,distrito,490,Varón
+diputados,Yucatán,5,Ticul,PRI,Canul Pérez Juan José,distrito,386,Varón
+diputados,Zacatecas,1,Fresnillo,MORENA,Maldonado Tapia Mirna Zabeida,distrito,468,Mujer
+diputados,Zacatecas,2,Jeréz De García Salinas,PVEM,Bugarín Cortés Lyndiana Elizabeth,distrito,439,Mujer
+diputados,Zacatecas,3,Zacatecas,PT,Femat Bañuelos Alfredo,distrito,354,Varón
+diputados,Zacatecas,4,Guadalupe,MORENA,Herrera Chávez Samuel,distrito,582,Varón
+diputados,I Circunscripción,1,,MC,Bravo Padilla Itzcóatl Tonatiuh,circunscripcion,428,Varón
+diputados,I Circunscripción,2,,MC,Zamudio Macias Martha Angélica,circunscripcion,237,Mujer
+diputados,I Circunscripción,3,,MC,García Lara Jorge Alcibíades,circunscripcion,570,Varón
+diputados,I Circunscripción,4,,MC,González Anaya María Libier,circunscripcion,550,Mujer
+diputados,I Circunscripción,5,,MC,Russo Salido Jorge Eugenio,circunscripcion,4,Varón
+diputados,I Circunscripción,6,,MORENA,Ramos Cruz Verónica,circunscripcion,148,Mujer
+diputados,I Circunscripción,7,,MORENA,Carbajal Miranda Marco Antonio,circunscripcion,332,Varón
+diputados,I Circunscripción,8,,MORENA,Clouthier Carrillo Tatiana,circunscripcion,320,Mujer
+diputados,I Circunscripción,9,,MORENA,Márquez González Miguel Ángel,circunscripcion,472,Varón
+diputados,I Circunscripción,10,,MORENA,Regalado Mardueño Carmina Yadira,circunscripcion,152,Mujer
+diputados,I Circunscripción,11,,MORENA,Guzmán De La Torre Francisco Javier,circunscripcion,612,Varón
+diputados,I Circunscripción,12,,MORENA,López Pérez María Teresa,circunscripcion,497,Mujer
+diputados,I Circunscripción,13,,MORENA,Aguilera Brenes Sebastián,circunscripcion,416,Varón
+diputados,I Circunscripción,14,,MORENA,Pérez Mackintosh Miriam Citlally,circunscripcion,86,Mujer
+diputados,I Circunscripción,15,,MORENA,Villa Villegas Alberto,circunscripcion,260,Varón
+diputados,I Circunscripción,16,,MORENA,Sandoval Soberanes Lucinda,circunscripcion,309,Mujer
+diputados,I Circunscripción,17,,MORENA,Villarreal Pasaret Francisco Jorge,circunscripcion,265,Varón
+diputados,I Circunscripción,18,,MORENA,Castillo Lozano Katia Alejandra,circunscripcion,343,Mujer
+diputados,I Circunscripción,19,,MORENA,Rocha Vega Efraín,circunscripcion,134,Varón
+diputados,I Circunscripción,20,,MORENA,Ramírez Lucero Martha Patricia,circunscripcion,145,Mujer
+diputados,I Circunscripción,21,,MORENA,López Castillo Manuel,circunscripcion,493,Varón
+diputados,I Circunscripción,22,,PAN,Terrazas Baca Patricia,circunscripcion,42,Mujer
+diputados,I Circunscripción,23,,PAN,Ruffo Appel Ernesto Guillermo,circunscripcion,11,Varón
+diputados,I Circunscripción,24,,PAN,García Gómez Martha Elena,circunscripcion,365,Mujer
+diputados,I Circunscripción,25,,PAN,Mares Aguilar José Rigoberto,circunscripcion,471,Varón
+diputados,I Circunscripción,26,,PAN,Bonnafoux Alcaraz Madeleine,circunscripcion,434,Mujer
+diputados,I Circunscripción,27,,PAN,Cambero Pérez José Ramón,circunscripcion,444,Varón
+diputados,I Circunscripción,28,,PAN,Mata Lozano Lizbeth,circunscripcion,503,Mujer
+diputados,I Circunscripción,29,,PAN,Castaños Valenzuela Carlos Humberto,circunscripcion,342,Varón
+diputados,I Circunscripción,30,,PRD,Juárez Piña Verónica Beatriz,circunscripcion,485,Mujer
+diputados,I Circunscripción,31,,PRI,Medina Herrera Benito,circunscripcion,525,Varón
+diputados,I Circunscripción,32,,PRI,Sánchez Martínez Lourdes Erika,circunscripcion,17,Mujer
+diputados,I Circunscripción,33,,PRI,Villegas Arreola Alfredo,circunscripcion,268,Varón
+diputados,I Circunscripción,34,,PES,Terán Villalobos Irma María,circunscripcion,58,Mujer
+diputados,I Circunscripción,35,,PRI,González Cuevas Isaías,circunscripcion,551,Varón
+diputados,I Circunscripción,36,,PRI,Noroña Quezada Hortensia María Luisa,circunscripcion,520,Mujer
+diputados,I Circunscripción,37,,PRI,Hernández Deras Ismael Alfredo,circunscripcion,614,Varón
+diputados,I Circunscripción,38,,PRI,Flores Sánchez Margarita,circunscripcion,358,Mujer
+diputados,I Circunscripción,39,,MORENA,Rosas Uribe Erika Mariana,circunscripcion,37,Mujer
+diputados,I Circunscripción,40,,PVEM,Gómez Alcantar Marco Antonio,circunscripcion,559,Varón
+diputados,II Circunscripción,1,,MC,Lozano Mac Donald María del Pilar,circunscripcion,501,Mujer
+diputados,II Circunscripción,2,,MORENA,Novella Macías Oscar Rafael,circunscripcion,403,Varón
+diputados,II Circunscripción,3,,MORENA,Quiroz Rodríguez María Del Carmen,circunscripcion,2429,Mujer
+diputados,II Circunscripción,4,,MORENA,Chico Herrera Miguel Ángel,circunscripcion,329,Varón
+diputados,II Circunscripción,5,,MORENA,Vargas Hernández Lidia Nallely,circunscripcion,56,Mujer
+diputados,II Circunscripción,6,,MORENA,Ramos Ruiz Juan Israel,circunscripcion,149,Varón
+diputados,II Circunscripción,7,,MORENA,Sánchez Galván Miroslava,circunscripcion,16,Mujer
+diputados,II Circunscripción,8,,MORENA,Del Bosque Villarreal Diego Eduardo,circunscripcion,325,Varón
+diputados,II Circunscripción,9,,MORENA,Cazarez Yañez Martina,circunscripcion,345,Mujer
+diputados,II Circunscripción,10,,MORENA,Badillo Moreno Cuauhtli Fernando,circunscripcion,454,Varón
+diputados,II Circunscripción,11,,MORENA,Veloz Silva María Luisa,circunscripcion,178,Mujer
+diputados,II Circunscripción,12,,MORENA,Santos Díaz Edelmiro Santiago,circunscripcion,65,Varón
+diputados,II Circunscripción,13,,MORENA,García Guardado Ma. de Jesús,circunscripcion,567,Mujer
+diputados,II Circunscripción,14,,PAN,Gracia Guzmán Raúl,circunscripcion,596,Varón
+diputados,II Circunscripción,15,,PAN,Torres Peimbert María Marcela,circunscripcion,46,Mujer
+diputados,II Circunscripción,16,,PAN,Trejo Reyes José Isabel,circunscripcion,41,Varón
+diputados,II Circunscripción,17,,PAN,Martínez Juárez Jacquelina,circunscripcion,477,Mujer
+diputados,II Circunscripción,18,,PAN,Aguilar Vega Marcos,circunscripcion,411,Varón
+diputados,II Circunscripción,19,,PAN,Garfias Cedillo Sylvia Violeta,circunscripcion,562,Mujer
+diputados,II Circunscripción,20,,PAN,Pérez Díaz Víctor Manuel,circunscripcion,82,Varón
+diputados,II Circunscripción,21,,PAN,Alemán Hernández Nohemí,circunscripcion,417,Mujer
+diputados,II Circunscripción,22,,PAN,Azuara Zúñiga Xavier,circunscripcion,453,Varón
+diputados,II Circunscripción,23,,PAN,Garza Galván Silvia Guadalupe,circunscripcion,561,Mujer
+diputados,II Circunscripción,24,,PAN,Torres Graciano Fernando,circunscripcion,45,Varón
+diputados,II Circunscripción,25,,PAN,Guerra Villarreal Isabel Margarita,circunscripcion,604,Mujer
+diputados,II Circunscripción,26,,PAN,Cinta Rodríguez Carlos Elhier,circunscripcion,2423,Varón
+diputados,II Circunscripción,27,,PRD,Esparza Márquez Frida Alejandra,circunscripcion,381,Mujer
+diputados,II Circunscripción,28,,PRD,Ortega Martínez Antonio,circunscripcion,107,Varón
+diputados,II Circunscripción,29,,PRI,Álvarez García Ivonne Liliana,circunscripcion,394,Mujer
+diputados,II Circunscripción,30,,PRI,Treviño Villarreal Pedro Pablo,circunscripcion,49,Varón
+diputados,II Circunscripción,31,,PRI,Rodríguez Mier y Terán Mariana,circunscripcion,20,Mujer
+diputados,II Circunscripción,32,,PRI,Moreira Valdez Rubén Ignacio,circunscripcion,510,Varón
+diputados,II Circunscripción,33,,PRI,Azuara Yarzábal Frinné,circunscripcion,452,Mujer
+diputados,II Circunscripción,34,,PRI,Pavón Campos Carlos,circunscripcion,98,Varón
+diputados,II Circunscripción,35,,PRI,Alemán Muñoz Castillo María,circunscripcion,406,Mujer
+diputados,II Circunscripción,36,,PRI,Campos Córdova Lenin Nelson,circunscripcion,407,Varón
+diputados,II Circunscripción,37,,PRI,Guel Saldívar Norma Adela,circunscripcion,602,Mujer
+diputados,II Circunscripción,38,,PVEM,Puente Salas Carlos Alberto,circunscripcion,141,Varón
+diputados,II Circunscripción,39,,PVEM,Espinoza Mata Zulma,circunscripcion,2082,Mujer
+diputados,II Circunscripción,40,,MORENA,Elizondo Garrido Francisco,circunscripcion,375,Varón
+diputados,III Circunscripción,1,,MC,Méndez De La Luz Dauzón Dulce María,circunscripcion,529,Mujer
+diputados,III Circunscripción,2,,MORENA,Ponce Cobos Alejandro,circunscripcion,93,Varón
+diputados,III Circunscripción,3,,MORENA,De la Cruz Delucio Patricia Del Carmen,circunscripcion,321,Mujer
+diputados,III Circunscripción,4,,MORENA,Santiago Manuel Iran,circunscripcion,63,Varón
+diputados,III Circunscripción,5,,MORENA,Guerra Méndez Lizeth Amayrani,circunscripcion,603,Mujer
+diputados,III Circunscripción,6,,MORENA,Carranza Aréas Julio,circunscripcion,333,Varón
+diputados,III Circunscripción,7,,MORENA,Merino García Virginia,circunscripcion,532,Mujer
+diputados,III Circunscripción,8,,MORENA,Gómez Ventura Manuel,circunscripcion,549,Varón
+diputados,III Circunscripción,9,,MORENA,Martínez Aguilar Emeteria Claudia,circunscripcion,473,Mujer
+diputados,III Circunscripción,10,,MORENA,Alegre Salazar Luis Javier,circunscripcion,423,Varón
+diputados,III Circunscripción,11,,MORENA,Zavaleta Sánchez Graciela,circunscripcion,239,Mujer
+diputados,III Circunscripción,12,,MORENA,Sibaja Mendoza Jorge Ángel,circunscripcion,68,Varón
+diputados,III Circunscripción,13,,MORENA,Ochoa Valdivia Zaira,circunscripcion,103,Mujer
+diputados,III Circunscripción,14,,MORENA,Andrade Zavala Marco Antonio,circunscripcion,389,Varón
+diputados,III Circunscripción,15,,MORENA,Valencia Cruz Rosalba,circunscripcion,51,Mujer
+diputados,III Circunscripción,16,,MORENA,Contreras Castillo Armando,circunscripcion,328,Varón
+diputados,III Circunscripción,17,,MORENA,Rodríguez Arellano Ediltrudis,circunscripcion,135,Mujer
+diputados,III Circunscripción,18,,MORENA,Medina Pérez Marco Antonio,circunscripcion,527,Varón
+diputados,III Circunscripción,19,,MORENA,García Cayetano Dorheny,circunscripcion,388,Mujer
+diputados,III Circunscripción,20,,MORENA,Blas López Víctor,circunscripcion,431,Varón
+diputados,III Circunscripción,21,,MORENA,García Rosales Edith,circunscripcion,579,Mujer
+diputados,III Circunscripción,22,,PAN,Patrón Laviada Cecilia Anunciación,circunscripcion,109,Mujer
+diputados,III Circunscripción,23,,PAN,Valenzuela González Carlos Alberto,circunscripcion,52,Varón
+diputados,III Circunscripción,24,,PAN,Díaz Jiménez Antonia Natividad,circunscripcion,371,Mujer
+diputados,III Circunscripción,25,,SG,Morales Vázquez Carlos Alberto,circunscripcion,509,Varón
+diputados,III Circunscripción,26,,PAN,Guzmán Avilés María Del Rosario,circunscripcion,611,Mujer
+diputados,III Circunscripción,27,,PAN,Gómez Quej José Del Carmen,circunscripcion,548,Varón
+diputados,III Circunscripción,28,,PAN,García Morlan Dulce Alejandra,circunscripcion,571,Mujer
+diputados,III Circunscripción,29,,PRD,Rodríguez Zamora Norma Azucena,circunscripcion,24,Mujer
+diputados,III Circunscripción,30,,MORENA,García Corpus Teófilo Manuel,circunscripcion,466,Varón
+diputados,III Circunscripción,31,,PRI,Ortiz Guarneros Juan,circunscripcion,110,Varón
+diputados,III Circunscripción,32,,PRI,Sauri Riancho Dulce María,circunscripcion,66,Mujer
+diputados,III Circunscripción,33,,PRI,Yunes Landa Héctor,circunscripcion,253,Varón
+diputados,III Circunscripción,34,,PRI,Pérez Munguía Soraya,circunscripcion,87,Mujer
+diputados,III Circunscripción,35,,PRI,Angulo Briceño Pablo Guillermo,circunscripcion,399,Varón
+diputados,III Circunscripción,36,,PRI,Ingram Vallines Anilú,circunscripcion,589,Mujer
+diputados,III Circunscripción,37,,PRI,Limón Hernández Manuel,circunscripcion,489,Varón
+diputados,III Circunscripción,38,,PT,Martínez Ruiz Maribel,circunscripcion,478,Mujer
+diputados,III Circunscripción,39,,PVEM,Corona Méndez Jorge Francisco,circunscripcion,2424,Varón
+diputados,III Circunscripción,40,,MORENA,Peralta De La Peña Ana Patricia,circunscripcion,97,Mujer
+diputados,IV Circunscripción,1,,MC,Tagle Martínez Martha Angélica,circunscripcion,73,Mujer
+diputados,IV Circunscripción,2,,MORENA,López Chávez Maria Beatriz,circunscripcion,494,Mujer
+diputados,IV Circunscripción,3,,MORENA,Calderón Medina Samuel,circunscripcion,442,Varón
+diputados,IV Circunscripción,4,,MORENA,Bautista Rivera David,circunscripcion,448,Varón
+diputados,IV Circunscripción,5,,MORENA,Espinoza Lopez Brenda,circunscripcion,370,Mujer
+diputados,IV Circunscripción,6,,MORENA,Mier Velazco Moisés Ignacio,circunscripcion,534,Varón
+diputados,IV Circunscripción,7,,MORENA,Díaz Aguilar Leticia,circunscripcion,349,Mujer
+diputados,IV Circunscripción,8,,MORENA,Palacios Cordero Lucio Ernesto,circunscripcion,112,Varón
+diputados,IV Circunscripción,9,,MORENA,Cuevas Barron Gabriela,circunscripcion,318,Mujer
+diputados,IV Circunscripción,10,,MORENA,De Jesús Jiménez Lucio,circunscripcion,319,Varón
+diputados,IV Circunscripción,11,,MORENA,Cuaxiloa Serrano Susana Beatriz,circunscripcion,317,Mujer
+diputados,IV Circunscripción,12,,MORENA,Muñoz Ledo y Lazo de la Vega Porfirio Alejandro,circunscripcion,506,Varón
+diputados,IV Circunscripción,13,,MORENA,Reyes Miguel Idalia,circunscripcion,138,Mujer
+diputados,IV Circunscripción,14,,MORENA,Huerta Martínez Manuel,circunscripcion,599,Varón
+diputados,IV Circunscripción,15,,MORENA,Piña Bernal Adela,circunscripcion,92,Mujer
+diputados,IV Circunscripción,16,,MORENA,Alejandro Candelaria Maximino,circunscripcion,424,Varón
+diputados,IV Circunscripción,17,,MORENA,Flores Olivo Lucía,circunscripcion,350,Mujer
+diputados,IV Circunscripción,18,,MORENA,Huerta González Agustín Reynaldo,circunscripcion,581,Varón
+diputados,IV Circunscripción,19,,MORENA,Martínez González Laura,circunscripcion,476,Mujer
+diputados,IV Circunscripción,20,,MORENA,Villarauz Martínez Rocío del Pilar,circunscripcion,263,Mujer
+diputados,IV Circunscripción,21,,PAN,Romero Herrera Jorge,circunscripcion,21,Varón
+diputados,IV Circunscripción,22,,PAN,Dávila Fernández Adriana,circunscripcion,311,Mujer
+diputados,IV Circunscripción,23,,PAN,Adame Castillo Marco Antonio,circunscripcion,410,Varón
+diputados,IV Circunscripción,24,,PAN,Sobrado Rodríguez Verónica María,circunscripcion,69,Mujer
+diputados,IV Circunscripción,25,,PAN,Carreón Mejía Carlos,circunscripcion,336,Varón
+diputados,IV Circunscripción,26,,SG,Riojas Martínez Ana Lucia,circunscripcion,122,Mujer
+diputados,IV Circunscripción,27,,PAN,Martínez Terrazas Oscar Daniel,circunscripcion,479,Varón
+diputados,IV Circunscripción,28,,SG,Serrano Cortes Héctor,circunscripcion,67,Varón
+diputados,IV Circunscripción,29,,MC,Macías Rábago Julieta,circunscripcion,483,Mujer
+diputados,IV Circunscripción,30,,SG,Toledo Gutiérrez Mauricio Alonso,circunscripcion,43,Varón
+diputados,IV Circunscripción,31,,MORENA,Rosas Martínez Luz Estefanía,circunscripcion,35,Mujer
+diputados,IV Circunscripción,32,,PRI,Saldaña Pérez María Lucero,circunscripcion,7,Mujer
+diputados,IV Circunscripción,33,,PRI,Galindo Favela Fernando,circunscripcion,361,Varón
+diputados,IV Circunscripción,34,,PRI,López Castro Cynthia Iliana,circunscripcion,486,Mujer
+diputados,IV Circunscripción,35,,PRI,Juárez Cisneros Rene,circunscripcion,542,Varón
+diputados,IV Circunscripción,36,,PRI,Pastor Badilla Claudia,circunscripcion,116,Mujer
+diputados,IV Circunscripción,37,,PRI,Córdova Morán Luis Eleusis Leónidas,circunscripcion,314,Varón
+diputados,IV Circunscripción,38,,PT,Garay Ulloa Silvano,circunscripcion,364,Varón
+diputados,IV Circunscripción,39,,PVEM,Escobar y Vega Arturo,circunscripcion,378,Varón
+diputados,IV Circunscripción,40,,MORENA,Fernández Cruz Nayeli Arlen,circunscripcion,355,Mujer
+diputados,V Circunscripción,1,,MC,Cheja Alfaro Jacobo David,circunscripcion,340,Varón
+diputados,V Circunscripción,2,,MC,Salinas Reyes Ruth,circunscripcion,2,Mujer
+diputados,V Circunscripción,3,,MORENA,Bahena Jiménez Socorro,circunscripcion,456,Mujer
+diputados,V Circunscripción,4,,MORENA,Abasolo Sánchez Pedro Daniel,circunscripcion,1,Varón
+diputados,V Circunscripción,5,,MORENA,Ascencio Ortega Reyna Celeste,circunscripcion,427,Mujer
+diputados,V Circunscripción,6,,MORENA,Maya Martínez Hirepan,circunscripcion,504,Varón
+diputados,V Circunscripción,7,,MORENA,Cano González Susana,circunscripcion,330,Mujer
+diputados,V Circunscripción,8,,MORENA,Gutiérrez Luna Sergio Carlos,circunscripcion,609,Varón
+diputados,V Circunscripción,9,,MORENA,Carrillo Luna Juana,circunscripcion,337,Mujer
+diputados,V Circunscripción,10,,MORENA,Pérez Hernández Sergio,circunscripcion,84,Varón
+diputados,V Circunscripción,11,,MORENA,Solís Barrera María Marivel,circunscripcion,70,Mujer
+diputados,V Circunscripción,12,,MORENA,González Reyes Marco Antonio,circunscripcion,558,Varón
+diputados,V Circunscripción,13,,MORENA,García Zepeda Julieta,circunscripcion,577,Mujer
+diputados,V Circunscripción,14,,MORENA,Ruiz Lustre Hugo Rafael,circunscripcion,3,Varón
+diputados,V Circunscripción,15,,MORENA,Castañeda Ortiz María Guadalupe Edith,circunscripcion,339,Mujer
+diputados,V Circunscripción,16,,MORENA,Ramírez Navarrete Francisco Javier,circunscripcion,146,Varón
+diputados,V Circunscripción,17,,MORENA,Chávez Pérez María,circunscripcion,346,Mujer
+diputados,V Circunscripción,18,,MORENA,García Rubio Agustín,circunscripcion,574,Varón
+diputados,V Circunscripción,19,,MORENA,Mercado Torres Edith Marisol,circunscripcion,531,Mujer
+diputados,V Circunscripción,20,,MORENA,Viedma Velázquez Alejandro,circunscripcion,259,Varón
+diputados,V Circunscripción,21,,PAN,Rodríguez Rivera Iván Arturo,circunscripcion,77,Varón
+diputados,V Circunscripción,22,,PAN,Rojas Hernández Laura Angélica,circunscripcion,25,Mujer
+diputados,V Circunscripción,23,,PAN,Preciado Rodríguez Jorge Luis,circunscripcion,118,Varón
+diputados,V Circunscripción,24,,PAN,Sandoval Mendoza María Liduvina,circunscripcion,50,Mujer
+diputados,V Circunscripción,25,,PAN,Torres Ramírez Adolfo,circunscripcion,48,Varón
+diputados,V Circunscripción,26,,PAN,Romero León Gloria,circunscripcion,31,Mujer
+diputados,V Circunscripción,27,,MORENA,Torres Piña Carlos,circunscripcion,47,Varón
+diputados,V Circunscripción,28,,PRD,Bautista Rodríguez Mónica,circunscripcion,447,Mujer
+diputados,V Circunscripción,29,,MORENA,Salinas Narváez Javier,circunscripcion,9,Varón
+diputados,V Circunscripción,30,,PRI,Ochoa Reza Enrique,circunscripcion,102,Varón
+diputados,V Circunscripción,31,,PRI,Herrera Anzaldo Ana Lilia,circunscripcion,598,Mujer
+diputados,V Circunscripción,32,,PRI,Miranda Nava Luis Enrique,circunscripcion,536,Varón
+diputados,V Circunscripción,33,,PRI,Velasco González Marcela Guillermina,circunscripcion,158,Mujer
+diputados,V Circunscripción,34,,PRI,Acosta Peña Brasil Alberto,circunscripcion,214,Varón
+diputados,V Circunscripción,35,,PRI,Puente De la Mora Ximena,circunscripcion,129,Mujer
+diputados,V Circunscripción,36,,PRI,Nemer Alvarez Ernesto Javier,circunscripcion,517,Varón
+diputados,V Circunscripción,37,,PRI,Barrera Fortoul Laura,circunscripcion,460,Mujer
+diputados,V Circunscripción,38,,PT,Sandoval Flores Reginaldo,circunscripcion,40,Varón
+diputados,V Circunscripción,39,,PVEM,Gómez Ordaz Leticia Mariana,circunscripcion,547,Mujer
+diputados,V Circunscripción,40,,PVEM,Alcántara Núñez Jesús Sergio,circunscripcion,422,Varón
+senadores,Representación Proporcional,,,MC,"Delgado Rannauro, Dante Alfonso",circunscripcion,306,Varón
+senadores,Representación Proporcional,,,MC,"Mercado Castro, Dora Patricia",circunscripcion,177,Mujer
+senadores,Representación Proporcional,,,MORENA,"Vázquez Alatorre, Antares Guadalupe",circunscripcion,198,Mujer
+senadores,Representación Proporcional,,,MORENA,"Méndez Ortiz, Casimiro",circunscripcion,187,Varón
+senadores,Representación Proporcional,,,MORENA,"Balderas Espinoza, Claudia Esther",circunscripcion,250,Mujer
+senadores,Representación Proporcional,,,MORENA,"Martínez Cázares, Germán",circunscripcion,2078,Varón
+senadores,Representación Proporcional,,,MORENA,"Vasconcelos, Héctor Enrique",circunscripcion,205,Varón
+senadores,Representación Proporcional,,,MORENA,"Peña Villa, José Alejandro",circunscripcion,197,Varón
+senadores,Representación Proporcional,,,MORENA,"Martínez Hernández, Ifigenia Martha",circunscripcion,192,Mujer
+senadores,Representación Proporcional,,,MORENA,"Rodríguez Ramírez, Laura María de Jesús",circunscripcion,229,Mujer
+senadores,Representación Proporcional,,,MORENA,"Gómez Urrutia, Napoleón",circunscripcion,274,Varón
+senadores,Representación Proporcional,,,MORENA,"Monreal Ávila, Ricardo",circunscripcion,161,Varón
+senadores,Representación Proporcional,,,PAN,"Zepeda Vidales, Damián",circunscripcion,213,Varón
+senadores,Representación Proporcional,,,PAN,"Rosales San Román, Indira de Jesús",circunscripcion,231,Mujer
+senadores,Representación Proporcional,,,PAN,"Vázquez Mota, Josefina Eugenia",circunscripcion,206,Mujer
+senadores,Representación Proporcional,,,PAN,"López Rabadán, Kenia",circunscripcion,182,Mujer
+senadores,Representación Proporcional,,,PAN,"Moya Clemente, Roberto Juan",circunscripcion,163,Varón
+senadores,Representación Proporcional,,,PAN,"Gálvez Ruiz, Bertha Xóchitl",circunscripcion,276,Mujer
+senadores,Representación Proporcional,,,PES,"Mora Arellano, Elvia Marcela",circunscripcion,162,Mujer
+senadores,Representación Proporcional,,,PES,"Romo Molina, Eunice Renata",circunscripcion,230,Mujer
+senadores,Representación Proporcional,,,PES,"Ávila Vázquez, Katya Elizabeth",circunscripcion,248,Mujer
+senadores,Representación Proporcional,,,PRD,"Mancera Espinosa, Miguel Ángel",circunscripcion,179,Varón
+senadores,Representación Proporcional,,,PRI,"Paredes Rangel, Beatriz Elena",circunscripcion,175,Mujer
+senadores,Representación Proporcional,,,PRI,"Aceves del Olmo, Carlos Humberto",circunscripcion,242,Varón
+senadores,Representación Proporcional,,,PRI,"Ruiz Massieu Salinas, Claudia",circunscripcion,2053,Mujer
+senadores,Representación Proporcional,,,PRI,"Ávila Villegas, Eruviel",circunscripcion,249,Varón
+senadores,Representación Proporcional,,,PRI,"Osorio Chong, Miguel Ángel",circunscripcion,172,Varón
+senadores,Representación Proporcional,,,PRI,"Rubio Márquez, Vanessa",circunscripcion,232,Mujer
+senadores,Representación Proporcional,,,PT,"Bañuelos de la Torre, Geovanna del Carmen",circunscripcion,251,Mujer
+senadores,Representación Proporcional,,,PVEM,"Zamora Guzmán, Rogelio Israel",circunscripcion,212,Varón
+senadores,Representación Proporcional,,,PVEM,"Lagunes Soto Ruíz, Alejandra",circunscripcion,180,Mujer
+senadores,Representación Proporcional,,,PVEM,"Velasco Coello, Manuel",circunscripcion,2057,Varón
+senadores,Aguascalientes,,,PAN,"Márquez Alvarado, Martha Cecilia",Mayoría Relativa,186,Mujer
+senadores,Aguascalientes,,,PAN,"Martín del Campo Martín del Campo, Juan Antonio",Mayoría Relativa,188,Varón
+senadores,Aguascalientes,,,MORENA,"Gutiérrez Castorena, Daniel",Primera Minoría,286,Varón
+senadores,Baja California,,,MORENA,"Novelo Osuna, Gerardo",Mayoría Relativa,169,Varón
+senadores,Baja California,,,PT,"León Gastélum, Alejandra del Carmen",Mayoría Relativa,181,Mujer
+senadores,Baja California,,,PAN,"Cruz Blackledge, Gina Andrea",Primera Minoría,302,Mujer
+senadores,Baja California Sur,,,MORENA,"Trasviña Waldenrath, Jesús Lucía",Mayoría Relativa,202,Mujer
+senadores,Baja California Sur,,,MORENA,"Velázquez Meza, Ricardo",Mayoría Relativa,208,Varón
+senadores,Baja California Sur,,,PAN,"Saldaña Cisneros, María Guadalupe",Primera Minoría,217,Mujer
+senadores,Campeche,,,MORENA,"Sánchez García, Cecilia Margarita",Mayoría Relativa,199,Mujer
+senadores,Campeche,,,MORENA,"Ostoa Ortega, Aníbal",Mayoría Relativa,173,Varón
+senadores,Campeche,,,MORENA,"Abreu Artiñano, Rocío Adriana",Primera Minoría,241,Mujer
+senadores,Chiapas,,,MORENA,"Ramírez Aguilar, Oscar Eduardo",Mayoría Relativa,223,Varón
+senadores,Chiapas,,,PES,"De León Villard, Sasil Dora Luz",Mayoría Relativa,304,Mujer
+senadores,Chiapas,,,MC,"Castañón Ramírez, Noé Fernando",Primera Minoría,299,Varón
+senadores,Chihuahua,,,MORENA,"Caraveo Camarena, Bertha Alicia",Mayoría Relativa,296,Mujer
+senadores,Chihuahua,,,MORENA,"Pérez Cuellar, Cruz",Mayoría Relativa,219,Varón
+senadores,Chihuahua,,,PAN,"Madero Muñoz, Gustavo Enrique",Primera Minoría,185,Varón
+senadores,Ciudad De México,,,MORENA,"Batres Guadarrama, Martí",Mayoría Relativa,271,Varón
+senadores,Ciudad De México,,,MORENA,"Hernández Mora, Minerva Citlalli",Mayoría Relativa,288,Mujer
+senadores,Ciudad De México,,,SG,"Álvarez Icaza Longoria, Emilio",Primera Minoría,243,Varón
+senadores,Coahuila,,,MORENA,"Galaz Caletti, Eva Eugenia",Mayoría Relativa,275,Mujer
+senadores,Coahuila,,,MORENA,"Guadiana Tijerina, Santana Armando",Mayoría Relativa,284,Varón
+senadores,Coahuila,,,PRI,"Martínez García, Verónica",Primera Minoría,189,Mujer
+senadores,Colima,,,MORENA,"Valencia de la Mora, Gricelda",Mayoría Relativa,204,Mujer
+senadores,Colima,,,PT,"Padilla Peña, Joel",Mayoría Relativa,174,Varón
+senadores,Colima,,,PVEM,"Benavides Cobos, Gabriela",Primera Minoría,272,Mujer
+senadores,Durango,,,PT,"Lucero Olivas, Miguel Ángel",Mayoría Relativa,183,Varón
+senadores,Durango,,,MORENA,"Valdez Martínez, Lilia Margarita",Mayoría Relativa,203,Mujer
+senadores,Durango,,,MC,"Enríquez Herrera, José Ramón",Primera Minoría,2418,Varón
+senadores,Estado De México,,,MORENA,"Martínez Miranda, Higinio",Mayoría Relativa,190,Varón
+senadores,Estado De México,,,MORENA,"Guerrero Sánchez, Martha",Mayoría Relativa,285,Mujer
+senadores,Estado De México,,,MC,"Zepeda Hernández, Juan Manuel",Primera Minoría,2050,Varón
+senadores,Guanajuato,,,PAN,"Bermúdez Méndez, José Erandi",Mayoría Relativa,283,Varón
+senadores,Guanajuato,,,PAN,"Reynoso Sánchez, Alejandra Noemí",Mayoría Relativa,226,Mujer
+senadores,Guanajuato,,,MORENA,"Micher Camarena, Martha Lucía",Primera Minoría,176,Mujer
+senadores,Guerrero,,,MORENA,"Salgado Macedonio, José Félix",Mayoría Relativa,215,Varón
+senadores,Guerrero,,,MORENA,"Salgado García, Nestora",Mayoría Relativa,216,Mujer
+senadores,Guerrero,,,PRI,"Añorve Baños, Manuel",Primera Minoría,246,Varón
+senadores,Hidalgo,,,MORENA,"González González, María Merced",Mayoría Relativa,282,Mujer
+senadores,Hidalgo,,,MORENA,"Menchaca Salazar, Julio Ramón",Mayoría Relativa,194,Varón
+senadores,Hidalgo,,,PRI,"Mayorga Delgado, Nuvia Magdalena",Primera Minoría,193,Mujer
+senadores,Jalisco,,,MC,"Castañeda Hoeflich, José Clemente",Mayoría Relativa,298,Varón
+senadores,Jalisco,,,MC,"Delgadillo García, Verónica",Mayoría Relativa,305,Mujer
+senadores,Jalisco,,,MORENA,"Cárdenas Mariscal, María Antonia",Primera Minoría,297,Mujer
+senadores,Michoacán,,,MORENA,"Arias Solís, Cristóbal",Mayoría Relativa,247,Varón
+senadores,Michoacán,,,MORENA,"Piña Gudiño, Blanca Estela",Mayoría Relativa,220,Mujer
+senadores,Michoacán,,,PRD,"García Conejo, Antonio",Primera Minoría,279,Varón
+senadores,Morelos,,,MORENA,"Meza Guzmán, Lucía Virginia",Mayoría Relativa,168,Mujer
+senadores,Morelos,,,MORENA,"Salazar Solorio, Radamés",Mayoría Relativa,218,Varón
+senadores,Morelos,,,PRI,"García Yáñez, Ángel",Primera Minoría,281,Varón
+senadores,Nayarit,,,MORENA,"Navarro Quintero, Miguel Ángel",Mayoría Relativa,167,Varón
+senadores,Nayarit,,,PT,"Pinedo Alonso, Cora Cecilia",Mayoría Relativa,221,Mujer
+senadores,Nayarit,,,PAN,"Núñez Sánchez, Gloria Elizabeth",Primera Minoría,171,Mujer
+senadores,Nuevo León,,,MC,"García Sepúlveda, Samuel Alejandro",Mayoría Relativa,280,Varón
+senadores,Nuevo León,,,MC,"Kempis Martínez, Indira",Mayoría Relativa,234,Mujer
+senadores,Nuevo León,,,PAN,"Fuentes Solís, Víctor Oswaldo",Primera Minoría,290,Varón
+senadores,Oaxaca,,,MORENA,"Harp Iturribarría, Susana",Mayoría Relativa,287,Mujer
+senadores,Oaxaca,,,MORENA,"Jara Cruz, Salomón",Mayoría Relativa,273,Varón
+senadores,Oaxaca,,,PVEM,"Bolaños-Cacho Cué, Raúl",Primera Minoría,293,Varón
+senadores,Puebla,,,MORENA,"Armenta Mier, Alejandro",Mayoría Relativa,2075,Varón
+senadores,Puebla,,,PT,"De la Sierra Arámburo, Nancy",Mayoría Relativa,303,Mujer
+senadores,Puebla,,,PAN,"Navarro Acevedo, Nadia",Primera Minoría,159,Mujer
+senadores,Querétaro,,,PAN,"Kuri González, Mauricio",Mayoría Relativa,233,Varón
+senadores,Querétaro,,,PAN,"Murguía Gutiérrez, María Guadalupe",Mayoría Relativa,165,Mujer
+senadores,Querétaro,,,MORENA,"Jiménez Yáñez, Juan José",Primera Minoría,235,Varón
+senadores,Quintana Roo,,,MORENA,"Pech Várguez, José Luis",Mayoría Relativa,196,Varón
+senadores,Quintana Roo,,,MORENA,"Villegas Canché, Freyda Marybel",Mayoría Relativa,210,Mujer
+senadores,Quintana Roo,,,PAN,"Martínez Simón, Mayuli Latifa",Primera Minoría,191,Mujer
+senadores,San Luis Potosí,,,PAN,"Gama Basarte, Marco Antonio",Mayoría Relativa,277,Varón
+senadores,San Luis Potosí,,,PVEM,"Noyola Cervantes, Ma. Leonor",Mayoría Relativa,170,Mujer
+senadores,San Luis Potosí,,,MORENA,"Dothé Mata, Primo",Primera Minoría,307,Varón
+senadores,Sinaloa,,,MORENA,"Castro Castro, Imelda",Mayoría Relativa,300,Mujer
+senadores,Sinaloa,,,MORENA,"Rocha Moya, Rubén",Mayoría Relativa,228,Varón
+senadores,Sinaloa,,,PRI,"Zamora Gastélum, Mario",Primera Minoría,211,Varón
+senadores,Sonora,,,MORENA,"Bours Griffith, Arturo",Mayoría Relativa,294,Varón
+senadores,Sonora,,,MORENA,"Téllez García, María Lilly del Carmen",Mayoría Relativa,201,Mujer
+senadores,Sonora,,,PRI,"Beltrones Sánchez, Sylvana",Primera Minoría,244,Mujer
+senadores,Tabasco,,,MORENA,"Fernández Balboa, Mónica",Mayoría Relativa,292,Mujer
+senadores,Tabasco,,,MORENA,"Peralta Suárez, Ovidio Salvador",Mayoría Relativa,207,Varón
+senadores,Tabasco,,,PRD,"Fócil Pérez, Juan Manuel",Primera Minoría,291,Varón
+senadores,Tamaulipas,,,MORENA,"Villarreal Anaya, Américo",Mayoría Relativa,209,Varón
+senadores,Tamaulipas,,,MORENA,"Covarrubias Cervantes, María Guadalupe",Mayoría Relativa,301,Mujer
+senadores,Tamaulipas,,,PAN,"García Cabeza de Vaca, Ismael",Primera Minoría,278,Varón
+senadores,Tlaxcala,,,MORENA,"Molina Ramírez, Joel",Mayoría Relativa,160,Varón
+senadores,Tlaxcala,,,MORENA,"Rivera Rivera, Ana Lilia",Mayoría Relativa,227,Mujer
+senadores,Tlaxcala,,,PAN,"Hernández Ramos, Minerva",Primera Minoría,289,Mujer
+senadores,Veracruz,,,MORENA,"Pérez Astorga, Ernesto",Mayoría Relativa,2076,Varón
+senadores,Veracruz,,,MORENA,"Sánchez Hernández, Gloria",Mayoría Relativa,200,Mujer
+senadores,Veracruz,,,PAN,"Rementería Del Puerto, Julen",Primera Minoría,225,Varón
+senadores,Yucatán,,,PRI,"Ramírez Marín, Jorge Carlos",Mayoría Relativa,224,Varón
+senadores,Yucatán,,,PVEM,"Camino Farjat, Verónica Noemí",Mayoría Relativa,295,Mujer
+senadores,Yucatán,,,PAN,"Paz Alonzo, Raúl",Primera Minoría,195,Varón
+senadores,Zacatecas,,,MORENA,"Luévano Cantú, María Soledad",Mayoría Relativa,184,Mujer
+senadores,Zacatecas,,,MORENA,"Narro Céspedes, José",Mayoría Relativa,166,Varón
+senadores,Zacatecas,,,PRI,"Anaya Mota, Claudia Edith",Primera Minoría,245,Mujer

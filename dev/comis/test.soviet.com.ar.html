@@ -1,0 +1,470 @@
+<!DOCTYPE html>
+<!-- saved from url=(0030)http://test.soviet.com.ar/map/ -->
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8"><script type="text/javascript">
+    (function() {
+      var container = document.querySelector('#_tcx-cs7o7n4e7xv');
+      if (!container) {
+        return;
+      }
+
+      var XHR = XMLHttpRequest.prototype;
+      var send = XHR.send;
+      var open = XHR.open;
+      XHR.open = function(method, url) {
+        this.url = url;
+        return open.apply(this, arguments);
+      };
+      XHR.send = function() {
+        this.addEventListener('load', function() {
+          try {
+            const response = this.response;
+            if (response && response.length) {
+              const firstChar = response[0];
+              if (firstChar === '[' || firstChar === '{') {
+                const wrapper = document.createElement('div');
+                wrapper.setAttribute('data-tcx-url', this.url);
+                wrapper.innerText = response;
+                container.appendChild(wrapper);
+              }
+            }
+          } catch (err) {
+            // No-op.
+          }
+        });
+        return send.apply(this, arguments);
+      };
+    })();
+  </script>
+<style>
+
+body{
+  text-align: center;
+  background-color: #dfdfdf;
+  color:#27aeaa;
+}
+h2, h3 {
+  font-family: verdana;
+  margin: 0px;
+  margin-top: 5px;
+}
+
+h2{
+  margin-top: 50px;
+}
+
+h3{
+  font-size: 13px;
+  font-weight: 400;
+}
+
+
+text {
+  fill: rgba(0, 0, 0, 1);
+  font: 19px "Helvetica Neue", Helvetica, Arial, sans-serif;
+  text-anchor: middle;
+  text-shadow: 0 2px 0 #fff, 2px 0 0 #fff, -2px 0 0 #fff, 0 -2px 0 #fff;
+}
+
+.node {
+  cursor: pointer;
+}
+
+.node:hover circle{
+        stroke: rgba(39, 174, 170,1);
+  stroke-width: 1px;
+}
+
+.continente circle{
+     fill: rgba(0, 0, 0, 0);
+
+  stroke-width:1px;
+}
+
+
+/*.Sudamerica circle{
+  fill:rgb(179,226,205);
+}
+
+.Europa circle{
+  fill:rgb(253,205,172);
+}
+
+.Asia circle{
+  fill:rgb(203,213,232);
+}
+
+.Norteamerica circle{
+  fill:rgb(244,202,228);
+}
+
+.Oceania circle{
+  fill:rgb(230,245,201);
+}
+
+.africa circle{
+  fill:rgb(255,242,174);
+}
+*/
+
+
+
+#continents{
+  position: fixed;
+  top:140px;
+  right:20px;
+  opacity: 0.7;
+  text-align: right;
+  line-height: 24px;
+}
+
+
+#continents span{
+  padding: 2px 4px;
+  color:white;
+}
+
+
+
+
+/*
+span.norteamerica{
+  background-color:rgb(179,226,205);
+}
+
+span.europa{
+  background-color:rgb(253,205,172);
+}
+
+span.asia{
+  background-color:rgb(203,213,232);
+}
+
+span.sudamerica{
+  background-color:rgb(244,202,228);
+}
+
+span.oceania{
+  background-color:rgb(230,245,201);
+}
+
+span.africa{
+  background-color:rgb(255,242,174);
+}
+*/
+
+
+.org {
+
+     fill: rgba(0, 0, 0, 0);
+       stroke: rgba(39, 174, 170,0.6);
+  stroke-width: 1px;: 
+
+}
+
+.pais circle{
+     fill: rgba(255, 255, 255, 0.3);
+}
+
+.pais.hovered text{
+  display: none;
+}
+
+.proyecto text{
+  display: none;
+}
+
+.proyecto circle {
+    fill: rgba(39, 174, 170,0.4);
+}
+
+.node--root, .nodisplay{
+display:none;  
+}
+
+.node{
+}
+
+
+
+.label{
+   
+    pointer-events: none;
+}
+
+
+
+
+
+.tipsy { font-size: 11px; position: absolute; padding: 5px; z-index: 100000;
+    font-family: monospace;
+ }
+  .tipsy-inner { background-color: rgba(39, 174, 170,1); color: #FFF; max-width: 200px; padding: 5px 8px 4px 8px; text-align: center; }
+
+  /* Rounded corners */
+  .tipsy-inner { border-radius: 3px; -moz-border-radius: 3px; -webkit-border-radius: 3px; }
+  
+  /* Uncomment for shadow */
+  .tipsy-inner { box-shadow: 3px 3px 5px rgba(0, 0, 0,0.5); -webkit-box-shadow: 3px 3px 5px rgba(0, 0, 0,0.5); -moz-box-shadow: 3px 3px 5px rgba(0, 0, 0,0.5); }
+  
+  .tipsy-arrow { position: absolute; width: 0; height: 0; line-height: 0; border: 5px dashed #000; }
+  
+  /* Rules to colour arrows */
+  .tipsy-arrow-n { border-bottom-color: #000; }
+  .tipsy-arrow-s { border-top-color: #000; }
+  .tipsy-arrow-e { border-left-color: #000; }
+  .tipsy-arrow-w { border-right-color: #000; }
+  
+  .tipsy-n .tipsy-arrow { top: 0px; left: 50%; margin-left: -5px; border-bottom-style: solid; border-top: none; border-left-color: transparent; border-right-color: transparent; }
+    .tipsy-nw .tipsy-arrow { top: 0; left: 10px; border-bottom-style: solid; border-top: none; border-left-color: transparent; border-right-color: transparent;}
+    .tipsy-ne .tipsy-arrow { top: 0; right: 10px; border-bottom-style: solid; border-top: none;  border-left-color: transparent; border-right-color: transparent;}
+  .tipsy-s .tipsy-arrow { bottom: 0; left: 50%; margin-left: -5px; border-top-style: solid; border-bottom: none;  border-left-color: transparent; border-right-color: transparent; }
+    .tipsy-sw .tipsy-arrow { bottom: 0; left: 10px; border-top-style: solid; border-bottom: none;  border-left-color: transparent; border-right-color: transparent; }
+    .tipsy-se .tipsy-arrow { bottom: 0; right: 10px; border-top-style: solid; border-bottom: none; border-left-color: transparent; border-right-color: transparent; }
+  .tipsy-e .tipsy-arrow { right: 0; top: 50%; margin-top: -5px; border-left-style: solid; border-right: none; border-top-color: transparent; border-bottom-color: transparent; }
+  .tipsy-w .tipsy-arrow { left: 0; top: 50%; margin-top: -5px; border-right-style: solid; border-left: none; border-top-color: transparent; border-bottom-color: transparent; }
+
+</style>
+
+
+</head><body class=" hasGoogleVoiceExt">
+ <!-- <h2></h2>
+  <h3>By Country and Company | made by <a href="https://twitter.com/rusosnith" target="_blank">@rusosnith</a></h3> -->
+  <h3 id="continents"><span style="background-color:#1f77b4">Mapeo de Datos</span><br><span style="background-color:#ff7f0e">Open Data</span><br><span style="background-color:#2ca02c">Información</span><br><span style="background-color:#d62728">Participación Ciudadana</span><br><span style="background-color:#9467bd">Legislación</span><br><span style="background-color:#8c564b">Seguridad para las Mujeres</span><br><span style="background-color:#e377c2">Toma decisiones</span><br><span style="background-color:#7f7f7f">Colaboración</span><br><span style="background-color:#bcbd22">Diseño colaborativo de normas</span><br><span style="background-color:#17becf">Offline</span><br><span style="background-color:#1f77b4">Vivienda</span><br><span style="background-color:#ff7f0e">Visualización de Datos</span><br><span style="background-color:#2ca02c">Reporte público</span><br><span style="background-color:#d62728">Comunicación</span><br></h3>
+
+
+<svg width="900" height="800"><g transform="translate(1,0.5)"><g transform="translate(449,399)" class="node node--root"><circle id="node-0" r="399"></circle></g><g transform="translate(265.52170220090045,358.78420161265655)" class="node continente" aria-describedby="tipsy" tabindex="0"><circle id="node-1" r="196.1607703729751"></circle></g><g transform="translate(652.8769670410068,358.78420161265655)" class="node continente" aria-describedby="tipsy" tabindex="0"><circle id="node-2" r="188.8262498887124"></circle></g><g transform="translate(465.737732484796,644.6139205909634)" class="node continente" aria-describedby="tipsy" tabindex="0"><circle id="node-3" r="150.4481863581755"></circle></g><g transform="translate(464.488463901864,157.5349620558975)" class="node continente" aria-describedby="tipsy" tabindex="0"><circle id="node-4" r="84.47103572694404"></circle></g><g transform="translate(335.924001228437,124.78596167319319)" class="node continente" aria-describedby="tipsy" tabindex="0"><circle id="node-5" r="45.83067894907196"></circle></g><g transform="translate(242.35151734974855,115.52548637907489)" class="node continente" aria-describedby="tipsy" tabindex="0"><circle id="node-6" r="45.83067894907196"></circle></g><g transform="translate(192.9478775686418,358.78420161265655)" class="node pais Norteamerica" aria-describedby="tipsy" tabindex="0"><circle id="node-7" r="121.2187011622977"></circle><clippath id="clip-0"><use href="#node-0"></use></clippath><text clip-path="url(#clip-0)" style="font-size: 27.5248px;"><tspan x="0" y="-0.19999999999999996em">Estados</tspan><tspan x="0" y="0.8em">Unidos</tspan></text></g><g transform="translate(387.9245256524075,358.78420161265655)" class="node pais Norteamerica" aria-describedby="tipsy" tabindex="0"><circle id="node-8" r="71.38970234304931"></circle><clippath id="clip-1"><use href="#node-1"></use></clippath><text clip-path="url(#clip-1)" style="font-size: 21.1231px;"><tspan x="0" y="0.30000000000000004em">Mexico</tspan></text></g><g transform="translate(528.8719693391057,319.2803778904835)" class="node pais Sudamerica" aria-describedby="tipsy" tabindex="0"><circle id="node-9" r="56.3127343869097"></circle><clippath id="clip-2"><use href="#node-2"></use></clippath><text clip-path="url(#clip-2)" style="font-size: 18.7605px;"><tspan x="0" y="0.30000000000000004em">Uruguay</tspan></text></g><g transform="translate(666.1889610212751,319.2803778904835)" class="node pais Sudamerica" aria-describedby="tipsy" tabindex="0"><circle id="node-10" r="78.636012716841"></circle><clippath id="clip-3"><use href="#node-3"></use></clippath><text clip-path="url(#clip-3)" style="font-size: 22.1692px;"><tspan x="0" y="0.30000000000000004em">Argentina</tspan></text></g><g transform="translate(574.5437442794056,441.2459629879363)" class="node pais Sudamerica" aria-describedby="tipsy" tabindex="0"><circle id="node-11" r="71.55540218203538"></circle><clippath id="clip-4"><use href="#node-4"></use></clippath><text clip-path="url(#clip-4)" style="font-size: 21.1476px;"><tspan x="0" y="0.30000000000000004em">Chile</tspan></text></g><g transform="translate(579.495747044064,233.30179083836265)" class="node pais Sudamerica" aria-describedby="tipsy" tabindex="0"><circle id="node-12" r="41.09418979223454"></circle><clippath id="clip-5"><use href="#node-5"></use></clippath><text clip-path="url(#clip-5)" style="font-size: 16.0262px;"><tspan x="0" y="0.30000000000000004em">Peru</tspan></text></g><g transform="translate(715.049306371207,459.84174860951765)" class="node pais Sudamerica" aria-describedby="tipsy" tabindex="0"><circle id="node-13" r="67.80714107908649"></circle><clippath id="clip-6"><use href="#node-6"></use></clippath><text clip-path="url(#clip-6)" style="font-size: 20.5863px;"><tspan x="0" y="0.30000000000000004em">Brasil</tspan></text></g><g transform="translate(751.15732082721,375.9694837205667)" class="node pais Sudamerica" aria-describedby="tipsy" tabindex="0"><circle id="node-14" r="21.139156040721947"></circle><clippath id="clip-7"><use href="#node-7"></use></clippath><text clip-path="url(#clip-7)" style="font-size: 11.4943px;"><tspan x="0" y="0.30000000000000004em">Bolivia</tspan></text></g><g transform="translate(362.8806476553135,629.9387903594375)" class="node pais Europa" aria-describedby="tipsy" tabindex="0"><circle id="node-15" r="44.18124425696966"></circle><clippath id="clip-8"><use href="#node-8"></use></clippath><text clip-path="url(#clip-8)" style="font-size: 16.6172px;"><tspan x="0" y="0.30000000000000004em">Alemania</tspan></text></g><g transform="translate(487.8219483135809,629.9387903594375)" class="node pais Europa" aria-describedby="tipsy" tabindex="0"><circle id="node-16" r="78.39181182287903"></circle><clippath id="clip-9"><use href="#node-9"></use></clippath><text clip-path="url(#clip-9)" style="font-size: 22.1348px;"><tspan x="0" y="-0.19999999999999996em">Reino</tspan><tspan x="0" y="0.8em">Unido</tspan></text></g><g transform="translate(395.82438156918,714.4773988368016)" class="node pais Europa" aria-describedby="tipsy" tabindex="0"><circle id="node-17" r="44.18124425696966"></circle><clippath id="clip-10"><use href="#node-10"></use></clippath><text clip-path="url(#clip-10)" style="font-size: 16.6172px;"><tspan x="0" y="0.30000000000000004em">Francia</tspan></text></g><g transform="translate(402.1336076747866,574.7939104985309)" class="node pais Europa" aria-describedby="tipsy" tabindex="0"><circle id="node-18" r="21.139156040721947"></circle><clippath id="clip-11"><use href="#node-11"></use></clippath><text clip-path="url(#clip-11)" style="font-size: 11.4943px;"><tspan x="0" y="0.30000000000000004em">Finlandia</tspan></text></g><g transform="translate(475.42190960445146,751.1604730544325)" class="node pais Europa" aria-describedby="tipsy" tabindex="0"><circle id="node-19" r="41.09418979223454"></circle><clippath id="clip-12"><use href="#node-12"></use></clippath><text clip-path="url(#clip-12)" style="font-size: 16.0262px;"><tspan x="0" y="0.30000000000000004em">Islandia</tspan></text></g><g transform="translate(532.7576013258182,721.3949907215106)" class="node pais Europa" aria-describedby="tipsy" tabindex="0"><circle id="node-20" r="21.139156040721947"></circle><clippath id="clip-13"><use href="#node-13"></use></clippath><text clip-path="url(#clip-13)" style="font-size: 11.4943px;"><tspan x="0" y="0.30000000000000004em">Belgica</tspan></text></g><g transform="translate(567.5420758722888,693.4065046583406)" class="node pais Europa" aria-describedby="tipsy" tabindex="0"><circle id="node-21" r="21.139156040721947"></circle><clippath id="clip-14"><use href="#node-14"></use></clippath><text clip-path="url(#clip-14)" style="font-size: 11.4943px;"><tspan x="0" y="0.30000000000000004em">Rumania</tspan></text></g><g transform="translate(587.0226451181369,653.2340956760548)" class="node pais Europa" aria-describedby="tipsy" tabindex="0"><circle id="node-22" r="21.139156040721947"></circle><clippath id="clip-15"><use href="#node-15"></use></clippath><text clip-path="url(#clip-15)" style="font-size: 11.4943px;"><tspan x="0" y="0.30000000000000004em">España</tspan></text></g><g transform="translate(587.4596162646884,608.5896774605667)" class="node pais Europa" aria-describedby="tipsy" tabindex="0"><circle id="node-23" r="21.139156040721947"></circle><clippath id="clip-16"><use href="#node-16"></use></clippath><text clip-path="url(#clip-16)" style="font-size: 11.4943px;"><tspan x="0" y="0.30000000000000004em">Italia</tspan></text></g><g transform="translate(464.488463901864,157.5349620558975)" class="node pais Internacional" aria-describedby="tipsy" tabindex="0"><circle id="node-24" r="82.1027911485253"></circle><clippath id="clip-17"><use href="#node-17"></use></clippath><text clip-path="url(#clip-17)" style="font-size: 22.6526px;"><tspan x="0" y="0.30000000000000004em">Internacional</tspan></text></g><g transform="translate(313.6007228985057,124.78596167319319)" class="node pais Asia" aria-describedby="tipsy" tabindex="0"><circle id="node-25" r="21.139156040721947"></circle><clippath id="clip-18"><use href="#node-18"></use></clippath><text clip-path="url(#clip-18)" style="font-size: 11.4943px;"><tspan x="0" y="0.30000000000000004em">Taiwan</tspan></text></g><g transform="translate(358.24727955836835,124.78596167319319)" class="node pais Asia" aria-describedby="tipsy" tabindex="0"><circle id="node-26" r="21.139156040721947"></circle><clippath id="clip-19"><use href="#node-19"></use></clippath><text clip-path="url(#clip-19)" style="font-size: 11.4943px;"><tspan x="0" y="0.30000000000000004em">Bahrain</tspan></text></g><g transform="translate(220.02823901981725,115.52548637907489)" class="node pais Oceania" aria-describedby="tipsy" tabindex="0"><circle id="node-27" r="21.139156040721947"></circle><clippath id="clip-20"><use href="#node-20"></use></clippath><text clip-path="url(#clip-20)" style="font-size: 11.4943px;"><tspan x="0" y="-0.19999999999999996em">Nueva</tspan><tspan x="0" y="0.8em">Zelanda</tspan></text></g><g transform="translate(264.67479567967985,115.52548637907489)" class="node pais Oceania" aria-describedby="tipsy" tabindex="0"><circle id="node-28" r="21.139156040721947"></circle><clippath id="clip-21"><use href="#node-21"></use></clippath><text clip-path="url(#clip-21)" style="font-size: 11.4943px;"><tspan x="0" y="0.30000000000000004em">Australia</tspan></text></g><g transform="translate(170.2182664044661,369.2523495684245)" class="node org" aria-describedby="tipsy" tabindex="0"><circle id="node-29" r="53.94448980849099"></circle></g><g transform="translate(245.30191225367906,369.2523495684245)" class="nodisplay"><circle id="node-30" r="18.770911462303232"></circle></g><g transform="translate(234.69498533849702,407.7271021928666)" class="nodisplay"><circle id="node-31" r="18.770911462303232"></circle></g><g transform="translate(234.694985338497,330.7775969439824)" class="nodisplay"><circle id="node-32" r="18.770911462303232"></circle></g><g transform="translate(202.90388009855977,279.63585231321156)" class="node org" aria-describedby="tipsy" tabindex="0"><circle id="node-33" r="39.07838638883712"></circle></g><g transform="translate(145.65218861001654,298.30122768999973)" class="nodisplay"><circle id="node-34" r="18.770911462303232"></circle></g><g transform="translate(112.76544952039474,320.9126380871238)" class="nodisplay"><circle id="node-35" r="18.770911462303232"></circle></g><g transform="translate(96.11121546880769,357.18177064155617)" class="nodisplay"><circle id="node-36" r="18.770911462303232"></circle></g><g transform="translate(100.39491175568038,396.8612796382393)" class="nodisplay"><circle id="node-37" r="18.770911462303232"></circle></g><g transform="translate(124.40623877641067,428.7402642958405)" class="nodisplay"><circle id="node-38" r="18.770911462303232"></circle></g><g transform="translate(161.36112556681294,443.81175494555987)" class="nodisplay"><circle id="node-39" r="18.770911462303232"></circle></g><g transform="translate(200.8184759624357,437.8175087166273)" class="nodisplay"><circle id="node-40" r="18.770911462303232"></circle></g><g transform="translate(239.57648219154163,447.3375108826257)" class="nodisplay"><circle id="node-41" r="18.770911462303232"></circle></g><g transform="translate(356.63310912023786,349.08646833040365)" class="nodisplay"><circle id="node-42" r="18.770911462303232"></circle></g><g transform="translate(414.1299657963569,349.08646833040365)" class="node org" aria-describedby="tipsy" tabindex="0"><circle id="node-43" r="36.35770063539711"></circle></g><g transform="translate(370.48441839326796,386.5157980000477)" class="nodisplay"><circle id="node-44" r="18.770911462303232"></circle></g><g transform="translate(370.48441839326796,311.65713866075964)" class="nodisplay"><circle id="node-45" r="18.770911462303232"></circle></g><g transform="translate(405.36463291154706,405.91126456455345)" class="nodisplay"><circle id="node-46" r="18.770911462303232"></circle></g><g transform="translate(528.8719693391057,319.2803778904835)" class="node org" aria-describedby="tipsy" tabindex="0"><circle id="node-47" r="53.94448980849099"></circle></g><g transform="translate(682.9550599109637,328.96028959770507)" class="nodisplay"><circle id="node-48" r="18.770911462303232"></circle></g><g transform="translate(722.8651274139888,328.96028959770507)" class="nodisplay"><circle id="node-49" r="18.770911462303232"></circle></g><g transform="translate(702.9100936624762,363.52342192207664)" class="nodisplay"><circle id="node-50" r="18.770911462303232"></circle></g><g transform="translate(702.9100936624762,294.3971572733335)" class="nodisplay"><circle id="node-51" r="18.770911462303232"></circle></g><g transform="translate(646.2339272697625,284.71724556611196)" class="node org" aria-describedby="tipsy" tabindex="0"><circle id="node-52" r="36.35770063539711"></circle></g><g transform="translate(645.3073801793622,342.20663622320143)" class="nodisplay"><circle id="node-53" r="18.770911462303232"></circle></g><g transform="translate(665.2624139308748,376.769768547573)" class="nodisplay"><circle id="node-54" r="18.770911462303232"></circle></g><g transform="translate(554.588710527893,441.2459629879363)" class="node org" aria-describedby="tipsy" tabindex="0"><circle id="node-55" r="49.23212385210407"></circle></g><g transform="translate(624.959990420719,441.2459629879363)" class="nodisplay"><circle id="node-56" r="18.770911462303232"></circle></g><g transform="translate(559.5407132925515,233.30179083836265)" class="nodisplay"><circle id="node-57" r="18.770911462303232"></circle></g><g transform="translate(599.4507807955766,233.30179083836265)" class="nodisplay"><circle id="node-58" r="18.770911462303232"></circle></g><g transform="translate(713.4826797281515,452.99571574788365)" class="nodisplay"><circle id="node-59" r="18.770911462303232"></circle></g><g transform="translate(753.3927472311767,452.99571574788365)" class="nodisplay"><circle id="node-60" r="18.770911462303232"></circle></g><g transform="translate(733.4377134796641,495.2223174644098)" class="node org" aria-describedby="tipsy" tabindex="0"><circle id="node-61" r="25.565118544696237"></circle></g><g transform="translate(733.4377134796641,418.432583423512)" class="nodisplay"><circle id="node-62" r="18.770911462303232"></circle></g><g transform="translate(693.527645976639,418.432583423512)" class="nodisplay"><circle id="node-63" r="18.770911462303232"></circle></g><g transform="translate(673.5726122251264,452.99571574788365)" class="nodisplay"><circle id="node-64" r="18.770911462303232"></circle></g><g transform="translate(751.15732082721,375.9694837205667)" class="nodisplay"><circle id="node-65" r="18.770911462303232"></circle></g><g transform="translate(342.9256139038009,618.4177462513136)" class="nodisplay"><circle id="node-66" r="18.770911462303232"></circle></g><g transform="translate(382.8356814068261,618.4177462513136)" class="nodisplay"><circle id="node-67" r="18.770911462303232"></circle></g><g transform="translate(362.8806476553135,652.9808785756852)" class="nodisplay"><circle id="node-68" r="18.770911462303232"></circle></g><g transform="translate(465.74287087761155,629.9387903594375)" class="node org" aria-describedby="tipsy" tabindex="0"><circle id="node-69" r="53.94448980849099"></circle></g><g transform="translate(540.8265167268245,629.9387903594375)" class="nodisplay"><circle id="node-70" r="18.770911462303232"></circle></g><g transform="translate(530.2195898116424,668.4135429838796)" class="nodisplay"><circle id="node-71" r="18.770911462303232"></circle></g><g transform="translate(530.2195898116424,591.4640377349954)" class="nodisplay"><circle id="node-72" r="18.770911462303232"></circle></g><g transform="translate(375.8693478176674,702.9563547286778)" class="nodisplay"><circle id="node-73" r="18.770911462303232"></circle></g><g transform="translate(415.7794153206926,702.9563547286778)" class="nodisplay"><circle id="node-74" r="18.770911462303232"></circle></g><g transform="translate(395.82438156918,737.5194870530494)" class="nodisplay"><circle id="node-75" r="18.770911462303232"></circle></g><g transform="translate(402.1336076747866,574.7939104985309)" class="nodisplay"><circle id="node-76" r="18.770911462303232"></circle></g><g transform="translate(455.46687585293887,751.1604730544325)" class="nodisplay"><circle id="node-77" r="18.770911462303232"></circle></g><g transform="translate(495.37694335596404,751.1604730544325)" class="nodisplay"><circle id="node-78" r="18.770911462303232"></circle></g><g transform="translate(532.7576013258182,721.3949907215106)" class="nodisplay"><circle id="node-79" r="18.770911462303232"></circle></g><g transform="translate(567.5420758722888,693.4065046583406)" class="nodisplay"><circle id="node-80" r="18.770911462303232"></circle></g><g transform="translate(587.0226451181369,653.2340956760548)" class="nodisplay"><circle id="node-81" r="18.770911462303232"></circle></g><g transform="translate(587.4596162646884,608.5896774605667)" class="nodisplay"><circle id="node-82" r="18.770911462303232"></circle></g><g transform="translate(444.5334301503514,146.01391794777362)" class="nodisplay"><circle id="node-83" r="18.770911462303232"></circle></g><g transform="translate(484.4434976533766,146.01391794777362)" class="nodisplay"><circle id="node-84" r="18.770911462303232"></circle></g><g transform="translate(464.488463901864,180.57705027214521)" class="nodisplay"><circle id="node-85" r="18.770911462303232"></circle></g><g transform="translate(464.488463901864,111.45078562340206)" class="nodisplay"><circle id="node-86" r="18.770911462303232"></circle></g><g transform="translate(424.57839639883883,111.45078562340206)" class="nodisplay"><circle id="node-87" r="18.770911462303232"></circle></g><g transform="translate(404.62336264732625,146.01391794777362)" class="nodisplay"><circle id="node-88" r="18.770911462303232"></circle></g><g transform="translate(424.57839639883883,180.57705027214521)" class="nodisplay"><circle id="node-89" r="18.770911462303232"></circle></g><g transform="translate(444.5334301503514,215.1401825965168)" class="nodisplay"><circle id="node-90" r="18.770911462303232"></circle></g><g transform="translate(484.4434976533766,215.1401825965168)" class="nodisplay"><circle id="node-91" r="18.770911462303232"></circle></g><g transform="translate(504.3985314048892,180.57705027214521)" class="nodisplay"><circle id="node-92" r="18.770911462303232"></circle></g><g transform="translate(524.3535651564018,146.01391794777362)" class="nodisplay"><circle id="node-93" r="18.770911462303232"></circle></g><g transform="translate(313.6007228985057,124.78596167319319)" class="nodisplay"><circle id="node-94" r="18.770911462303232"></circle></g><g transform="translate(358.24727955836835,124.78596167319319)" class="nodisplay"><circle id="node-95" r="18.770911462303232"></circle></g><g transform="translate(220.02823901981725,115.52548637907489)" class="nodisplay"><circle id="node-96" r="18.770911462303232"></circle></g><g transform="translate(264.67479567967985,115.52548637907489)" class="nodisplay"><circle id="node-97" r="18.770911462303232"></circle></g><g transform="translate(170.2182664044661,369.2523495684245)" class="node proyecto" aria-describedby="tipsy" tabindex="0"><circle id="node-98" r="16.40266688388452"></circle><clippath id="clip-22"><use href="#node-22"></use></clippath><text clip-path="url(#clip-22)" style="font-size: 10.1251px;"><tspan x="0" y="-0.7em">2nd</tspan><tspan x="0" y="0.30000000000000004em">City</tspan><tspan x="0" y="1.3em">Zoning</tspan></text></g><g transform="translate(205.39184475065386,369.2523495684245)" class="node proyecto" aria-describedby="tipsy" tabindex="0"><circle id="node-99" r="16.40266688388452"></circle><clippath id="clip-23"><use href="#node-23"></use></clippath><text clip-path="url(#clip-23)" style="font-size: 10.1251px;"><tspan x="0" y="0.30000000000000004em">CAPSure</tspan></text></g><g transform="translate(187.80505557755998,399.71356195822534)" class="node proyecto" aria-describedby="tipsy" tabindex="0"><circle id="node-100" r="16.40266688388452"></circle><clippath id="clip-24"><use href="#node-24"></use></clippath><text clip-path="url(#clip-24)" style="font-size: 10.1251px;"><tspan x="0" y="-0.7em">Crime</tspan><tspan x="0" y="0.30000000000000004em">in</tspan><tspan x="0" y="1.3em">Chicago</tspan></text></g><g transform="translate(187.80505557755998,338.79113717862367)" class="node proyecto" aria-describedby="tipsy" tabindex="0"><circle id="node-101" r="16.40266688388452"></circle><clippath id="clip-25"><use href="#node-25"></use></clippath><text clip-path="url(#clip-25)" style="font-size: 10.1251px;"><tspan x="0" y="-2.7em">Is</tspan><tspan x="0" y="-1.7em">there</tspan><tspan x="0" y="-0.7em">sewage</tspan><tspan x="0" y="0.30000000000000004em">in</tspan><tspan x="0" y="1.3em">the</tspan><tspan x="0" y="2.3em">Chicago</tspan><tspan x="0" y="3.3em">River?</tspan></text></g><g transform="translate(152.63147723137223,338.79113717862367)" class="node proyecto" aria-describedby="tipsy" tabindex="0"><circle id="node-102" r="16.40266688388452"></circle><clippath id="clip-26"><use href="#node-26"></use></clippath><text clip-path="url(#clip-26)" style="font-size: 10.1251px;"><tspan x="0" y="-0.19999999999999996em">Transit</tspan><tspan x="0" y="0.8em">Future</tspan></text></g><g transform="translate(245.30191225367906,369.2523495684245)" class="node proyecto" aria-describedby="tipsy" tabindex="0"><circle id="node-103" r="16.40266688388452"></circle><clippath id="clip-27"><use href="#node-27"></use></clippath><text clip-path="url(#clip-27)" style="font-size: 10.1251px;"><tspan x="0" y="-0.7em">All</tspan><tspan x="0" y="0.30000000000000004em">Our</tspan><tspan x="0" y="1.3em">Ideas</tspan></text></g><g transform="translate(234.69498533849702,407.7271021928666)" class="node proyecto" aria-describedby="tipsy" tabindex="0"><circle id="node-104" r="16.40266688388452"></circle><clippath id="clip-28"><use href="#node-28"></use></clippath><text clip-path="url(#clip-28)" style="font-size: 10.1251px;"><tspan x="0" y="-0.19999999999999996em">Bill</tspan><tspan x="0" y="0.8em">Watcher</tspan></text></g><g transform="translate(234.694985338497,330.7775969439824)" class="node proyecto" aria-describedby="tipsy" tabindex="0"><circle id="node-105" r="16.40266688388452"></circle><clippath id="clip-29"><use href="#node-29"></use></clippath><text clip-path="url(#clip-29)" style="font-size: 10.1251px;"><tspan x="0" y="-0.19999999999999996em">Citizen</tspan><tspan x="0" y="0.8em">Budget</tspan></text></g><g transform="translate(185.3170909254659,269.4821148499446)" class="node proyecto" aria-describedby="tipsy" tabindex="0"><circle id="node-106" r="16.40266688388452"></circle><clippath id="clip-30"><use href="#node-30"></use></clippath><text clip-path="url(#clip-30)" style="font-size: 10.1251px;"><tspan x="0" y="0.30000000000000004em">CityVoice</tspan></text></g><g transform="translate(220.49066927165364,269.4821148499446)" class="node proyecto" aria-describedby="tipsy" tabindex="0"><circle id="node-107" r="16.40266688388452"></circle><clippath id="clip-31"><use href="#node-31"></use></clippath><text clip-path="url(#clip-31)" style="font-size: 10.1251px;"><tspan x="0" y="0.30000000000000004em">Streetmix</tspan></text></g><g transform="translate(202.90388009855977,299.94332723974543)" class="node proyecto" aria-describedby="tipsy" tabindex="0"><circle id="node-108" r="16.40266688388452"></circle><clippath id="clip-32"><use href="#node-32"></use></clippath><text clip-path="url(#clip-32)" style="font-size: 10.1251px;"><tspan x="0" y="0.30000000000000004em">Textizen</tspan></text></g><g transform="translate(145.65218861001654,298.30122768999973)" class="node proyecto" aria-describedby="tipsy" tabindex="0"><circle id="node-109" r="16.40266688388452"></circle><clippath id="clip-33"><use href="#node-33"></use></clippath><text clip-path="url(#clip-33)" style="font-size: 10.1251px;"><tspan x="0" y="0.30000000000000004em">Considerit</tspan></text></g><g transform="translate(112.76544952039474,320.9126380871238)" class="node proyecto" aria-describedby="tipsy" tabindex="0"><circle id="node-110" r="16.40266688388452"></circle><clippath id="clip-34"><use href="#node-34"></use></clippath><text clip-path="url(#clip-34)" style="font-size: 10.1251px;"><tspan x="0" y="-0.19999999999999996em">Democracy</tspan><tspan x="0" y="0.8em">Earth</tspan></text></g><g transform="translate(96.11121546880769,357.18177064155617)" class="node proyecto" aria-describedby="tipsy" tabindex="0"><circle id="node-111" r="16.40266688388452"></circle><clippath id="clip-35"><use href="#node-35"></use></clippath><text clip-path="url(#clip-35)" style="font-size: 10.1251px;"><tspan x="0" y="0.30000000000000004em">GovTrack</tspan></text></g><g transform="translate(100.39491175568038,396.8612796382393)" class="node proyecto" aria-describedby="tipsy" tabindex="0"><circle id="node-112" r="16.40266688388452"></circle><clippath id="clip-36"><use href="#node-36"></use></clippath><text clip-path="url(#clip-36)" style="font-size: 10.1251px;"><tspan x="0" y="0.30000000000000004em">Helios</tspan></text></g><g transform="translate(124.40623877641067,428.7402642958405)" class="node proyecto" aria-describedby="tipsy" tabindex="0"><circle id="node-113" r="16.40266688388452"></circle><clippath id="clip-37"><use href="#node-37"></use></clippath><text clip-path="url(#clip-37)" style="font-size: 10.1251px;"><tspan x="0" y="-0.7em">Open</tspan><tspan x="0" y="0.30000000000000004em">Budget</tspan><tspan x="0" y="1.3em">Oakland</tspan></text></g><g transform="translate(161.36112556681294,443.81175494555987)" class="node proyecto" aria-describedby="tipsy" tabindex="0"><circle id="node-114" r="16.40266688388452"></circle><clippath id="clip-38"><use href="#node-38"></use></clippath><text clip-path="url(#clip-38)" style="font-size: 10.1251px;"><tspan x="0" y="0.30000000000000004em">Shareabouts</tspan></text></g><g transform="translate(200.8184759624357,437.8175087166273)" class="node proyecto" aria-describedby="tipsy" tabindex="0"><circle id="node-115" r="16.40266688388452"></circle><clippath id="clip-39"><use href="#node-39"></use></clippath><text clip-path="url(#clip-39)" style="font-size: 10.1251px;"><tspan x="0" y="-0.7em">The</tspan><tspan x="0" y="0.30000000000000004em">State</tspan><tspan x="0" y="1.3em">Decoded</tspan></text></g><g transform="translate(239.57648219154163,447.3375108826257)" class="node proyecto" aria-describedby="tipsy" tabindex="0"><circle id="node-116" r="16.40266688388452"></circle><clippath id="clip-40"><use href="#node-40"></use></clippath><text clip-path="url(#clip-40)" style="font-size: 10.1251px;"><tspan x="0" y="0.30000000000000004em">VoterVox</tspan></text></g><g transform="translate(356.63310912023786,349.08646833040365)" class="node proyecto" aria-describedby="tipsy" tabindex="0"><circle id="node-117" r="16.40266688388452"></circle><clippath id="clip-41"><use href="#node-41"></use></clippath><text clip-path="url(#clip-41)" style="font-size: 10.1251px;"><tspan x="0" y="0.30000000000000004em">Eventario</tspan></text></g><g transform="translate(396.543176623263,349.08646833040365)" class="node proyecto" aria-describedby="tipsy" tabindex="0"><circle id="node-118" r="16.40266688388452"></circle><clippath id="clip-42"><use href="#node-42"></use></clippath><text clip-path="url(#clip-42)" style="font-size: 10.1251px;"><tspan x="0" y="-0.7em">Explica</tspan><tspan x="0" y="0.30000000000000004em">la</tspan><tspan x="0" y="1.3em">ley</tspan></text></g><g transform="translate(431.7167549694508,349.08646833040365)" class="node proyecto" aria-describedby="tipsy" tabindex="0"><circle id="node-119" r="16.40266688388452"></circle><clippath id="clip-43"><use href="#node-43"></use></clippath><text clip-path="url(#clip-43)" style="font-size: 10.1251px;"><tspan x="0" y="-0.7em">Mejora</tspan><tspan x="0" y="0.30000000000000004em">tu</tspan><tspan x="0" y="1.3em">escuela</tspan></text></g><g transform="translate(370.48441839326796,386.5157980000477)" class="node proyecto" aria-describedby="tipsy" tabindex="0"><circle id="node-120" r="16.40266688388452"></circle><clippath id="clip-44"><use href="#node-44"></use></clippath><text clip-path="url(#clip-44)" style="font-size: 10.1251px;"><tspan x="0" y="0.30000000000000004em">Narcodata</tspan></text></g><g transform="translate(370.48441839326796,311.65713866075964)" class="node proyecto" aria-describedby="tipsy" tabindex="0"><circle id="node-121" r="16.40266688388452"></circle><clippath id="clip-45"><use href="#node-45"></use></clippath><text clip-path="url(#clip-45)" style="font-size: 10.1251px;"><tspan x="0" y="-0.19999999999999996em">Ramo</tspan><tspan x="0" y="0.8em">23</tspan></text></g><g transform="translate(405.36463291154706,405.91126456455345)" class="node proyecto" aria-describedby="tipsy" tabindex="0"><circle id="node-122" r="16.40266688388452"></circle><clippath id="clip-46"><use href="#node-46"></use></clippath><text clip-path="url(#clip-46)" style="font-size: 10.1251px;"><tspan x="0" y="-0.19999999999999996em">Representantes</tspan><tspan x="0" y="0.8em">Patito</tspan></text></g><g transform="translate(528.8719693391057,319.2803778904835)" class="node proyecto" aria-describedby="tipsy" tabindex="0"><circle id="node-123" r="16.40266688388452"></circle><clippath id="clip-47"><use href="#node-47"></use></clippath><text clip-path="url(#clip-47)" style="font-size: 10.1251px;"><tspan x="0" y="-0.7em">A</tspan><tspan x="0" y="0.30000000000000004em">Tu</tspan><tspan x="0" y="1.3em">Nombre</tspan></text></g><g transform="translate(564.0455476852935,319.2803778904835)" class="node proyecto" aria-describedby="tipsy" tabindex="0"><circle id="node-124" r="16.40266688388452"></circle><clippath id="clip-48"><use href="#node-48"></use></clippath><text clip-path="url(#clip-48)" style="font-size: 10.1251px;"><tspan x="0" y="-0.7em">A</tspan><tspan x="0" y="0.30000000000000004em">Tu</tspan><tspan x="0" y="1.3em">Servicio</tspan></text></g><g transform="translate(546.4587585121996,349.74159028028436)" class="node proyecto" aria-describedby="tipsy" tabindex="0"><circle id="node-125" r="16.40266688388452"></circle><clippath id="clip-49"><use href="#node-49"></use></clippath><text clip-path="url(#clip-49)" style="font-size: 10.1251px;"><tspan x="0" y="-0.19999999999999996em">Adónde</tspan><tspan x="0" y="0.8em">Reciclo?</tspan></text></g><g transform="translate(546.4587585121996,288.8191655006827)" class="node proyecto" aria-describedby="tipsy" tabindex="0"><circle id="node-126" r="16.40266688388452"></circle><clippath id="clip-50"><use href="#node-50"></use></clippath><text clip-path="url(#clip-50)" style="font-size: 10.1251px;"><tspan x="0" y="-0.7em">Legado</tspan><tspan x="0" y="0.30000000000000004em">del</tspan><tspan x="0" y="1.3em">Bicentenario</tspan></text></g><g transform="translate(511.28518016601186,288.8191655006827)" class="node proyecto" aria-describedby="tipsy" tabindex="0"><circle id="node-127" r="16.40266688388452"></circle><clippath id="clip-51"><use href="#node-51"></use></clippath><text clip-path="url(#clip-51)" style="font-size: 10.1251px;"><tspan x="0" y="-0.7em">Por</tspan><tspan x="0" y="0.30000000000000004em">Mi</tspan><tspan x="0" y="1.3em">Barrio</tspan></text></g><g transform="translate(682.9550599109637,328.96028959770507)" class="node proyecto" aria-describedby="tipsy" tabindex="0"><circle id="node-128" r="16.40266688388452"></circle><clippath id="clip-52"><use href="#node-52"></use></clippath><text clip-path="url(#clip-52)" style="font-size: 10.1251px;"><tspan x="0" y="-1.2em">Caminos</tspan><tspan x="0" y="-0.19999999999999996em">de</tspan><tspan x="0" y="0.8em">la</tspan><tspan x="0" y="1.8em">Villa</tspan></text></g><g transform="translate(722.8651274139888,328.96028959770507)" class="node proyecto" aria-describedby="tipsy" tabindex="0"><circle id="node-129" r="16.40266688388452"></circle><clippath id="clip-53"><use href="#node-53"></use></clippath><text clip-path="url(#clip-53)" style="font-size: 10.1251px;"><tspan x="0" y="0.30000000000000004em">Constitución.al</tspan></text></g><g transform="translate(702.9100936624762,363.52342192207664)" class="node proyecto" aria-describedby="tipsy" tabindex="0"><circle id="node-130" r="16.40266688388452"></circle><clippath id="clip-54"><use href="#node-54"></use></clippath><text clip-path="url(#clip-54)" style="font-size: 10.1251px;"><tspan x="0" y="0.30000000000000004em">DemocracyOS</tspan></text></g><g transform="translate(702.9100936624762,294.3971572733335)" class="node proyecto" aria-describedby="tipsy" tabindex="0"><circle id="node-131" r="16.40266688388452"></circle><clippath id="clip-55"><use href="#node-55"></use></clippath><text clip-path="url(#clip-55)" style="font-size: 10.1251px;"><tspan x="0" y="0.30000000000000004em">Dipudatos</tspan></text></g><g transform="translate(628.6471380966686,284.71724556611196)" class="node proyecto" aria-describedby="tipsy" tabindex="0"><circle id="node-132" r="16.40266688388452"></circle><clippath id="clip-56"><use href="#node-56"></use></clippath><text clip-path="url(#clip-56)" style="font-size: 10.1251px;"><tspan x="0" y="-1.2em">Fiscales</tspan><tspan x="0" y="-0.19999999999999996em">de</tspan><tspan x="0" y="0.8em">la</tspan><tspan x="0" y="1.8em">Red</tspan></text></g><g transform="translate(663.8207164428563,284.71724556611196)" class="node proyecto" aria-describedby="tipsy" tabindex="0"><circle id="node-133" r="16.40266688388452"></circle><clippath id="clip-57"><use href="#node-57"></use></clippath><text clip-path="url(#clip-57)" style="font-size: 10.1251px;"><tspan x="0" y="0.30000000000000004em">QueProponen</tspan></text></g><g transform="translate(645.3073801793622,342.20663622320143)" class="node proyecto" aria-describedby="tipsy" tabindex="0"><circle id="node-134" r="16.40266688388452"></circle><clippath id="clip-58"><use href="#node-58"></use></clippath><text clip-path="url(#clip-58)" style="font-size: 10.1251px;"><tspan x="0" y="-0.7em">Gasto</tspan><tspan x="0" y="0.30000000000000004em">Público</tspan><tspan x="0" y="1.3em">Bahiense</tspan></text></g><g transform="translate(665.2624139308748,376.769768547573)" class="node proyecto" aria-describedby="tipsy" tabindex="0"><circle id="node-135" r="16.40266688388452"></circle><clippath id="clip-59"><use href="#node-59"></use></clippath><text clip-path="url(#clip-59)" style="font-size: 10.1251px;"><tspan x="0" y="-0.19999999999999996em">Voto</tspan><tspan x="0" y="0.8em">Limpio</tspan></text></g><g transform="translate(537.0019213547992,441.2459629879363)" class="node proyecto" aria-describedby="tipsy" tabindex="0"><circle id="node-136" r="16.40266688388452"></circle><clippath id="clip-60"><use href="#node-60"></use></clippath><text clip-path="url(#clip-60)" style="font-size: 10.1251px;"><tspan x="0" y="-0.19999999999999996em">Congreso</tspan><tspan x="0" y="0.8em">Abierto</tspan></text></g><g transform="translate(572.1754997009868,441.2459629879363)" class="node proyecto" aria-describedby="tipsy" tabindex="0"><circle id="node-137" r="16.40266688388452"></circle><clippath id="clip-61"><use href="#node-61"></use></clippath><text clip-path="url(#clip-61)" style="font-size: 10.1251px;"><tspan x="0" y="-1.2em">Del</tspan><tspan x="0" y="-0.19999999999999996em">dicho</tspan><tspan x="0" y="0.8em">al</tspan><tspan x="0" y="1.8em">hecho</tspan></text></g><g transform="translate(554.588710527893,471.70717537773714)" class="node proyecto" aria-describedby="tipsy" tabindex="0"><circle id="node-138" r="16.40266688388452"></circle><clippath id="clip-62"><use href="#node-62"></use></clippath><text clip-path="url(#clip-62)" style="font-size: 10.1251px;"><tspan x="0" y="-0.7em">Quien</tspan><tspan x="0" y="0.30000000000000004em">te</tspan><tspan x="0" y="1.3em">financia</tspan></text></g><g transform="translate(554.588710527893,410.7847505981355)" class="node proyecto" aria-describedby="tipsy" tabindex="0"><circle id="node-139" r="16.40266688388452"></circle><clippath id="clip-63"><use href="#node-63"></use></clippath><text clip-path="url(#clip-63)" style="font-size: 10.1251px;"><tspan x="0" y="-0.19999999999999996em">¿Hay</tspan><tspan x="0" y="0.8em">Acuerdo?</tspan></text></g><g transform="translate(624.959990420719,441.2459629879363)" class="node proyecto" aria-describedby="tipsy" tabindex="0"><circle id="node-140" r="16.40266688388452"></circle><clippath id="clip-64"><use href="#node-64"></use></clippath><text clip-path="url(#clip-64)" style="font-size: 10.1251px;"><tspan x="0" y="0.30000000000000004em">Poderopedia</tspan></text></g><g transform="translate(559.5407132925515,233.30179083836265)" class="node proyecto" aria-describedby="tipsy" tabindex="0"><circle id="node-141" r="16.40266688388452"></circle><clippath id="clip-65"><use href="#node-65"></use></clippath><text clip-path="url(#clip-65)" style="font-size: 10.1251px;"><tspan x="0" y="0.30000000000000004em">Datea</tspan></text></g><g transform="translate(599.4507807955766,233.30179083836265)" class="node proyecto" aria-describedby="tipsy" tabindex="0"><circle id="node-142" r="16.40266688388452"></circle><clippath id="clip-66"><use href="#node-66"></use></clippath><text clip-path="url(#clip-66)" style="font-size: 10.1251px;"><tspan x="0" y="-3.7em">Portal</tspan><tspan x="0" y="-2.7em">de</tspan><tspan x="0" y="-1.7em">Datos</tspan><tspan x="0" y="-0.7em">Abiertos</tspan><tspan x="0" y="0.30000000000000004em">de</tspan><tspan x="0" y="1.3em">la</tspan><tspan x="0" y="2.3em">Municipalidad</tspan><tspan x="0" y="3.3em">de</tspan><tspan x="0" y="4.3em">Miraflores</tspan></text></g><g transform="translate(713.4826797281515,452.99571574788365)" class="node proyecto" aria-describedby="tipsy" tabindex="0"><circle id="node-143" r="16.40266688388452"></circle><clippath id="clip-67"><use href="#node-67"></use></clippath><text clip-path="url(#clip-67)" style="font-size: 10.1251px;"><tspan x="0" y="-1.2em">De</tspan><tspan x="0" y="-0.19999999999999996em">Olho</tspan><tspan x="0" y="0.8em">Nas</tspan><tspan x="0" y="1.8em">Metas</tspan></text></g><g transform="translate(753.3927472311767,452.99571574788365)" class="node proyecto" aria-describedby="tipsy" tabindex="0"><circle id="node-144" r="16.40266688388452"></circle><clippath id="clip-68"><use href="#node-68"></use></clippath><text clip-path="url(#clip-68)" style="font-size: 10.1251px;"><tspan x="0" y="-0.19999999999999996em">Gabinete</tspan><tspan x="0" y="0.8em">Digital</tspan></text></g><g transform="translate(733.4377134796641,495.2223174644098)" class="node proyecto" aria-describedby="tipsy" tabindex="0"><circle id="node-145" r="23.196873966277526"></circle><clippath id="clip-69"><use href="#node-69"></use></clippath><text clip-path="url(#clip-69)" style="font-size: 12.0408px;"><tspan x="0" y="0.30000000000000004em">Participa.br</tspan></text></g><g transform="translate(733.4377134796641,418.432583423512)" class="node proyecto" aria-describedby="tipsy" tabindex="0"><circle id="node-146" r="16.40266688388452"></circle><clippath id="clip-70"><use href="#node-70"></use></clippath><text clip-path="url(#clip-70)" style="font-size: 10.1251px;"><tspan x="0" y="0.30000000000000004em">Participatorio</tspan></text></g><g transform="translate(693.527645976639,418.432583423512)" class="node proyecto" aria-describedby="tipsy" tabindex="0"><circle id="node-147" r="16.40266688388452"></circle><clippath id="clip-71"><use href="#node-71"></use></clippath><text clip-path="url(#clip-71)" style="font-size: 10.1251px;"><tspan x="0" y="-0.7em">Programa</tspan><tspan x="0" y="0.30000000000000004em">Cidades</tspan><tspan x="0" y="1.3em">Sustentaveis</tspan></text></g><g transform="translate(673.5726122251264,452.99571574788365)" class="node proyecto" aria-describedby="tipsy" tabindex="0"><circle id="node-148" r="16.40266688388452"></circle><clippath id="clip-72"><use href="#node-72"></use></clippath><text clip-path="url(#clip-72)" style="font-size: 10.1251px;"><tspan x="0" y="0.30000000000000004em">SigaLei</tspan></text></g><g transform="translate(751.15732082721,375.9694837205667)" class="node proyecto" aria-describedby="tipsy" tabindex="0"><circle id="node-149" r="16.40266688388452"></circle><clippath id="clip-73"><use href="#node-73"></use></clippath><text clip-path="url(#clip-73)" style="font-size: 10.1251px;"><tspan x="0" y="-0.19999999999999996em">¿Cuántas</tspan><tspan x="0" y="0.8em">más?</tspan></text></g><g transform="translate(342.9256139038009,618.4177462513136)" class="node proyecto" aria-describedby="tipsy" tabindex="0"><circle id="node-150" r="16.40266688388452"></circle><clippath id="clip-74"><use href="#node-74"></use></clippath><text clip-path="url(#clip-74)" style="font-size: 10.1251px;"><tspan x="0" y="0.30000000000000004em">Adhocracy</tspan></text></g><g transform="translate(382.8356814068261,618.4177462513136)" class="node proyecto" aria-describedby="tipsy" tabindex="0"><circle id="node-151" r="16.40266688388452"></circle><clippath id="clip-75"><use href="#node-75"></use></clippath><text clip-path="url(#clip-75)" style="font-size: 10.1251px;"><tspan x="0" y="-0.7em">Code</tspan><tspan x="0" y="0.30000000000000004em">for</tspan><tspan x="0" y="1.3em">Germany</tspan></text></g><g transform="translate(362.8806476553135,652.9808785756852)" class="node proyecto" aria-describedby="tipsy" tabindex="0"><circle id="node-152" r="16.40266688388452"></circle><clippath id="clip-76"><use href="#node-76"></use></clippath><text clip-path="url(#clip-76)" style="font-size: 10.1251px;"><tspan x="0" y="0.30000000000000004em">OffenerHaushalt</tspan></text></g><g transform="translate(465.74287087761155,629.9387903594375)" class="node proyecto" aria-describedby="tipsy" tabindex="0"><circle id="node-153" r="16.40266688388452"></circle><clippath id="clip-77"><use href="#node-77"></use></clippath><text clip-path="url(#clip-77)" style="font-size: 10.1251px;"><tspan x="0" y="0.30000000000000004em">Alaveteli</tspan></text></g><g transform="translate(500.9164492237993,629.9387903594375)" class="node proyecto" aria-describedby="tipsy" tabindex="0"><circle id="node-154" r="16.40266688388452"></circle><clippath id="clip-78"><use href="#node-78"></use></clippath><text clip-path="url(#clip-78)" style="font-size: 10.1251px;"><tspan x="0" y="0.30000000000000004em">FixMyStreet</tspan></text></g><g transform="translate(483.32966005070546,660.4000027492383)" class="node proyecto" aria-describedby="tipsy" tabindex="0"><circle id="node-155" r="16.40266688388452"></circle><clippath id="clip-79"><use href="#node-79"></use></clippath><text clip-path="url(#clip-79)" style="font-size: 10.1251px;"><tspan x="0" y="0.30000000000000004em">MapIt</tspan></text></g><g transform="translate(483.32966005070546,599.4775779696366)" class="node proyecto" aria-describedby="tipsy" tabindex="0"><circle id="node-156" r="16.40266688388452"></circle><clippath id="clip-80"><use href="#node-80"></use></clippath><text clip-path="url(#clip-80)" style="font-size: 10.1251px;"><tspan x="0" y="0.30000000000000004em">PopIt</tspan></text></g><g transform="translate(448.15608170451765,599.4775779696366)" class="node proyecto" aria-describedby="tipsy" tabindex="0"><circle id="node-157" r="16.40266688388452"></circle><clippath id="clip-81"><use href="#node-81"></use></clippath><text clip-path="url(#clip-81)" style="font-size: 10.1251px;"><tspan x="0" y="-1.2em">They</tspan><tspan x="0" y="-0.19999999999999996em">Work</tspan><tspan x="0" y="0.8em">For</tspan><tspan x="0" y="1.8em">You</tspan></text></g><g transform="translate(430.5692925314238,629.9387903594375)" class="node proyecto" aria-describedby="tipsy" tabindex="0"><circle id="node-158" r="16.40266688388452"></circle><clippath id="clip-82"><use href="#node-82"></use></clippath><text clip-path="url(#clip-82)" style="font-size: 10.1251px;"><tspan x="0" y="-0.7em">Write</tspan><tspan x="0" y="0.30000000000000004em">To</tspan><tspan x="0" y="1.3em">Them</tspan></text></g><g transform="translate(540.8265167268245,629.9387903594375)" class="node proyecto" aria-describedby="tipsy" tabindex="0"><circle id="node-159" r="16.40266688388452"></circle><clippath id="clip-83"><use href="#node-83"></use></clippath><text clip-path="url(#clip-83)" style="font-size: 10.1251px;"><tspan x="0" y="0.30000000000000004em">EveryPolitician</tspan></text></g><g transform="translate(530.2195898116424,668.4135429838796)" class="node proyecto" aria-describedby="tipsy" tabindex="0"><circle id="node-160" r="16.40266688388452"></circle><clippath id="clip-84"><use href="#node-84"></use></clippath><text clip-path="url(#clip-84)" style="font-size: 10.1251px;"><tspan x="0" y="0.30000000000000004em">Represent</tspan></text></g><g transform="translate(530.2195898116424,591.4640377349954)" class="node proyecto" aria-describedby="tipsy" tabindex="0"><circle id="node-161" r="16.40266688388452"></circle><clippath id="clip-85"><use href="#node-85"></use></clippath><text clip-path="url(#clip-85)" style="font-size: 10.1251px;"><tspan x="0" y="0.30000000000000004em">YourNextMP</tspan></text></g><g transform="translate(375.8693478176674,702.9563547286778)" class="node proyecto" aria-describedby="tipsy" tabindex="0"><circle id="node-162" r="16.40266688388452"></circle><clippath id="clip-86"><use href="#node-86"></use></clippath><text clip-path="url(#clip-86)" style="font-size: 10.1251px;"><tspan x="0" y="0.30000000000000004em">Assembl</tspan></text></g><g transform="translate(415.7794153206926,702.9563547286778)" class="node proyecto" aria-describedby="tipsy" tabindex="0"><circle id="node-163" r="16.40266688388452"></circle><clippath id="clip-87"><use href="#node-87"></use></clippath><text clip-path="url(#clip-87)" style="font-size: 10.1251px;"><tspan x="0" y="-1.7em">La</tspan><tspan x="0" y="-0.7em">fabrique</tspan><tspan x="0" y="0.30000000000000004em">de</tspan><tspan x="0" y="1.3em">la</tspan><tspan x="0" y="2.3em">loi</tspan></text></g><g transform="translate(395.82438156918,737.5194870530494)" class="node proyecto" aria-describedby="tipsy" tabindex="0"><circle id="node-164" r="16.40266688388452"></circle><clippath id="clip-88"><use href="#node-88"></use></clippath><text clip-path="url(#clip-88)" style="font-size: 10.1251px;"><tspan x="0" y="-0.19999999999999996em">Pixel</tspan><tspan x="0" y="0.8em">Humain</tspan></text></g><g transform="translate(402.1336076747866,574.7939104985309)" class="node proyecto" aria-describedby="tipsy" tabindex="0"><circle id="node-165" r="16.40266688388452"></circle><clippath id="clip-89"><use href="#node-89"></use></clippath><text clip-path="url(#clip-89)" style="font-size: 10.1251px;"><tspan x="0" y="-1.2em">Avoin</tspan><tspan x="0" y="-0.19999999999999996em">Ministerio</tspan><tspan x="0" y="0.8em">(Open</tspan><tspan x="0" y="1.8em">Ministry)</tspan></text></g><g transform="translate(455.46687585293887,751.1604730544325)" class="node proyecto" aria-describedby="tipsy" tabindex="0"><circle id="node-166" r="16.40266688388452"></circle><clippath id="clip-90"><use href="#node-90"></use></clippath><text clip-path="url(#clip-90)" style="font-size: 10.1251px;"><tspan x="0" y="-0.19999999999999996em">Betri</tspan><tspan x="0" y="0.8em">Reykjavik</tspan></text></g><g transform="translate(495.37694335596404,751.1604730544325)" class="node proyecto" aria-describedby="tipsy" tabindex="0"><circle id="node-167" r="16.40266688388452"></circle><clippath id="clip-91"><use href="#node-91"></use></clippath><text clip-path="url(#clip-91)" style="font-size: 10.1251px;"><tspan x="0" y="0.30000000000000004em">Wasa2il</tspan></text></g><g transform="translate(532.7576013258182,721.3949907215106)" class="node proyecto" aria-describedby="tipsy" tabindex="0"><circle id="node-168" r="16.40266688388452"></circle><clippath id="clip-92"><use href="#node-92"></use></clippath><text clip-path="url(#clip-92)" style="font-size: 10.1251px;"><tspan x="0" y="-0.19999999999999996em">Get</tspan><tspan x="0" y="0.8em">Opinionated</tspan></text></g><g transform="translate(567.5420758722888,693.4065046583406)" class="node proyecto" aria-describedby="tipsy" tabindex="0"><circle id="node-169" r="16.40266688388452"></circle><clippath id="clip-93"><use href="#node-93"></use></clippath><text clip-path="url(#clip-93)" style="font-size: 10.1251px;"><tspan x="0" y="-4.2em">Harta</tspan><tspan x="0" y="-3.2em">Banilor</tspan><tspan x="0" y="-2.2em">Publici</tspan><tspan x="0" y="-1.2em">/</tspan><tspan x="0" y="-0.19999999999999996em">Public</tspan><tspan x="0" y="0.8em">Procurement</tspan><tspan x="0" y="1.8em">Map</tspan><tspan x="0" y="2.8em">-</tspan><tspan x="0" y="3.8em">Initiativa</tspan><tspan x="0" y="4.8em">Romania</tspan></text></g><g transform="translate(587.0226451181369,653.2340956760548)" class="node proyecto" aria-describedby="tipsy" tabindex="0"><circle id="node-170" r="16.40266688388452"></circle><clippath id="clip-94"><use href="#node-94"></use></clippath><text clip-path="url(#clip-94)" style="font-size: 10.1251px;"><tspan x="0" y="0.30000000000000004em">Irekia</tspan></text></g><g transform="translate(587.4596162646884,608.5896774605667)" class="node proyecto" aria-describedby="tipsy" tabindex="0"><circle id="node-171" r="16.40266688388452"></circle><clippath id="clip-95"><use href="#node-95"></use></clippath><text clip-path="url(#clip-95)" style="font-size: 10.1251px;"><tspan x="0" y="0.30000000000000004em">OpenMaint</tspan></text></g><g transform="translate(444.5334301503514,146.01391794777362)" class="node proyecto" aria-describedby="tipsy" tabindex="0"><circle id="node-172" r="16.40266688388452"></circle><clippath id="clip-96"><use href="#node-96"></use></clippath><text clip-path="url(#clip-96)" style="font-size: 10.1251px;"><tspan x="0" y="0.30000000000000004em">Bill-it</tspan></text></g><g transform="translate(484.4434976533766,146.01391794777362)" class="node proyecto" aria-describedby="tipsy" tabindex="0"><circle id="node-173" r="16.40266688388452"></circle><clippath id="clip-97"><use href="#node-97"></use></clippath><text clip-path="url(#clip-97)" style="font-size: 10.1251px;"><tspan x="0" y="0.30000000000000004em">Cargografias</tspan></text></g><g transform="translate(464.488463901864,180.57705027214521)" class="node proyecto" aria-describedby="tipsy" tabindex="0"><circle id="node-174" r="16.40266688388452"></circle><clippath id="clip-98"><use href="#node-98"></use></clippath><text clip-path="url(#clip-98)" style="font-size: 10.1251px;"><tspan x="0" y="-0.19999999999999996em">Civic</tspan><tspan x="0" y="0.8em">Stack</tspan></text></g><g transform="translate(464.488463901864,111.45078562340206)" class="node proyecto" aria-describedby="tipsy" tabindex="0"><circle id="node-175" r="16.40266688388452"></circle><clippath id="clip-99"><use href="#node-99"></use></clippath><text clip-path="url(#clip-99)" style="font-size: 10.1251px;"><tspan x="0" y="0.30000000000000004em">FixMyStreet</tspan></text></g><g transform="translate(424.57839639883883,111.45078562340206)" class="node proyecto" aria-describedby="tipsy" tabindex="0"><circle id="node-176" r="16.40266688388452"></circle><clippath id="clip-100"><use href="#node-100"></use></clippath><text clip-path="url(#clip-100)" style="font-size: 10.1251px;"><tspan x="0" y="0.30000000000000004em">Grano</tspan></text></g><g transform="translate(404.62336264732625,146.01391794777362)" class="node proyecto" aria-describedby="tipsy" tabindex="0"><circle id="node-177" r="16.40266688388452"></circle><clippath id="clip-101"><use href="#node-101"></use></clippath><text clip-path="url(#clip-101)" style="font-size: 10.1251px;"><tspan x="0" y="0.30000000000000004em">Incoma</tspan></text></g><g transform="translate(424.57839639883883,180.57705027214521)" class="node proyecto" aria-describedby="tipsy" tabindex="0"><circle id="node-178" r="16.40266688388452"></circle><clippath id="clip-102"><use href="#node-102"></use></clippath><text clip-path="url(#clip-102)" style="font-size: 10.1251px;"><tspan x="0" y="0.30000000000000004em">Iota</tspan></text></g><g transform="translate(444.5334301503514,215.1401825965168)" class="node proyecto" aria-describedby="tipsy" tabindex="0"><circle id="node-179" r="16.40266688388452"></circle><clippath id="clip-103"><use href="#node-103"></use></clippath><text clip-path="url(#clip-103)" style="font-size: 10.1251px;"><tspan x="0" y="0.30000000000000004em">Konsento</tspan></text></g><g transform="translate(484.4434976533766,215.1401825965168)" class="node proyecto" aria-describedby="tipsy" tabindex="0"><circle id="node-180" r="16.40266688388452"></circle><clippath id="clip-104"><use href="#node-104"></use></clippath><text clip-path="url(#clip-104)" style="font-size: 10.1251px;"><tspan x="0" y="0.30000000000000004em">MyCity</tspan></text></g><g transform="translate(504.3985314048892,180.57705027214521)" class="node proyecto" aria-describedby="tipsy" tabindex="0"><circle id="node-181" r="16.40266688388452"></circle><clippath id="clip-105"><use href="#node-105"></use></clippath><text clip-path="url(#clip-105)" style="font-size: 10.1251px;"><tspan x="0" y="-0.19999999999999996em">Open</tspan><tspan x="0" y="0.8em">Spending</tspan></text></g><g transform="translate(524.3535651564018,146.01391794777362)" class="node proyecto" aria-describedby="tipsy" tabindex="0"><circle id="node-182" r="16.40266688388452"></circle><clippath id="clip-106"><use href="#node-106"></use></clippath><text clip-path="url(#clip-106)" style="font-size: 10.1251px;"><tspan x="0" y="-0.19999999999999996em">Say</tspan><tspan x="0" y="0.8em">It</tspan></text></g><g transform="translate(313.6007228985057,124.78596167319319)" class="node proyecto" aria-describedby="tipsy" tabindex="0"><circle id="node-183" r="16.40266688388452"></circle><clippath id="clip-107"><use href="#node-107"></use></clippath><text clip-path="url(#clip-107)" style="font-size: 10.1251px;"><tspan x="0" y="0.30000000000000004em">Budget</tspan></text></g><g transform="translate(358.24727955836835,124.78596167319319)" class="node proyecto" aria-describedby="tipsy" tabindex="0"><circle id="node-184" r="16.40266688388452"></circle><clippath id="clip-108"><use href="#node-108"></use></clippath><text clip-path="url(#clip-108)" style="font-size: 10.1251px;"><tspan x="0" y="-0.19999999999999996em">Crowd</tspan><tspan x="0" y="0.8em">Voice</tspan></text></g><g transform="translate(220.02823901981725,115.52548637907489)" class="node proyecto" aria-describedby="tipsy" tabindex="0"><circle id="node-185" r="16.40266688388452"></circle><clippath id="clip-109"><use href="#node-109"></use></clippath><text clip-path="url(#clip-109)" style="font-size: 10.1251px;"><tspan x="0" y="0.30000000000000004em">Loomio</tspan></text></g><g transform="translate(264.67479567967985,115.52548637907489)" class="node proyecto" aria-describedby="tipsy" tabindex="0"><circle id="node-186" r="16.40266688388452"></circle><clippath id="clip-110"><use href="#node-110"></use></clippath><text clip-path="url(#clip-110)" style="font-size: 10.1251px;"><tspan x="0" y="-0.19999999999999996em">Serval</tspan><tspan x="0" y="0.8em">Project</tspan></text></g></g></svg>
+<!-- <script src="//d3js.org/d3.v4.min.js"></script> -->
+<!-- <script src="../../lib/d3.js"></script>
+   <script type="text/javascript" src="../../lib/jquery-1.9.1.min.js"></script> 
+    <script type="text/javascript" src="../../lib/jquery.tipsy.js"></script>  -->
+
+  <script type="text/javascript" src="./test.soviet.com.ar_files/d3.min.js.descarga"></script>
+  <script type="text/javascript" src="./test.soviet.com.ar_files/jquery.min.js.descarga"></script>
+
+  <script type="text/javascript" src="./test.soviet.com.ar_files/jquery.tipsy.min.js.descarga"></script>
+
+<script>
+
+
+Array.prototype.getUnique = function(){
+   var u = {}, a = [];
+   for(var i = 0, l = this.length; i < l; ++i){
+      if(u.hasOwnProperty(this[i])) {
+         continue;
+      }
+      a.push(this[i]);
+      u[this[i]] = 1;
+   }
+   return a;
+}
+
+var color =  d3.scaleOrdinal(d3.schemeCategory10);
+
+var svg = d3.select("svg"),
+    width = +svg.attr("width"),
+    height = +svg.attr("height");
+
+var format = d3.format(",d");
+
+var pack = d3.pack()
+    .size([width - 2, height - 2])
+    .padding(3);
+
+var continentesTotal = [];
+
+d3.json("data.json", function(error, data) {
+  if (error) throw error;
+
+//var flaredData = toFlare(data, "continente", "reporta_a");
+
+// var nestedData = d3.nest()
+//   .key(function(d) {
+//         d.r = 5;
+//         return d.Continente;
+//   })
+//   // .rollup(function(v) {
+//   //   return v;
+//   // })
+//   .map(data);
+
+  var root = d3.hierarchy(data)
+      .each(function(d) { })
+      .sum(function(d) { return d.size; })
+      .sort(function(a, b) { return b.Nombre - a.Nombre; })
+      ;
+      console.log(root);
+
+    pack(root);
+
+  var node = svg.select("g")
+    .selectAll("g")
+    .data(root.descendants())
+    .enter().append("g")
+    .attr("transform", function(d) { return "translate(" + d.x + "," + d.y + ")"; })
+    .attr("class", function(d) {
+                    switch(d.depth){
+                      case 0:
+                          return "node node--root";
+                          break;
+                      case 1:
+                           return "node continente";
+                          break;
+                      case 2:
+                            var x = "node pais ";
+                            if(d.data.children[0].children) {x += d.data.children[0].children[0].color;};
+                           return x;
+                          break;
+                      case 3:
+                          return d.value > 1 ? "node org" : "nodisplay" ;
+                          break
+                      
+                      case 4:
+                          return "node proyecto";
+                          break
+                      }
+                  })
+    .each(function(d) { d.node = this;
+     })
+      .on("mouseover", hovered(true))
+      .on("mouseout", hovered(false))
+      ;
+
+  node.append("circle")
+      .attr("id", function(d, i) { return "node-" + i; })
+      // .attr("fill", function(d) { 
+      //     if (d.depth ==4) return color(d.data.color); })
+      .attr("r", function(d) { return d.r; });
+
+
+  var leaf = node.filter(function(d) { return d.depth == 2 || d.depth == 4})
+    .attr("class", function(d) {
+                    switch(d.depth){
+                      case 0:
+                          return "node node--root";
+                          break;
+                      case 1:
+                           return "node continente";
+                          break;
+                 case 2:
+                            var x ="";
+                            if(d.data.children[0].children) {x += d.data.children[0].children[0].color;}
+                              else if (d.data.children[0].color) {x += d.data.children[0].color};
+                              if(x) continentesTotal.push(x);
+                           return "node pais " + d.parent.data.name;
+                          break;
+                      case 3:
+                          return d.value > 1 ? "node org" : "nodisplay" ;
+                          break
+                      
+                      case 4:
+                          return "node proyecto";
+                          break
+                      }
+                  })
+   // .filter(function(d) { return d.data.name; })
+    ;
+
+  leaf.append("clipPath")
+      .attr("id", function(d, i) { return "clip-" + i; })
+    .append("use")
+      .attr("xlink:href", function(d, i) { return "#node-" + i + ""; });
+
+  leaf.append("text")
+      .style("font-size", function(d) { return Math.sqrt(d.r) * 2.5 + "px"; })
+      .attr("clip-path", function(d, i) { return "url(#clip-" + i + ")"; })
+    .selectAll("tspan")
+      .data(function(d) { 
+        var words = d.data.name.split(/\s+/g);
+        return words })
+    .enter().append("tspan")
+      .attr("x", 0)
+      .attr("y", function(d, i, nodes) { return 1.3 + (i - nodes.length / 2 - 0.5) + "em"; })
+      .text(function(d) { return d; });
+
+
+   var continentSelector = d3.select("#continents");
+
+
+     continentesTotal = continentesTotal.getUnique();
+
+   continentSelector.html(function (d) {
+      var xx= "";
+      for (i = 0; i < continentesTotal.length; i++) {
+       xx += '<span style="background-color:' + color(continentesTotal[i]) + '">' + continentesTotal[i] + '</span><br>'
+       // if(i<continentesTotal.length-1) xx += " - ";
+      }
+      return xx;  
+    })
+   
+
+
+// $('.continente').tipsy({ 
+//         gravity: 'w', 
+//         html: true, 
+//         title: function() {
+//          var d = this.__data__, c;
+//           var texto  = '<b style="font-size:14px">'+d.data.name+'</b><br>People:'+d.value; 
+//           return texto;
+//         }
+//       });
+
+
+$('.continente').tipsy({ 
+        gravity: 'w', 
+        html: true, 
+        title: function() {
+         var d = this.__data__, c;
+          var texto  = '<b style="font-size:14px">'+d.data.name+'</b><br>Paises:'+d.value; 
+          return texto;
+        }
+      });
+
+
+ $('.pais').tipsy({ 
+        gravity: 'w', 
+        html: true, 
+        opacity: 1, 
+        title: function() {
+         var d = this.__data__, c;
+          var texto  = '<b style="font-size:14px">'+d.data.name+'</b><br>Organizaciones:'+d.value; 
+          return texto;        }
+      });
+
+
+ $('.org').tipsy({ 
+        gravity: 'w', 
+        html: true, 
+        opacity: 1, 
+        title: function() {
+         var d = this.__data__, c;
+         console.log(d.data.name);
+          var texto  = '<b style="font-size:14px">'+d.data.name+'</b><br>Proyectos:'+d.value; 
+
+          return texto;        }
+      });
+
+ $('.proyecto').tipsy({ 
+        gravity: 'w', 
+        html: true, 
+        opacity: 1, 
+        title: function() {
+         var d = this.__data__, c;
+         console.log(d.data.name);
+          var texto  = '<b style="font-size:14px">'+d.data.name+'</b><br>'+d.data.label[1]+"<br>"+d.data.label[5]+'<br>('+d.data.color+')';
+          return texto;        }
+      });
+});
+
+function hovered(hover) {
+  return function(d) {
+        d3.selectAll(d.ancestors().filter(function(d) { return d.parent}).map(function(d) { return d.node; })).classed("hovered", hover);
+    // d3.selectAll(d.ancestors().filter(function(d) { return d.parent}).map(function(d) { return d.node; })).attr("opacity", function(d) { return (hover ? 0 : 1)});
+    // d3.selectAll(d.descendants().filter(function(d) { return d.children}).map(function(d) { return d.node; })).attr("opacity", function(d) { return (!hover ? 0.3 : 1)});
+
+  };
+}
+
+
+
+</script>
+</body></html>

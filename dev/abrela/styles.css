@@ -1,0 +1,236 @@
+body{
+  text-align: center;
+  background-color: #dfdfdf;
+/* // color:#27aeaa;
+*/}
+h2, h3 {
+  font-family: verdana;
+  margin: 0px;
+  margin-top: 5px;
+  color:black;
+}
+
+h2{
+  margin-top: 50px;
+}
+
+h3{
+  font-size: 13px;
+  font-weight: 400;
+    color:black;
+
+}
+
+
+text {
+  fill: rgba(0, 0, 0, 1);
+  font: 19px "Helvetica Neue", Helvetica, Arial, sans-serif;
+  text-anchor: middle;
+  text-shadow: 0 2px 0 #fff, 2px 0 0 #fff, -2px 0 0 #fff, 0 -2px 0 #fff;
+}
+
+.node {
+  cursor: pointer;
+}
+/*
+.node:hover circle{
+        stroke: rgba(39, 174, 170,1);
+  stroke-width: 1px;
+}
+*/
+/*.node.depth0{
+  display: none;
+}
+*/
+
+.continente circle{
+     fill: rgba(0, 0, 0, 0);
+
+  stroke-width:1px;
+}
+
+
+/*.Sudamerica circle{
+  fill:rgb(179,226,205);
+}
+
+.Europa circle{
+  fill:rgb(253,205,172);
+}
+
+.Asia circle{
+  fill:rgb(203,213,232);
+}
+
+.Norteamerica circle{
+  fill:rgb(244,202,228);
+}
+
+.Oceania circle{
+  fill:rgb(230,245,201);
+}
+
+.africa circle{
+  fill:rgb(255,242,174);
+}
+*/
+
+
+
+#sectores{
+  position: fixed;
+  top:140px;
+  right:20px;
+  opacity: 0.7;
+  text-align: right;
+  line-height: 24px;
+}
+
+
+#sectores span{
+  padding: 2px 4px;
+  color:white;
+}
+
+
+
+
+/*
+span.norteamerica{
+  background-color:rgb(179,226,205);
+}
+
+span.europa{
+  background-color:rgb(253,205,172);
+}
+
+span.asia{
+  background-color:rgb(203,213,232);
+}
+
+span.sudamerica{
+  background-color:rgb(244,202,228);
+}
+
+span.oceania{
+  background-color:rgb(230,245,201);
+}
+
+span.africa{
+  background-color:rgb(255,242,174);
+}
+*/
+
+
+.org {
+
+     fill: rgba(0, 0, 0, 0);
+       stroke: rgba(39, 174, 170,0.6);
+  stroke-width: 1px;: 
+
+}
+
+.pais circle{
+     fill: rgba(255, 255, 255, 0.3);
+}
+
+
+.hoveredChild text{
+  display: none;
+}
+
+
+/*
+.noText text{
+  display: none;
+}
+*/
+.proyecto circle {
+    fill: rgba(39, 174, 170,0.4);
+}
+
+.node--root, .nodisplay{
+display:none;  
+}
+
+.node{
+}
+
+
+
+.label{
+   
+    pointer-events: none;
+}
+
+
+
+
+.node {
+  box-sizing: border-box;
+  line-height: 1em;
+  overflow: hidden;
+  position: absolute;
+  white-space: pre;
+  background: #ddd;
+}
+
+.depth0 circle, .depth1 circle {
+    fill: hsla(0, 0%, 42%, 0.05);
+}
+
+.depth2 circle {
+opacity: 0.3;
+}
+
+
+.generom circle{
+   fill:rgba(233, 97, 83, 0.32);
+}
+
+.womenLine {
+  fill: rgba(255, 58, 0, 0.8);
+}
+.node-label,
+.node-value {
+  margin: 4px;
+}
+
+.node-value {
+  margin-top: -2px;
+}
+
+.node-value {
+  font-weight: bold;
+}
+
+
+/* TIPSY */
+
+.tipsy { font-size: 11px; position: absolute; padding: 5px; z-index: 100000;
+    font-family: monospace;
+ }
+  .tipsy-inner { background-color: rgba(39, 174, 170,1); color: #FFF; max-width: 200px; padding: 5px 8px 4px 8px; text-align: center; }
+
+  /* Rounded corners */
+  .tipsy-inner { border-radius: 3px; -moz-border-radius: 3px; -webkit-border-radius: 3px; }
+  
+  /* Uncomment for shadow */
+  .tipsy-inner { box-shadow: 3px 3px 5px rgba(0, 0, 0,0.5); -webkit-box-shadow: 3px 3px 5px rgba(0, 0, 0,0.5); -moz-box-shadow: 3px 3px 5px rgba(0, 0, 0,0.5); }
+  
+  .tipsy-arrow { position: absolute; width: 0; height: 0; line-height: 0; border: 5px dashed #000; }
+  
+  /* Rules to colour arrows */
+  .tipsy-arrow-n { border-bottom-color: #000; }
+  .tipsy-arrow-s { border-top-color: #000; }
+  .tipsy-arrow-e { border-left-color: #000; }
+  .tipsy-arrow-w { border-right-color: #000; }
+  
+  .tipsy-n .tipsy-arrow { top: 0px; left: 50%; margin-left: -5px; border-bottom-style: solid; border-top: none; border-left-color: transparent; border-right-color: transparent; }
+    .tipsy-nw .tipsy-arrow { top: 0; left: 10px; border-bottom-style: solid; border-top: none; border-left-color: transparent; border-right-color: transparent;}
+    .tipsy-ne .tipsy-arrow { top: 0; right: 10px; border-bottom-style: solid; border-top: none;  border-left-color: transparent; border-right-color: transparent;}
+  .tipsy-s .tipsy-arrow { bottom: 0; left: 50%; margin-left: -5px; border-top-style: solid; border-bottom: none;  border-left-color: transparent; border-right-color: transparent; }
+    .tipsy-sw .tipsy-arrow { bottom: 0; left: 10px; border-top-style: solid; border-bottom: none;  border-left-color: transparent; border-right-color: transparent; }
+    .tipsy-se .tipsy-arrow { bottom: 0; right: 10px; border-top-style: solid; border-bottom: none; border-left-color: transparent; border-right-color: transparent; }
+  .tipsy-e .tipsy-arrow { right: 0; top: 50%; margin-top: -5px; border-left-style: solid; border-right: none; border-top-color: transparent; border-bottom-color: transparent; }
+  .tipsy-w .tipsy-arrow { left: 0; top: 50%; margin-top: -5px; border-right-style: solid; border-left: none; border-top-color: transparent; border-bottom-color: transparent; }
