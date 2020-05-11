@@ -70,9 +70,8 @@
     var distanceLimit = 30;
     
     var colorScale = d3.scaleOrdinal()
-        .range(["#97191E","#282770","#F62128","#DF3A01","#FD7631","#634878","#008246","#F7EC47","gray"])
+        .range(["#8e0000","#2da2cf","#066533","#ff4343","#f28e33","#662583","#93c130","#ffee3b","#808080"])
         .domain(["MORENA","PAN","PRI","PT","MC","PES","PVEM","PRD","SG"]);
-    
     
     
     var angleScale = d3.scaleOrdinal()
@@ -190,7 +189,7 @@
       
       d3.timeout(function() {
     
-                   for (var i = 0; i < 170; ++i) simulation.tick(); // evalua la simulacion
+                   for (var i = 0; i < 120; ++i) simulation.tick(); // evalua la simulacion
                        ticked(); //actualiza posiciones.
                     
     
@@ -218,7 +217,7 @@
                                               .classed("unselected", false)
                                               .classed("selected", false);  
     
-                                d3.selectAll(".estadoVector")
+                              d3.selectAll(".estadoVector")
                                     .transition()    
                                     .duration(200)    
                                     .style("fill", "rgba(0,0,0,0.1")
@@ -234,8 +233,7 @@
                                     div.select("#distrito").html("Distrito:&nbsp;<b>"+d.data.distrito+"</b>");
                                     div.select("#partido").html("Partido:&nbsp;<b>"+d.data.partido+"</b>");
     
-                                d3.selectAll(".circulos").filter(function(e){
-                                  return e.id != d.data.id})
+                                d3.selectAll(".circulos").filter(function(e){return e.id != d.data.id})
                                               .classed("unselected", true); 
     
                                 d3.selectAll(".circulos").filter(function(e){return e.id == d.data.id})
@@ -255,13 +253,20 @@
     
                                 }
                               })          
-                              .on("mousemove", function (d) {
+                              .on("mousemove", function (d) { // HOVER SECTION
                                 d3.selectAll(".circulos")
-                                .classed("hovered", false);
+                                      .classed("hovered", false);
+                                
+                                d3.selectAll(".estadoVector")
+                                      .classed("hovered", false);
+                                      
                                 if (getDistance(d3.mouse(this), [d.data.x, d.data.y]) < distanceLimit) {
-                                d3.selectAll(".circulos").filter(function (e) { 
-                                  return e.id == d.data.id })
-                                            .classed("hovered", true); 
+                                         d3.selectAll(".circulos")
+                                                .filter(function (e) { return e.id == d.data.id })
+                                                      .classed("hovered", true); 
+                                        
+                                         d3.select(".estadoVector#"+ estadosCode[d.data.estado])
+                                                      .classed("hovered", true); 
                                 }
                               })
                             
@@ -323,13 +328,13 @@
     var leyenda = svg.append("g")
         .attr("class", "leyenda")
       
-      .attr("transform", "translate("+(width-80)+", 40)");
+      .attr("transform", "translate("+(width-80)+", 20)");
     
       leyenda.append("g").attr("class", "legendSize");
     
     
       leyenda.append("g")
-        .attr("transform", "translate(0, 80)")
+        .attr("transform", "translate(0, 50)")
       .attr("class", "legendOrdinal");
       
     
