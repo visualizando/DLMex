@@ -45,7 +45,19 @@
     'Representación Proporcional':[-109,19]
     }
     
-    
+  
+    var gruposAparteDef=[ // ACA DEFINO QUE GRUPOS VAN APARTE
+      'I Circunscripción',
+    'II Circunscripción',
+    'III Circunscripción',
+    'IV Circunscripción',
+    'V Circunscripción',
+    'Ciudad De México'
+    ];
+
+
+
+
     var path = d3.geoPath();
     
     var proyeccionMapa = d3.geoMercator()
@@ -127,7 +139,6 @@
         var nodes = personas.map(function(d, i) {
             var centroide;
               if (d.tipo !="circunscripcion"){
-                console.log(d.Entidad)
                 centroide = [centroids[estadosCode[d.Entidad]][0],centroids[estadosCode[d.Entidad]][1]];
               } else {
                 centroide = proyeccionMapa(circunscripciones[d.Entidad]);
@@ -141,6 +152,8 @@
               partido: d.partido,
               genero: d.genero,
               radius: 5,
+              r: 5,
+              tipo: d.tipo,
               distrito: d.distrito,
               centroide:  centroide,
               x: centroide[0]+15*Math.cos(angleScale(d.partido)*Math.PI*2),
@@ -178,7 +191,7 @@
                        ticked(); //actualiza posiciones.
                     
     
-                    let circles = nodos.append('circle')
+                    var circles = nodos.append('circle')
                         .attr('r', (d) => d.radius)
                         .attr('class','circulos')
                         .attr('fill', (d) => colorScale(d.partido))
@@ -253,6 +266,32 @@
     
                     cell.append("path")
                           .attr("d", function(d) { return "M" + d.join("L") + "Z"; });
+
+                          var circunscripcionesCircles = [];
+                          gruposAparteDef.forEach(function(d, i) { 
+                            circunscripcionesCircles.push(d3.packEnclose(circles.data().filter(function(d){return d.estado == gruposAparteDef[i]})))
+
+                          });
+
+
+                          console.log(circunscripcionesCircles);
+                      
+                          svg.append("g")
+                            .selectAll("circle")
+                            .data(circunscripcionesCircles)
+                            .enter()
+                            .append("circle")
+                            .attr("class", "enclosingCircle")
+                            .attr("r", function(d) {
+                              return d.r*1.1 ;
+                            })
+                            .attr("cx", function(d) {
+                              return d.x;
+                            })
+                            .attr("cy", function(d) {
+                              return d.y;
+                            });
+
     
            });  //--- END TIMEOUT
     

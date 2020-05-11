@@ -266,3 +266,8 @@ div#tooltip #tamanio,  div#tooltip #link{
   font-weight: 500;
   font-size: 12px;
 }
+
+.enclosingCircle{
+  fill: none;
+    stroke: black;
+}
