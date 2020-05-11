@@ -37,17 +37,18 @@
     };
     
     var circunscripciones={
-    'I Circunscripción':[-113,23],
-    'II Circunscripción':[-95,26],
-    'III Circunscripción':[-93,21],
+    'I Circunscripción':[-114,23],
+    'II Circunscripción':[-96,28],
+    'III Circunscripción':[-90,23],
     'IV Circunscripción':[-104,16],
     'V Circunscripción':[-109,19],
-    'Representación Proporcional':[-109,19]
+    'Representación Proporcional':[-109,19],
+    'Ciudad De México':[-94,21]
     }
     
   
     var gruposAparteDef=[ // ACA DEFINO QUE GRUPOS VAN APARTE
-      'I Circunscripción',
+    'I Circunscripción',
     'II Circunscripción',
     'III Circunscripción',
     'IV Circunscripción',
@@ -138,7 +139,9 @@
 
         var nodes = personas.map(function(d, i) {
             var centroide;
-              if (d.tipo !="circunscripcion"){
+              if (d.Entidad =="Ciudad De México"){
+                centroide = proyeccionMapa(circunscripciones["Ciudad De México"]);
+              } else if (d.tipo !="circunscripcion"){
                 centroide = [centroids[estadosCode[d.Entidad]][0],centroids[estadosCode[d.Entidad]][1]];
               } else {
                 centroide = proyeccionMapa(circunscripciones[d.Entidad]);
@@ -269,29 +272,39 @@
 
                           var circunscripcionesCircles = [];
                           gruposAparteDef.forEach(function(d, i) { 
-                            circunscripcionesCircles.push(d3.packEnclose(circles.data().filter(function(d){return d.estado == gruposAparteDef[i]})))
+                            circunscripcionesCircles.push([d3.packEnclose(circles.data().filter(function(d){return d.estado == gruposAparteDef[i]})),d])
 
                           });
 
-
-                          console.log(circunscripcionesCircles);
-                      
-                          svg.append("g")
-                            .selectAll("circle")
+                          var gruposAparteCirculos = svg.append("g").attr("id","gruposAparte")
+                            .selectAll("g")
                             .data(circunscripcionesCircles)
                             .enter()
-                            .append("circle")
+                            .append("g")
+                            .attr("transform",function(d){ return "translate(" + d[0].x + "," + d[0].y +")"});
+
+
+                          gruposAparteCirculos.append("circle")
                             .attr("class", "enclosingCircle")
                             .attr("r", function(d) {
-                              return d.r*1.1 ;
-                            })
-                            .attr("cx", function(d) {
-                              return d.x;
-                            })
-                            .attr("cy", function(d) {
-                              return d.y;
+                              return d[0].r*1.1 ;
                             });
 
+                          gruposAparteCirculos.append("path")
+                            .attr("id", function(d,i){
+                              return "circPath"+i;
+                            })
+                            .attr("d", d => circle(d[0].r + 10))
+                            .attr("display", "none");
+
+                          gruposAparteCirculos.append("text")
+                            .attr("fill", "#555")
+                          .append("textPath")
+                            .attr("xlink:href",  function(d,i){
+                              return "#circPath"+i;
+                            })
+                            .attr("startOffset", "50%")
+                            .text(d=>d[1]);
     
            });  //--- END TIMEOUT
     
@@ -354,7 +367,11 @@
         return Math.sqrt(xs + ys);
       }
     
-    
+    var circle = d3.arc()
+    .innerRadius(0)
+    .outerRadius(d => d)
+    .startAngle(-Math.PI)
+    .endAngle(Math.PI);
     
     
     } // fin de Ready;

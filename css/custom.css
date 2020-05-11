@@ -271,3 +271,7 @@ div#tooltip #tamanio,  div#tooltip #link{
   fill: none;
     stroke: black;
 }
+
+textPath{
+  text-anchor: middle;
+}
