@@ -1,38 +1,17 @@
-body{
-  text-align: center;
-  background-color: #fff;
-}
-
-h2, h3 {
-  font-family: verdana;
-  margin: 0px;
-  margin-top: 5px;
-  color:black;
-}
-
-h2{
-  margin-top: 50px;
-}
-
-h3{
-  font-size: 13px;
-  font-weight: 400;
-  color:black;
-
-}
 
 
 text {
-    fill: rgba(0, 0, 0, 1);
-    font: 19px "Helvetica Neue", Helvetica, Arial, sans-serif;
-    text-anchor: middle;
-    paint-order: stroke;
-    stroke: #ffffff;
-    stroke-width: 4px;
-    stroke-linecap: butt;
-    stroke-linejoin: round;
-    stroke-opacity: 0.8;
-     pointer-events: none;
+  fill: rgba(0, 0, 0, 1);
+  font: 13px "Helvetica Neue", Helvetica, Arial, sans-serif;
+  text-anchor: middle;
+  paint-order: stroke;
+  stroke: #ffffff;
+  stroke-width: 4px;
+  stroke-linecap: butt;
+  stroke-linejoin: round;
+  stroke-opacity: 0.8;
+  pointer-events: none;
+
 }
 
 .node {
@@ -42,103 +21,12 @@ text {
 circle{
       outline: none;
 }
-#continentes{
-  
-  line-height: 24px;
-      width: 80%;
-    margin: 10px auto;
-}
+
 
 .buscador{
   margin:0 auto;
 }
 
-
-.selectors{
-    background-color:silver;
-    fill:silver;
-}
-
-.selectors.latinoamerica, .country.latinoamerica{
-  background-color:rgb(102,194,165);
-  fill:rgb(102,194,165);
-}
-
-.selectors.america, .country.america{
-  background-color:rgb(255, 131, 131);
-  fill:rgb(255, 131, 131);
-}
-
-.selectors.asia-MiddleEast, .country.asia-MiddleEast{
-  background-color:rgb(141,160,203);
-  fill:rgb(141,160,203);
-}
-
-.selectors.southernEurope, .country.southernEurope{
-  background-color:rgb(66, 185, 185);
-  fill:rgb(66, 185, 185);
-}
-
-
-.selectors.austria, .country.austria{
-  background-color:rgb(70, 169, 195);
-  fill:rgb(70, 169, 195);
-}
-
-
-
-.selectors.australia, .country.australia{
-  background-color:rgb(231,138,195);
-  fill:rgb(231,138,195);
-}
-
-.selectors.central-EasternEurope, .country.central-EasternEurope{
-  background-color:rgb(107, 199, 123);
-  fill:rgb(107, 199, 123);
-}
-
-.selectors.africa, .country.africa{
-  background-color:rgb(247, 170, 83);
-  fill:rgb(247, 170, 83);
-}
-
-
-
-.org {
-  fill: rgba(0, 0, 0, 0);
-  stroke: rgba(39, 174, 170,0.6);
-  stroke-width: 1px;: 
-}
-
-
-
-.hovered{
-  display: none;
-}
-/*
-.hovered .depth3 circle{
-    display: 1;
-
-}*/
-
-.noText text{
-  display: none;
-}
-
-
-
-.node--root, .nodisplay{
-  display:none;  
-}
-
-.node{
-}
-
-
-
-.label{
-  pointer-events: none;
-}
 
 
 
@@ -152,87 +40,6 @@ circle{
   background: #ddd;
 }
 
-.depth0 circle, .depth1 circle {
-/*  fill: hsla(0, 0%, 42%, 0.05);
-  stroke-width:1px;
-  stroke:hsla(0, 0%, 42%, 0.25);*/
-  display: none;
-}
-
-.depth2 circle{
-    fill: hsla(0, 0%, 42%, 0.05);
-  stroke-width:1px;
-  stroke:hsla(0, 0%, 42%, 0.25);
-}
-.depth3 circle {
-    fill: hsla(0, 0%, 100%, 0.1);
-    stroke: hsla(0, 0%, 100%, 0.4);
-    stroke-width: 1px;
-}
-
-
-.depth4 circle {
-    fill: white;
-    opacity: 0.3;
-}
-
-
-
-
-.generom circle{
-   fill:rgba(233, 97, 83, 0.32);
-}
-
-.womenLine {
-  fill: rgba(255, 58, 0, 0.8);
-  stroke-width: 1px;
-}
-.node-label,
-.node-value {
-  margin: 4px;
-}
-
-.node-value {
-  margin-top: -2px;
-}
-
-.node-value {
-  font-weight: bold;
-}
-
-
-
-
-
-#selectorPanel{
-  display: inline-block;
-  min-width: 50%;
-  max-width: 75%;
-  margin: 15px auto;
-  padding: 10px 0px;
-  background-color: #f0f0f0;
-  border-radius: 6px;
-}
-
-#selectorPanel button, #selectorPanel select{
-  margin-left: 10px;
-  border-radius: 2px;
-  padding: 2px 10px;
-}
-
-#selectorPanel select{
-  padding-left: 1px;
-}
-
-.selectors{
-    border-radius: 15px;
-    margin: 4px;
-    padding: 0px 13px;
-    color: white;
-    display: inline-block;
-
-    cursor: pointer;
-}
 
 
 .svg-container {
@@ -248,9 +55,50 @@ circle{
 }
 .svg-content-responsive {
     display: block;
-/*    position: absolute;
-    top: 100px;
-    left: 0;*/
+
+}
+
+
+
+
+
+
+.comision .child{
+  fill:#00000010;
+  opacity: 0.8;
+ }
+
+.child:hover{
+  stroke: white;
+  paint-order: stroke;
+  stroke-width: 4px;
+  opacity: 1;
+}
+
+.padre {
+  stroke:rgb(224, 224, 224);
+  paint-order: stroke;
+  stroke-width: 10px;
+  fill:rgb(224, 224, 224);
+}
+
+.comision:hover .MORENA, .MORENA.child.selecccionado{ fill:#8e0000}
+.comision:hover .PAN, .PAN.child.selecccionado{ fill:#2da2cf}
+.comision:hover .PRI, .PRI.child.selecccionado{ fill:#066533}
+.comision:hover .PT, .PT.child.selecccionado{ fill:#ff4343}
+.comision:hover .MC, .MC.child.selecccionado{ fill:#e86f00}
+.comision:hover .PES, .PES.child.selecccionado{ fill:#662583}
+.comision:hover .PVEM, .PVEM.child.selecccionado{ fill:#93c130}
+.comision:hover .PRD, .PRD.child.selecccionado{ fill:#ffb31c}
+.comision:hover .SG, .SG.child.selecccionado{ fill:#808080}
+
+
+
+
+
+ 
+.comision:hover text{
+  display:none;
 }
 
 
@@ -266,7 +114,7 @@ circle{
   max-width:200px;
 }
 
-  .tipsy-inner { background-color: #777; color: #FFF; max-width: 200px; padding: 5px 8px 4px 8px; text-align: center; }
+  .tipsy-inner { background-color: #777; color: #FFF; width: 200px; padding: 5px 8px 4px 8px; text-align: center; }
 
   /* Rounded corners */
   .tipsy-inner { border-radius: 3px; -moz-border-radius: 3px; -webkit-border-radius: 3px; }
@@ -290,3 +138,14 @@ circle{
     .tipsy-se .tipsy-arrow { bottom: 0; right: 10px; border-top-style: solid; border-bottom: none; border-left-color: transparent; border-right-color: transparent; }
   .tipsy-e .tipsy-arrow { right: 0; top: 50%; margin-top: -5px; border-left-style: solid; border-right: none; border-top-color: transparent; border-bottom-color: transparent; }
   .tipsy-w .tipsy-arrow { left: 0; top: 50%; margin-top: -5px; border-right-style: solid; border-left: none; border-top-color: transparent; border-bottom-color: transparent; }
+
+
+
+  #actualtitle{
+    width:100%;
+    display: block;
+    font-size: 13px;
+    font-weight: 400;
+    background-color: silver;
+    color:black;
+  }

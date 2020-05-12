@@ -8,7 +8,7 @@
 <head>
 <link rel="shortcut icon" href="">
   <link rel="stylesheet" href="styles.css">
-  <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/d3/4.9.1/d3.min.js"></script>
+  <script src="https://d3js.org/d3.v5.min.js"></script>
   <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
   <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery.tipsy/1.0.3/jquery.tipsy.js"></script>
   <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/tabletop.js/1.5.2/tabletop.min.js"></script>
@@ -17,12 +17,10 @@
 
 <body>
 
-<!--   <h2>Participantes Abrelatam-Condatos 2017</h2><h3>Agrupados por país y organización</h3>
- --><!--   <input type="text" id="text-box-id" style="width: 100%" />
- -->  <h3 id="continentes"></h3>
 
- <h3 class= "buscador">Buscar persona/organización 
- <input type="text" id="text-box-id" name="search" style="width: 100px" /></h3>
+
+ <!-- <h3 class= "buscador">Buscar persona/organización 
+ <input type="text" id="text-box-id" name="search" style="width: 100px" /></h3> -->
 <div id="chart" class="svg-container">
       <svg  ><g id="main"></g></svg>
 </div>
@@ -31,13 +29,6 @@
 
 
 /// Functions
-function UrlExists(url)
-{
-    var http = new XMLHttpRequest();
-    http.open('HEAD', url, false);
-    http.send();
-    return http.status!=404;
-}
 
 function getUnique(arr) {
     var a = [], b = [], prev;
@@ -66,17 +57,23 @@ function camelize(str) {
 }
 
 
-// DATALOAD -Tabletop.js
+var circle = d3.arc()
+    .innerRadius(0)
+    .outerRadius(d => d)
+    .startAngle(-Math.PI)
+    .endAngle(Math.PI);
 
+    var promises = [
+        d3.csv("comisionesDiputados.csv")
+      ]
+    
+      Promise.all(promises).then(function(data){
+        drawChart(data[0]);
+      });
+    
  
-d3.csv("Confirmados.csv", function(data) {
-    showInfo(data);
-  });
 
-
-
-var updated = 0;
-
+      var actualTitle;
 
 var svg = d3.select("svg"),
     width = 900,
@@ -85,16 +82,14 @@ var svg = d3.select("svg"),
     svg.attr("height",height)
     .attr("width",width);
 
-var color = d3.scaleSequential(d3.interpolateMagma)
-    .domain([-4, 4]);
 
-var continentesTotal = [];
 
-var groups = ["Masculino","Femenino"];
-var arco = d3.arc()
-      ;
+ 
+      // var colorScale = d3.scaleOrdinal()
+      // .range(["#8e0000","#2da2cf","#066533","#ff4343","#e86f00","#662583","#93c130","#ffb31c","#808080"])
+      //   .domain(["MORENA","PAN","PRI","PT","MC","PES","PVEM","PRD","SG"]);
 
-var colorea =  d3.scaleOrdinal(d3.schemeCategory10);
+
 
 var pie = d3.pie()
       .sort(null);
@@ -102,74 +97,35 @@ var pie = d3.pie()
 var pack = d3.pack()
     .size([width - 2, width - 2])
     .padding(function(d) {
-    if (d.height == 4 ) return 15;
-    if (d.height == 3 ) return 10;
-    if (d.height == 2 ) return 5;
-    if (d.height == 1 ) return 3;
-
-
+    if (d.depth == 1 ) return 5;
+    if (d.depth == 0 ) return 17;
 });
 
-var selectedOptions = [];
 
-var missingImages = []
-
-var imageUrl = "images/";
-
-// DATA ADQUISITION 
-
-function showInfo(data, tabletop) {
-
-
-
-    updated = 1;
-    drawChart(data);
-};
-
-
- 
-function updateOptions(){
-    var order =  d3.select(this).attr("order");
-    selectedOptions[order] = this.value;
-    }
 
 
 function drawChart(data){
-  if(updated){
+
     var nest = d3.nest()
-          .key(function(d) { return d.continente; })
-          .key(function(d) { return d.country; })
-          .key(function(d) { return d.organization; })
-          .key(function(d) { return d.name + " " + d.surname; })
-
-
-      .rollup(function(v) { return {
-          count: d3.sum(v, function(d) {
-            return 100 ;/*parseFloat(d["Grand Total"]);*/}),
-          others: v
-        }; })
-      .entries(data);
-
+          .key(function(d) { return d.Comisiones; })
+         // .key(function(d) { return d.partido; })
+          .entries(data);
 
       var root = d3.hierarchy({values: nest}, function(d) {return d.values; })
         .sum(function(d) {
-
-           return 100;
-          
+          switch(d["Posición"]){
+              case 'Integrante':
+                return 100;
+              case 'Presidente':
+                return 300;
+              case 'Secretario/a':
+                return 200;
+              }
         })
         .sort(function(a, b) { 
-            if(a.height == 0) {
-               return d3.ascending(a.data.value.others[0]["gender"], b.data.value.others[0]["gender"]);
-            }else if(a.height > 3) {
-              console.log(b);
-             return b.value.others[0]["gender"] - a.value.others[0]["gender"];
-              }
-             else{
-            return b.value - a.value; 
-          }
-
-            
-        });
+          return b.value - a.value; 
+        })
+        ;
     pack(root);
 
 
@@ -177,81 +133,97 @@ function drawChart(data){
 //~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 // Start drawing
 
+const node = svg.select("#main")
+    .attr("pointer-events", "all")
+    .selectAll("g")
+    .data(root.descendants().filter(d=>d.depth==1))
+    .enter().append("g").attr("class","comision")
+    .attr("transform", function(d) { 
+            return "translate(" + d.x + "," + d.y + ")"; })
+    // .on("mouseenter", hovered(true))
+    // .on("mouseleave", hovered(false))
+    .attr("id", function(d) {
+         return camelize(d.data.key);
+          });
 
-     var node = svg.select("g")
-        .selectAll("g")
-        .data(root.descendants().filter(function(d) { return d.depth > 0}))
-        .enter().append("g")
-          .attr("transform", function(d) { return "translate(" + d.x + "," + d.y + ")"; })
-          .attr("class", function(d) { 
-
-            if (d.depth==3){
-                        var clase = "node noText depth" + d.depth ;
-                        if (d.children.length == 1) clase = clase + " nodisplay";  
-            }else if (d.depth!=2) {
-
-                        var clase = "node noText depth" + d.depth ;
-                        if (!d.height) {
-                            if(d.data.value.others[0]["organization_type"]){
-                               continentesTotal.push(d.data.value.others[0]["organization_type"]);
-
-                            } else { continentesTotal.push("Otro");
-                            }
-                          clase += " continentes" + camelize(d.data.value.others[0]["organization_type"]);
-                        } 
+  node.append("circle")
+      .attr("r",d=>d.r)
+      .attr("class", "padre")
+      //.attr("pointer-events", d => d.children ? "all" : "none")
+      .classed("hovered",d => d.children ? false : true)
+      ;
 
 
-            }else if (d.depth==2) {
-                      var clase = "country " + camelize(d.parent.data.key) ;
-            }else{
-                       var clase =  "node depth" + d.depth;
+  var childs = node.append("g").selectAll("circle")
+          .data(d=>d.children).enter()
+          .append("circle")
+          .attr("r",d=>d.r)
+          .attr("cy",d=>d.y-d.parent.y)
+          .attr("cx",d=>d.x-d.parent.x)
+          .attr("class", d => d.height==1 ? d.data.key + " child" : "p"+d.data.id + " " + d.data.partido + " child")
+           .on("mousemove", hovered()); // esto es para actualizar el titulo en el tipsy
+         
+  
+  // === TITULO EN CIRCULOS ==============
+  // node.append("path")
+  //     .attr("id", function(d,i) { 
+  //       return "titulo"+i;
+  //         })
+  //     .attr("d", d => circle(d.r + 3))
+  //     .attr("display", "none");
 
-            }
+  // node.filter(d => d.depth ===1).append("text")
+  //     .attr("fill", "#555")
+  //   .append("textPath")
+  //     .attr("xlink:href", function(d,i) { 
+  //       return "#titulo"+i;
+  //         })
+  //     .attr("startOffset", "50%")
+  //     .text(function(d) { return  d.data.key;});
 
-            return clase;
-          })
-          .attr("id", function(d) {
-                      return camelize(d.data.key);
-          })
-          
-          .each(function(d) { d.node = this; })
-          .on("mouseover", hovered(true))
-          .on("mouseout", hovered(false))
-          ;
-
-
-  var circlesParents = node.filter(function(d) { return d.depth < 3}).append("circle")
-        .attr("id", function(d, i) { return "node-" + camelize(d.data.key) })
-        .attr("r", function(d) { 
-          return d.r; })  
-
- var circles = node.filter(function(d) { return d.depth >= 3}).append("circle")
-        .attr("id", function(d, i) { return "node-" + camelize(d.data.key) })
-        .attr("r", function(d) { 
-          return d.r; })
-      // //  TO ADD COLORS OF PEOPLE BASED ON SOMETHING
-        .attr("class",function(d) { 
-            if (d.parent.height==1) {
-
-                       return d.data.value.others[0]["gender"];
-
-            }})
-        ;
+    // **** FIN TITULO EN CIRCULOS ==============
 
 
 
 
- var leaf = node.filter(function(d) { return d.depth < 3});
-
-    leaf.append("clipPath")
-        .attr("id", function(d, i) { return "clip-" + camelize(d.data.key); })
-      .append("use")
-        .attr("xlink:href", function(d, i) { return "#node-" + camelize(d.data.key) + ""; });
 
 
+const leaf = node.filter(d => d.depth ===1);
+  
+  // leaf.select("circle")
+  //     .attr("id", d => (d.leafUid = "#node-" + camelize(d.data.key)));
 
-  var textos = svg.append('g').attr("id", "texts").selectAll("g")
-        .data(root.descendants().filter(function(d) { return d.depth ==2}))
+  // leaf.append("clipPath")
+  //     .attr("id", d => (d.clipUid = "clip-" + camelize(d.data.key)))
+  //   .append("use")
+  //     .attr("xlink:href", d => d.leafUid.href);
+
+  leaf.append("text")
+      //.attr("clip-path", d => d.clipUid)
+    .selectAll("tspan")
+    .data(d=> { 
+      v = d.data.key.split(/(?<=(^|\s)[^\s]{3,})\s+/g).filter(el=> {
+                                                        return el.trim() != "";
+                                                      });
+      return v;
+    })
+    .join("tspan")
+      .attr("x", 0)
+      .attr("y", (d, i, nodes) => `${i - nodes.length / 2 + 0.8}em`)
+      .text(d => d);
+
+
+// var leaf = node.filter(function(d) { return d.depth == 1});
+
+//     leaf.append("clipPath")
+//         .attr("id", function(d, i) { return "clip-" + camelize(d.data.key); })
+//       .append("use")
+//         .attr("xlink:href", function(d, i) { return "#node-" + camelize(d.data.key) + ""; });
+
+
+
+ /*  var textos = svg.append('g').attr("id", "texts").selectAll("g")
+        .data(root.descendants().filter(function(d) { return d.depth ==1}))
         .enter().append("g")
           .attr("transform", function(d) { return "translate(" + d.x + "," + d.y + ")"; })
           .attr("class", function(d) {
@@ -267,77 +239,30 @@ function drawChart(data){
       .enter().append("tspan")
         .attr("x", 0)
         .attr("y", function(d, i, nodes) { return 1.3 + (i - nodes.length / 2 - 0.5) + "em"; })
-        .text(function(d) { return d; });
-
-
-
-
-// ADDS COUNTER TAGS
-
-     var continentesSelector = d3.select("#continentes");
-     var continentesTotalUnique = [];
-
-       continentesTotal = getUnique(continentesTotal);
-
-       continentesTotal[0].forEach(function(d,k){
-        continentesTotalUnique.push({'name':d,'value':continentesTotal[1][k]});
-       })
-
-        continentesTotalUnique.sort(function(x, y){
-                   return d3.descending(x.value, y.value);
-                })
-
-
-     continentesSelector.html(function (d) {
-        var xx= "";
-        for (i = 0; i < continentesTotalUnique.length; i++) {
-         xx += '<a class="selectors '+ camelize(continentesTotalUnique[i].name) +'" data="'+ continentesTotalUnique[i].name +'">' + continentesTotalUnique[i].name +"&nbsp"+ continentesTotalUnique[i].value + '</a>';
-        }
-        return xx;  
-      })
-     
-
+        .text(function(d) { return d; }); */
 
 
 
   $(document).ready(function() {
-// 
-    $(".selectors").hover(
-    function() {
-       var value = $(this)[0].attributes.data.nodeValue.toLowerCase();
-        $(".depth4").each(function(index, elem) {
-            var $elem = $(elem);
-            var org = d3.select(elem).data()[0].data.value.others[0].organization_type;
 
-            if (org.toLowerCase() == value) {
-                d3.select($elem[0].childNodes[0]).style("opacity","0.8") ;                
-            } else {
-                 d3.select($elem[0].childNodes[0]).style("opacity","0.2")   ;               
-
-
-            }
-        });
-    }, function() {
-      
-    }
-  );
   
 
-  $("input[name='search']").on("input", function(){ 
+  // $("input[name='search']").on("input", function(){ 
 
- var value = $(this).val().toLowerCase();
-           $(".depth4").each(function(index, elem) {
-                      var $elem = $(elem);
-                      var org = d3.select(elem).data()[0].data.key;
-                      if (value.length > 0 && org.toLowerCase().indexOf(value) != -1 ) {
-                          d3.select($elem[0].childNodes[0]).style("fill","#ff4fa7").style("stroke-width","3px").style("stroke","white").style("opacity","1") ;                
-                      } else {
-                           d3.select($elem[0].childNodes[0]).style("fill","white").style("opacity","0.3").style("stroke","none")   ;               
+  //         var value = $(this).val().toLowerCase();
+  //                   $(".child").each(function(index, elem) {
+  //                               var $elem = $(elem);
+  //                               var org = d3.select(elem).data()
+  //                               org = org[0].data.nombre + " " + org[0].data.apellido;
+  //                               if (value.length > 0 && org.toLowerCase().indexOf(value) != -1 ) {
+  //                                   d3.select($elem[0].childNodes[0]).style("fill","#ff4fa7").style("stroke-width","3px").style("stroke","white").style("opacity","1") ;                
+  //                               } else {
+  //                                   d3.select($elem[0].childNodes[0]).style("fill","white").style("opacity","0.3").style("stroke","none")   ;               
 
 
-                      }
-                  });
-  });
+  //                               }
+  //                           });
+  //           });
 
 
 // $("input").keyup(function() {
@@ -360,25 +285,22 @@ function drawChart(data){
       
 //     }
 //   );
+  
 
-
-
-
-   
-
-         $('circle').tipsy({ 
+         $('.comision').tipsy({ 
                 gravity: 'n', 
                 html: true, 
                 opacity: 1, 
                 title: function() {
                  var d = this.__data__, c;
-                  var texto  = '<b style="font-size:14px">'+d.data.key+'</b>';
-                  if(d.depth==1) texto += "<br>Paises: " + d.children.length ;      
-                  if(d.depth==2) texto += "<br>Participantes: " + d.children.length ;
-                  // if(d.depth==3) texto += "<br>Participantesssss: " + d.children.length ;
-                  if(d.height==0) texto += "<br>"+ d.data.value.others[0]["organization"]  + " (" + d.data.value.others[0]["country"] + ")";
+                  var texto  = '<span id=actualtitle></span><b style="font-size:13px">'+d.data.key+'</b>';
+                  if(d.depth==1) texto += "<br>Integrantes: " + d.children.length ;
                   return texto;        }
           });
+
+          
+        
+
 
 
   })
@@ -387,35 +309,27 @@ function drawChart(data){
               .style("opacity", 1e-6);
 
 
+              function hovered() {
+                return function(d) {
+                  d3.select("#actualtitle").html(d.data.nombre + " "+d.data.apellido)
+                  d3.selectAll('.p'+d.data.id).classed("seleccionado",true);
+                    }
+                }
+
 
   }
 
-}
 
 
 
 
 
 
-function hovered(hover) {
-  return function(d) {
-    if(d.depth ==2 ){
-      d3.select('#textCountry'+ camelize(d.data.key))
-      .classed("hovered", hover);
-    }else if (d.depth ==3 ){
-      d3.select('#textCountry'+ camelize(d.parent.data.key))
-      .classed("hovered", hover);
-    }else if (d.depth ==4 ){
-      d3.select('#textCountry'+ camelize(d.parent.parent.data.key))
-      .classed("hovered", hover);
-    }
-  
-  
-  };
-}
+
+
 
 </script>
-<h3>
-Codeado con amor abrelatamero por <a href="https://www.soviet.com.ar" target="_blank">Andres Snitcofsky</h3>
-<br><br>
+
+
+
 </body>

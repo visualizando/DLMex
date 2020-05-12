@@ -1,0 +1,1383 @@
+id,apellido,nombre,partido,genero,Nacimiento,Comisiones,Posición
+550,González Anaya,María Libier,MC,f,27/03/1954,Desarrollo Social,Integrante
+550,González Anaya,María Libier,MC,f,27/03/1954,Relaciones Exteriores,Integrante
+237,Zamudio Macías,Martha Angélica,MC,f,24/02/1957,Seguridad Social,Integrante
+428,Bravo Padilla,Itzcóatl Tonatiuh,MC,v,07/02/1960,Presupuesto y Cuenta Pública,Integrante
+584,Herrera Vega,Geraldina Isabel,MC,f,24/04/1963,"Ciencia, Tecnología e Innovación",Integrante
+584,Herrera Vega,Geraldina Isabel,MC,f,24/04/1963,Derechos Humanos,Integrante
+340,Cheja Alfaro,Jacobo David,MC,v,08/10/1965,Marina,Integrante
+340,Cheja Alfaro,Jacobo David,MC,v,08/10/1965,Protección Civil y Prevención de Desastres,Integrante
+136,Rodríguez Carrillo,Mario Alberto,MC,v,14/03/1967,"Ciencia, Tecnología e Innovación",Integrante
+136,Rodríguez Carrillo,Mario Alberto,MC,v,14/03/1967,Educación,Integrante
+147,Ramírez Salcido,Juan Francisco,MC,v,25/03/1969,Defensa Nacional,Integrante
+147,Ramírez Salcido,Juan Francisco,MC,v,25/03/1969,Vivienda,Integrante
+570,García Lara,Jorge Alcibíades,MC,v,05/08/1969,Radio y Televisión,Integrante
+570,García Lara,Jorge Alcibíades,MC,v,05/08/1969,Vivienda,Integrante
+4,Russo Salido,Jorge Eugenio,MC,v,19/12/1969,Pesca,Integrante
+327,Del Toro Pérez,Higinio,MC,v,28/01/1972,Deporte,Integrante
+327,Del Toro Pérez,Higinio,MC,v,28/01/1972,Hacienda y Crédito Público,Integrante
+384,Espinoza Cárdenas,Juan Martín,MC,v,11/07/1972,"Desarrollo y Conservación Rural, Agrícola y Autosuficiencia Alimentaria",Integrante
+384,Espinoza Cárdenas,Juan Martín,MC,v,11/07/1972,Pueblos Indígenas,Integrante
+23,Rodríguez Vázquez,Ariel,MC,v,01/11/1972,"Medio Ambiente, Sustentabilidad, Cambio Climático y Recursos Naturales",Integrante
+23,Rodríguez Vázquez,Ariel,MC,v,01/11/1972,Pueblos Indígenas,Integrante
+73,Tagle Martínez,Martha Angélica,MC,f,26/11/1973,Puntos Constitucionales,Integrante
+73,Tagle Martínez,Martha Angélica,MC,f,26/11/1973,Salud,Integrante
+501,Lozano Mac Donald,María del Pilar,MC,f,10/10/1974,Asuntos Migratorios,Integrante
+501,Lozano Mac Donald,María del Pilar,MC,f,10/10/1974,Relaciones Exteriores,Integrante
+500,Loya Hernández,Fabiola Raquel Guadalupe,MC,f,05/11/1974,Comunicaciones y Transportes,Integrante
+500,Loya Hernández,Fabiola Raquel Guadalupe,MC,f,05/11/1974,Igualdad de Género,Integrante
+34,Ron Ramos,Eduardo,MC,v,24/02/1975,Pesca,Integrante
+119,Prudencio González,Carmen Julia,MC,f,30/06/1977,Defensa Nacional,Integrante
+119,Prudencio González,Carmen Julia,MC,f,30/06/1977,Gobernación y Población,Integrante
+526,Medina Ortíz,Adriana Gabriela,MC,f,25/06/1979,"Recursos Hidráulicos, Agua Potable y Saneamiento",Integrante
+367,Falomir Saenz,Alan Jesús,MC,v,23/02/1981,Deporte,Integrante
+367,Falomir Saenz,Alan Jesús,MC,v,23/02/1981,Seguridad Pública,Integrante
+312,Contreras González,Lourdes Celenia,MC,f,29/12/1984,Derechos de la Niñez y Adolescencia,Integrante
+312,Contreras González,Lourdes Celenia,MC,f,29/12/1984,Economía Social y Fomento del Cooperativismo,Integrante
+2,Salinas Reyes,Ruth,MC,f,19/02/1985,Economía Social y Fomento del Cooperativismo,Integrante
+2,Salinas Reyes,Ruth,MC,f,19/02/1985,Transparencia y Anticorrupción,Integrante
+540,Ku Escalante,Kehila Abigail,MC,f,02/09/1985,"Economía, Comercio y Competitividad",Integrante
+540,Ku Escalante,Kehila Abigail,MC,f,02/09/1985,Educación,Integrante
+529,Méndez de la Luz Dauzón,Dulce María,MC,f,06/10/1985,Derechos de la Niñez y Adolescencia,Integrante
+529,Méndez de la Luz Dauzón,Dulce María,MC,f,06/10/1985,Juventud y Diversidad Sexual,Integrante
+555,González García,Ana Priscila,MC,f,13/05,Infraestructura,Integrante
+555,González García,Ana Priscila,MC,f,13/05,Trabajo y Previsión Social,Integrante
+266,Villarreal Salazar,Juan Carlos,MC,v,11/08,Jurisdiccional,Integrante
+266,Villarreal Salazar,Juan Carlos,MC,v,11/08,"Régimen, Reglamentos y Prácticas Parlamentarias",Integrante
+546,Gómez Maldonado,Maiella Martha Gabriela,MC,f,26/09,Presupuesto y Cuenta Pública,Integrante
+546,Gómez Maldonado,Maiella Martha Gabriela,MC,f,26/09,Turismo,Integrante
+136,Rodríguez Carrillo,Mario Alberto,MC,v,14/03/1967,Vigilancia de la Auditoría Superior de la Federación,Presidente
+501,Lozano Mac Donald,María del Pilar,MC,f,10/10/1974,"Desarrollo Metropolitano, Urbano, Ordenamiento Territorial y Movilidad",Presidente
+34,Ron Ramos,Eduardo,MC,v,24/02/1975,Ganadería,Presidente
+550,González Anaya,María Libier,MC,f,27/03/1954,Asuntos Migratorios,Secretario/a
+237,Zamudio Macías,Martha Angélica,MC,f,24/02/1957,Trabajo y Previsión Social,Secretario/a
+237,Zamudio Macías,Martha Angélica,MC,f,24/02/1957,Turismo,Secretario/a
+428,Bravo Padilla,Itzcóatl Tonatiuh,MC,v,07/02/1960,Hacienda y Crédito Público,Secretario/a
+584,Herrera Vega,Geraldina Isabel,MC,f,24/04/1963,"Economía, Comercio y Competitividad",Secretario/a
+340,Cheja Alfaro,Jacobo David,MC,v,08/10/1965,Energía,Secretario/a
+147,Ramírez Salcido,Juan Francisco,MC,v,25/03/1969,Seguridad Social,Secretario/a
+570,García Lara,Jorge Alcibíades,MC,v,05/08/1969,Infraestructura,Secretario/a
+4,Russo Salido,Jorge Eugenio,MC,v,19/12/1969,"Desarrollo y Conservación Rural, Agrícola y Autosuficiencia Alimentaria",Secretario/a
+4,Russo Salido,Jorge Eugenio,MC,v,19/12/1969,Ganadería,Secretario/a
+327,Del Toro Pérez,Higinio,MC,v,28/01/1972,Comunicaciones y Transportes,Secretario/a
+384,Espinoza Cárdenas,Juan Martín,MC,v,11/07/1972,Cultura y Cinematografía,Secretario/a
+23,Rodríguez Vázquez,Ariel,MC,v,01/11/1972,Federalismo y Desarrollo Municipal,Secretario/a
+73,Tagle Martínez,Martha Angélica,MC,f,26/11/1973,Gobernación y Población,Secretario/a
+500,Loya Hernández,Fabiola Raquel Guadalupe,MC,f,05/11/1974,Presupuesto y Cuenta Pública,Secretario/a
+119,Prudencio González,Carmen Julia,MC,f,30/06/1977,Seguridad Pública,Secretario/a
+526,Medina Ortíz,Adriana Gabriela,MC,f,25/06/1979,"Desarrollo Metropolitano, Urbano, Ordenamiento Territorial y Movilidad",Secretario/a
+526,Medina Ortíz,Adriana Gabriela,MC,f,25/06/1979,Puntos Constitucionales,Secretario/a
+367,Falomir Saenz,Alan Jesús,MC,v,23/02/1981,"Recursos Hidráulicos, Agua Potable y Saneamiento",Secretario/a
+312,Contreras González,Lourdes Celenia,MC,f,29/12/1984,Desarrollo Social,Secretario/a
+2,Salinas Reyes,Ruth,MC,f,19/02/1985,Vigilancia de la Auditoría Superior de la Federación,Secretario/a
+540,Ku Escalante,Kehila Abigail,MC,f,02/09/1985,Derechos Humanos,Secretario/a
+529,Méndez de la Luz Dauzón,Dulce María,MC,f,06/10/1985,Atención a Grupos Vulnerables,Secretario/a
+555,González García,Ana Priscila,MC,f,13/05,"Medio Ambiente, Sustentabilidad, Cambio Climático y Recursos Naturales",Secretario/a
+266,Villarreal Salazar,Juan Carlos,MC,v,11/08,Justicia,Secretario/a
+266,Villarreal Salazar,Juan Carlos,MC,v,11/08,Transparencia y Anticorrupción,Secretario/a
+546,Gómez Maldonado,Maiella Martha Gabriela,MC,f,26/09,Salud,Secretario/a
+612,Guzmán de la Torre,Francisco Javier,MORENA,v,29/08/1944,Ganadería,Integrante
+142,Rabelo Velasco,Roque Luis,MORENA,v,12/08/1945,Defensa Nacional,Integrante
+142,Rabelo Velasco,Roque Luis,MORENA,v,12/08/1945,Protección Civil y Prevención de Desastres,Integrante
+544,Gómez Álvarez,Pablo,MORENA,v,21/10/1946,Hacienda y Crédito Público,Integrante
+544,Gómez Álvarez,Pablo,MORENA,v,21/10/1946,Jurisdiccional,Integrante
+544,Gómez Álvarez,Pablo,MORENA,v,21/10/1946,Presupuesto y Cuenta Pública,Integrante
+544,Gómez Álvarez,Pablo,MORENA,v,21/10/1946,Puntos Constitucionales,Integrante
+239,Zavaleta Sánchez,Graciela,MORENA,f,23/12/1946,Derechos de la Niñez y Adolescencia,Integrante
+239,Zavaleta Sánchez,Graciela,MORENA,f,23/12/1946,Salud,Integrante
+511,Moreno Gil,Mario Ismael,MORENA,v,17/06/1948,Federalismo y Desarrollo Municipal,Integrante
+511,Moreno Gil,Mario Ismael,MORENA,v,17/06/1948,Radio y Televisión,Integrante
+330,Cano González,Susana,MORENA,f,02/06/1949,Derechos de la Niñez y Adolescencia,Integrante
+330,Cano González,Susana,MORENA,f,02/06/1949,Derechos Humanos,Integrante
+135,Rodríguez Arellano,Ediltrudis,MORENA,f,23/06/1954,Marina,Integrante
+135,Rodríguez Arellano,Ediltrudis,MORENA,f,23/06/1954,"Medio Ambiente, Sustentabilidad, Cambio Climático y Recursos Naturales",Integrante
+582,Herrera Chávez,Samuel,MORENA,v,17/09/1954,Asuntos Migratorios,Integrante
+582,Herrera Chávez,Samuel,MORENA,v,17/09/1954,"Desarrollo Metropolitano, Urbano, Ordenamiento Territorial y Movilidad",Integrante
+605,Guillén Quiroz,Ana Lilia,MORENA,f,05/02/1955,Economía Social y Fomento del Cooperativismo,Integrante
+605,Guillén Quiroz,Ana Lilia,MORENA,f,05/02/1955,Energía,Integrante
+404,Arrieta Sánchez,Eleuterio,MORENA,v,02/05/1955,Salud,Integrante
+404,Arrieta Sánchez,Eleuterio,MORENA,v,02/05/1955,Trabajo y Previsión Social,Integrante
+134,Rocha Vega,Efraín,MORENA,v,12/05/1955,Ganadería,Integrante
+134,Rocha Vega,Efraín,MORENA,v,12/05/1955,"Medio Ambiente, Sustentabilidad, Cambio Climático y Recursos Naturales",Integrante
+351,Farías Zambrano,Melba Nelia,MORENA,f,06/07/1955,Igualdad de Género,Integrante
+124,Rivera Castillo,Fortunato,MORENA,v,17/11/1955,Ganadería,Integrante
+474,Martínez Flores,Juan,MORENA,v,03/04/1956,Comunicaciones y Transportes,Integrante
+474,Martínez Flores,Juan,MORENA,v,03/04/1956,Salud,Integrante
+528,Mejía Cruz,María Esther,MORENA,f,08/07/1956,Presupuesto y Cuenta Pública,Integrante
+528,Mejía Cruz,María Esther,MORENA,f,08/07/1956,Vivienda,Integrante
+178,Veloz Silva,María Luisa,MORENA,f,26/08/1956,Justicia,Integrante
+178,Veloz Silva,María Luisa,MORENA,f,26/08/1956,Trabajo y Previsión Social,Integrante
+591,Interian Gallegos,Limbert Iván de Jesús,MORENA,v,13/09/1956,"Ciencia, Tecnología e Innovación",Integrante
+591,Interian Gallegos,Limbert Iván de Jesús,MORENA,v,13/09/1956,Seguridad Pública,Integrante
+583,Herrera Pérez,Gonzalo,MORENA,v,07/07/1957,Asuntos Migratorios,Integrante
+583,Herrera Pérez,Gonzalo,MORENA,v,07/07/1957,Ganadería,Integrante
+14,Sánchez Barrios,Carlos,MORENA,v,17/08/1957,Comunicaciones y Transportes,Integrante
+464,García Anaya,Lidia,MORENA,f,31/10/1957,Presupuesto y Cuenta Pública,Integrante
+464,García Anaya,Lidia,MORENA,f,31/10/1957,Puntos Constitucionales,Integrante
+113,Palma Olvera,Carmen Patricia,MORENA,f,13/01/1958,Educación,Integrante
+113,Palma Olvera,Carmen Patricia,MORENA,f,13/01/1958,Igualdad de Género,Integrante
+466,García Corpus,Teófilo Manuel,MORENA,v,06/02/1958,Protección Civil y Prevención de Desastres,Integrante
+466,García Corpus,Teófilo Manuel,MORENA,v,06/02/1958,Pueblos Indígenas,Integrante
+415,Aguilar Molina,Leticia Arlett,MORENA,f,01/03/1958,"Desarrollo Metropolitano, Urbano, Ordenamiento Territorial y Movilidad",Integrante
+415,Aguilar Molina,Leticia Arlett,MORENA,f,01/03/1958,Desarrollo Social,Integrante
+443,Calderón Salas,Rodrigo,MORENA,v,05/04/1958,Seguridad Pública,Integrante
+443,Calderón Salas,Rodrigo,MORENA,v,05/04/1958,Transparencia y Anticorrupción,Integrante
+594,Jiménez Andrade,Lorena del Socorro,MORENA,f,21/10/1958,"Desarrollo y Conservación Rural, Agrícola y Autosuficiencia Alimentaria",Integrante
+594,Jiménez Andrade,Lorena del Socorro,MORENA,f,21/10/1958,"Recursos Hidráulicos, Agua Potable y Saneamiento",Integrante
+236,Zamora Valdez,Casimiro,MORENA,v,15/11/1958,Economía Social y Fomento del Cooperativismo,Integrante
+236,Zamora Valdez,Casimiro,MORENA,v,15/11/1958,Pesca,Integrante
+527,Medina Pérez,Marco Antonio,MORENA,v,17/12/1958,Justicia,Integrante
+527,Medina Pérez,Marco Antonio,MORENA,v,17/12/1958,Trabajo y Previsión Social,Integrante
+458,Barajas Barajas,Esteban,MORENA,v,20/01/1959,"Medio Ambiente, Sustentabilidad, Cambio Climático y Recursos Naturales",Integrante
+458,Barajas Barajas,Esteban,MORENA,v,20/01/1959,Turismo,Integrante
+567,García Guardado,María de Jesús,MORENA,f,03/04/1959,Educación,Integrante
+567,García Guardado,María de Jesús,MORENA,f,03/04/1959,Ganadería,Integrante
+254,Yáñez Centeno y Cabrera,Claudia Valeria,MORENA,f,02/05/1959,Comunicaciones y Transportes,Integrante
+70,Solís Barrera,María Marivel,MORENA,f,03/01/1960,Infraestructura,Integrante
+70,Solís Barrera,María Marivel,MORENA,f,03/01/1960,Turismo,Integrante
+491,López Aparicio,Delfino,MORENA,v,09/02/1960,"Ciencia, Tecnología e Innovación",Integrante
+491,López Aparicio,Delfino,MORENA,v,09/02/1960,Pueblos Indígenas,Integrante
+335,Carrazco Macías,Olegaria,MORENA,f,12/04/1960,Pesca,Integrante
+335,Carrazco Macías,Olegaria,MORENA,f,12/04/1960,Trabajo y Previsión Social,Integrante
+585,Hidalgo Ponce,Javier Ariel,MORENA,v,14/05/1960,Puntos Constitucionales,Integrante
+585,Hidalgo Ponce,Javier Ariel,MORENA,v,14/05/1960,Salud,Integrante
+65,Santos Díaz,Edelmiro Santiago,MORENA,v,02/07/1960,"Economía, Comercio y Competitividad",Integrante
+65,Santos Díaz,Edelmiro Santiago,MORENA,v,02/07/1960,Salud,Integrante
+513,Medel Palma,Carmen,MORENA,f,26/09/1960,Ganadería,Integrante
+513,Medel Palma,Carmen,MORENA,f,26/09/1960,Seguridad Social,Integrante
+395,Ambrocio Gachuz,José Guadalupe,MORENA,v,12/12/1960,Presupuesto y Cuenta Pública,Integrante
+395,Ambrocio Gachuz,José Guadalupe,MORENA,v,12/12/1960,"Régimen, Reglamentos y Prácticas Parlamentarias",Integrante
+329,Chico Herrera,Miguel Ángel,MORENA,v,17/03/1961,Defensa Nacional,Integrante
+329,Chico Herrera,Miguel Ángel,MORENA,v,17/03/1961,Gobernación y Población,Integrante
+329,Chico Herrera,Miguel Ángel,MORENA,v,17/03/1961,Trabajo y Previsión Social,Integrante
+401,Arenas Madrigal,Edgar Eduardo,MORENA,v,29/05/1963,Infraestructura,Integrante
+401,Arenas Madrigal,Edgar Eduardo,MORENA,v,29/05/1963,Trabajo y Previsión Social,Integrante
+470,Manzano Salazar,Javier,MORENA,v,05/06/1963,Asuntos Frontera Sur,Integrante
+470,Manzano Salazar,Javier,MORENA,v,05/06/1963,Asuntos Migratorios,Integrante
+514,Murguía Soto,Ulises,MORENA,v,09/07/1963,Defensa Nacional,Integrante
+514,Murguía Soto,Ulises,MORENA,v,09/07/1963,Seguridad Social,Integrante
+346,Chávez Pérez,María,MORENA,f,15/08/1963,Desarrollo Social,Integrante
+346,Chávez Pérez,María,MORENA,f,15/08/1963,Educación,Integrante
+368,Exsome Zapata,Ricardo Francisco,MORENA,v,28/09/1963,Energía,Integrante
+599,Huerta Martínez,Manuel,MORENA,v,02/12/1963,Defensa Nacional,Integrante
+599,Huerta Martínez,Manuel,MORENA,v,02/12/1963,Pueblos Indígenas,Integrante
+400,Antonio Altamirano,Carol,MORENA,v,13/12/1963,Energía,Integrante
+400,Antonio Altamirano,Carol,MORENA,v,13/12/1963,Vigilancia de la Auditoría Superior de la Federación,Integrante
+423,Alegre Salazar,Luis Javier,MORENA,v,04/02/1964,Comunicaciones y Transportes,Integrante
+423,Alegre Salazar,Luis Javier,MORENA,v,04/02/1964,Radio y Televisión,Integrante
+600,Guerrero Barrera,Yolanda,MORENA,f,21/02/1964,Comunicaciones y Transportes,Integrante
+600,Guerrero Barrera,Yolanda,MORENA,f,21/02/1964,"Economía, Comercio y Competitividad",Integrante
+348,Delsol Estrada,José Ricardo,MORENA,v,29/03/1964,"Medio Ambiente, Sustentabilidad, Cambio Climático y Recursos Naturales",Integrante
+348,Delsol Estrada,José Ricardo,MORENA,v,29/03/1964,Vigilancia de la Auditoría Superior de la Federación,Integrante
+267,Villavicencio Ayala,Silvia Lorena,MORENA,f,12/06/1964,Cultura y Cinematografía,Integrante
+267,Villavicencio Ayala,Silvia Lorena,MORENA,f,12/06/1964,Derechos Humanos,Integrante
+267,Villavicencio Ayala,Silvia Lorena,MORENA,f,12/06/1964,Justicia,Integrante
+114,Pani Barragán,Alejandra,MORENA,f,17/07/1964,Cultura y Cinematografía,Integrante
+114,Pani Barragán,Alejandra,MORENA,f,17/07/1964,Hacienda y Crédito Público,Integrante
+320,Clouthier Carrillo,Tatiana,MORENA,f,12/08/1964,Gobernación y Población,Integrante
+320,Clouthier Carrillo,Tatiana,MORENA,f,12/08/1964,Vigilancia de la Auditoría Superior de la Federación,Integrante
+533,Merlín García,María del Rosario,MORENA,f,01/11/1964,Comunicaciones y Transportes,Integrante
+533,Merlín García,María del Rosario,MORENA,f,01/11/1964,Energía,Integrante
+270,Villegas Guarneros,Dulce María Corina,MORENA,f,04/12/1964,Deporte,Integrante
+270,Villegas Guarneros,Dulce María Corina,MORENA,f,04/12/1964,Turismo,Integrante
+333,Carranza Aréas,Julio,MORENA,v,14/03/1965,"Ciencia, Tecnología e Innovación",Integrante
+333,Carranza Aréas,Julio,MORENA,v,14/03/1965,"Recursos Hidráulicos, Agua Potable y Saneamiento",Integrante
+350,Flores Olivo,Lucía,MORENA,f,09/04/1965,Comunicaciones y Transportes,Integrante
+350,Flores Olivo,Lucía,MORENA,f,09/04/1965,Seguridad Social,Integrante
+51,Valencia Cruz,Rosalba,MORENA,f,25/07/1965,Puntos Constitucionales,Integrante
+431,Blas López,Víctor,MORENA,v,09/08/1965,Protección Civil y Prevención de Desastres,Integrante
+499,López Rodríguez,Abelina,MORENA,f,23/09/1965,Defensa Nacional,Integrante
+499,López Rodríguez,Abelina,MORENA,f,23/09/1965,Presupuesto y Cuenta Pública,Integrante
+9,Salinas Narváez,Javier,MORENA,v,22/11/1965,Hacienda y Crédito Público,Integrante
+398,Alfaro Morales,María Isabel,MORENA,f,24/02/1966,Atención a Grupos Vulnerables,Integrante
+398,Alfaro Morales,María Isabel,MORENA,f,24/02/1966,Deporte,Integrante
+60,Tenorio Adame,Paola,MORENA,f,20/04/1966,Infraestructura,Integrante
+60,Tenorio Adame,Paola,MORENA,f,20/04/1966,Puntos Constitucionales,Integrante
+505,Mayer Bretón,Sergio,MORENA,v,21/05/1966,"Ciencia, Tecnología e Innovación",Integrante
+505,Mayer Bretón,Sergio,MORENA,v,21/05/1966,Derechos de la Niñez y Adolescencia,Integrante
+108,Ortega Nájera,Hilda Patricia,MORENA,f,10/08/1966,"Desarrollo Metropolitano, Urbano, Ordenamiento Territorial y Movilidad",Integrante
+108,Ortega Nájera,Hilda Patricia,MORENA,f,10/08/1966,Infraestructura,Integrante
+549,Gómez Ventura,Manuel,MORENA,v,10/11/1966,Hacienda y Crédito Público,Integrante
+549,Gómez Ventura,Manuel,MORENA,v,10/11/1966,Transparencia y Anticorrupción,Integrante
+26,Rojas Martínez,Beatriz,MORENA,f,21/12/1966,"Recursos Hidráulicos, Agua Potable y Saneamiento",Integrante
+26,Rojas Martínez,Beatriz,MORENA,f,21/12/1966,Transparencia y Anticorrupción,Integrante
+352,Farrera Esponda,Juan Enrique,MORENA,v,21/03/1967,Asuntos Migratorios,Integrante
+352,Farrera Esponda,Juan Enrique,MORENA,v,21/03/1967,Protección Civil y Prevención de Desastres,Integrante
+152,Regalado Mardueño,Carmina Yadira,MORENA,f,06/11/1967,Economía Social y Fomento del Cooperativismo,Integrante
+152,Regalado Mardueño,Carmina Yadira,MORENA,f,06/11/1967,Turismo,Integrante
+139,Reyes López,Valentín,MORENA,v,13/02/1968,Gobernación y Población,Integrante
+139,Reyes López,Valentín,MORENA,v,13/02/1968,Infraestructura,Integrante
+328,Contreras Castillo,Armando,MORENA,v,13/04/1968,Justicia,Integrante
+328,Contreras Castillo,Armando,MORENA,v,13/04/1968,"Recursos Hidráulicos, Agua Potable y Saneamiento",Integrante
+328,Contreras Castillo,Armando,MORENA,v,13/04/1968,Transparencia y Anticorrupción,Integrante
+105,Onofre Vázquez,Vicente Alberto,MORENA,v,06/04/1969,Radio y Televisión,Integrante
+95,Pool Moo,Jesús de los Ángeles,MORENA,v,22/12/1969,Presupuesto y Cuenta Pública,Integrante
+95,Pool Moo,Jesús de los Ángeles,MORENA,v,22/12/1969,Seguridad Pública,Integrante
+345,Cázarez Yáñez,Martina,MORENA,f,07/03/1970,Radio y Televisión,Integrante
+359,Díaz García,María Elizabeth,MORENA,f,10/02/1971,Federalismo y Desarrollo Municipal,Integrante
+359,Díaz García,María Elizabeth,MORENA,f,10/02/1971,Justicia,Integrante
+321,De la Cruz Delucio,Patricia del Carmen,MORENA,f,21/06/1971,Asuntos Frontera Sur,Integrante
+321,De la Cruz Delucio,Patricia del Carmen,MORENA,f,21/06/1971,Pueblos Indígenas,Integrante
+265,Villarreal Pasaret,Francisco Jorge,MORENA,v,24/09/1971,Asuntos Migratorios,Integrante
+265,Villarreal Pasaret,Francisco Jorge,MORENA,v,24/09/1971,Seguridad Pública,Integrante
+131,Robles Ortíz,Martha,MORENA,f,19/12/1971,Atención a Grupos Vulnerables,Integrante
+131,Robles Ortíz,Martha,MORENA,f,19/12/1971,Turismo,Integrante
+13,Sánchez Barrales Zavalza,Raúl Ernesto,MORENA,v,19/12/1971,Presupuesto y Cuenta Pública,Integrante
+13,Sánchez Barrales Zavalza,Raúl Ernesto,MORENA,v,19/12/1971,Transparencia y Anticorrupción,Integrante
+606,Gutiérrez Gutiérrez,Daniel,MORENA,v,15/02/1972,"Desarrollo y Conservación Rural, Agrícola y Autosuficiencia Alimentaria",Integrante
+606,Gutiérrez Gutiérrez,Daniel,MORENA,v,15/02/1972,Presupuesto y Cuenta Pública,Integrante
+93,Ponce Cobos,Alejandro,MORENA,v,17/04/1972,Protección Civil y Prevención de Desastres,Integrante
+93,Ponce Cobos,Alejandro,MORENA,v,17/04/1972,Pueblos Indígenas,Integrante
+516,Navarrete Rivera,Alma Delia,MORENA,f,29/07/1972,Gobernación y Población,Integrante
+516,Navarrete Rivera,Alma Delia,MORENA,f,29/07/1972,"Recursos Hidráulicos, Agua Potable y Saneamiento",Integrante
+145,Ramírez Lucero,Martha Patricia,MORENA,f,03/09/1972,Puntos Constitucionales,Integrante
+101,Ocampo Manzanares,Araceli,MORENA,f,15/10/1972,Economía Social y Fomento del Cooperativismo,Integrante
+101,Ocampo Manzanares,Araceli,MORENA,f,15/10/1972,Pueblos Indígenas,Integrante
+260,Villa Villegas,Alberto,MORENA,v,25/10/1972,Relaciones Exteriores,Integrante
+260,Villa Villegas,Alberto,MORENA,v,25/10/1972,Vivienda,Integrante
+389,Andrade Zavala,Marco Antonio,MORENA,v,17/11/1972,Hacienda y Crédito Público,Integrante
+389,Andrade Zavala,Marco Antonio,MORENA,v,17/11/1972,Presupuesto y Cuenta Pública,Integrante
+383,Espinosa de los Monteros García,Adriana María Guadalupe,MORENA,f,11/12/1972,"Desarrollo Metropolitano, Urbano, Ordenamiento Territorial y Movilidad",Integrante
+383,Espinosa de los Monteros García,Adriana María Guadalupe,MORENA,f,11/12/1972,Desarrollo Social,Integrante
+28,Román Ávila,María Guadalupe,MORENA,f,24/02/1973,"Desarrollo Metropolitano, Urbano, Ordenamiento Territorial y Movilidad",Integrante
+28,Román Ávila,María Guadalupe,MORENA,f,24/02/1973,Economía Social y Fomento del Cooperativismo,Integrante
+103,Ochoa Valdivia,Zaira,MORENA,f,05/03/1973,Hacienda y Crédito Público,Integrante
+103,Ochoa Valdivia,Zaira,MORENA,f,05/03/1973,Vivienda,Integrante
+81,Pérez Bernabé,Jaime Humberto,MORENA,v,01/04/1973,Marina,Integrante
+81,Pérez Bernabé,Jaime Humberto,MORENA,v,01/04/1973,Transparencia y Anticorrupción,Integrante
+54,Varela López,Víctor Gabriel,MORENA,v,20/04/1973,"Desarrollo Metropolitano, Urbano, Ordenamiento Territorial y Movilidad",Integrante
+54,Varela López,Víctor Gabriel,MORENA,v,20/04/1973,Juventud y Diversidad Sexual,Integrante
+574,García Rubio,Agustín,MORENA,v,05/06/1973,"Economía, Comercio y Competitividad",Integrante
+574,García Rubio,Agustín,MORENA,v,05/06/1973,Infraestructura,Integrante
+494,López Chávez,María Beatriz,MORENA,f,18/08/1973,Vivienda,Integrante
+420,Alavéz Ruíz,Aleida,MORENA,f,10/01/1974,"Desarrollo Metropolitano, Urbano, Ordenamiento Territorial y Movilidad",Integrante
+420,Alavéz Ruíz,Aleida,MORENA,f,10/01/1974,Hacienda y Crédito Público,Integrante
+150,Ramos Sotelo,Guadalupe,MORENA,f,01/02/1974,Atención a Grupos Vulnerables,Integrante
+150,Ramos Sotelo,Guadalupe,MORENA,f,01/02/1974,Cultura y Cinematografía,Integrante
+88,Pérez Rodríguez,Claudia,MORENA,f,29/06/1974,"Régimen, Reglamentos y Prácticas Parlamentarias",Integrante
+88,Pérez Rodríguez,Claudia,MORENA,f,29/06/1974,Relaciones Exteriores,Integrante
+412,Aguilar Castillo,Heriberto Marcelo,MORENA,v,12/02/1975,Infraestructura,Integrante
+412,Aguilar Castillo,Heriberto Marcelo,MORENA,v,12/02/1975,Marina,Integrante
+414,Aguilar Linda,Bonifacio,MORENA,v,08/05/1976,"Desarrollo y Conservación Rural, Agrícola y Autosuficiencia Alimentaria",Integrante
+414,Aguilar Linda,Bonifacio,MORENA,v,08/05/1976,Vivienda,Integrante
+138,Reyes Miguel,Idalia,MORENA,f,15/08/1976,Deporte,Integrante
+138,Reyes Miguel,Idalia,MORENA,f,15/08/1976,Educación,Integrante
+436,Briceño Zuloaga,María Wendy,MORENA,f,15/09/1976,Federalismo y Desarrollo Municipal,Integrante
+436,Briceño Zuloaga,María Wendy,MORENA,f,15/09/1976,Seguridad Pública,Integrante
+459,Barrera Badillo,Rocío,MORENA,f,1/10/1976,Presupuesto y Cuenta Pública,Integrante
+459,Barrera Badillo,Rocío,MORENA,f,1/10/1976,"Régimen, Reglamentos y Prácticas Parlamentarias",Integrante
+592,Jarero Velázquez,Miguel Pavel,MORENA,v,19/10/1976,Pesca,Integrante
+592,Jarero Velázquez,Miguel Pavel,MORENA,v,19/10/1976,Presupuesto y Cuenta Pública,Integrante
+53,Valles Sampedro,Lorenia Iveth,MORENA,f,18/12/1976,Hacienda y Crédito Público,Integrante
+53,Valles Sampedro,Lorenia Iveth,MORENA,f,18/12/1976,"Medio Ambiente, Sustentabilidad, Cambio Climático y Recursos Naturales",Integrante
+53,Valles Sampedro,Lorenia Iveth,MORENA,f,18/12/1976,Relaciones Exteriores,Integrante
+424,Alejandro Candelaria,Maximino,MORENA,v,08/01/1977,Asuntos Frontera Norte,Integrante
+424,Alejandro Candelaria,Maximino,MORENA,v,08/01/1977,Asuntos Frontera Sur,Integrante
+2080,Gordillo Moreno,Alfredo Antonio,MORENA,v,02/02/1977,Deporte,Integrante
+2080,Gordillo Moreno,Alfredo Antonio,MORENA,v,02/02/1977,Presupuesto y Cuenta Pública,Integrante
+467,Martínez Aké,Carlos Enrique,MORENA,v,25/04/1977,Asuntos Frontera Sur,Integrante
+467,Martínez Aké,Carlos Enrique,MORENA,v,25/04/1977,Infraestructura,Integrante
+112,Palacios Cordero,Lucio Ernesto,MORENA,v,07/07/1977,Economía Social y Fomento del Cooperativismo,Integrante
+112,Palacios Cordero,Lucio Ernesto,MORENA,v,07/07/1977,Puntos Constitucionales,Integrante
+564,Juan Carlos,Irma,MORENA,v,19/07/1977,Federalismo y Desarrollo Municipal,Integrante
+564,Juan Carlos,Irma,MORENA,v,19/07/1977,"Medio Ambiente, Sustentabilidad, Cambio Climático y Recursos Naturales",Integrante
+6,Salazar Fernández,Luis Fernando,MORENA,v,18/11/1977,Gobernación y Población,Integrante
+6,Salazar Fernández,Luis Fernando,MORENA,v,18/11/1977,Jurisdiccional,Integrante
+62,Santiago Chepi,Azael,MORENA,v,15/12/1977,"Economía, Comercio y Competitividad",Integrante
+62,Santiago Chepi,Azael,MORENA,v,15/12/1977,Protección Civil y Prevención de Desastres,Integrante
+418,Aguilera Chairez,Maribel,MORENA,f,20/12/1977,Asuntos Migratorios,Integrante
+418,Aguilera Chairez,Maribel,MORENA,f,20/12/1977,"Economía, Comercio y Competitividad",Integrante
+316,Cruz Santos,Flora Tania,MORENA,f,27/01/1978,Comunicaciones y Transportes,Integrante
+316,Cruz Santos,Flora Tania,MORENA,f,27/01/1978,Gobernación y Población,Integrante
+115,Parra Juárez,Inés,MORENA,f,20/04/1978,Cultura y Cinematografía,Integrante
+115,Parra Juárez,Inés,MORENA,f,20/04/1978,Pueblos Indígenas,Integrante
+518,Noriega Galaz,Martha Lizeth,MORENA,f,27/02/1979,Asuntos Frontera Norte,Integrante
+518,Noriega Galaz,Martha Lizeth,MORENA,f,27/02/1979,"Medio Ambiente, Sustentabilidad, Cambio Climático y Recursos Naturales",Integrante
+47,Torres Piña,Carlos,MORENA,v,01/03/1979,Seguridad Social,Integrante
+543,González Castañeda,Sandra Paola,MORENA,f,31/03/1979,Energía,Integrante
+543,González Castañeda,Sandra Paola,MORENA,f,31/03/1979,Igualdad de Género,Integrante
+318,Cuevas Barron,Gabriela,MORENA,f,03/04/1979,"Desarrollo Metropolitano, Urbano, Ordenamiento Territorial y Movilidad",Integrante
+309,Sandoval Soberanes,Lucinda,MORENA,f,18/02/1980,Pueblos Indígenas,Integrante
+309,Sandoval Soberanes,Lucinda,MORENA,f,18/02/1980,Seguridad Social,Integrante
+615,Hernández Pérez,César Agustín,MORENA,v,01/03/1980,"Desarrollo Metropolitano, Urbano, Ordenamiento Territorial y Movilidad",Integrante
+615,Hernández Pérez,César Agustín,MORENA,v,01/03/1980,Gobernación y Población,Integrante
+64,Santiago Marcos,Nancy Yadira,MORENA,f,04/05/1980,"Desarrollo y Conservación Rural, Agrícola y Autosuficiencia Alimentaria",Integrante
+64,Santiago Marcos,Nancy Yadira,MORENA,f,04/05/1980,Presupuesto y Cuenta Pública,Integrante
+90,Pérez Segura,Laura Imelda,MORENA,f,30/05/1980,Relaciones Exteriores,Integrante
+90,Pérez Segura,Laura Imelda,MORENA,f,30/05/1980,Vigilancia de la Auditoría Superior de la Federación,Integrante
+541,Montes Nieves,Jorge Luis,MORENA,v,14/01/1981,Educación,Integrante
+541,Montes Nieves,Jorge Luis,MORENA,v,14/01/1981,"Régimen, Reglamentos y Prácticas Parlamentarias",Integrante
+541,Montes Nieves,Jorge Luis,MORENA,v,14/01/1981,Vivienda,Integrante
+448,Bautista Rivera,David,MORENA,v,27/03/1981,Vivienda,Integrante
+462,Bautista Bravo,Juan Ángel,MORENA,v,25/07/1981,Deporte,Integrante
+462,Bautista Bravo,Juan Ángel,MORENA,v,25/07/1981,Federalismo y Desarrollo Municipal,Integrante
+375,Elizondo Garrido,Francisco,MORENA,v,17/01/1982,Hacienda y Crédito Público,Integrante
+343,Castillo Lozano,Katia Alejandra,MORENA,f,20/10/1982,Igualdad de Género,Integrante
+343,Castillo Lozano,Katia Alejandra,MORENA,f,20/10/1982,Presupuesto y Cuenta Pública,Integrante
+607,Guerra Mena,Juanita,MORENA,f,19/03/1983,Comunicaciones y Transportes,Integrante
+607,Guerra Mena,Juanita,MORENA,f,19/03/1983,Hacienda y Crédito Público,Integrante
+104,Olvera Bautista,Sandra Simey,MORENA,f,20/08/1983,Cultura y Cinematografía,Integrante
+104,Olvera Bautista,Sandra Simey,MORENA,f,20/08/1983,Desarrollo Social,Integrante
+37,Rosas Uribe,Erika Mariana,MORENA,f,09/01/1984,Comunicaciones y Transportes,Integrante
+37,Rosas Uribe,Erika Mariana,MORENA,f,09/01/1984,Educación,Integrante
+117,Prado de los Santos,Miguel,MORENA,v,19/01/1984,Radio y Televisión,Integrante
+433,Bonilla Herrera,Raquel,MORENA,f,10/03/1984,Energía,Integrante
+433,Bonilla Herrera,Raquel,MORENA,f,10/03/1984,Turismo,Integrante
+403,Novella Macías,Oscar Rafael,MORENA,v,12/10/1984,"Desarrollo y Conservación Rural, Agrícola y Autosuficiencia Alimentaria",Integrante
+403,Novella Macías,Oscar Rafael,MORENA,v,12/10/1984,Educación,Integrante
+106,Orihuela Nava,David,MORENA,v,31/01/1985,Puntos Constitucionales,Integrante
+106,Orihuela Nava,David,MORENA,v,31/01/1985,"Recursos Hidráulicos, Agua Potable y Saneamiento",Integrante
+473,Martínez Aguilar,Emeteria Claudia,MORENA,f,03/03/1985,Atención a Grupos Vulnerables,Integrante
+473,Martínez Aguilar,Emeteria Claudia,MORENA,f,03/03/1985,"Medio Ambiente, Sustentabilidad, Cambio Climático y Recursos Naturales",Integrante
+63,Santiago Manuel,Irán,MORENA,v,04/03/1985,Educación,Integrante
+63,Santiago Manuel,Irán,MORENA,v,04/03/1985,Radio y Televisión,Integrante
+63,Santiago Manuel,Irán,MORENA,v,04/03/1985,Seguridad Social,Integrante
+148,Ramos Cruz,Verónica,MORENA,f,01/05/1985,Economía Social y Fomento del Cooperativismo,Integrante
+148,Ramos Cruz,Verónica,MORENA,f,01/05/1985,Vivienda,Integrante
+445,Bayardo Cabrera,Rosa María,MORENA,f,12/12/1985,"Medio Ambiente, Sustentabilidad, Cambio Climático y Recursos Naturales",Integrante
+445,Bayardo Cabrera,Rosa María,MORENA,f,12/12/1985,Turismo,Integrante
+531,Mercado Torres,Edith Marisol,MORENA,f,15/09/1986,Marina,Integrante
+531,Mercado Torres,Edith Marisol,MORENA,f,15/09/1986,Salud,Integrante
+256,Vences Valencia,Julieta Kristal,MORENA,f,24/10/1986,Igualdad de Género,Integrante
+256,Vences Valencia,Julieta Kristal,MORENA,f,24/10/1986,Protección Civil y Prevención de Desastres,Integrante
+154,Reyes Carmona,Emmanuel,MORENA,v,29/06/1987,Atención a Grupos Vulnerables,Integrante
+154,Reyes Carmona,Emmanuel,MORENA,v,29/06/1987,Comunicaciones y Transportes,Integrante
+146,Ramírez Navarrete,Francisco Javier,MORENA,v,03/01/1988,Educación,Integrante
+146,Ramírez Navarrete,Francisco Javier,MORENA,v,03/01/1988,Protección Civil y Prevención de Desastres,Integrante
+370,Espinoza López,Brenda,MORENA,f,19/06/1988,"Economía, Comercio y Competitividad",Integrante
+370,Espinoza López,Brenda,MORENA,f,19/06/1988,Trabajo y Previsión Social,Integrante
+456,Bahena Jiménez,Socorro,MORENA,f,10/08/1988,Derechos Humanos,Integrante
+456,Bahena Jiménez,Socorro,MORENA,f,10/08/1988,Salud,Integrante
+57,Vargas Meraz,Teresita de Jesús,MORENA,f,16/12/1989,Asuntos Frontera Norte,Integrante
+57,Vargas Meraz,Teresita de Jesús,MORENA,f,16/12/1989,Federalismo y Desarrollo Municipal,Integrante
+454,Badillo Moreno,Cuauhtli Fernando,MORENA,v,11/05/1990,Deporte,Integrante
+454,Badillo Moreno,Cuauhtli Fernando,MORENA,v,11/05/1990,"Régimen, Reglamentos y Prácticas Parlamentarias",Integrante
+388,García Cayetano,Dorheny,MORENA,f,25/07/1990,Derechos Humanos,Integrante
+388,García Cayetano,Dorheny,MORENA,f,25/07/1990,Juventud y Diversidad Sexual,Integrante
+1,Abasolo Sánchez,Pedro Daniel,MORENA,v,03/02/1991,Seguridad Pública,Integrante
+1,Abasolo Sánchez,Pedro Daniel,MORENA,v,03/02/1991,Trabajo y Previsión Social,Integrante
+463,Bautista Peláez,María Del Carmen,MORENA,f,03/04/1991,Atención a Grupos Vulnerables,Integrante
+463,Bautista Peláez,María Del Carmen,MORENA,f,03/04/1991,Turismo,Integrante
+259,Viedma Velázquez,Alejandro,MORENA,v,11/11/1991,Puntos Constitucionales,Integrante
+259,Viedma Velázquez,Alejandro,MORENA,v,11/11/1991,Trabajo y Previsión Social,Integrante
+56,Vargas Hernández,Lidia Nallely,MORENA,f,03/08/1992,Protección Civil y Prevención de Desastres,Integrante
+56,Vargas Hernández,Lidia Nallely,MORENA,f,03/08/1992,"Régimen, Reglamentos y Prácticas Parlamentarias",Integrante
+427,Ascencio Ortega,Reyna Celeste,MORENA,f,05/01/1993,Atención a Grupos Vulnerables,Integrante
+427,Ascencio Ortega,Reyna Celeste,MORENA,f,05/01/1993,"Ciencia, Tecnología e Innovación",Integrante
+603,Guerra Méndez,Lizeth Amayrani,MORENA,f,18/01/1994,Gobernación y Población,Integrante
+603,Guerra Méndez,Lizeth Amayrani,MORENA,f,18/01/1994,Juventud y Diversidad Sexual,Integrante
+94,Ponce Méndez,María Geraldine,MORENA,f,04/04/1994,Deporte,Integrante
+94,Ponce Méndez,María Geraldine,MORENA,f,04/04/1994,Relaciones Exteriores,Integrante
+416,Aguilera Brenes,Sebastián,MORENA,v,10/06/1995,Juventud y Diversidad Sexual,Integrante
+35,Rosas Martínez,Luz Estefanía,MORENA,f,22/08/1995,Infraestructura,Integrante
+35,Rosas Martínez,Luz Estefanía,MORENA,f,22/08/1995,"Régimen, Reglamentos y Prácticas Parlamentarias",Integrante
+461,Barroso Chávez,Alejandro,MORENA,v,04/01,Presupuesto y Cuenta Pública,Integrante
+461,Barroso Chávez,Alejandro,MORENA,v,04/01,Seguridad Social,Integrante
+534,Mier Velazco,Moisés Ignacio,MORENA,v,04/01,Presupuesto y Cuenta Pública,Integrante
+534,Mier Velazco,Moisés Ignacio,MORENA,v,04/01,Seguridad Pública,Integrante
+99,Rodríguez Gómez,Eraclio,MORENA,v,04/01,Asuntos Frontera Norte,Integrante
+2422,Callejas Romero,Gustavo,MORENA,v,07/01,"Economía, Comercio y Competitividad",Integrante
+2422,Callejas Romero,Gustavo,MORENA,v,07/01,Justicia,Integrante
+15,Sánchez Castro,Anita,MORENA,f,07/01,Atención a Grupos Vulnerables,Integrante
+15,Sánchez Castro,Anita,MORENA,f,07/01,Desarrollo Social,Integrante
+76,Tellez Infante,Jannet,MORENA,f,08/01,Derechos Humanos,Integrante
+76,Tellez Infante,Jannet,MORENA,f,08/01,Desarrollo Social,Integrante
+532,Merino García,Virginia,MORENA,f,11/01,Pueblos Indígenas,Integrante
+532,Merino García,Virginia,MORENA,f,11/01,Vivienda,Integrante
+537,Mojica Toledo,Alejandro,MORENA,v,12/01,Presupuesto y Cuenta Pública,Integrante
+537,Mojica Toledo,Alejandro,MORENA,v,12/01,Transparencia y Anticorrupción,Integrante
+476,Martínez González,Laura,MORENA,f,15/01,Derechos de la Niñez y Adolescencia,Integrante
+476,Martínez González,Laura,MORENA,f,15/01,Igualdad de Género,Integrante
+355,Fernández Cruz,Nayeli Arlen,MORENA,f,16/01,"Medio Ambiente, Sustentabilidad, Cambio Climático y Recursos Naturales",Integrante
+355,Fernández Cruz,Nayeli Arlen,MORENA,f,16/01,Vigilancia de la Auditoría Superior de la Federación,Integrante
+317,Cuaxiloa Serrano,Susana Beatriz,MORENA,f,19/01,Derechos de la Niñez y Adolescencia,Integrante
+317,Cuaxiloa Serrano,Susana Beatriz,MORENA,f,19/01,Transparencia y Anticorrupción,Integrante
+373,Domínguez Rodríguez,Roberto Ángel,MORENA,v,27/01,Federalismo y Desarrollo Municipal,Integrante
+373,Domínguez Rodríguez,Roberto Ángel,MORENA,v,27/01,Gobernación y Población,Integrante
+157,Vázquez Vázquez,Alfredo,MORENA,v,27/01,Asuntos Frontera Sur,Integrante
+157,Vázquez Vázquez,Alfredo,MORENA,v,27/01,Asuntos Migratorios,Integrante
+432,Bonifaz Moedano,Raúl Eduardo,MORENA,v,28/01,Gobernación y Población,Integrante
+432,Bonifaz Moedano,Raúl Eduardo,MORENA,v,28/01,Radio y Televisión,Integrante
+68,Sibaja Mendoza,Jorge Ángel,MORENA,v,08/02,Derechos Humanos,Integrante
+523,Montes Hernández,María de Lourdes,MORENA,f,11/02,Ganadería,Integrante
+523,Montes Hernández,María de Lourdes,MORENA,f,11/02,Relaciones Exteriores,Integrante
+493,López Castillo,Manuel,MORENA,v,12/02,Asuntos Migratorios,Integrante
+493,López Castillo,Manuel,MORENA,v,12/02,Pesca,Integrante
+38,Sánchez Ortíz,Graciela,MORENA,f,18/02,Economía Social y Fomento del Cooperativismo,Integrante
+38,Sánchez Ortíz,Graciela,MORENA,f,18/02,Salud,Integrante
+593,Jáuregui Montes de Oca,Miguel Ángel,MORENA,v,19/02,Desarrollo Social,Integrante
+593,Jáuregui Montes de Oca,Miguel Ángel,MORENA,v,19/02,Federalismo y Desarrollo Municipal,Integrante
+325,Del Bosque Villarreal,Diego Eduardo,MORENA,v,21/02,Asuntos Frontera Norte,Integrante
+325,Del Bosque Villarreal,Diego Eduardo,MORENA,v,21/02,"Desarrollo y Conservación Rural, Agrícola y Autosuficiencia Alimentaria",Integrante
+440,Burelo Cortázar,Teresa,MORENA,f,01/03,Energía,Integrante
+440,Burelo Cortázar,Teresa,MORENA,f,01/03,Marina,Integrante
+577,García Zepeda,Julieta,MORENA,f,02/03,Seguridad Pública,Integrante
+577,García Zepeda,Julieta,MORENA,f,02/03,Turismo,Integrante
+334,Carrasco Godínez,Nelly Minerva,MORENA,f,16/03,Derechos de la Niñez y Adolescencia,Integrante
+334,Carrasco Godínez,Nelly Minerva,MORENA,f,16/03,Seguridad Social,Integrante
+349,Díaz Aguilar,Leticia,MORENA,f,20/03,Derechos de la Niñez y Adolescencia,Integrante
+349,Díaz Aguilar,Leticia,MORENA,f,20/03,Desarrollo Social,Integrante
+616,Hernández Pérez,María Eugenia,MORENA,f,20/03,Igualdad de Género,Integrante
+616,Hernández Pérez,María Eugenia,MORENA,f,20/03,Relaciones Exteriores,Integrante
+538,Mojica Wences,Víctor Adolfo,MORENA,v,24/03,Seguridad Social,Integrante
+538,Mojica Wences,Víctor Adolfo,MORENA,v,24/03,Vivienda,Integrante
+128,Robles Gutiérrez,Beatriz Silvia,MORENA,f,24/03,"Ciencia, Tecnología e Innovación",Integrante
+128,Robles Gutiérrez,Beatriz Silvia,MORENA,f,24/03,Transparencia y Anticorrupción,Integrante
+2426,Guerra Navarro,Laura Mónica,MORENA,f,25/03,Cultura y Cinematografía,Integrante
+2426,Guerra Navarro,Laura Mónica,MORENA,f,25/03,"Medio Ambiente, Sustentabilidad, Cambio Climático y Recursos Naturales",Integrante
+2426,Guerra Navarro,Laura Mónica,MORENA,f,25/03,Relaciones Exteriores,Integrante
+575,García Soto,Ulises,MORENA,v,29/03,"Desarrollo Metropolitano, Urbano, Ordenamiento Territorial y Movilidad",Integrante
+575,García Soto,Ulises,MORENA,v,29/03,Pueblos Indígenas,Integrante
+587,Huerta Corona,Benjamín Saúl,MORENA,v,31/03,Energía,Integrante
+587,Huerta Corona,Benjamín Saúl,MORENA,v,31/03,"Recursos Hidráulicos, Agua Potable y Saneamiento",Integrante
+123,Ríos Fararoni,Eulalio Juan,MORENA,v,18/04,Energía,Integrante
+123,Ríos Fararoni,Eulalio Juan,MORENA,v,18/04,Vigilancia de la Auditoría Superior de la Federación,Integrante
+255,Villegas Sánchez,Merary,MORENA,f,20/04,Atención a Grupos Vulnerables,Integrante
+255,Villegas Sánchez,Merary,MORENA,f,20/04,Radio y Televisión,Integrante
+498,López Rayón,Claudia,MORENA,f,22/04,Derechos de la Niñez y Adolescencia,Integrante
+498,López Rayón,Claudia,MORENA,f,22/04,Economía Social y Fomento del Cooperativismo,Integrante
+377,Elorza Flores,José Luis,MORENA,v,28/04,Pesca,Integrante
+377,Elorza Flores,José Luis,MORENA,v,28/04,Relaciones Exteriores,Integrante
+39,Sánchez Rodríguez,Juan Pablo,MORENA,v,29/04,Desarrollo Social,Integrante
+39,Sánchez Rodríguez,Juan Pablo,MORENA,v,29/04,Vivienda,Integrante
+2421,Areizaga Uribe,Erwin Jorge,MORENA,v,02/05,Comunicaciones y Transportes,Integrante
+2421,Areizaga Uribe,Erwin Jorge,MORENA,v,02/05,Pueblos Indígenas,Integrante
+576,García Vidaña,Martha Olivia,MORENA,f,04/05,Infraestructura,Integrante
+576,García Vidaña,Martha Olivia,MORENA,f,04/05,Pueblos Indígenas,Integrante
+608,Hernández Tapia,Arturo Roberto,MORENA,v,05/05,Comunicaciones y Transportes,Integrante
+608,Hernández Tapia,Arturo Roberto,MORENA,v,05/05,Vigilancia de la Auditoría Superior de la Federación,Integrante
+581,Huerta González,Agustín Reynaldo,MORENA,v,07/05,Atención a Grupos Vulnerables,Integrante
+581,Huerta González,Agustín Reynaldo,MORENA,v,07/05,Defensa Nacional,Integrante
+387,Campos Equihua,Ignacio Benjamín,MORENA,v,12/05,"Economía, Comercio y Competitividad",Integrante
+387,Campos Equihua,Ignacio Benjamín,MORENA,v,12/05,Hacienda y Crédito Público,Integrante
+468,Maldonado Tapia,Mirna Zabeida,MORENA,f,13/05,Relaciones Exteriores,Integrante
+468,Maldonado Tapia,Mirna Zabeida,MORENA,f,13/05,Turismo,Integrante
+155,Reyes Colín,Marco Antonio,MORENA,v,18/05,"Economía, Comercio y Competitividad",Integrante
+155,Reyes Colín,Marco Antonio,MORENA,v,18/05,Presupuesto y Cuenta Pública,Integrante
+437,Ávalos Magaña,Laura Patricia,MORENA,f,21/05,Igualdad de Género,Integrante
+437,Ávalos Magaña,Laura Patricia,MORENA,f,21/05,Marina,Integrante
+357,Flores Anguiano,Feliciano,MORENA,v,28/05,Asuntos Migratorios,Integrante
+357,Flores Anguiano,Feliciano,MORENA,v,28/05,Pesca,Integrante
+535,Minor Mora,Jesús Salvador,MORENA,v,01/06,Asuntos Frontera Norte,Integrante
+535,Minor Mora,Jesús Salvador,MORENA,v,01/06,"Desarrollo y Conservación Rural, Agrícola y Autosuficiencia Alimentaria",Integrante
+326,Del Castillo Ibarra,Erika Vanessa,MORENA,f,10/06,Cultura y Cinematografía,Integrante
+326,Del Castillo Ibarra,Erika Vanessa,MORENA,f,10/06,Derechos de la Niñez y Adolescencia,Integrante
+313,Contreras Montes,Gustavo,MORENA,v,11/06,Desarrollo Social,Integrante
+313,Contreras Montes,Gustavo,MORENA,v,11/06,Seguridad Pública,Integrante
+539,Molina Espinoza,Irineo,MORENA,v,13/06,Federalismo y Desarrollo Municipal,Integrante
+539,Molina Espinoza,Irineo,MORENA,v,13/06,Infraestructura,Integrante
+308,Obrador Narváez,Manuela del Carmen,MORENA,f,16/06,Asuntos Frontera Sur,Integrante
+308,Obrador Narváez,Manuela del Carmen,MORENA,f,16/06,Energía,Integrante
+337,Carrillo Luna,Juana,MORENA,f,24/06,Energía,Integrante
+337,Carrillo Luna,Juana,MORENA,f,24/06,"Medio Ambiente, Sustentabilidad, Cambio Climático y Recursos Naturales",Integrante
+97,Peralta de la Peña,Ana Patricia,MORENA,f,24/06,Igualdad de Género,Integrante
+97,Peralta de la Peña,Ana Patricia,MORENA,f,24/06,Relaciones Exteriores,Integrante
+578,González Robledo,Erasmo,MORENA,v,28/06,"Medio Ambiente, Sustentabilidad, Cambio Climático y Recursos Naturales",Integrante
+578,González Robledo,Erasmo,MORENA,v,28/06,Puntos Constitucionales,Integrante
+609,Gutiérrez Luna,Sergio Carlos,MORENA,v,12/07,Jurisdiccional,Integrante
+609,Gutiérrez Luna,Sergio Carlos,MORENA,v,12/07,Seguridad Pública,Integrante
+609,Gutiérrez Luna,Sergio Carlos,MORENA,v,12/07,Vigilancia de la Auditoría Superior de la Federación,Integrante
+522,Mora García,Carmen,MORENA,f,14/07,Seguridad Pública,Integrante
+522,Mora García,Carmen,MORENA,f,14/07,Vigilancia de la Auditoría Superior de la Federación,Integrante
+22,Rodríguez Ruíz,Ana María,MORENA,f,23/07,"Recursos Hidráulicos, Agua Potable y Saneamiento",Integrante
+2074,Pérez Arroyo,Alfonso,MORENA,v,30/07,Federalismo y Desarrollo Municipal,Integrante
+2074,Pérez Arroyo,Alfonso,MORENA,v,30/07,Gobernación y Población,Integrante
+487,Lamarque Cano,Carlos Javier,MORENA,v,01/08,"Desarrollo y Conservación Rural, Agrícola y Autosuficiencia Alimentaria",Integrante
+487,Lamarque Cano,Carlos Javier,MORENA,v,01/08,Pesca,Integrante
+331,Carvajal Hidalgo,Alejandro,MORENA,v,02/08,Infraestructura,Integrante
+331,Carvajal Hidalgo,Alejandro,MORENA,v,02/08,Jurisdiccional,Integrante
+331,Carvajal Hidalgo,Alejandro,MORENA,v,02/08,Seguridad Social,Integrante
+59,Terán Águila,Rubén,MORENA,v,09/08,Justicia,Integrante
+59,Terán Águila,Rubén,MORENA,v,09/08,Seguridad Pública,Integrante
+588,Huerta Del Río,María de los Ángeles,MORENA,f,10/08,"Ciencia, Tecnología e Innovación",Integrante
+588,Huerta Del Río,María de los Ángeles,MORENA,f,10/08,Cultura y Cinematografía,Integrante
+588,Huerta Del Río,María de los Ángeles,MORENA,f,10/08,Radio y Televisión,Integrante
+16,Sánchez Galván,Miroslava,MORENA,f,10/08,"Régimen, Reglamentos y Prácticas Parlamentarias",Integrante
+16,Sánchez Galván,Miroslava,MORENA,f,10/08,Trabajo y Previsión Social,Integrante
+344,Cayetano García,Rubén,MORENA,v,11/08,Derechos Humanos,Integrante
+344,Cayetano García,Rubén,MORENA,v,11/08,Transparencia y Anticorrupción,Integrante
+310,Núñez Álvarez,Estela,MORENA,f,16/08,Educación,Integrante
+310,Núñez Álvarez,Estela,MORENA,f,16/08,Infraestructura,Integrante
+85,Pérez López,Beatriz Dominga,MORENA,f,24/08,Economía Social y Fomento del Cooperativismo,Integrante
+85,Pérez López,Beatriz Dominga,MORENA,f,24/08,Pueblos Indígenas,Integrante
+2081,Audiffred Fernández,Karen Ivette,MORENA,f,30/08,Desarrollo Social,Integrante
+2081,Audiffred Fernández,Karen Ivette,MORENA,f,30/08,Federalismo y Desarrollo Municipal,Integrante
+2081,Audiffred Fernández,Karen Ivette,MORENA,f,30/08,Puntos Constitucionales,Integrante
+372,Domínguez Flores,Rosalinda,MORENA,f,06/09,Comunicaciones y Transportes,Integrante
+372,Domínguez Flores,Rosalinda,MORENA,f,06/09,Hacienda y Crédito Público,Integrante
+425,Arvizu de la Luz,Felipe Rafael,MORENA,v,09/09,Defensa Nacional,Integrante
+425,Arvizu de la Luz,Felipe Rafael,MORENA,v,09/09,Vivienda,Integrante
+396,Andazola Gómez,Socorro Irma,MORENA,f,22/09,Federalismo y Desarrollo Municipal,Integrante
+396,Andazola Gómez,Socorro Irma,MORENA,f,22/09,Vivienda,Integrante
+332,Carbajal Miranda,Marco Antonio,MORENA,v,26/09,Economía Social y Fomento del Cooperativismo,Integrante
+332,Carbajal Miranda,Marco Antonio,MORENA,v,26/09,Turismo,Integrante
+84,Pérez Hernández,Sergio,MORENA,v,8/10,"Recursos Hidráulicos, Agua Potable y Saneamiento",Integrante
+84,Pérez Hernández,Sergio,MORENA,v,8/10,Turismo,Integrante
+61,Tello Espinosa,Claudia,MORENA,f,16/10,Derechos Humanos,Integrante
+61,Tello Espinosa,Claudia,MORENA,f,16/10,Vivienda,Integrante
+579,García Rosales,Edith,MORENA,f,17/10,Federalismo y Desarrollo Municipal,Integrante
+579,García Rosales,Edith,MORENA,f,17/10,Ganadería,Integrante
+472,Márquez González,Miguel Ángel,MORENA,v,21/10,Defensa Nacional,Integrante
+472,Márquez González,Miguel Ángel,MORENA,v,21/10,Derechos Humanos,Integrante
+397,Ángeles Mendoza,Julio César,MORENA,v,24/10,Infraestructura,Integrante
+380,Espadas Méndez,Gregorio Efraín,MORENA,v,26/10,Deporte,Integrante
+380,Espadas Méndez,Gregorio Efraín,MORENA,v,26/10,Salud,Integrante
+450,Ayala Bobadilla,Carlos Iván,MORENA,v,27/10,Ganadería,Integrante
+558,González Reyes,Marco Antonio,MORENA,v,07/11,Atención a Grupos Vulnerables,Integrante
+558,González Reyes,Marco Antonio,MORENA,v,07/11,Deporte,Integrante
+590,Hernández Villalpando,Rafael,MORENA,v,08/11,"Desarrollo Metropolitano, Urbano, Ordenamiento Territorial y Movilidad",Integrante
+369,Espinoza Segura,María Bertha,MORENA,f,15/11,Marina,Integrante
+369,Espinoza Segura,María Bertha,MORENA,f,15/11,"Recursos Hidráulicos, Agua Potable y Saneamiento",Integrante
+86,Pérez Mackintosh,Miriam Citlally,MORENA,f,20/11,Derechos de la Niñez y Adolescencia,Integrante
+86,Pérez Mackintosh,Miriam Citlally,MORENA,f,20/11,Trabajo y Previsión Social,Integrante
+595,Jiménez y Meneses,Héctor Guillermo de Jesús,MORENA,v,24/11,Defensa Nacional,Integrante
+595,Jiménez y Meneses,Héctor Guillermo de Jesús,MORENA,v,24/11,Trabajo y Previsión Social,Integrante
+2425,Díaz Avilez,María Guadalupe,MORENA,f,25/11,Transparencia y Anticorrupción,Integrante
+2425,Díaz Avilez,María Guadalupe,MORENA,f,25/11,Vigilancia de la Auditoría Superior de la Federación,Integrante
+504,Maya Martínez,Hirepan,MORENA,v,02/12,"Ciencia, Tecnología e Innovación",Integrante
+504,Maya Martínez,Hirepan,MORENA,v,02/12,Federalismo y Desarrollo Municipal,Integrante
+262,Villalvazo Amaya,Mirtha Iliana,MORENA,f,02/12,Relaciones Exteriores,Integrante
+262,Villalvazo Amaya,Mirtha Iliana,MORENA,f,02/12,Seguridad Pública,Integrante
+449,Ávila Vera,Mildred Concepción,MORENA,f,05/12,Educación,Integrante
+449,Ávila Vera,Mildred Concepción,MORENA,f,05/12,Igualdad de Género,Integrante
+339,Castañeda Ortíz,María Guadalupe Edith,MORENA,f,12/12,"Ciencia, Tecnología e Innovación",Integrante
+339,Castañeda Ortíz,María Guadalupe Edith,MORENA,f,12/12,Seguridad Social,Integrante
+263,Villarauz Martínez,Rocío del Pilar,MORENA,f,12/12,Asuntos Frontera Sur,Integrante
+263,Villarauz Martínez,Rocío del Pilar,MORENA,f,12/12,Transparencia y Anticorrupción,Integrante
+393,Alvarado Moreno,María Guillermina,MORENA,f,26/12,Protección Civil y Prevención de Desastres,Integrante
+393,Alvarado Moreno,María Guillermina,MORENA,f,26/12,Seguridad Pública,Integrante
+435,Borrego Adame,Francisco Javier,MORENA,v,27/12,Ganadería,Integrante
+435,Borrego Adame,Francisco Javier,MORENA,v,27/12,"Recursos Hidráulicos, Agua Potable y Saneamiento",Integrante
+442,Calderón Medina,Samuel,MORENA,v,27/12,Derechos de la Niñez y Adolescencia,Integrante
+442,Calderón Medina,Samuel,MORENA,v,27/12,Derechos Humanos,Integrante
+92,Piña Bernal,Adela,MORENA,f,28/12,"Medio Ambiente, Sustentabilidad, Cambio Climático y Recursos Naturales",Integrante
+497,López Pérez,María Teresa,MORENA,f,30/12,Justicia,Integrante
+497,López Pérez,María Teresa,MORENA,f,30/12,Trabajo y Previsión Social,Integrante
+319,De Jesús Jiménez,Lucio,MORENA,v,No responde,"Desarrollo Metropolitano, Urbano, Ordenamiento Territorial y Movilidad",Integrante
+319,De Jesús Jiménez,Lucio,MORENA,v,No responde,Marina,Integrante
+2429,Quiroz Rodríguez,María del Carmen,MORENA,f,No responde,Derechos Humanos,Integrante
+2429,Quiroz Rodríguez,María del Carmen,MORENA,f,No responde,Salud,Integrante
+70,Solís Barrera,María Marivel,MORENA,f,03/01/1960,"Ciencia, Tecnología e Innovación",Presidente
+368,Exsome Zapata,Ricardo Francisco,MORENA,v,28/09/1963,Infraestructura,Presidente
+423,Alegre Salazar,Luis Javier,MORENA,v,04/02/1964,Turismo,Presidente
+51,Valencia Cruz,Rosalba,MORENA,f,25/07/1965,Derechos de la Niñez y Adolescencia,Presidente
+3,Ruíz Lustre,Hugo Rafael,MORENA,v,22/08/1965,Derechos Humanos,Presidente
+505,Mayer Bretón,Sergio,MORENA,v,21/05/1966,Cultura y Cinematografía,Presidente
+145,Ramírez Lucero,Martha Patricia,MORENA,f,03/09/1972,Jurisdiccional,Presidente
+420,Alavéz Ruíz,Aleida,MORENA,f,10/01/1974,Puntos Constitucionales,Presidente
+436,Briceño Zuloaga,María Wendy,MORENA,f,15/09/1976,Igualdad de Género,Presidente
+459,Barrera Badillo,Rocío,MORENA,f,1/10/1976,Gobernación y Población,Presidente
+564,Juan Carlos,Irma,MORENA,v,19/07/1977,Pueblos Indígenas,Presidente
+47,Torres Piña,Carlos,MORENA,v,01/03/1979,Vivienda,Presidente
+607,Guerra Mena,Juanita,MORENA,f,19/03/1983,Seguridad Pública,Presidente
+117,Prado de los Santos,Miguel,MORENA,v,19/01/1984,Desarrollo Social,Presidente
+256,Vences Valencia,Julieta Kristal,MORENA,f,24/10/1986,Asuntos Migratorios,Presidente
+427,Ascencio Ortega,Reyna Celeste,MORENA,f,05/01/1993,Juventud y Diversidad Sexual,Presidente
+99,Rodríguez Gómez,Eraclio,MORENA,v,04/01,"Desarrollo y Conservación Rural, Agrícola y Autosuficiencia Alimentaria",Presidente
+432,Bonifaz Moedano,Raúl Eduardo,MORENA,v,28/01,Asuntos Frontera Sur,Presidente
+123,Ríos Fararoni,Eulalio Juan,MORENA,v,18/04,Pesca,Presidente
+357,Flores Anguiano,Feliciano,MORENA,v,28/05,"Recursos Hidráulicos, Agua Potable y Saneamiento",Presidente
+16,Sánchez Galván,Miroslava,MORENA,f,10/08,Salud,Presidente
+78,Rodríguez González,Manuel,MORENA,v,26/10,Energía,Presidente
+92,Piña Bernal,Adela,MORENA,f,28/12,Educación,Presidente
+506,Muñoz Ledo y Lazo de la Vega,Porfirio Alejandro,MORENA,v,23/07/1933,"Régimen, Reglamentos y Prácticas Parlamentarias",Secretario/a
+612,Guzmán de la Torre,Francisco Javier,MORENA,v,29/08/1944,"Economía, Comercio y Competitividad",Secretario/a
+142,Rabelo Velasco,Roque Luis,MORENA,v,12/08/1945,Ganadería,Secretario/a
+239,Zavaleta Sánchez,Graciela,MORENA,f,23/12/1946,Derechos Humanos,Secretario/a
+511,Moreno Gil,Mario Ismael,MORENA,v,17/06/1948,Cultura y Cinematografía,Secretario/a
+330,Cano González,Susana,MORENA,f,02/06/1949,Seguridad Social,Secretario/a
+135,Rodríguez Arellano,Ediltrudis,MORENA,f,23/06/1954,Ganadería,Secretario/a
+582,Herrera Chávez,Samuel,MORENA,v,17/09/1954,Infraestructura,Secretario/a
+605,Guillén Quiroz,Ana Lilia,MORENA,f,05/02/1955,Vivienda,Secretario/a
+404,Arrieta Sánchez,Eleuterio,MORENA,v,02/05/1955,Seguridad Social,Secretario/a
+134,Rocha Vega,Efraín,MORENA,v,12/05/1955,"Desarrollo y Conservación Rural, Agrícola y Autosuficiencia Alimentaria",Secretario/a
+351,Farías Zambrano,Melba Nelia,MORENA,f,06/07/1955,"Economía, Comercio y Competitividad",Secretario/a
+474,Martínez Flores,Juan,MORENA,v,03/04/1956,Seguridad Social,Secretario/a
+528,Mejía Cruz,María Esther,MORENA,f,08/07/1956,Desarrollo Social,Secretario/a
+178,Veloz Silva,María Luisa,MORENA,f,26/08/1956,Cultura y Cinematografía,Secretario/a
+591,Interian Gallegos,Limbert Iván de Jesús,MORENA,v,13/09/1956,Transparencia y Anticorrupción,Secretario/a
+521,Mora Ríos,María Teresa Rebeca Rosa,MORENA,f,11/05/1957,Asuntos Migratorios,Secretario/a
+583,Herrera Pérez,Gonzalo,MORENA,v,07/07/1957,Pueblos Indígenas,Secretario/a
+14,Sánchez Barrios,Carlos,MORENA,v,17/08/1957,Federalismo y Desarrollo Municipal,Secretario/a
+464,García Anaya,Lidia,MORENA,f,31/10/1957,Vigilancia de la Auditoría Superior de la Federación,Secretario/a
+113,Palma Olvera,Carmen Patricia,MORENA,f,13/01/1958,Turismo,Secretario/a
+466,García Corpus,Teófilo Manuel,MORENA,v,06/02/1958,"Desarrollo y Conservación Rural, Agrícola y Autosuficiencia Alimentaria",Secretario/a
+415,Aguilar Molina,Leticia Arlett,MORENA,f,01/03/1958,Radio y Televisión,Secretario/a
+443,Calderón Salas,Rodrigo,MORENA,v,05/04/1958,"Desarrollo y Conservación Rural, Agrícola y Autosuficiencia Alimentaria",Secretario/a
+594,Jiménez Andrade,Lorena del Socorro,MORENA,f,21/10/1958,Educación,Secretario/a
+236,Zamora Valdez,Casimiro,MORENA,v,15/11/1958,"Recursos Hidráulicos, Agua Potable y Saneamiento",Secretario/a
+527,Medina Pérez,Marco Antonio,MORENA,v,17/12/1958,Hacienda y Crédito Público,Secretario/a
+458,Barajas Barajas,Esteban,MORENA,v,20/01/1959,Puntos Constitucionales,Secretario/a
+567,García Guardado,María de Jesús,MORENA,f,03/04/1959,Atención a Grupos Vulnerables,Secretario/a
+254,Yáñez Centeno y Cabrera,Claudia Valeria,MORENA,f,02/05/1959,Pesca,Secretario/a
+491,López Aparicio,Delfino,MORENA,v,09/02/1960,Atención a Grupos Vulnerables,Secretario/a
+335,Carrazco Macías,Olegaria,MORENA,f,12/04/1960,Desarrollo Social,Secretario/a
+585,Hidalgo Ponce,Javier Ariel,MORENA,v,14/05/1960,"Desarrollo Metropolitano, Urbano, Ordenamiento Territorial y Movilidad",Secretario/a
+65,Santos Díaz,Edelmiro Santiago,MORENA,v,02/07/1960,Seguridad Social,Secretario/a
+513,Medel Palma,Carmen,MORENA,f,26/09/1960,Salud,Secretario/a
+395,Ambrocio Gachuz,José Guadalupe,MORENA,v,12/12/1960,"Medio Ambiente, Sustentabilidad, Cambio Climático y Recursos Naturales",Secretario/a
+401,Arenas Madrigal,Edgar Eduardo,MORENA,v,29/05/1963,"Régimen, Reglamentos y Prácticas Parlamentarias",Secretario/a
+470,Manzano Salazar,Javier,MORENA,v,05/06/1963,Pueblos Indígenas,Secretario/a
+514,Murguía Soto,Ulises,MORENA,v,09/07/1963,Seguridad Pública,Secretario/a
+346,Chávez Pérez,María,MORENA,f,15/08/1963,Vivienda,Secretario/a
+599,Huerta Martínez,Manuel,MORENA,v,02/12/1963,Salud,Secretario/a
+400,Antonio Altamirano,Carol,MORENA,v,13/12/1963,Hacienda y Crédito Público,Secretario/a
+600,Guerrero Barrera,Yolanda,MORENA,f,21/02/1964,Infraestructura,Secretario/a
+348,Delsol Estrada,José Ricardo,MORENA,v,29/03/1964,Ganadería,Secretario/a
+114,Pani Barragán,Alejandra,MORENA,f,17/07/1964,"Ciencia, Tecnología e Innovación",Secretario/a
+533,Merlín García,María del Rosario,MORENA,f,01/11/1964,Presupuesto y Cuenta Pública,Secretario/a
+270,Villegas Guarneros,Dulce María Corina,MORENA,f,04/12/1964,Derechos de la Niñez y Adolescencia,Secretario/a
+333,Carranza Aréas,Julio,MORENA,v,14/03/1965,Marina,Secretario/a
+350,Flores Olivo,Lucía,MORENA,f,09/04/1965,Vivienda,Secretario/a
+431,Blas López,Víctor,MORENA,v,09/08/1965,Transparencia y Anticorrupción,Secretario/a
+499,López Rodríguez,Abelina,MORENA,f,23/09/1965,Turismo,Secretario/a
+9,Salinas Narváez,Javier,MORENA,v,22/11/1965,Puntos Constitucionales,Secretario/a
+9,Salinas Narváez,Javier,MORENA,v,22/11/1965,"Recursos Hidráulicos, Agua Potable y Saneamiento",Secretario/a
+398,Alfaro Morales,María Isabel,MORENA,f,24/02/1966,Cultura y Cinematografía,Secretario/a
+60,Tenorio Adame,Paola,MORENA,f,20/04/1966,Hacienda y Crédito Público,Secretario/a
+108,Ortega Nájera,Hilda Patricia,MORENA,f,10/08/1966,Cultura y Cinematografía,Secretario/a
+549,Gómez Ventura,Manuel,MORENA,v,10/11/1966,Trabajo y Previsión Social,Secretario/a
+26,Rojas Martínez,Beatriz,MORENA,f,21/12/1966,Igualdad de Género,Secretario/a
+352,Farrera Esponda,Juan Enrique,MORENA,v,21/03/1967,"Desarrollo y Conservación Rural, Agrícola y Autosuficiencia Alimentaria",Secretario/a
+152,Regalado Mardueño,Carmina Yadira,MORENA,f,06/11/1967,Cultura y Cinematografía,Secretario/a
+152,Regalado Mardueño,Carmina Yadira,MORENA,f,06/11/1967,Jurisdiccional,Secretario/a
+139,Reyes López,Valentín,MORENA,v,13/02/1968,"Recursos Hidráulicos, Agua Potable y Saneamiento",Secretario/a
+105,Onofre Vázquez,Vicente Alberto,MORENA,v,06/04/1969,Gobernación y Población,Secretario/a
+95,Pool Moo,Jesús de los Ángeles,MORENA,v,22/12/1969,Comunicaciones y Transportes,Secretario/a
+345,Cázarez Yáñez,Martina,MORENA,f,07/03/1970,"Desarrollo y Conservación Rural, Agrícola y Autosuficiencia Alimentaria",Secretario/a
+359,Díaz García,María Elizabeth,MORENA,f,10/02/1971,Igualdad de Género,Secretario/a
+321,De la Cruz Delucio,Patricia del Carmen,MORENA,f,21/06/1971,Pesca,Secretario/a
+265,Villarreal Pasaret,Francisco Jorge,MORENA,v,24/09/1971,Asuntos Frontera Norte,Secretario/a
+131,Robles Ortíz,Martha,MORENA,f,19/12/1971,Derechos de la Niñez y Adolescencia,Secretario/a
+13,Sánchez Barrales Zavalza,Raúl Ernesto,MORENA,v,19/12/1971,Seguridad Pública,Secretario/a
+606,Gutiérrez Gutiérrez,Daniel,MORENA,v,15/02/1972,Vigilancia de la Auditoría Superior de la Federación,Secretario/a
+93,Ponce Cobos,Alejandro,MORENA,v,17/04/1972,Transparencia y Anticorrupción,Secretario/a
+516,Navarrete Rivera,Alma Delia,MORENA,f,29/07/1972,"Desarrollo Metropolitano, Urbano, Ordenamiento Territorial y Movilidad",Secretario/a
+145,Ramírez Lucero,Martha Patricia,MORENA,f,03/09/1972,Justicia,Secretario/a
+101,Ocampo Manzanares,Araceli,MORENA,f,15/10/1972,Gobernación y Población,Secretario/a
+260,Villa Villegas,Alberto,MORENA,v,25/10/1972,"Ciencia, Tecnología e Innovación",Secretario/a
+389,Andrade Zavala,Marco Antonio,MORENA,v,17/11/1972,Vigilancia de la Auditoría Superior de la Federación,Secretario/a
+383,Espinosa de los Monteros García,Adriana María Guadalupe,MORENA,f,11/12/1972,Justicia,Secretario/a
+28,Román Ávila,María Guadalupe,MORENA,f,24/02/1973,Seguridad Pública,Secretario/a
+103,Ochoa Valdivia,Zaira,MORENA,f,05/03/1973,Educación,Secretario/a
+81,Pérez Bernabé,Jaime Humberto,MORENA,v,01/04/1973,Gobernación y Población,Secretario/a
+54,Varela López,Víctor Gabriel,MORENA,v,20/04/1973,Desarrollo Social,Secretario/a
+149,Ramos Ruíz,Juan Israel,MORENA,v,29/04/1973,"Medio Ambiente, Sustentabilidad, Cambio Climático y Recursos Naturales",Secretario/a
+574,García Rubio,Agustín,MORENA,v,05/06/1973,Hacienda y Crédito Público,Secretario/a
+494,López Chávez,María Beatriz,MORENA,f,18/08/1973,Desarrollo Social,Secretario/a
+150,Ramos Sotelo,Guadalupe,MORENA,f,01/02/1974,Turismo,Secretario/a
+88,Pérez Rodríguez,Claudia,MORENA,f,29/06/1974,Justicia,Secretario/a
+412,Aguilar Castillo,Heriberto Marcelo,MORENA,v,12/02/1975,"Economía, Comercio y Competitividad",Secretario/a
+414,Aguilar Linda,Bonifacio,MORENA,v,08/05/1976,Pueblos Indígenas,Secretario/a
+138,Reyes Miguel,Idalia,MORENA,f,15/08/1976,Marina,Secretario/a
+507,Morales Elvira,Erik Isaac,MORENA,v,01/09/1976,Deporte,Secretario/a
+592,Jarero Velázquez,Miguel Pavel,MORENA,v,19/10/1976,Vigilancia de la Auditoría Superior de la Federación,Secretario/a
+424,Alejandro Candelaria,Maximino,MORENA,v,08/01/1977,Asuntos Migratorios,Secretario/a
+2080,Gordillo Moreno,Alfredo Antonio,MORENA,v,02/02/1977,Vigilancia de la Auditoría Superior de la Federación,Secretario/a
+467,Martínez Aké,Carlos Enrique,MORENA,v,25/04/1977,Energía,Secretario/a
+112,Palacios Cordero,Lucio Ernesto,MORENA,v,07/07/1977,Desarrollo Social,Secretario/a
+6,Salazar Fernández,Luis Fernando,MORENA,v,18/11/1977,Hacienda y Crédito Público,Secretario/a
+62,Santiago Chepi,Azael,MORENA,v,15/12/1977,Educación,Secretario/a
+418,Aguilera Chairez,Maribel,MORENA,f,20/12/1977,"Desarrollo y Conservación Rural, Agrícola y Autosuficiencia Alimentaria",Secretario/a
+316,Cruz Santos,Flora Tania,MORENA,f,27/01/1978,Educación,Secretario/a
+115,Parra Juárez,Inés,MORENA,f,20/04/1978,Vigilancia de la Auditoría Superior de la Federación,Secretario/a
+518,Noriega Galaz,Martha Lizeth,MORENA,f,27/02/1979,Transparencia y Anticorrupción,Secretario/a
+543,González Castañeda,Sandra Paola,MORENA,f,31/03/1979,Vigilancia de la Auditoría Superior de la Federación,Secretario/a
+318,Cuevas Barron,Gabriela,MORENA,f,03/04/1979,Relaciones Exteriores,Secretario/a
+309,Sandoval Soberanes,Lucinda,MORENA,f,18/02/1980,Pesca,Secretario/a
+615,Hernández Pérez,César Agustín,MORENA,v,01/03/1980,Presupuesto y Cuenta Pública,Secretario/a
+64,Santiago Marcos,Nancy Yadira,MORENA,f,04/05/1980,Economía Social y Fomento del Cooperativismo,Secretario/a
+90,Pérez Segura,Laura Imelda,MORENA,f,30/05/1980,Presupuesto y Cuenta Pública,Secretario/a
+448,Bautista Rivera,David,MORENA,v,27/03/1981,Deporte,Secretario/a
+462,Bautista Bravo,Juan Ángel,MORENA,v,25/07/1981,"Régimen, Reglamentos y Prácticas Parlamentarias",Secretario/a
+375,Elizondo Garrido,Francisco,MORENA,v,17/01/1982,Infraestructura,Secretario/a
+343,Castillo Lozano,Katia Alejandra,MORENA,f,20/10/1982,Deporte,Secretario/a
+104,Olvera Bautista,Sandra Simey,MORENA,f,20/08/1983,Radio y Televisión,Secretario/a
+37,Rosas Uribe,Erika Mariana,MORENA,f,09/01/1984,Radio y Televisión,Secretario/a
+433,Bonilla Herrera,Raquel,MORENA,f,10/03/1984,"Desarrollo Metropolitano, Urbano, Ordenamiento Territorial y Movilidad",Secretario/a
+403,Novella Macías,Oscar Rafael,MORENA,v,12/10/1984,Asuntos Migratorios,Secretario/a
+106,Orihuela Nava,David,MORENA,v,31/01/1985,Justicia,Secretario/a
+473,Martínez Aguilar,Emeteria Claudia,MORENA,f,03/03/1985,Derechos de la Niñez y Adolescencia,Secretario/a
+148,Ramos Cruz,Verónica,MORENA,f,01/05/1985,Trabajo y Previsión Social,Secretario/a
+445,Bayardo Cabrera,Rosa María,MORENA,f,12/12/1985,Comunicaciones y Transportes,Secretario/a
+531,Mercado Torres,Edith Marisol,MORENA,f,15/09/1986,Deporte,Secretario/a
+154,Reyes Carmona,Emmanuel,MORENA,v,29/06/1987,Salud,Secretario/a
+146,Ramírez Navarrete,Francisco Javier,MORENA,v,03/01/1988,"Economía, Comercio y Competitividad",Secretario/a
+370,Espinoza López,Brenda,MORENA,f,19/06/1988,Presupuesto y Cuenta Pública,Secretario/a
+456,Bahena Jiménez,Socorro,MORENA,f,10/08/1988,Igualdad de Género,Secretario/a
+57,Vargas Meraz,Teresita de Jesús,MORENA,f,16/12/1989,Relaciones Exteriores,Secretario/a
+454,Badillo Moreno,Cuauhtli Fernando,MORENA,v,11/05/1990,Juventud y Diversidad Sexual,Secretario/a
+388,García Cayetano,Dorheny,MORENA,f,25/07/1990,Igualdad de Género,Secretario/a
+1,Abasolo Sánchez,Pedro Daniel,MORENA,v,03/02/1991,Juventud y Diversidad Sexual,Secretario/a
+463,Bautista Peláez,María Del Carmen,MORENA,f,03/04/1991,Relaciones Exteriores,Secretario/a
+259,Viedma Velázquez,Alejandro,MORENA,v,11/11/1991,Juventud y Diversidad Sexual,Secretario/a
+56,Vargas Hernández,Lidia Nallely,MORENA,f,03/08/1992,Juventud y Diversidad Sexual,Secretario/a
+603,Guerra Méndez,Lizeth Amayrani,MORENA,f,18/01/1994,Turismo,Secretario/a
+94,Ponce Méndez,María Geraldine,MORENA,f,04/04/1994,Presupuesto y Cuenta Pública,Secretario/a
+416,Aguilera Brenes,Sebastián,MORENA,v,10/06/1995,Deporte,Secretario/a
+35,Rosas Martínez,Luz Estefanía,MORENA,f,22/08/1995,Transparencia y Anticorrupción,Secretario/a
+461,Barroso Chávez,Alejandro,MORENA,v,04/01,Salud,Secretario/a
+2422,Callejas Romero,Gustavo,MORENA,v,07/01,Federalismo y Desarrollo Municipal,Secretario/a
+15,Sánchez Castro,Anita,MORENA,f,07/01,Trabajo y Previsión Social,Secretario/a
+76,Tellez Infante,Jannet,MORENA,f,08/01,Defensa Nacional,Secretario/a
+532,Merino García,Virginia,MORENA,f,11/01,Atención a Grupos Vulnerables,Secretario/a
+537,Mojica Toledo,Alejandro,MORENA,v,12/01,"Desarrollo Metropolitano, Urbano, Ordenamiento Territorial y Movilidad",Secretario/a
+476,Martínez González,Laura,MORENA,f,15/01,Derechos Humanos,Secretario/a
+355,Fernández Cruz,Nayeli Arlen,MORENA,f,16/01,Energía,Secretario/a
+317,Cuaxiloa Serrano,Susana Beatriz,MORENA,f,19/01,Derechos Humanos,Secretario/a
+373,Domínguez Rodríguez,Roberto Ángel,MORENA,v,27/01,"Recursos Hidráulicos, Agua Potable y Saneamiento",Secretario/a
+157,Vázquez Vázquez,Alfredo,MORENA,v,27/01,Pueblos Indígenas,Secretario/a
+68,Sibaja Mendoza,Jorge Ángel,MORENA,v,08/02,Gobernación y Población,Secretario/a
+523,Montes Hernández,María de Lourdes,MORENA,f,11/02,Salud,Secretario/a
+493,López Castillo,Manuel,MORENA,v,12/02,Asuntos Frontera Norte,Secretario/a
+38,Sánchez Ortíz,Graciela,MORENA,f,18/02,Derechos de la Niñez y Adolescencia,Secretario/a
+593,Jáuregui Montes de Oca,Miguel Ángel,MORENA,v,19/02,Transparencia y Anticorrupción,Secretario/a
+325,Del Bosque Villarreal,Diego Eduardo,MORENA,v,21/02,"Medio Ambiente, Sustentabilidad, Cambio Climático y Recursos Naturales",Secretario/a
+440,Burelo Cortázar,Teresa,MORENA,f,01/03,Comunicaciones y Transportes,Secretario/a
+577,García Zepeda,Julieta,MORENA,f,02/03,"Medio Ambiente, Sustentabilidad, Cambio Climático y Recursos Naturales",Secretario/a
+334,Carrasco Godínez,Nelly Minerva,MORENA,f,16/03,Derechos Humanos,Secretario/a
+349,Díaz Aguilar,Leticia,MORENA,f,20/03,"Recursos Hidráulicos, Agua Potable y Saneamiento",Secretario/a
+616,Hernández Pérez,María Eugenia,MORENA,f,20/03,"Ciencia, Tecnología e Innovación",Secretario/a
+538,Mojica Wences,Víctor Adolfo,MORENA,v,24/03,Salud,Secretario/a
+128,Robles Gutiérrez,Beatriz Silvia,MORENA,f,24/03,Relaciones Exteriores,Secretario/a
+575,García Soto,Ulises,MORENA,v,29/03,Asuntos Migratorios,Secretario/a
+587,Huerta Corona,Benjamín Saúl,MORENA,v,31/03,Hacienda y Crédito Público,Secretario/a
+498,López Rayón,Claudia,MORENA,f,22/04,Deporte,Secretario/a
+377,Elorza Flores,José Luis,MORENA,v,28/04,Gobernación y Población,Secretario/a
+39,Sánchez Rodríguez,Juan Pablo,MORENA,v,29/04,Educación,Secretario/a
+2421,Areizaga Uribe,Erwin Jorge,MORENA,v,02/05,Asuntos Migratorios,Secretario/a
+576,García Vidaña,Martha Olivia,MORENA,f,04/05,"Medio Ambiente, Sustentabilidad, Cambio Climático y Recursos Naturales",Secretario/a
+608,Hernández Tapia,Arturo Roberto,MORENA,v,05/05,Salud,Secretario/a
+581,Huerta González,Agustín Reynaldo,MORENA,v,07/05,Ganadería,Secretario/a
+387,Campos Equihua,Ignacio Benjamín,MORENA,v,12/05,Presupuesto y Cuenta Pública,Secretario/a
+468,Maldonado Tapia,Mirna Zabeida,MORENA,f,13/05,Ganadería,Secretario/a
+155,Reyes Colín,Marco Antonio,MORENA,v,18/05,Economía Social y Fomento del Cooperativismo,Secretario/a
+437,Ávalos Magaña,Laura Patricia,MORENA,f,21/05,Energía,Secretario/a
+535,Minor Mora,Jesús Salvador,MORENA,v,01/06,"Recursos Hidráulicos, Agua Potable y Saneamiento",Secretario/a
+326,Del Castillo Ibarra,Erika Vanessa,MORENA,f,10/06,Derechos Humanos,Secretario/a
+313,Contreras Montes,Gustavo,MORENA,v,11/06,Puntos Constitucionales,Secretario/a
+539,Molina Espinoza,Irineo,MORENA,v,13/06,Presupuesto y Cuenta Pública,Secretario/a
+308,Obrador Narváez,Manuela del Carmen,MORENA,f,16/06,Infraestructura,Secretario/a
+337,Carrillo Luna,Juana,MORENA,f,24/06,Comunicaciones y Transportes,Secretario/a
+97,Peralta de la Peña,Ana Patricia,MORENA,f,24/06,Salud,Secretario/a
+578,González Robledo,Erasmo,MORENA,v,28/06,Presupuesto y Cuenta Pública,Secretario/a
+609,Gutiérrez Luna,Sergio Carlos,MORENA,v,12/07,Puntos Constitucionales,Secretario/a
+522,Mora García,Carmen,MORENA,f,14/07,Ganadería,Secretario/a
+22,Rodríguez Ruíz,Ana María,MORENA,f,23/07,Trabajo y Previsión Social,Secretario/a
+2074,Pérez Arroyo,Alfonso,MORENA,v,30/07,"Ciencia, Tecnología e Innovación",Secretario/a
+487,Lamarque Cano,Carlos Javier,MORENA,v,01/08,Hacienda y Crédito Público,Secretario/a
+331,Carvajal Hidalgo,Alejandro,MORENA,v,02/08,Vivienda,Secretario/a
+59,Terán Águila,Rubén,MORENA,v,09/08,Cultura y Cinematografía,Secretario/a
+344,Cayetano García,Rubén,MORENA,v,11/08,Justicia,Secretario/a
+310,Núñez Álvarez,Estela,MORENA,f,16/08,Energía,Secretario/a
+85,Pérez López,Beatriz Dominga,MORENA,f,24/08,Gobernación y Población,Secretario/a
+372,Domínguez Flores,Rosalinda,MORENA,f,06/09,Infraestructura,Secretario/a
+425,Arvizu de la Luz,Felipe Rafael,MORENA,v,09/09,Economía Social y Fomento del Cooperativismo,Secretario/a
+396,Andazola Gómez,Socorro Irma,MORENA,f,22/09,Asuntos Frontera Norte,Secretario/a
+332,Carbajal Miranda,Marco Antonio,MORENA,v,26/09,"Desarrollo y Conservación Rural, Agrícola y Autosuficiencia Alimentaria",Secretario/a
+84,Pérez Hernández,Sergio,MORENA,v,8/10,Radio y Televisión,Secretario/a
+61,Tello Espinosa,Claudia,MORENA,f,16/10,Atención a Grupos Vulnerables,Secretario/a
+579,García Rosales,Edith,MORENA,f,17/10,"Desarrollo y Conservación Rural, Agrícola y Autosuficiencia Alimentaria",Secretario/a
+472,Márquez González,Miguel Ángel,MORENA,v,21/10,Seguridad Social,Secretario/a
+397,Ángeles Mendoza,Julio César,MORENA,v,24/10,Energía,Secretario/a
+380,Espadas Méndez,Gregorio Efraín,MORENA,v,26/10,Vivienda,Secretario/a
+450,Ayala Bobadilla,Carlos Iván,MORENA,v,27/10,Pesca,Secretario/a
+558,González Reyes,Marco Antonio,MORENA,v,07/11,Derechos de la Niñez y Adolescencia,Secretario/a
+590,Hernández Villalpando,Rafael,MORENA,v,08/11,Radio y Televisión,Secretario/a
+369,Espinoza Segura,María Bertha,MORENA,f,15/11,Economía Social y Fomento del Cooperativismo,Secretario/a
+86,Pérez Mackintosh,Miriam Citlally,MORENA,f,20/11,Relaciones Exteriores,Secretario/a
+595,Jiménez y Meneses,Héctor Guillermo de Jesús,MORENA,v,24/11,Puntos Constitucionales,Secretario/a
+2425,Díaz Avilez,María Guadalupe,MORENA,f,25/11,"Economía, Comercio y Competitividad",Secretario/a
+504,Maya Martínez,Hirepan,MORENA,v,02/12,Cultura y Cinematografía,Secretario/a
+262,Villalvazo Amaya,Mirtha Iliana,MORENA,f,02/12,Energía,Secretario/a
+449,Ávila Vera,Mildred Concepción,MORENA,f,05/12,Desarrollo Social,Secretario/a
+339,Castañeda Ortíz,María Guadalupe Edith,MORENA,f,12/12,Economía Social y Fomento del Cooperativismo,Secretario/a
+263,Villarauz Martínez,Rocío del Pilar,MORENA,f,12/12,Igualdad de Género,Secretario/a
+393,Alvarado Moreno,María Guillermina,MORENA,f,26/12,Defensa Nacional,Secretario/a
+435,Borrego Adame,Francisco Javier,MORENA,v,27/12,Comunicaciones y Transportes,Secretario/a
+442,Calderón Medina,Samuel,MORENA,v,27/12,Vivienda,Secretario/a
+497,López Pérez,María Teresa,MORENA,f,30/12,Educación,Secretario/a
+319,De Jesús Jiménez,Lucio,MORENA,v,No responde,Desarrollo Social,Secretario/a
+2429,Quiroz Rodríguez,María del Carmen,MORENA,f,No responde,Comunicaciones y Transportes,Secretario/a
+365,García Gómez,Martha Elena,PAN,f,03/05/1945,Deporte,Integrante
+11,Ruffo Appel,Ernesto,PAN,v,25/06/1952,Asuntos Frontera Norte,Integrante
+143,Ramírez Barba,Éctor Jaime,PAN,v,01/12/1956,Seguridad Social,Integrante
+143,Ramírez Barba,Éctor Jaime,PAN,v,01/12/1956,Transparencia y Anticorrupción,Integrante
+41,Trejo Reyes,José Isabel,PAN,v,09/04/1959,Comunicaciones y Transportes,Integrante
+46,Torres Peimbert,María Marcela,PAN,f,07/10/1961,"Medio Ambiente, Sustentabilidad, Cambio Climático y Recursos Naturales",Integrante
+610,Guzmán Avilés,Jesús,PAN,v,25/12/1961,Ganadería,Integrante
+610,Guzmán Avilés,Jesús,PAN,v,25/12/1961,"Recursos Hidráulicos, Agua Potable y Saneamiento",Integrante
+482,Mata Carrasco,Mario,PAN,v,20/03/1962,Ganadería,Integrante
+482,Mata Carrasco,Mario,PAN,v,20/03/1962,"Recursos Hidráulicos, Agua Potable y Saneamiento",Integrante
+561,Garza Galván,Silvia Guadalupe,PAN,f,05/07/1962,"Medio Ambiente, Sustentabilidad, Cambio Climático y Recursos Naturales",Integrante
+561,Garza Galván,Silvia Guadalupe,PAN,f,05/07/1962,Trabajo y Previsión Social,Integrante
+257,Verástegui Ostos,Vicente Javier,PAN,v,03/09/1963,Desarrollo Social,Integrante
+257,Verástegui Ostos,Vicente Javier,PAN,v,03/09/1963,Marina,Integrante
+611,Guzmán Avilés,María del Rosario,PAN,f,20/11/1963,Seguridad Pública,Integrante
+31,Romero León,Gloria,PAN,f,25/01/1964,Transparencia y Anticorrupción,Integrante
+31,Romero León,Gloria,PAN,f,25/01/1964,Vigilancia de la Auditoría Superior de la Federación,Integrante
+42,Terrazas Baca,Patricia,PAN,f,26/09/1966,"Ciencia, Tecnología e Innovación",Integrante
+100,Ortega Martínez,María del Pilar,PAN,f,29/06/1968,"Ciencia, Tecnología e Innovación",Integrante
+100,Ortega Martínez,María del Pilar,PAN,f,29/06/1968,Seguridad Social,Integrante
+82,Pérez Díaz,Víctor Manuel,PAN,v,01/06/1969,"Desarrollo Metropolitano, Urbano, Ordenamiento Territorial y Movilidad",Integrante
+69,Sobrado Rodríguez,Verónica María,PAN,f,07/03/1970,Atención a Grupos Vulnerables,Integrante
+69,Sobrado Rodríguez,Verónica María,PAN,f,07/03/1970,Cultura y Cinematografía,Integrante
+45,Torres Graciano,Fernando,PAN,v,27/08/1970,Gobernación y Población,Integrante
+311,Dávila Fernández,Adriana,PAN,f,30/12/1970,Derechos Humanos,Integrante
+311,Dávila Fernández,Adriana,PAN,f,30/12/1970,Gobernación y Población,Integrante
+411,Aguilar Vega,Marcos,PAN,v,05/07/1972,Gobernación y Población,Integrante
+411,Aguilar Vega,Marcos,PAN,v,05/07/1972,Puntos Constitucionales,Integrante
+118,Preciado Rodríguez,Jorge Luis,PAN,v,09/08/1972,Asuntos Migratorios,Integrante
+118,Preciado Rodríguez,Jorge Luis,PAN,v,09/08/1972,Derechos Humanos,Integrante
+496,López Cisneros,José Martín,PAN,v,11/11/1972,Presupuesto y Cuenta Pública,Integrante
+496,López Cisneros,José Martín,PAN,v,11/11/1972,Vigilancia de la Auditoría Superior de la Federación,Integrante
+5,Salazar Báez,Josefina,PAN,f,29/01/1974,Derechos Humanos,Integrante
+5,Salazar Báez,Josefina,PAN,f,29/01/1974,Transparencia y Anticorrupción,Integrante
+77,Rodríguez Rivera,Iván Arturo,PAN,v,02/05/1974,Vigilancia de la Auditoría Superior de la Federación,Integrante
+573,García Rojas,Mariana Dunyaska,PAN,f,29/10/1974,Marina,Integrante
+573,García Rojas,Mariana Dunyaska,PAN,f,29/10/1974,Relaciones Exteriores,Integrante
+596,Gracia Guzmán,Raúl,PAN,v,20/02/1975,Puntos Constitucionales,Integrante
+379,Espadas Galván,Jorge Arturo,PAN,v,08/09/1975,"Régimen, Reglamentos y Prácticas Parlamentarias",Integrante
+379,Espadas Galván,Jorge Arturo,PAN,v,08/09/1975,Seguridad Pública,Integrante
+604,Guerra Villarreal,Isabel Margarita,PAN,f,22/09/1975,Educación,Integrante
+604,Guerra Villarreal,Isabel Margarita,PAN,f,22/09/1975,"Medio Ambiente, Sustentabilidad, Cambio Climático y Recursos Naturales",Integrante
+121,Riggs Baeza,Miguel Alonso,PAN,v,27/10/1975,Asuntos Frontera Norte,Integrante
+121,Riggs Baeza,Miguel Alonso,PAN,v,27/10/1975,Ganadería,Integrante
+50,Sandoval Mendoza,María Liduvina,PAN,f,24/01/1976,Igualdad de Género,Integrante
+50,Sandoval Mendoza,María Liduvina,PAN,f,24/01/1976,Trabajo y Previsión Social,Integrante
+127,Robledo Leal,Ernesto Alfonso,PAN,v,06/06/1976,Economía Social y Fomento del Cooperativismo,Integrante
+127,Robledo Leal,Ernesto Alfonso,PAN,v,06/06/1976,Infraestructura,Integrante
+342,Castaños Valenzuela,Carlos Humberto,PAN,v,14/04/1977,Defensa Nacional,Integrante
+342,Castaños Valenzuela,Carlos Humberto,PAN,v,14/04/1977,Marina,Integrante
+132,Rocha Acosta,Sonia,PAN,f,30/03/1978,Protección Civil y Prevención de Desastres,Integrante
+132,Rocha Acosta,Sonia,PAN,f,30/03/1978,Salud,Integrante
+434,Bonnafoux Alcaraz,Madeleine,PAN,f,31/01/1979,Asuntos Frontera Norte,Integrante
+434,Bonnafoux Alcaraz,Madeleine,PAN,f,31/01/1979,Igualdad de Género,Integrante
+453,Azuara Zúñiga,Xavier,PAN,v,16/09/1979,Vivienda,Integrante
+465,Arriaga Rojas,Justino Eugenio,PAN,v,20/09/1979,"Ciencia, Tecnología e Innovación",Integrante
+465,Arriaga Rojas,Justino Eugenio,PAN,v,20/09/1979,Energía,Integrante
+2423,Cinta Rodríguez,Carlos Elhier,PAN,v,14/01/1980,Cultura y Cinematografía,Integrante
+2423,Cinta Rodríguez,Carlos Elhier,PAN,v,14/01/1980,Vivienda,Integrante
+48,Torres Ramírez,Adolfo,PAN,v,18/11/1980,Relaciones Exteriores,Integrante
+48,Torres Ramírez,Adolfo,PAN,v,18/11/1980,Turismo,Integrante
+471,Mares Aguilar,José Rigoberto,PAN,v,17/02/1981,Hacienda y Crédito Público,Integrante
+471,Mares Aguilar,José Rigoberto,PAN,v,17/02/1981,Presupuesto y Cuenta Pública,Integrante
+264,Villarreal García,Ricardo,PAN,v,12/04/1981,Presupuesto y Cuenta Pública,Integrante
+264,Villarreal García,Ricardo,PAN,v,12/04/1981,Puntos Constitucionales,Integrante
+477,Martínez Juárez,Jacquelina,PAN,f,26/05/1981,Igualdad de Género,Integrante
+477,Martínez Juárez,Jacquelina,PAN,f,26/05/1981,Turismo,Integrante
+417,Alemán Hernández,Nohemí,PAN,f,03/02/1982,"Desarrollo Metropolitano, Urbano, Ordenamiento Territorial y Movilidad",Integrante
+417,Alemán Hernández,Nohemí,PAN,f,03/02/1982,Infraestructura,Integrante
+10,Salinas Wolberg,Hernán,PAN,v,01/04/1982,"Economía, Comercio y Competitividad",Integrante
+371,Díaz Jiménez,Antonia Natividad,PAN,f,13/06/1982,Asuntos Frontera Sur,Integrante
+371,Díaz Jiménez,Antonia Natividad,PAN,f,13/06/1982,Comunicaciones y Transportes,Integrante
+151,Ramos Tamez,Mario Alberto,PAN,v,03/04/1983,Defensa Nacional,Integrante
+151,Ramos Tamez,Mario Alberto,PAN,v,03/04/1983,Energía,Integrante
+52,Valenzuela González,Carlos Alberto,PAN,v,18/04/1983,Marina,Integrante
+52,Valenzuela González,Carlos Alberto,PAN,v,18/04/1983,Pueblos Indígenas,Integrante
+125,Rivera Hernández,Marcelino,PAN,v,26/04/1984,Asuntos Frontera Sur,Integrante
+125,Rivera Hernández,Marcelino,PAN,v,26/04/1984,"Desarrollo y Conservación Rural, Agrícola y Autosuficiencia Alimentaria",Integrante
+490,Lixa Abimerhi,José Elías,PAN,v,28/02/1987,Jurisdiccional,Integrante
+490,Lixa Abimerhi,José Elías,PAN,v,28/02/1987,Justicia,Integrante
+556,González Márquez,Karen Michel,PAN,f,21/01/1988,Economía Social y Fomento del Cooperativismo,Integrante
+556,González Márquez,Karen Michel,PAN,f,21/01/1988,Radio y Televisión,Integrante
+530,Mendoza Acevedo,Luis Alberto,PAN,v,12/01,Protección Civil y Prevención de Desastres,Integrante
+530,Mendoza Acevedo,Luis Alberto,PAN,v,12/01,Seguridad Social,Integrante
+479,Martínez Terrazas,Oscar Daniel,PAN,v,17/01,Relaciones Exteriores,Integrante
+36,Rosas Quintanilla,José Salvador,PAN,v,22/01,Federalismo y Desarrollo Municipal,Integrante
+36,Rosas Quintanilla,José Salvador,PAN,v,22/01,Presupuesto y Cuenta Pública,Integrante
+554,González Estrada,Martha Elisa,PAN,f,29/01,Deporte,Integrante
+554,González Estrada,Martha Elisa,PAN,f,29/01,Derechos de la Niñez y Adolescencia,Integrante
+601,Gutiérrez Valdez,María de los Angeles,PAN,f,08/03,Pueblos Indígenas,Integrante
+601,Gutiérrez Valdez,María de los Angeles,PAN,f,08/03,Salud,Integrante
+32,Romo Cuéllar,Martha Estela,PAN,f,14/03,Atención a Grupos Vulnerables,Integrante
+32,Romo Cuéllar,Martha Estela,PAN,f,14/03,Ganadería,Integrante
+33,Romo Romo,Guadalupe,PAN,v,22/03,Deporte,Integrante
+33,Romo Romo,Guadalupe,PAN,v,22/03,Protección Civil y Prevención de Desastres,Integrante
+109,Patrón Laviada,Cecilia Anunciación,PAN,f,25/03,Desarrollo Social,Integrante
+109,Patrón Laviada,Cecilia Anunciación,PAN,f,25/03,Hacienda y Crédito Público,Integrante
+562,Garfias Cedillo,Sylvia Violeta,PAN,f,29/03,Igualdad de Género,Integrante
+562,Garfias Cedillo,Sylvia Violeta,PAN,f,29/03,Radio y Televisión,Integrante
+475,Macías Olvera,Felipe Fernando,PAN,v,04/04,Educación,Integrante
+475,Macías Olvera,Felipe Fernando,PAN,v,04/04,Seguridad Pública,Integrante
+515,Murillo Chávez,Janet Melanie,PAN,f,17/04,Cultura y Cinematografía,Integrante
+515,Murillo Chávez,Janet Melanie,PAN,f,17/04,Desarrollo Social,Integrante
+79,Núñez Cerón,Saraí,PAN,f,17/04,Deporte,Integrante
+79,Núñez Cerón,Saraí,PAN,f,17/04,"Economía, Comercio y Competitividad",Integrante
+565,García Escalante,Ricardo,PAN,v,02/05,Pesca,Integrante
+336,Carreón Mejía,Carlos,PAN,v,27/05,"Desarrollo y Conservación Rural, Agrícola y Autosuficiencia Alimentaria",Integrante
+444,Cambero Pérez,José Ramón,PAN,v,27/06,Pesca,Integrante
+444,Cambero Pérez,José Ramón,PAN,v,27/06,Turismo,Integrante
+495,Luévano Núñez,Francisco Javier,PAN,v,01/07,Asuntos Migratorios,Integrante
+495,Luévano Núñez,Francisco Javier,PAN,v,01/07,Presupuesto y Cuenta Pública,Integrante
+545,Gómez Cárdenas,Annia Sarahí,PAN,f,06/07,Educación,Integrante
+545,Gómez Cárdenas,Annia Sarahí,PAN,f,06/07,Relaciones Exteriores,Integrante
+451,Ayala Díaz,María de los Ángeles,PAN,f,02/08,Energía,Integrante
+451,Ayala Díaz,María de los Ángeles,PAN,f,02/08,"Medio Ambiente, Sustentabilidad, Cambio Climático y Recursos Naturales",Integrante
+360,Flores Suárez,Ricardo,PAN,v,05/08,Defensa Nacional,Integrante
+360,Flores Suárez,Ricardo,PAN,v,05/08,"Recursos Hidráulicos, Agua Potable y Saneamiento",Integrante
+492,López Birlain,Ana Paola,PAN,f,21/09,Derechos de la Niñez y Adolescencia,Integrante
+492,López Birlain,Ana Paola,PAN,f,21/09,Salud,Integrante
+75,Tejeda Cid,Armando,PAN,v,21/09,"Desarrollo y Conservación Rural, Agrícola y Autosuficiencia Alimentaria",Integrante
+75,Tejeda Cid,Armando,PAN,v,21/09,Energía,Integrante
+572,García Ochoa,Absalón,PAN,v,23/09,"Desarrollo Metropolitano, Urbano, Ordenamiento Territorial y Movilidad",Integrante
+572,García Ochoa,Absalón,PAN,v,23/09,Justicia,Integrante
+382,Espinosa Rivas,María Eugenia Leticia,PAN,f,20/11,Atención a Grupos Vulnerables,Integrante
+382,Espinosa Rivas,María Eugenia Leticia,PAN,f,20/11,"Ciencia, Tecnología e Innovación",Integrante
+571,García Morlan,Dulce Alejandra,PAN,f,05/12,Asuntos Migratorios,Integrante
+426,Ascencio Barba,Sergio Fernando,PAN,v,09/12,"Economía, Comercio y Competitividad",Integrante
+426,Ascencio Barba,Sergio Fernando,PAN,v,09/12,Vivienda,Integrante
+548,Gómez Quej,José del Carmen,PAN,v,18/12,Federalismo y Desarrollo Municipal,Integrante
+548,Gómez Quej,José del Carmen,PAN,v,18/12,Pesca,Integrante
+42,Terrazas Baca,Patricia,PAN,f,26/09/1966,Hacienda y Crédito Público,Presidente
+100,Ortega Martínez,María del Pilar,PAN,f,29/06/1968,Justicia,Presidente
+82,Pérez Díaz,Víctor Manuel,PAN,v,01/06/1969,Comunicaciones y Transportes,Presidente
+118,Preciado Rodríguez,Jorge Luis,PAN,v,09/08/1972,"Régimen, Reglamentos y Prácticas Parlamentarias",Presidente
+604,Guerra Villarreal,Isabel Margarita,PAN,f,22/09/1975,Radio y Televisión,Presidente
+264,Villarreal García,Ricardo,PAN,v,12/04/1981,Federalismo y Desarrollo Municipal,Presidente
+530,Mendoza Acevedo,Luis Alberto,PAN,v,12/01,Economía Social y Fomento del Cooperativismo,Presidente
+365,García Gómez,Martha Elena,PAN,f,03/05/1945,Infraestructura,Secretario/a
+11,Ruffo Appel,Ernesto,PAN,v,25/06/1952,Federalismo y Desarrollo Municipal,Secretario/a
+11,Ruffo Appel,Ernesto,PAN,v,25/06/1952,Pesca,Secretario/a
+143,Ramírez Barba,Éctor Jaime,PAN,v,01/12/1956,Salud,Secretario/a
+41,Trejo Reyes,José Isabel,PAN,v,09/04/1959,Hacienda y Crédito Público,Secretario/a
+41,Trejo Reyes,José Isabel,PAN,v,09/04/1959,Seguridad Social,Secretario/a
+46,Torres Peimbert,María Marcela,PAN,f,07/10/1961,Educación,Secretario/a
+46,Torres Peimbert,María Marcela,PAN,f,07/10/1961,Transparencia y Anticorrupción,Secretario/a
+610,Guzmán Avilés,Jesús,PAN,v,25/12/1961,Federalismo y Desarrollo Municipal,Secretario/a
+482,Mata Carrasco,Mario,PAN,v,20/03/1962,Infraestructura,Secretario/a
+561,Garza Galván,Silvia Guadalupe,PAN,f,05/07/1962,"Economía, Comercio y Competitividad",Secretario/a
+257,Verástegui Ostos,Vicente Javier,PAN,v,03/09/1963,"Desarrollo y Conservación Rural, Agrícola y Autosuficiencia Alimentaria",Secretario/a
+611,Guzmán Avilés,María del Rosario,PAN,f,20/11/1963,Justicia,Secretario/a
+611,Guzmán Avilés,María del Rosario,PAN,f,20/11/1963,Marina,Secretario/a
+31,Romero León,Gloria,PAN,f,25/01/1964,Economía Social y Fomento del Cooperativismo,Secretario/a
+69,Sobrado Rodríguez,Verónica María,PAN,f,07/03/1970,Igualdad de Género,Secretario/a
+45,Torres Graciano,Fernando,PAN,v,27/08/1970,Defensa Nacional,Secretario/a
+45,Torres Graciano,Fernando,PAN,v,27/08/1970,Vivienda,Secretario/a
+311,Dávila Fernández,Adriana,PAN,f,30/12/1970,Seguridad Pública,Secretario/a
+411,Aguilar Vega,Marcos,PAN,v,05/07/1972,"Régimen, Reglamentos y Prácticas Parlamentarias",Secretario/a
+496,López Cisneros,José Martín,PAN,v,11/11/1972,Trabajo y Previsión Social,Secretario/a
+5,Salazar Báez,Josefina,PAN,f,29/01/1974,Vigilancia de la Auditoría Superior de la Federación,Secretario/a
+77,Rodríguez Rivera,Iván Arturo,PAN,v,02/05/1974,Defensa Nacional,Secretario/a
+77,Rodríguez Rivera,Iván Arturo,PAN,v,02/05/1974,Puntos Constitucionales,Secretario/a
+573,García Rojas,Mariana Dunyaska,PAN,f,29/10/1974,Justicia,Secretario/a
+596,Gracia Guzmán,Raúl,PAN,v,20/02/1975,Jurisdiccional,Secretario/a
+379,Espadas Galván,Jorge Arturo,PAN,v,08/09/1975,Gobernación y Población,Secretario/a
+121,Riggs Baeza,Miguel Alonso,PAN,v,27/10/1975,Deporte,Secretario/a
+50,Sandoval Mendoza,María Liduvina,PAN,f,24/01/1976,Protección Civil y Prevención de Desastres,Secretario/a
+127,Robledo Leal,Ernesto Alfonso,PAN,v,06/06/1976,Educación,Secretario/a
+342,Castaños Valenzuela,Carlos Humberto,PAN,v,14/04/1977,Radio y Televisión,Secretario/a
+132,Rocha Acosta,Sonia,PAN,f,30/03/1978,Presupuesto y Cuenta Pública,Secretario/a
+434,Bonnafoux Alcaraz,Madeleine,PAN,f,31/01/1979,Derechos Humanos,Secretario/a
+453,Azuara Zúñiga,Xavier,PAN,v,16/09/1979,Presupuesto y Cuenta Pública,Secretario/a
+453,Azuara Zúñiga,Xavier,PAN,v,16/09/1979,"Recursos Hidráulicos, Agua Potable y Saneamiento",Secretario/a
+465,Arriaga Rojas,Justino Eugenio,PAN,v,20/09/1979,"Medio Ambiente, Sustentabilidad, Cambio Climático y Recursos Naturales",Secretario/a
+2423,Cinta Rodríguez,Carlos Elhier,PAN,v,14/01/1980,Comunicaciones y Transportes,Secretario/a
+48,Torres Ramírez,Adolfo,PAN,v,18/11/1980,"Desarrollo Metropolitano, Urbano, Ordenamiento Territorial y Movilidad",Secretario/a
+471,Mares Aguilar,José Rigoberto,PAN,v,17/02/1981,Infraestructura,Secretario/a
+477,Martínez Juárez,Jacquelina,PAN,f,26/05/1981,Vivienda,Secretario/a
+417,Alemán Hernández,Nohemí,PAN,f,03/02/1982,"Recursos Hidráulicos, Agua Potable y Saneamiento",Secretario/a
+10,Salinas Wolberg,Hernán,PAN,v,01/04/1982,Energía,Secretario/a
+10,Salinas Wolberg,Hernán,PAN,v,01/04/1982,"Medio Ambiente, Sustentabilidad, Cambio Climático y Recursos Naturales",Secretario/a
+371,Díaz Jiménez,Antonia Natividad,PAN,f,13/06/1982,Pueblos Indígenas,Secretario/a
+151,Ramos Tamez,Mario Alberto,PAN,v,03/04/1983,Trabajo y Previsión Social,Secretario/a
+52,Valenzuela González,Carlos Alberto,PAN,v,18/04/1983,Hacienda y Crédito Público,Secretario/a
+125,Rivera Hernández,Marcelino,PAN,v,26/04/1984,Pueblos Indígenas,Secretario/a
+490,Lixa Abimerhi,José Elías,PAN,v,28/02/1987,Puntos Constitucionales,Secretario/a
+556,González Márquez,Karen Michel,PAN,f,21/01/1988,"Desarrollo Metropolitano, Urbano, Ordenamiento Territorial y Movilidad",Secretario/a
+479,Martínez Terrazas,Oscar Daniel,PAN,v,17/01,Juventud y Diversidad Sexual,Secretario/a
+479,Martínez Terrazas,Oscar Daniel,PAN,v,17/01,Radio y Televisión,Secretario/a
+36,Rosas Quintanilla,José Salvador,PAN,v,22/01,Asuntos Frontera Norte,Secretario/a
+554,González Estrada,Martha Elisa,PAN,f,29/01,Transparencia y Anticorrupción,Secretario/a
+601,Gutiérrez Valdez,María de los Angeles,PAN,f,08/03,Derechos de la Niñez y Adolescencia,Secretario/a
+32,Romo Cuéllar,Martha Estela,PAN,f,14/03,Salud,Secretario/a
+33,Romo Romo,Guadalupe,PAN,v,22/03,Ganadería,Secretario/a
+109,Patrón Laviada,Cecilia Anunciación,PAN,f,25/03,Atención a Grupos Vulnerables,Secretario/a
+562,Garfias Cedillo,Sylvia Violeta,PAN,f,29/03,Derechos Humanos,Secretario/a
+475,Macías Olvera,Felipe Fernando,PAN,v,04/04,Gobernación y Población,Secretario/a
+515,Murillo Chávez,Janet Melanie,PAN,f,17/04,Derechos de la Niñez y Adolescencia,Secretario/a
+79,Núñez Cerón,Saraí,PAN,f,17/04,Relaciones Exteriores,Secretario/a
+565,García Escalante,Ricardo,PAN,v,02/05,"Ciencia, Tecnología e Innovación",Secretario/a
+565,García Escalante,Ricardo,PAN,v,02/05,Vigilancia de la Auditoría Superior de la Federación,Secretario/a
+336,Carreón Mejía,Carlos,PAN,v,27/05,Asuntos Frontera Sur,Secretario/a
+336,Carreón Mejía,Carlos,PAN,v,27/05,Cultura y Cinematografía,Secretario/a
+444,Cambero Pérez,José Ramón,PAN,v,27/06,Desarrollo Social,Secretario/a
+495,Luévano Núñez,Francisco Javier,PAN,v,01/07,Comunicaciones y Transportes,Secretario/a
+545,Gómez Cárdenas,Annia Sarahí,PAN,f,06/07,Cultura y Cinematografía,Secretario/a
+451,Ayala Díaz,María de los Ángeles,PAN,f,02/08,"Economía, Comercio y Competitividad",Secretario/a
+360,Flores Suárez,Ricardo,PAN,v,05/08,Hacienda y Crédito Público,Secretario/a
+492,López Birlain,Ana Paola,PAN,f,21/09,Economía Social y Fomento del Cooperativismo,Secretario/a
+75,Tejeda Cid,Armando,PAN,v,21/09,Presupuesto y Cuenta Pública,Secretario/a
+572,García Ochoa,Absalón,PAN,v,23/09,"Desarrollo y Conservación Rural, Agrícola y Autosuficiencia Alimentaria",Secretario/a
+382,Espinosa Rivas,María Eugenia Leticia,PAN,f,20/11,Asuntos Migratorios,Secretario/a
+571,García Morlan,Dulce Alejandra,PAN,f,05/12,Seguridad Pública,Secretario/a
+571,García Morlan,Dulce Alejandra,PAN,f,05/12,Turismo,Secretario/a
+426,Ascencio Barba,Sergio Fernando,PAN,v,09/12,Turismo,Secretario/a
+548,Gómez Quej,José del Carmen,PAN,v,18/12,Energía,Secretario/a
+107,Ortega Martínez,Antonio,PRD,v,28/07/1954,Presupuesto y Cuenta Pública,Integrante
+107,Ortega Martínez,Antonio,PRD,v,28/07/1954,"Recursos Hidráulicos, Agua Potable y Saneamiento",Integrante
+405,Almaguer Pardo,María Guadalupe,PRD,f,26/10/1961,Gobernación y Población,Integrante
+405,Almaguer Pardo,María Guadalupe,PRD,f,26/10/1961,Seguridad Pública,Integrante
+485,Juárez Piña,Verónica Beatriz,PRD,f,28/09/1971,Derechos de la Niñez y Adolescencia,Integrante
+485,Juárez Piña,Verónica Beatriz,PRD,f,28/09/1971,Justicia,Integrante
+485,Juárez Piña,Verónica Beatriz,PRD,f,28/09/1971,Puntos Constitucionales,Integrante
+137,Reyes Montiel,Claudia,PRD,f,07/02/1974,Defensa Nacional,Integrante
+137,Reyes Montiel,Claudia,PRD,f,07/02/1974,Turismo,Integrante
+391,Almeida López,Mónica,PRD,f,03/04/1974,Energía,Integrante
+421,Alcalá Padilla,Abril,PRD,f,28/04/1979,"Ciencia, Tecnología e Innovación",Integrante
+24,Rodríguez Zamora,Norma Azucena,PRD,f,07/02/1986,"Desarrollo Metropolitano, Urbano, Ordenamiento Territorial y Movilidad",Integrante
+24,Rodríguez Zamora,Norma Azucena,PRD,f,07/02/1986,Federalismo y Desarrollo Municipal,Integrante
+381,Esparza Márquez,Frida Alejandra,PRD,f,05/11/1996,"Medio Ambiente, Sustentabilidad, Cambio Climático y Recursos Naturales",Integrante
+381,Esparza Márquez,Frida Alejandra,PRD,f,05/11/1996,Salud,Integrante
+568,García Gutiérrez,Raymundo,PRD,v,04/07,Transparencia y Anticorrupción,Integrante
+568,García Gutiérrez,Raymundo,PRD,v,04/07,Vigilancia de la Auditoría Superior de la Federación,Integrante
+419,Aguilera Rojas,José Guadalupe,PRD,v,12/12,"Desarrollo y Conservación Rural, Agrícola y Autosuficiencia Alimentaria",Integrante
+419,Aguilera Rojas,José Guadalupe,PRD,v,12/12,Pesca,Integrante
+391,Almeida López,Mónica,PRD,f,03/04/1974,Marina,Presidente
+107,Ortega Martínez,Antonio,PRD,v,28/07/1954,Hacienda y Crédito Público,Secretario/a
+405,Almaguer Pardo,María Guadalupe,PRD,f,26/10/1961,Igualdad de Género,Secretario/a
+137,Reyes Montiel,Claudia,PRD,f,07/02/1974,"Economía, Comercio y Competitividad",Secretario/a
+391,Almeida López,Mónica,PRD,f,03/04/1974,Vivienda,Secretario/a
+421,Alcalá Padilla,Abril,PRD,f,28/04/1979,Cultura y Cinematografía,Secretario/a
+421,Alcalá Padilla,Abril,PRD,f,28/04/1979,Educación,Secretario/a
+24,Rodríguez Zamora,Norma Azucena,PRD,f,07/02/1986,Comunicaciones y Transportes,Secretario/a
+381,Esparza Márquez,Frida Alejandra,PRD,f,05/11/1996,Juventud y Diversidad Sexual,Secretario/a
+568,García Gutiérrez,Raymundo,PRD,v,04/07,Pueblos Indígenas,Secretario/a
+419,Aguilera Rojas,José Guadalupe,PRD,v,12/12,Infraestructura,Secretario/a
+40,Sandoval Flores,Reginaldo,PT,v,1967,Ganadería,Integrante
+40,Sandoval Flores,Reginaldo,PT,v,1967,Hacienda y Crédito Público,Integrante
+156,Vázquez García,Dionicia,PT,f,29/03/1948,Defensa Nacional,Integrante
+156,Vázquez García,Dionicia,PT,f,29/03/1948,Protección Civil y Prevención de Desastres,Integrante
+557,González Morales,Hildelisa,PT,f,22/12/1956,"Desarrollo y Conservación Rural, Agrícola y Autosuficiencia Alimentaria",Integrante
+240,Zertuche Zuani,Armando Javier,PT,v,27/11/1957,Deporte,Integrante
+240,Zertuche Zuani,Armando Javier,PT,v,27/11/1957,Energía,Integrante
+569,García Hernández,Jesús Fernando,PT,v,30/05/1958,Marina,Integrante
+569,García Hernández,Jesús Fernando,PT,v,30/05/1958,Pesca,Integrante
+364,Garay Ulloa,Silvano,PT,v,10/02/1959,Gobernación y Población,Integrante
+364,Garay Ulloa,Silvano,PT,v,10/02/1959,"Régimen, Reglamentos y Prácticas Parlamentarias",Integrante
+597,Jiménez Pérez,María Roselia,PT,f,30/08/1959,Justicia,Integrante
+597,Jiménez Pérez,María Roselia,PT,f,30/08/1959,Salud,Integrante
+130,Robles Montoya,Ángel Benjamín,PT,v,08/11/1959,"Economía, Comercio y Competitividad",Integrante
+130,Robles Montoya,Ángel Benjamín,PT,v,08/11/1959,Presupuesto y Cuenta Pública,Integrante
+356,Fernández Noroña,José Gerardo Rodolfo,PT,v,19/03/1960,Defensa Nacional,Integrante
+524,Montalvo Luna,José Luis,PT,v,29/04/1960,Educación,Integrante
+524,Montalvo Luna,José Luis,PT,v,29/04/1960,Trabajo y Previsión Social,Integrante
+580,González Yáñez,Óscar,PT,v,06/10/1964,Presupuesto y Cuenta Pública,Integrante
+563,García García,Margarita,PT,f,26/01/1966,Pueblos Indígenas,Integrante
+72,Sosa Salinas,José de la Luz,PT,v,25/05/1966,Pesca,Integrante
+72,Sosa Salinas,José de la Luz,PT,v,25/05/1966,"Régimen, Reglamentos y Prácticas Parlamentarias",Integrante
+469,Manzanilla Téllez,Emilio,PT,v,10/04/1971,"Desarrollo Metropolitano, Urbano, Ordenamiento Territorial y Movilidad",Integrante
+469,Manzanilla Téllez,Emilio,PT,v,10/04/1971,Federalismo y Desarrollo Municipal,Integrante
+566,García Grande,Ana Ruth,PT,f,30/05/1971,Jurisdiccional,Integrante
+566,García Grande,Ana Ruth,PT,f,30/05/1971,Pesca,Integrante
+566,García Grande,Ana Ruth,PT,f,30/05/1971,"Recursos Hidráulicos, Agua Potable y Saneamiento",Integrante
+140,Reyes Ledesma,Armando,PT,v,10/04/1972,Energía,Integrante
+140,Reyes Ledesma,Armando,PT,v,10/04/1972,Marina,Integrante
+324,Dekker Gómez,Clementina Marta,PT,f,10/04/1973,"Medio Ambiente, Sustentabilidad, Cambio Climático y Recursos Naturales",Integrante
+2056,Huerta Hernández,Martha,PT,f,11/02/1974,Derechos Humanos,Integrante
+2056,Huerta Hernández,Martha,PT,f,11/02/1974,Igualdad de Género,Integrante
+27,Rojo Pimentel,Ana Karina,PT,f,28/11/1976,Protección Civil y Prevención de Desastres,Integrante
+27,Rojo Pimentel,Ana Karina,PT,f,28/11/1976,Puntos Constitucionales,Integrante
+586,Huacus Esquivel,Francisco Javier,PT,v,26/08/1986,Infraestructura,Integrante
+586,Huacus Esquivel,Francisco Javier,PT,v,26/08/1986,Seguridad Pública,Integrante
+354,Femat Bañuelos,Alfredo,PT,v,12/01,Deporte,Integrante
+488,Lastra Muñoz,Claudia Elena,PT,f,13/01,Cultura y Cinematografía,Integrante
+2428,Osuna Medina,José Mario,PT,v,19/01,Marina,Integrante
+484,Maceda Carrera,Nelly,PT,f,05/02,Deporte,Integrante
+484,Maceda Carrera,Nelly,PT,f,05/02,"Desarrollo y Conservación Rural, Agrícola y Autosuficiencia Alimentaria",Integrante
+96,Porras Domínguez,Alfredo,PT,v,21/02,Seguridad Pública,Integrante
+96,Porras Domínguez,Alfredo,PT,v,21/02,Vigilancia de la Auditoría Superior de la Federación,Integrante
+429,Bernal Camarena,Ana Laura,PT,f,29/03,"Ciencia, Tecnología e Innovación",Integrante
+429,Bernal Camarena,Ana Laura,PT,f,29/03,Juventud y Diversidad Sexual,Integrante
+353,Favela Peñuñuri,Francisco,PT,v,15/04,Pesca,Integrante
+353,Favela Peñuñuri,Francisco,PT,v,15/04,Turismo,Integrante
+376,Elizondo Guerra,Olga Juliana,PT,f,21/05,Atención a Grupos Vulnerables,Integrante
+376,Elizondo Guerra,Olga Juliana,PT,f,21/05,Relaciones Exteriores,Integrante
+552,González Soto,Santiago,PT,v,25/06,Comunicaciones y Transportes,Integrante
+552,González Soto,Santiago,PT,v,25/06,Radio y Televisión,Integrante
+480,Martínez Ventura,Luis Enrique,PT,v,19/08,Justicia,Integrante
+480,Martínez Ventura,Luis Enrique,PT,v,19/08,Protección Civil y Prevención de Desastres,Integrante
+430,Bernal Martínez,Mary Carmen,PT,f,24/08,"Medio Ambiente, Sustentabilidad, Cambio Climático y Recursos Naturales",Integrante
+374,Domínguez Vázquez,Claudia Angélica,PT,f,13/09,Asuntos Migratorios,Integrante
+374,Domínguez Vázquez,Claudia Angélica,PT,f,13/09,Derechos de la Niñez y Adolescencia,Integrante
+120,Roblero Gordillo,Maricruz,PT,v,26/10,Desarrollo Social,Integrante
+120,Roblero Gordillo,Maricruz,PT,v,26/10,Vivienda,Integrante
+481,Marú Mejía,María Teresa,PT,f,29/10,Economía Social y Fomento del Cooperativismo,Integrante
+481,Marú Mejía,María Teresa,PT,f,29/10,Vigilancia de la Auditoría Superior de la Federación,Integrante
+519,García Duque,José Luis,PT,v,08/11,Atención a Grupos Vulnerables,Integrante
+519,García Duque,José Luis,PT,v,08/11,Derechos de la Niñez y Adolescencia,Integrante
+580,González Yáñez,Óscar,PT,v,06/10/1964,Transparencia y Anticorrupción,Presidente
+354,Femat Bañuelos,Alfredo,PT,v,12/01,Relaciones Exteriores,Presidente
+430,Bernal Martínez,Mary Carmen,PT,f,24/08,Seguridad Social,Presidente
+40,Sandoval Flores,Reginaldo,PT,v,1967,Presupuesto y Cuenta Pública,Secretario/a
+156,Vázquez García,Dionicia,PT,f,29/03/1948,Atención a Grupos Vulnerables,Secretario/a
+557,González Morales,Hildelisa,PT,f,22/12/1956,Federalismo y Desarrollo Municipal,Secretario/a
+557,González Morales,Hildelisa,PT,f,22/12/1956,Seguridad Social,Secretario/a
+240,Zertuche Zuani,Armando Javier,PT,v,27/11/1957,Defensa Nacional,Secretario/a
+569,García Hernández,Jesús Fernando,PT,v,30/05/1958,"Desarrollo y Conservación Rural, Agrícola y Autosuficiencia Alimentaria",Secretario/a
+364,Garay Ulloa,Silvano,PT,v,10/02/1959,Puntos Constitucionales,Secretario/a
+597,Jiménez Pérez,María Roselia,PT,f,30/08/1959,Pueblos Indígenas,Secretario/a
+130,Robles Montoya,Ángel Benjamín,PT,v,08/11/1959,Economía Social y Fomento del Cooperativismo,Secretario/a
+356,Fernández Noroña,José Gerardo Rodolfo,PT,v,19/03/1960,Energía,Secretario/a
+524,Montalvo Luna,José Luis,PT,v,29/04/1960,Transparencia y Anticorrupción,Secretario/a
+580,González Yáñez,Óscar,PT,v,06/10/1964,Hacienda y Crédito Público,Secretario/a
+563,García García,Margarita,PT,f,26/01/1966,Protección Civil y Prevención de Desastres,Secretario/a
+563,García García,Margarita,PT,f,26/01/1966,Trabajo y Previsión Social,Secretario/a
+72,Sosa Salinas,José de la Luz,PT,v,25/05/1966,"Desarrollo y Conservación Rural, Agrícola y Autosuficiencia Alimentaria",Secretario/a
+469,Manzanilla Téllez,Emilio,PT,v,10/04/1971,Comunicaciones y Transportes,Secretario/a
+566,García Grande,Ana Ruth,PT,f,30/05/1971,Justicia,Secretario/a
+140,Reyes Ledesma,Armando,PT,v,10/04/1972,Infraestructura,Secretario/a
+324,Dekker Gómez,Clementina Marta,PT,f,10/04/1973,Igualdad de Género,Secretario/a
+324,Dekker Gómez,Clementina Marta,PT,f,10/04/1973,Turismo,Secretario/a
+2056,Huerta Hernández,Martha,PT,f,11/02/1974,Derechos de la Niñez y Adolescencia,Secretario/a
+27,Rojo Pimentel,Ana Karina,PT,f,28/11/1976,Desarrollo Social,Secretario/a
+586,Huacus Esquivel,Francisco Javier,PT,v,26/08/1986,"Desarrollo y Conservación Rural, Agrícola y Autosuficiencia Alimentaria",Secretario/a
+354,Femat Bañuelos,Alfredo,PT,v,12/01,Educación,Secretario/a
+488,Lastra Muñoz,Claudia Elena,PT,f,13/01,Asuntos Frontera Norte,Secretario/a
+484,Maceda Carrera,Nelly,PT,f,05/02,Asuntos Migratorios,Secretario/a
+96,Porras Domínguez,Alfredo,PT,v,21/02,"Recursos Hidráulicos, Agua Potable y Saneamiento",Secretario/a
+429,Bernal Camarena,Ana Laura,PT,f,29/03,Deporte,Secretario/a
+353,Favela Peñuñuri,Francisco,PT,v,15/04,Salud,Secretario/a
+376,Elizondo Guerra,Olga Juliana,PT,f,21/05,Ganadería,Secretario/a
+552,González Soto,Santiago,PT,v,25/06,Cultura y Cinematografía,Secretario/a
+480,Martínez Ventura,Luis Enrique,PT,v,19/08,"Desarrollo Metropolitano, Urbano, Ordenamiento Territorial y Movilidad",Secretario/a
+430,Bernal Martínez,Mary Carmen,PT,f,24/08,Derechos Humanos,Secretario/a
+374,Domínguez Vázquez,Claudia Angélica,PT,f,13/09,Relaciones Exteriores,Secretario/a
+120,Roblero Gordillo,Maricruz,PT,v,26/10,Asuntos Frontera Sur,Secretario/a
+481,Marú Mejía,María Teresa,PT,f,29/10,"Economía, Comercio y Competitividad",Secretario/a
+519,García Duque,José Luis,PT,v,08/11,Comunicaciones y Transportes,Secretario/a
+83,Pérez Hernández,José Ángel,PES,v,01/03/1958,Gobernación y Población,Integrante
+83,Pérez Hernández,José Ángel,PES,v,01/03/1958,Seguridad Pública,Integrante
+30,Rosete Sánchez,María de Jesús,PES,f,12/03/1960,Deporte,Integrante
+409,Acundo González,Miguel,PES,v,29/09/1961,"Desarrollo y Conservación Rural, Agrícola y Autosuficiencia Alimentaria",Integrante
+409,Acundo González,Miguel,PES,v,29/09/1961,Pueblos Indígenas,Integrante
+457,Baldenebro Arredondo,Manuel de Jesús,PES,v,13/05/1962,Salud,Integrante
+457,Baldenebro Arredondo,Manuel de Jesús,PES,v,13/05/1962,Seguridad Social,Integrante
+322,De la Peña Marshall,Ricardo,PES,v,17/02/1964,Derechos Humanos,Integrante
+322,De la Peña Marshall,Ricardo,PES,v,17/02/1964,Energía,Integrante
+91,Pérez Negrón Ruíz,Iván Arturo,PES,v,20/07/1974,Vigilancia de la Auditoría Superior de la Federación,Integrante
+71,Sosa Ruíz,Olga Patricia,PES,f,22/09/1974,Igualdad de Género,Integrante
+55,Vargas Contreras,Ernesto,PES,v,06/03/1977,Cultura y Cinematografía,Integrante
+44,Torres Díaz,Elba Lorena,PES,f,15/03/1977,Derechos Humanos,Integrante
+44,Torres Díaz,Elba Lorena,PES,f,15/03/1977,Seguridad Social,Integrante
+269,Villegas González,Héctor Joel,PES,v,09/05/1979,Asuntos Frontera Norte,Integrante
+402,Argüelles Victorero,Jorge Arturo,PES,v,13/05/1981,Marina,Integrante
+402,Argüelles Victorero,Jorge Arturo,PES,v,13/05/1981,Protección Civil y Prevención de Desastres,Integrante
+12,Salvatori Bojalil,Nayeli,PES,f,26/08/1985,Igualdad de Género,Integrante
+512,Moreno Medina,Esmeralda de los Ángeles,PES,f,19/12/1986,Justicia,Integrante
+512,Moreno Medina,Esmeralda de los Ángeles,PES,f,19/12/1986,Puntos Constitucionales,Integrante
+8,Saldívar Camacho,Francisco Javier,PES,v,12/03,Jurisdiccional,Integrante
+8,Saldívar Camacho,Francisco Javier,PES,v,12/03,"Recursos Hidráulicos, Agua Potable y Saneamiento",Integrante
+613,Guzmán Valdéz,Edgar,PES,v,19/04,Justicia,Integrante
+613,Guzmán Valdéz,Edgar,PES,v,19/04,Puntos Constitucionales,Integrante
+502,Lozano Rodríguez,Adriana,PES,f,26/06,Asuntos Frontera Norte,Integrante
+502,Lozano Rodríguez,Adriana,PES,f,26/06,Hacienda y Crédito Público,Integrante
+502,Lozano Rodríguez,Adriana,PES,f,26/06,Presupuesto y Cuenta Pública,Integrante
+74,Teissier Zavala,Adriana Paulina,PES,f,20/07,"Medio Ambiente, Sustentabilidad, Cambio Climático y Recursos Naturales",Integrante
+74,Teissier Zavala,Adriana Paulina,PES,f,20/07,Turismo,Integrante
+560,Garza Gutiérrez,Laura Erika de Jesús,PES,f,19/08,Derechos de la Niñez y Adolescencia,Integrante
+560,Garza Gutiérrez,Laura Erika de Jesús,PES,f,19/08,Desarrollo Social,Integrante
+438,Buenfil Díaz,Irasema del Carmen,PES,f,22/08,Asuntos Frontera Sur,Integrante
+438,Buenfil Díaz,Irasema del Carmen,PES,f,22/08,"Ciencia, Tecnología e Innovación",Integrante
+553,González Escoto,Armando,PES,v,27/08,"Desarrollo Metropolitano, Urbano, Ordenamiento Territorial y Movilidad",Integrante
+553,González Escoto,Armando,PES,v,27/08,Federalismo y Desarrollo Municipal,Integrante
+366,García Aguilar,Carolina,PES,f,22/09,Economía Social y Fomento del Cooperativismo,Integrante
+366,García Aguilar,Carolina,PES,f,22/09,Transparencia y Anticorrupción,Integrante
+455,Báez Ruiz,Claudia,PES,f,02/10,Relaciones Exteriores,Integrante
+455,Báez Ruiz,Claudia,PES,f,02/10,Vivienda,Integrante
+153,Reséndiz Hernández,Nancy Claudia,PES,f,19/12,Defensa Nacional,Integrante
+153,Reséndiz Hernández,Nancy Claudia,PES,f,19/12,Justicia,Integrante
+441,Cabrera Lagunas,María del Carmen,PES,f,30/12,Ganadería,Integrante
+441,Cabrera Lagunas,María del Carmen,PES,f,30/12,Pesca,Integrante
+457,Baldenebro Arredondo,Manuel de Jesús,PES,v,13/05/1962,Trabajo y Previsión Social,Presidente
+55,Vargas Contreras,Ernesto,PES,v,06/03/1977,Deporte,Presidente
+153,Reséndiz Hernández,Nancy Claudia,PES,f,19/12,Protección Civil y Prevención de Desastres,Presidente
+83,Pérez Hernández,José Ángel,PES,v,01/03/1958,"Economía, Comercio y Competitividad",Secretario/a
+30,Rosete Sánchez,María de Jesús,PES,f,12/03/1960,Economía Social y Fomento del Cooperativismo,Secretario/a
+30,Rosete Sánchez,María de Jesús,PES,f,12/03/1960,Trabajo y Previsión Social,Secretario/a
+409,Acundo González,Miguel,PES,v,29/09/1961,Vivienda,Secretario/a
+322,De la Peña Marshall,Ricardo,PES,v,17/02/1964,Cultura y Cinematografía,Secretario/a
+91,Pérez Negrón Ruíz,Iván Arturo,PES,v,20/07/1974,Hacienda y Crédito Público,Secretario/a
+91,Pérez Negrón Ruíz,Iván Arturo,PES,v,20/07/1974,Puntos Constitucionales,Secretario/a
+71,Sosa Ruíz,Olga Patricia,PES,f,22/09/1974,Marina,Secretario/a
+71,Sosa Ruíz,Olga Patricia,PES,f,22/09/1974,Turismo,Secretario/a
+44,Torres Díaz,Elba Lorena,PES,f,15/03/1977,Salud,Secretario/a
+269,Villegas González,Héctor Joel,PES,v,09/05/1979,"Desarrollo y Conservación Rural, Agrícola y Autosuficiencia Alimentaria",Secretario/a
+269,Villegas González,Héctor Joel,PES,v,09/05/1979,"Recursos Hidráulicos, Agua Potable y Saneamiento",Secretario/a
+402,Argüelles Victorero,Jorge Arturo,PES,v,13/05/1981,Vigilancia de la Auditoría Superior de la Federación,Secretario/a
+12,Salvatori Bojalil,Nayeli,PES,f,26/08/1985,Radio y Televisión,Secretario/a
+512,Moreno Medina,Esmeralda de los Ángeles,PES,f,19/12/1986,Seguridad Pública,Secretario/a
+8,Saldívar Camacho,Francisco Javier,PES,v,12/03,"Desarrollo Metropolitano, Urbano, Ordenamiento Territorial y Movilidad",Secretario/a
+613,Guzmán Valdéz,Edgar,PES,v,19/04,Juventud y Diversidad Sexual,Secretario/a
+74,Teissier Zavala,Adriana Paulina,PES,f,20/07,Infraestructura,Secretario/a
+560,Garza Gutiérrez,Laura Erika de Jesús,PES,f,19/08,"Ciencia, Tecnología e Innovación",Secretario/a
+438,Buenfil Díaz,Irasema del Carmen,PES,f,22/08,Energía,Secretario/a
+553,González Escoto,Armando,PES,v,27/08,"Medio Ambiente, Sustentabilidad, Cambio Climático y Recursos Naturales",Secretario/a
+366,García Aguilar,Carolina,PES,f,22/09,Desarrollo Social,Secretario/a
+455,Báez Ruiz,Claudia,PES,f,02/10,Educación,Secretario/a
+441,Cabrera Lagunas,María del Carmen,PES,f,30/12,Presupuesto y Cuenta Pública,Secretario/a
+551,González Cuevas,Isaías,PRI,v,06/07/1940,Seguridad Social,Integrante
+551,González Cuevas,Isaías,PRI,v,06/07/1940,Turismo,Integrante
+489,Limón Hernández,Manuel,PRI,v,10/01/1946,Energía,Integrante
+489,Limón Hernández,Manuel,PRI,v,10/01/1946,Trabajo y Previsión Social,Integrante
+314,Córdova Morán,Luis Eleusis Leónidas,PRI,v,26/09/1949,Derechos Humanos,Integrante
+314,Córdova Morán,Luis Eleusis Leónidas,PRI,v,26/09/1949,Educación,Integrante
+525,Medina Herrera,Benito,PRI,v,05/06/1950,Marina,Integrante
+525,Medina Herrera,Benito,PRI,v,05/06/1950,Relaciones Exteriores,Integrante
+268,Villegas Arreola,Alfredo,PRI,v,12/01/1951,Energía,Integrante
+268,Villegas Arreola,Alfredo,PRI,v,12/01/1951,Presupuesto y Cuenta Pública,Integrante
+158,Velasco González,Marcela Guillermina,PRI,f,25/06/1952,Salud,Integrante
+158,Velasco González,Marcela Guillermina,PRI,f,25/06/1952,Vivienda,Integrante
+98,Pavón Campos,Carlos,PRI,v,31/10/1955,Trabajo y Previsión Social,Integrante
+98,Pavón Campos,Carlos,PRI,v,31/10/1955,Vivienda,Integrante
+7,Saldaña Pérez,María Lucero,PRI,f,18/01/1957,Federalismo y Desarrollo Municipal,Integrante
+7,Saldaña Pérez,María Lucero,PRI,f,18/01/1957,Gobernación y Población,Integrante
+253,Yunes Landa,Héctor,PRI,v,27/09/1958,Asuntos Migratorios,Integrante
+253,Yunes Landa,Héctor,PRI,v,27/09/1958,Relaciones Exteriores,Integrante
+392,Alonzo Morales,María Ester,PRI,f,15/01/1959,Pesca,Integrante
+323,De las Fuentes Hernández,Fernando Donato,PRI,v,07/08/1960,Vigilancia de la Auditoría Superior de la Federación,Integrante
+517,Nemer Álvarez,Ernesto Javier,PRI,v,17/07/1961,"Economía, Comercio y Competitividad",Integrante
+517,Nemer Álvarez,Ernesto Javier,PRI,v,17/07/1961,Infraestructura,Integrante
+358,Flores Sánchez,Margarita,PRI,f,10/12/1961,Cultura y Cinematografía,Integrante
+358,Flores Sánchez,Margarita,PRI,f,10/12/1961,Deporte,Integrante
+510,Moreira Valdez,Rubén Ignacio,PRI,v,18/04/1963,Asuntos Frontera Sur,Integrante
+614,Hernández Deras,Ismael Alfredo,PRI,v,20/02/1964,"Desarrollo y Conservación Rural, Agrícola y Autosuficiencia Alimentaria",Integrante
+614,Hernández Deras,Ismael Alfredo,PRI,v,20/02/1964,Presupuesto y Cuenta Pública,Integrante
+126,Roa Sánchez,Cruz Juvenal,PRI,v,10/05/1968,Puntos Constitucionales,Integrante
+126,Roa Sánchez,Cruz Juvenal,PRI,v,10/05/1968,Transparencia y Anticorrupción,Integrante
+214,Acosta Peña,Brasil Alberto,PRI,v,21/06/1970,Comunicaciones y Transportes,Integrante
+214,Acosta Peña,Brasil Alberto,PRI,v,21/06/1970,"Desarrollo Metropolitano, Urbano, Ordenamiento Territorial y Movilidad",Integrante
+413,Aguilar Castillo,Ricardo,PRI,v,05/08/1970,Gobernación y Población,Integrante
+413,Aguilar Castillo,Ricardo,PRI,v,05/08/1970,Salud,Integrante
+116,Pastor Badilla,Claudia,PRI,f,01/12/1970,"Medio Ambiente, Sustentabilidad, Cambio Climático y Recursos Naturales",Integrante
+116,Pastor Badilla,Claudia,PRI,f,01/12/1970,Puntos Constitucionales,Integrante
+598,Herrera Anzaldo,Ana Lilia,PRI,f,29/08/1971,Vigilancia de la Auditoría Superior de la Federación,Integrante
+385,Espinoza Eguía,Juan Francisco,PRI,v,10/11/1971,Deporte,Integrante
+386,Canul Pérez,Juan José,PRI,v,08/01/1972,Ganadería,Integrante
+386,Canul Pérez,Juan José,PRI,v,08/01/1972,Pueblos Indígenas,Integrante
+49,Treviño Villarreal,Pedro Pablo,PRI,v,13/06/1972,Presupuesto y Cuenta Pública,Integrante
+49,Treviño Villarreal,Pedro Pablo,PRI,v,13/06/1972,Seguridad Pública,Integrante
+102,Ochoa Reza,Enrique,PRI,v,01/09/1972,Justicia,Integrante
+102,Ochoa Reza,Enrique,PRI,v,01/09/1972,Seguridad Social,Integrante
+238,Zarzosa Sánchez,Eduardo,PRI,v,16/12/1973,Comunicaciones y Transportes,Integrante
+238,Zarzosa Sánchez,Eduardo,PRI,v,16/12/1973,Ganadería,Integrante
+460,Barrera Fortoul,Laura,PRI,f,10/05/1976,Atención a Grupos Vulnerables,Integrante
+460,Barrera Fortoul,Laura,PRI,f,10/05/1976,Turismo,Integrante
+20,Rodríguez Mier y Terán,Mariana,PRI,f,01/06/1976,Asuntos Migratorios,Integrante
+20,Rodríguez Mier y Terán,Mariana,PRI,f,01/06/1976,Marina,Integrante
+520,Noroña Quezada,Hortensia María Luisa,PRI,f,19/10/1976,"Desarrollo Metropolitano, Urbano, Ordenamiento Territorial y Movilidad",Integrante
+129,Puente de la Mora,Ximena,PRI,f,12/03/1977,Igualdad de Género,Integrante
+129,Puente de la Mora,Ximena,PRI,f,12/03/1977,Justicia,Integrante
+87,Pérez Munguía,Soraya,PRI,f,27/09/1977,Energía,Integrante
+394,Álvarez García,Ivonne Liliana,PRI,f,25/04/1978,Gobernación y Población,Integrante
+394,Álvarez García,Ivonne Liliana,PRI,f,25/04/1978,"Régimen, Reglamentos y Prácticas Parlamentarias",Integrante
+361,Galindo Favela,Fernando,PRI,v,06/05/1978,Hacienda y Crédito Público,Integrante
+589,Ingram Vallines,Anilú,PRI,f,26/08/1980,Desarrollo Social,Integrante
+17,Sánchez Martínez,Lourdes Erika,PRI,f,29/09/1980,"Desarrollo y Conservación Rural, Agrícola y Autosuficiencia Alimentaria",Integrante
+17,Sánchez Martínez,Lourdes Erika,PRI,f,29/09/1980,Hacienda y Crédito Público,Integrante
+602,Guel Saldívar,Norma Adela,PRI,f,24/04/1984,Cultura y Cinematografía,Integrante
+602,Guel Saldívar,Norma Adela,PRI,f,24/04/1984,Radio y Televisión,Integrante
+406,Alemán Muñoz Castillo,María,PRI,f,14/04/1990,Transparencia y Anticorrupción,Integrante
+399,Ángulo Briceño,Pablo Guillermo,PRI,v,01/09/1990,Infraestructura,Integrante
+399,Ángulo Briceño,Pablo Guillermo,PRI,v,01/09/1990,Radio y Televisión,Integrante
+486,López Castro,Cynthia Iliana,PRI,f,18/02,Desarrollo Social,Integrante
+486,López Castro,Cynthia Iliana,PRI,f,18/02,Igualdad de Género,Integrante
+452,Azuara Yarzábal,Frinné,PRI,f,03/03,Economía Social y Fomento del Cooperativismo,Integrante
+452,Azuara Yarzábal,Frinné,PRI,f,03/03,Pueblos Indígenas,Integrante
+363,Garay Cadena,Martha Hortencia,PRI,f,03/04,Derechos de la Niñez y Adolescencia,Integrante
+363,Garay Cadena,Martha Hortencia,PRI,f,03/04,Educación,Integrante
+407,Campos Córdova,Lenin Nelson,PRI,v,08/08,Economía Social y Fomento del Cooperativismo,Integrante
+407,Campos Córdova,Lenin Nelson,PRI,v,08/08,"Recursos Hidráulicos, Agua Potable y Saneamiento",Integrante
+110,Ortíz Guarneros,Juan,PRI,v,25/09,Defensa Nacional,Integrante
+110,Ortíz Guarneros,Juan,PRI,v,25/09,Protección Civil y Prevención de Desastres,Integrante
+525,Medina Herrera,Benito,PRI,v,05/06/1950,Defensa Nacional,Presidente
+510,Moreira Valdez,Rubén Ignacio,PRI,v,18/04/1963,Asuntos Frontera Norte,Presidente
+361,Galindo Favela,Fernando,PRI,v,06/05/1978,"Economía, Comercio y Competitividad",Presidente
+363,Garay Cadena,Martha Hortencia,PRI,f,03/04,Atención a Grupos Vulnerables,Presidente
+551,González Cuevas,Isaías,PRI,v,06/07/1940,Trabajo y Previsión Social,Secretario/a
+314,Córdova Morán,Luis Eleusis Leónidas,PRI,v,26/09/1949,Deporte,Secretario/a
+268,Villegas Arreola,Alfredo,PRI,v,12/01/1951,Pesca,Secretario/a
+158,Velasco González,Marcela Guillermina,PRI,f,25/06/1952,Vigilancia de la Auditoría Superior de la Federación,Secretario/a
+98,Pavón Campos,Carlos,PRI,v,31/10/1955,Seguridad Social,Secretario/a
+542,Juárez Cisneros,René,PRI,v,08/06/1956,Protección Civil y Prevención de Desastres,Secretario/a
+7,Saldaña Pérez,María Lucero,PRI,f,18/01/1957,Derechos Humanos,Secretario/a
+253,Yunes Landa,Héctor,PRI,v,27/09/1958,Seguridad Pública,Secretario/a
+392,Alonzo Morales,María Ester,PRI,f,15/01/1959,Asuntos Frontera Sur,Secretario/a
+392,Alonzo Morales,María Ester,PRI,f,15/01/1959,Atención a Grupos Vulnerables,Secretario/a
+323,De las Fuentes Hernández,Fernando Donato,PRI,v,07/08/1960,Defensa Nacional,Secretario/a
+323,De las Fuentes Hernández,Fernando Donato,PRI,v,07/08/1960,Radio y Televisión,Secretario/a
+517,Nemer Álvarez,Ernesto Javier,PRI,v,17/07/1961,Desarrollo Social,Secretario/a
+358,Flores Sánchez,Margarita,PRI,f,10/12/1961,Turismo,Secretario/a
+614,Hernández Deras,Ismael Alfredo,PRI,v,20/02/1964,Asuntos Migratorios,Secretario/a
+536,Miranda Nava,Luis Enrique,PRI,v,04/02/1965,"Medio Ambiente, Sustentabilidad, Cambio Climático y Recursos Naturales",Secretario/a
+126,Roa Sánchez,Cruz Juvenal,PRI,v,10/05/1968,Gobernación y Población,Secretario/a
+214,Acosta Peña,Brasil Alberto,PRI,v,21/06/1970,"Ciencia, Tecnología e Innovación",Secretario/a
+413,Aguilar Castillo,Ricardo,PRI,v,05/08/1970,Federalismo y Desarrollo Municipal,Secretario/a
+116,Pastor Badilla,Claudia,PRI,f,01/12/1970,"Régimen, Reglamentos y Prácticas Parlamentarias",Secretario/a
+598,Herrera Anzaldo,Ana Lilia,PRI,f,29/08/1971,"Desarrollo Metropolitano, Urbano, Ordenamiento Territorial y Movilidad",Secretario/a
+385,Espinoza Eguía,Juan Francisco,PRI,v,10/11/1971,Ganadería,Secretario/a
+385,Espinoza Eguía,Juan Francisco,PRI,v,10/11/1971,"Recursos Hidráulicos, Agua Potable y Saneamiento",Secretario/a
+386,Canul Pérez,Juan José,PRI,v,08/01/1972,"Desarrollo y Conservación Rural, Agrícola y Autosuficiencia Alimentaria",Secretario/a
+49,Treviño Villarreal,Pedro Pablo,PRI,v,13/06/1972,Hacienda y Crédito Público,Secretario/a
+102,Ochoa Reza,Enrique,PRI,v,01/09/1972,Energía,Secretario/a
+238,Zarzosa Sánchez,Eduardo,PRI,v,16/12/1973,Pueblos Indígenas,Secretario/a
+460,Barrera Fortoul,Laura,PRI,f,10/05/1976,Derechos de la Niñez y Adolescencia,Secretario/a
+20,Rodríguez Mier y Terán,Mariana,PRI,f,01/06/1976,Justicia,Secretario/a
+520,Noroña Quezada,Hortensia María Luisa,PRI,f,19/10/1976,Igualdad de Género,Secretario/a
+520,Noroña Quezada,Hortensia María Luisa,PRI,f,19/10/1976,Relaciones Exteriores,Secretario/a
+129,Puente de la Mora,Ximena,PRI,f,12/03/1977,Transparencia y Anticorrupción,Secretario/a
+87,Pérez Munguía,Soraya,PRI,f,27/09/1977,Economía Social y Fomento del Cooperativismo,Secretario/a
+87,Pérez Munguía,Soraya,PRI,f,27/09/1977,"Economía, Comercio y Competitividad",Secretario/a
+361,Galindo Favela,Fernando,PRI,v,06/05/1978,Presupuesto y Cuenta Pública,Secretario/a
+589,Ingram Vallines,Anilú,PRI,f,26/08/1980,Infraestructura,Secretario/a
+589,Ingram Vallines,Anilú,PRI,f,26/08/1980,Jurisdiccional,Secretario/a
+17,Sánchez Martínez,Lourdes Erika,PRI,f,29/09/1980,"Recursos Hidráulicos, Agua Potable y Saneamiento",Secretario/a
+602,Guel Saldívar,Norma Adela,PRI,f,24/04/1984,Vivienda,Secretario/a
+406,Alemán Muñoz Castillo,María,PRI,f,14/04/1990,Juventud y Diversidad Sexual,Secretario/a
+406,Alemán Muñoz Castillo,María,PRI,f,14/04/1990,Puntos Constitucionales,Secretario/a
+399,Ángulo Briceño,Pablo Guillermo,PRI,v,01/09/1990,Comunicaciones y Transportes,Secretario/a
+486,López Castro,Cynthia Iliana,PRI,f,18/02,Educación,Secretario/a
+452,Azuara Yarzábal,Frinné,PRI,f,03/03,Salud,Secretario/a
+407,Campos Córdova,Lenin Nelson,PRI,v,08/08,Cultura y Cinematografía,Secretario/a
+110,Ortíz Guarneros,Juan,PRI,v,25/09,Marina,Secretario/a
+446,Bautista Villegas,Óscar,PVEM,v,06/02/1964,"Desarrollo y Conservación Rural, Agrícola y Autosuficiencia Alimentaria",Integrante
+446,Bautista Villegas,Óscar,PVEM,v,06/02/1964,Energía,Integrante
+422,Alcántara Núñez,Jesús Sergio,PVEM,v,21/06/1965,Comunicaciones y Transportes,Integrante
+422,Alcántara Núñez,Jesús Sergio,PVEM,v,21/06/1965,Presupuesto y Cuenta Pública,Integrante
+378,Escobar y Vega,Arturo,PVEM,v,23/04/1970,Radio y Televisión,Integrante
+559,Gómez Alcantar,Marco Antonio,PVEM,v,18/04/1972,Justicia,Integrante
+559,Gómez Alcantar,Marco Antonio,PVEM,v,18/04/1972,Puntos Constitucionales,Integrante
+362,Gallardo Cardona,José Ricardo,PVEM,v,10/11/1980,Deporte,Integrante
+362,Gallardo Cardona,José Ricardo,PVEM,v,10/11/1980,Ganadería,Integrante
+547,Gómez Ordaz,Leticia Mariana,PVEM,f,06/03,Deporte,Integrante
+547,Gómez Ordaz,Leticia Mariana,PVEM,f,06/03,Salud,Integrante
+261,Villafuerte Zavala,Lilia,PVEM,f,19/04,Economía Social y Fomento del Cooperativismo,Integrante
+261,Villafuerte Zavala,Lilia,PVEM,f,19/04,"Régimen, Reglamentos y Prácticas Parlamentarias",Integrante
+261,Villafuerte Zavala,Lilia,PVEM,f,19/04,Turismo,Integrante
+19,Rubio Montejo,Roberto Antonio,PVEM,v,20/04,Educación,Integrante
+2082,Espinoza Mata,Zulma,PVEM,f,16/09,"Ciencia, Tecnología e Innovación",Integrante
+439,Bugarín Cortés,Lyndiana Elizabeth,PVEM,f,13/12,Ganadería,Integrante
+19,Rubio Montejo,Roberto Antonio,PVEM,v,20/04,"Medio Ambiente, Sustentabilidad, Cambio Climático y Recursos Naturales",Presidente
+446,Bautista Villegas,Óscar,PVEM,v,06/02/1964,"Recursos Hidráulicos, Agua Potable y Saneamiento",Secretario/a
+422,Alcántara Núñez,Jesús Sergio,PVEM,v,21/06/1965,"Desarrollo Metropolitano, Urbano, Ordenamiento Territorial y Movilidad",Secretario/a
+141,Puente Salas,Carlos Alberto,PVEM,v,16/12/1971,Hacienda y Crédito Público,Secretario/a
+559,Gómez Alcantar,Marco Antonio,PVEM,v,18/04/1972,Gobernación y Población,Secretario/a
+362,Gallardo Cardona,José Ricardo,PVEM,v,10/11/1980,Presupuesto y Cuenta Pública,Secretario/a
+547,Gómez Ordaz,Leticia Mariana,PVEM,f,06/03,Desarrollo Social,Secretario/a
+19,Rubio Montejo,Roberto Antonio,PVEM,v,20/04,Pueblos Indígenas,Secretario/a
+2082,Espinoza Mata,Zulma,PVEM,f,16/09,Asuntos Frontera Sur,Secretario/a
+439,Bugarín Cortés,Lyndiana Elizabeth,PVEM,f,13/12,Presupuesto y Cuenta Pública,Secretario/a
+80,Pérez Rivera,Evaristo Lenin,SG,v,28/10/1966,Asuntos Migratorios,Integrante
+80,Pérez Rivera,Evaristo Lenin,SG,v,28/10/1966,Energía,Integrante
+509,Morales Vázquez,Carlos Alberto,SG,v,22/08/1972,Infraestructura,Integrante
+509,Morales Vázquez,Carlos Alberto,SG,v,22/08/1972,Presupuesto y Cuenta Pública,Integrante
+43,Toledo Gutiérrez,Mauricio Alonso,SG,v,19/06/1980,Asuntos Frontera Norte,Integrante
+43,Toledo Gutiérrez,Mauricio Alonso,SG,v,19/06/1980,Asuntos Frontera Sur,Integrante
+122,Riojas Martínez,Ana Lucía,SG,f,25/02/1988,Derechos Humanos,Integrante
+122,Riojas Martínez,Ana Lucía,SG,f,25/02/1988,Igualdad de Género,Integrante
+67,Serrano Cortés,Héctor,SG,v,22/04/1962,Radio y Televisión,Secretario/a
+67,Serrano Cortés,Héctor,SG,v,22/04/1962,Vigilancia de la Auditoría Superior de la Federación,Secretario/a
+80,Pérez Rivera,Evaristo Lenin,SG,v,28/10/1966,Trabajo y Previsión Social,Secretario/a
+509,Morales Vázquez,Carlos Alberto,SG,v,22/08/1972,"Desarrollo Metropolitano, Urbano, Ordenamiento Territorial y Movilidad",Secretario/a
+43,Toledo Gutiérrez,Mauricio Alonso,SG,v,19/06/1980,Gobernación y Población,Secretario/a
+122,Riojas Martínez,Ana Lucía,SG,f,25/02/1988,Juventud y Diversidad Sexual,Secretario/a

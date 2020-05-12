@@ -66,17 +66,20 @@
     
     var padding = 1;
     
-    var height = 900, width=1000;
+    var height = 700, width=1000;
     var distanceLimit = 30;
     
+    var partidosLista =["MORENA","PAN","PRI","PT","MC","PES","PVEM","PRD","SG"];
+
     var colorScale = d3.scaleOrdinal()
-        .range(["#8e0000","#2da2cf","#066533","#ff4343","#f28e33","#662583","#93c130","#ffee3b","#808080"])
-        .domain(["MORENA","PAN","PRI","PT","MC","PES","PVEM","PRD","SG"]);
+        .domain(partidosLista)
+        .range(partidosLista);
+        
     
     
     var angleScale = d3.scaleOrdinal()
           .range([1/9,2/9,3/9,4/9,5/9,6/9,7/9,8/9,1]);
-        angleScale.domain = colorScale.domain;
+        angleScale.domain = partidosLista;
         
       var promises = [
         d3.json("data/mexico.topo.json"),
@@ -189,14 +192,15 @@
       
       d3.timeout(function() {
     
-                   for (var i = 0; i < 120; ++i) simulation.tick(); // evalua la simulacion
+                   for (var i = 0; i < 150; ++i) simulation.tick(); // evalua la simulacion
                        ticked(); //actualiza posiciones.
                     
     
                     var circles = nodos.append('circle')
                         .attr('r', (d) => d.radius)
-                        .attr('class','circulos')
-                        .attr('fill', (d) => colorScale(d.partido))
+                        //.attr('class','circulos')
+                        .attr("class", d => "circulos "+ d.partido)
+                        //.attr('fill', (d) => colorScale(d.partido))
                     
                         ;
     
@@ -344,6 +348,7 @@
         .labelOffset(10)
        .title("Partido")
         .orient('vertical')
+        .useClass(true)
       .scale(colorScale);
     
     svg.select(".legendOrdinal")

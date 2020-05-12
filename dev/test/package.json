@@ -1,0 +1,14 @@
+{
+  "name": "@rusosnith/wheres-that-2-trillion-going",
+  "main": "3d3c7d98e09d8bd0@203.js",
+  "version": "203.0.0",
+  "homepage": "https://observablehq.com/@rusosnith/wheres-that-2-trillion-going",
+  "author": {
+    "name": "andres Snitcofsky",
+    "url": "https://observablehq.com/@rusosnith"
+  },
+  "type": "module",
+  "peerDependencies": {
+    "@observablehq/runtime": "4"
+  }
+}
