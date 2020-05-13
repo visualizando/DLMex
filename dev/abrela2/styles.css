@@ -60,9 +60,6 @@ circle{
 
 
 
-
-
-
 .comision .child{
   fill:#00000010;
   opacity: 0.8;
@@ -81,16 +78,15 @@ circle{
   stroke-width: 10px;
   fill:rgb(224, 224, 224);
 }
-
-.comision:hover .MORENA, .MORENA.child.selecccionado{ fill:#8e0000}
-.comision:hover .PAN, .PAN.child.selecccionado{ fill:#2da2cf}
-.comision:hover .PRI, .PRI.child.selecccionado{ fill:#066533}
-.comision:hover .PT, .PT.child.selecccionado{ fill:#ff4343}
-.comision:hover .MC, .MC.child.selecccionado{ fill:#e86f00}
-.comision:hover .PES, .PES.child.selecccionado{ fill:#662583}
-.comision:hover .PVEM, .PVEM.child.selecccionado{ fill:#93c130}
-.comision:hover .PRD, .PRD.child.selecccionado{ fill:#ffb31c}
-.comision:hover .SG, .SG.child.selecccionado{ fill:#808080}
+.comision:hover .MORENA, .MORENA.child.seleccionado{ fill:#8e0000}
+.comision:hover .PAN, .PAN.child.seleccionado{ fill:#2da2cf}
+.comision:hover .PRI, .PRI.child.seleccionado{ fill:#066533}
+.comision:hover .PT, .PT.child.seleccionado{ fill:#ff4343}
+.comision:hover .MC, .MC.child.seleccionado{ fill:#e86f00}
+.comision:hover .PES, .PES.child.seleccionado{ fill:#662583}
+.comision:hover .PVEM, .PVEM.child.seleccionado{ fill:#93c130}
+.comision:hover .PRD, .PRD.child.seleccionado{ fill:#ffb31c}
+.comision:hover .SG, .SG.child.seleccionado{ fill:#808080}
 
 
 

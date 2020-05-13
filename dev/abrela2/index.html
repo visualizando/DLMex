@@ -117,9 +117,9 @@ function drawChart(data){
               case 'Integrante':
                 return 100;
               case 'Presidente':
-                return 300;
+                return 500;
               case 'Secretario/a':
-                return 200;
+                return 250;
               }
         })
         .sort(function(a, b) { 
@@ -151,6 +151,7 @@ const node = svg.select("#main")
       .attr("class", "padre")
       //.attr("pointer-events", d => d.children ? "all" : "none")
       .classed("hovered",d => d.children ? false : true)
+      .on("mousemove", hovered()); // esto es para actualizar el titulo en el tipsy
       ;
 
 
@@ -312,6 +313,7 @@ const leaf = node.filter(d => d.depth ===1);
               function hovered() {
                 return function(d) {
                   d3.select("#actualtitle").html(d.data.nombre + " "+d.data.apellido)
+                  d3.selectAll('.child').classed("seleccionado",false);
                   d3.selectAll('.p'+d.data.id).classed("seleccionado",true);
                     }
                 }
