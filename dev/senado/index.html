@@ -8,8 +8,8 @@
 <head>
 <link rel="shortcut icon" href="">
   <link rel="stylesheet" href="styles.css">
-    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/tabletop.js/1.5.2/tabletop.min.js"></script>
-    <script src="//d3js.org/d3.v3.min.js"></script>
+    
+    <script src="//d3js.org/d3.v5.min.js"></script>
   <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
   <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery.tipsy/1.0.3/jquery.tipsy.js"></script>
 
@@ -74,35 +74,36 @@ function getUnique(arr) {
 }
 
 
-
-// DATALOAD -Tabletop.js
-
- var publicSpreadsheetUrl = 'https://docs.google.com/spreadsheets/d/11qVkdNbtitc6x32qDOfnLhq9n9dFs1RPdP1TVh8fSro/pubhtml?gid=0&single=true';
-
-      
-        Tabletop.init( { key: publicSpreadsheetUrl,
-                         callback: start,
-                         simpleSheet: true } )
-      
+var promises = [
+        d3.csv("../../data/congreso.csv")
+      ]
+    
+      Promise.all(promises).then(function(data){
+        ready(data)
+      });
+    
 
 
 
+function ready (results){
+  var data = d3.nest() // acá las personas en csv
+                          .key(function (d) { return d.camara; })
+                          .object(results[0]);
 
-
-function start(data, tabletop) {
+                          data = data["diputados"]        
 
   var nest = d3.nest()
-      .key(function(d) { return d['Country Code']; })
+      .key(function(d) { return d.Entidad; })
       .rollup(function(v) { return {
           count: v.length,
-          country: v[0].Country,
-          continent: v[0].Continent
+          country: v[0].entidad,
+          continent: v[0].partido
         }; })
       .entries(data);
 
 
     var continentesTotal = d3.nest()
-      .key(function(d) { return d.Continent; })
+      .key(function(d) { return d.partido; })
       .rollup(function(v) { return v.length})
       .entries(data);
 
@@ -113,7 +114,8 @@ var countsTotal=[];
 
 
     nest.forEach(function(d){
-      countsTotal.push(d.values.count);
+      console.log(d);
+      countsTotal.push(d.value.count);
     })
 
 
@@ -123,16 +125,18 @@ var margin = {top: 0, right: 0, bottom: 0, left: 0},
     height = 800 - margin.top - margin.bottom,
     padding = 3;
 
-var projection = d3.geo.mercator().scale(280).translate([550,500]);
+    var projection = d3.geoMercator()
 
-var radius = d3.scale.sqrt()
+//var projection = d3.geo.mercator().scale(280).translate([550,500]);
+
+var radius = d3.scaleSqrt()
     .domain([0, d3.max(countsTotal)])
     .range([10, 80]);
 
-var force = d3.layout.force()
-    .charge(0)
-    .gravity(0)
-    .size([width, height]);
+var force = d3.forceSimulation()
+.force('charge', d3.forceManyBody().strength(0.3))
+//    .size([width, height])
+    ;
 
 var svg = d3.select("svg")
     // .attr("width", width + margin.left + margin.right)

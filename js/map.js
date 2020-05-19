@@ -94,8 +94,10 @@
     // Define the div for the tooltip
     let div = d3.select("#tooltip")
     .style("opacity",0)
-    .style("left", width*0.7 + "px")
+    .style("right", "50px")
     .style("top", height * 0.2 + "px")
+    .style("pointer-events", "none")
+    
     ;
     
   var svg = d3.select("div#mapaDiputados")
