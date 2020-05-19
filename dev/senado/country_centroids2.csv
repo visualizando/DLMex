@@ -1,0 +1,249 @@
+iso,LAT,LONG,SHORT_NAME
+af,33,66,Afghanistan
+al,41,20,Albania
+dz,28,3,Algeria
+as,-14.3333333,-170,American Samoa
+ad,42.5,1.5,Andorra
+ao,-12.5,18.5,Angola
+ai,18.216667,-63.05,Anguilla
+ag,17.05,-61.8,Antigua and Barbuda
+ar,-34,-64,Argentina
+am,40,45,Armenia
+aw,12.5,-69.966667,Aruba
+sh,-15.95,-5.7,Ascension
+au,-25,135,Australia
+at,47.333333,13.333333,Austria
+az,40.5,47.5,Azerbaijan
+bs,24,-76,Bahamas
+bh,26,50.5,Bahrain
+bd,24,90,Bangladesh
+bb,13.166667,-59.533333,Barbados
+by,53,28,Belarus
+be,50.833333,4,Belgium
+bz,17.25,-88.75,Belize
+bj,9.5,2.25,Benin
+bm,32.333333,-64.75,Bermuda
+bt,27.5,90.5,Bhutan
+bo,-17,-65,Bolivia
+bq,12.2,-68.25,Bonaire
+ba,44.25,17.833333,Bosnia and Herzegovina
+bw,-22,24,Botswana
+bv,-54.433333,3.4,Bouvet Island
+br,-10,-55,Brazil
+io,-6,72,British Indian Ocean Territory
+vg,18.5,-64.5,British Virgin Islands
+bn,4.5,114.666667,Brunei
+bg,43,25,Bulgaria
+bf,13,-2,Burkina Faso
+mm,22,98,Burma
+bi,-3.5,30,Burundi
+kh,13,105,Cambodia
+cm,6,12,Cameroon
+ca,50,-80,Canada
+cv,16,-24,Cape Verde
+ky,19.5,-80.666667,Cayman Islands
+cf,7,21,Central African Republic
+td,15,19,Chad
+cl,-30,-71,Chile
+cn,35,105,China
+cx,-10.5,105.666667,Christmas Island
+cc,-12,96.833333,Cocos (Keeling) Islands
+co,4,-72,Colombia
+km,-12.166667,44.25,Comoros
+ck,-16.083333,-161.583333,Cook Islands
+cr,10,-84,Costa Rica
+ci,8,-5,Cote d'Ivoire
+hr,45.166667,15.5,Croatia
+cu,22,-79.5,Cuba
+cw,12.166667,-69,Curaçao
+cy,35,33,Cyprus
+cz,49.75,15,Czech Republic
+cd,0,25,Democratic Republic of the Congo
+dk,56,10,Denmark
+dj,11.5,42.5,Djibouti
+dm,15.5,-61.333333,Dominica
+do,19,-70.666667,Dominican Republic
+ec,-2,-77.5,Ecuador
+eg,27,30,Egypt
+sv,13.833333,-88.916667,El Salvador
+gq,2,10,Equatorial Guinea
+er,15,39,Eritrea
+ee,59,26,Estonia
+et,8,38,Ethiopia
+fk,-51.75,-59.166667,Falkland Islands
+fo,62,-7,Faroe Islands
+fm,5,152,Federated States of Micronesia
+fj,-18,178,Fiji
+fi,64,26,Finland
+fr,46,2,France
+gf,4,-53,French Guiana
+pf,-15,-140,French Polynesia
+tf,-43,67,French Southern and Antarctic Lands
+ga,-1,11.75,Gabon
+gm,13.5,-15.5,Gambia
+ps,31.425074,34.373398,Gaza Strip
+ge,41.999981,43.499905,Georgia
+de,51.5,10.5,Germany
+gh,8,-2,Ghana
+gi,36.133333,-5.35,Gibraltar
+gr,39,22,Greece
+gl,72,-40,Greenland
+gd,12.116667,-61.666667,Grenada
+gp,16.25,-61.583333,Guadeloupe
+gu,13.4444444,144.7366667,Guam
+gt,15.5,-90.25,Guatemala
+gg,49.583333,-2.333333,Guernsey
+gn,11,-10,Guinea
+gw,12,-15,Guinea-Bissau
+gy,5,-59,Guyana
+ht,19,-72.416667,Haiti
+hm,-53,73,Heard Island and McDonald Islands
+hn,15,-86.5,Honduras
+hk,22.25,114.166667,Hong Kong
+hu,47,20,Hungary
+is,65,-18,Iceland
+in,20,77,India
+id,-5,120,Indonesia
+ir,32,53,Iran
+iq,33,44,Iraq
+ie,53,-8,Ireland
+im,54.25,-4.5,Isle of Man
+il,31.5,34.75,Israel
+it,42.833333,12.833333,Italy
+jm,18.25,-77.5,Jamaica
+jp,36,138,Japan
+je,49.216667,-2.116667,Jersey
+jo,31,36,Jordan
+kz,48,68,Kazakhstan
+ke,1,38,Kenya
+ki,-5,-170,Kiribati
+kw,29.5,47.75,Kuwait
+kg,41,75,Kyrgyzstan
+la,18,105,Laos
+lv,57,25,Latvia
+lb,33.833333,35.833333,Lebanon
+ls,-29.5,28.25,Lesotho
+lr,6.5,-9.5,Liberia
+ly,25,17,Libya
+li,47.166667,9.533333,Liechtenstein
+lt,56,24,Lithuania
+lu,49.75,6.166667,Luxembourg
+mo,22.157778,113.559722,Macau
+mk,41.833333,22,Macedonia
+mg,-20,47,Madagascar
+mw,-13.5,34,Malawi
+my,2.5,112.5,Malaysia
+mv,3.2,73,Maldives
+ml,17,-4,Mali
+mt,35.916667,14.433333,Malta
+mh,10,167,Marshall Islands
+mq,14.666667,-61,Martinique
+mr,20,-12,Mauritania
+mu,-20.3,57.583333,Mauritius
+yt,-12.833333,45.166667,Mayotte
+mx,23,-102,Mexico
+md,47,29,Moldova
+mc,43.733333,7.4,Monaco
+mn,46,105,Mongolia
+me,42.5,19.3,Montenegro
+ms,16.75,-62.2,Montserrat
+ma,32,-5,Morocco
+mz,-18.25,35,Mozambique
+na,-22,17,Namibia
+nr,-0.533333,166.916667,Nauru
+np,28,84,Nepal
+nl,52.5,5.75,Netherlands
+nc,-21.5,165.5,New Caledonia
+nz,-42,174,New Zealand
+ni,13,-85,Nicaragua
+ne,16,8,Niger
+ng,10,8,Nigeria
+nu,-19.033333,-169.866667,Niue
+nf,-29.033333,167.95,Norfolk Island
+kp,40,127,North Korea
+mp,16,146,Northern Mariana Islands
+no,62,10,Norway
+om,21,57,Oman
+pk,30,70,Pakistan
+pw,6,134,Palau
+pa,9,-80,Panama
+pg,-6,147,Papua New Guinea
+py,-22.993333,-57.996389,Paraguay
+pe,-10,-76,Peru
+ph,13,122,Philippines
+pn,-25.066667,-130.1,Pitcairn Islands
+pl,52,20,Poland
+pt,39.5,-8,Portugal
+pr,18.2482882,-66.4998941,Puerto Rico
+qa,25.5,51.25,Qatar
+cg,-1,15,Republic of the Congo
+re,-21.1,55.6,Reunion
+ro,46,25,Romania
+ru,60,100,Russia
+rw,-2,30,Rwanda
+bl,17.9,-62.833333,Saint Barthelemy
+kn,17.333333,-62.75,Saint Kitts and Nevis
+lc,13.883333,-60.966667,Saint Lucia
+mf,18.075,-63.05833,Saint Martin
+pm,46.833333,-56.333333,Saint Pierre and Miquelon
+vc,13.083333,-61.2,Saint Vincent and the Grenadines
+ws,-13.803096,-172.178309,Samoa
+sm,43.933333,12.416667,San Marino
+st,1,7,Sao Tome and Principe
+sa,25,45,Saudi Arabia
+sn,14,-14,Senegal
+rs,44,21,Serbia
+sc,-4.583333,55.666667,Seychelles
+sl,8.5,-11.5,Sierra Leone
+sg,1.366667,103.8,Singapore
+sx,18.04167,-63.06667,Sint Maarten
+sk,48.666667,19.5,Slovakia
+si,46.25,15.166667,Slovenia
+sb,-8,159,Solomon Islands
+so,6,48,Somalia
+za,-30,26,South Africa
+gs,-56,-33,South Georgia and South Sandwich Islands
+kr,37,127.5,South Korea
+ss,8,30,South Sudan
+es,40,-4,Spain
+lk,7,81,Sri Lanka
+sd,16,30,Sudan
+sr,4,-56,Suriname
+sj,78,20,Svalbard
+sz,-26.5,31.5,Swaziland
+se,62,15,Sweden
+ch,47,8,Switzerland
+sy,35,38,Syria
+tw,24,121,Taiwan
+tj,39,71,Tajikistan
+tz,-6,35,Tanzania
+th,15,100,Thailand
+tl,-8.833333,125.75,Timor-Leste
+tg,8,1.166667,Togo
+tk,-9,-171.75,Tokelau
+to,-20,-175,Tonga
+tt,11,-61,Trinidad and Tobago
+tn,34,9,Tunisia
+tr,39.059012,34.911546,Turkey
+tm,40,60,Turkmenistan
+tc,21.733333,-71.583333,Turks and Caicos Islands
+tv,-8,178,Tuvalu
+ug,2,33,Uganda
+ua,49,32,Ukraine
+ae,24,54,United Arab Emirates
+uk,54,-4,United Kingdom
+us,39.828175,-90.5795,United States
+uy,-33,-56,Uruguay
+um,5.8811111,-162.0725,US Minor Outlying Islands
+vi,18.3482891,-64.9834807,US Virgin Islands
+uz,41.707542,63.84911,Uzbekistan
+vu,-16,167,Vanuatu
+va,41.9,12.45,Vatican City
+ve,8,-66,Venezuela
+vn,16.166667,107.833333,Vietnam
+wf,-13.3,-176.2,Wallis and Futuna
+ps,31.666667,35.25,West Bank
+eh,25,-13.5,Western Sahara
+ye,15.5,47.5,Yemen
+zm,-15,30,Zambia
+zw,-19,29,Zimbabwe

@@ -1,7 +1,16 @@
-html{
-    background-color: #f8f9fb
+html, .hero.is-info .tabs.is-boxed li.is-active a, .hero.is-info .tabs.is-boxed li.is-active a:hover{
+    background-color: #f8f9fb;
+    color:#060B18;
     ;
 }
+
+.svg-content {
+  display: inline-block;
+  top: 0;
+  left: 0;
+}
+
+
 
 
 .title {

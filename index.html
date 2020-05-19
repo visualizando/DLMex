@@ -21,55 +21,7 @@
 
     <script src="https://d3js.org/topojson.v2.min.js"></script>
 
-    <script type="text/javascript">
-      var nested;
     
-      d3.csv('data/organigramas.csv')
-                  .then(function(imported) {
-                      
-                      nested = d3.nest()
-                            .key(function(d) { return d.Camara; })
-                            .key(function(d) { return d.Seccion; })
-                            .entries(imported);
-                      
-                  })
-                  .catch(function(error){
-                      // handle error   
-                  })
-    
-        google.charts.load('current', {packages:["orgchart"]});
-        google.charts.setOnLoadCallback(dibujaGraficos);
-  
-        
-        function dibujaGraficos() {  
-          nested.forEach(function(d){
-                  d3.select("#organigramasMenu").append("li").append("a")
-                                  .html(d.key);
-    
-                  d.values.forEach(function(e){
-                    var subArea = d3.select("#organigramas").append("div").attr("class","box");
-                              subArea.append("h3").attr("class","subtitle").html(e.key);
-                              subArea.append("div").attr("id",e.values[0].idSlug);
-                          ;
-                          var tablaContent = e.values.map(function(f){
-                              return [{'v':f.idSlug,'f':f.area+":<br><b>"+f.titular+"</b>"},f['depende de'],f.direccion+" "+f.telefono];
-                            })
-                           drawChart(tablaContent,e.values[0].idSlug)
-                          })                                 
-                    })
-        }
-   
-        function drawChart(tablaContent,id) {
-          var tabla = new google.visualization.DataTable();
-          tabla.addColumn('string', 'Name');
-          tabla.addColumn('string', 'Manager');
-          tabla.addColumn('string', 'ToolTip');
-    
-          tabla.addRows(tablaContent);
-          var chart = new google.visualization.OrgChart(document.getElementById(id));
-          chart.draw(tabla, {'allowHtml':true,'size':'small'});
-        }
-     </script>
 
 
   </head>
@@ -77,8 +29,9 @@
 
   <body>
 
+    
 
-    <section class="hero is-info is-fullheight">
+    <section class="hero is-info is-medium">
       <!-- Hero head: will stick at the top -->
       <div class="hero-head">
         <header class="navbar">
@@ -132,6 +85,19 @@
       
         </div>
       </div>
+
+                <!-- Hero footer: will stick at the bottom -->
+            <div class="hero-foot">
+              <nav class="tabs is-boxed is-fullwidth">
+                <div class="container">
+                  <ul>
+                    <li><a>Buscador</a></li>
+                      <li class="is-active"><a>Información contextual</a></li>
+                  </ul>
+                </div>
+              </nav>
+            </div>
+            
    
     </section>
 
@@ -141,7 +107,7 @@
 
       <div class="container is-widescreen">
         <div class="columns is-mobile is-centered">
-          <div class="column is-fullwidth has-text-centered	">
+          <div class="column is-fullwidth-de has-text-centered	">
 
             <div id="tooltip">
               <h3 ><span id="title"></span></h3>
@@ -150,15 +116,20 @@
               <h5 id="partido"></h5>
             
             </div> 
+            <div class="column is-8 is-offset-2">
+              <h2 class="title is-1">
+                Distribución de bancas en la Cámara de Diputados
+              </h2>
+              <h3 class="subtitle is-6">
+                Mapa de distribución de los diputados por unidad territorial (estados y circunscripciones) por la que fueron electos según el sistema de elección: mayoría relativa o representación proporcional.
+            </h3>
+                <div class="notification is-primary is-light">
+              Mové el cursor sobre los legisladores para ver el estado que representan y accedé a su perfil haciendo un click en el legislador elegido. Mové el cursor sobre las circunscripciones para ver los estados incluidos en cada una. 
+              </div>
+            </div>
             
-            <h2 class="title is-1">
-              Distribución de bancas en la Cámara de Diputados
-            </h2>
-            <p>
-              Mapa de distribución de los diputados por unidad territorial (estados y circunscripciones) por la que fueron electos según el sistema de elección: mayoría relativa o representación proporcional. 
-            </p>
               <br>
-              <svg id="mapaDiputados"></svg>
+              <div id="mapaDiputados" style="max-width: 900px; margin:auto"></div>
           </div>
         </div>
      </div>
@@ -169,13 +140,14 @@
       <div class="container is-widescreen">
         <div class="columns is-mobile is-centered">
           <div class="column is-fullwidth has-text-centered	">
+            <div class="column is-8 is-offset-2">
             <h2 class="title is-1">
               Distribución de curules en el Senado
             </h2>
-            <p>
+            <h3 class="subtitle is-6">
               Mapa de distribución de los senadores por unidad territorial (estados o lista nacional) por la que fueron electos según el sistema de elección: mayoría relativa y representación proporcional.
- 
-            </p>
+            </h3>
+          </div>
               <br>
               <!-- <img alt="Mapa de México dividido por estados" src="mapaSenadoEstatico.svg"> -->
           </div>
@@ -194,6 +166,7 @@
               </h2>
             <h3 class="subtitle is-6">
               Visualización sobre la formación académica alcanzada y actividades públicas, partidarias y privadas que llevaron adelante los legisladores de la Legislatura actual antes de ocupar sus cargos actuales.
+
             </h3>
     
         
@@ -212,7 +185,8 @@
               Perspectiva de Genero
               </h2>
             <h3 class="subtitle is-6">
-              Integración proporcional de las cámaras y análisis sobre la integración de comisiones, participación de mujeres en cargos jerárquicos y formación académica
+              Integración proporcional de las cámaras y análisis sobre la integración de comisiones, participación de mujeres en cargos jerárquicos y formación académica 
+
             </h3>
     
         
@@ -230,6 +204,7 @@
              </h2>
             <h3 class="subtitle is-6">
               ¿Cómo es el trámite legislativo en México? Este es el camino que recorren las iniciativas, cómo se debaten y sancionan hasta convertirse en ley en el Congreso de la Unión.
+
             </h3>
         
  
@@ -251,14 +226,29 @@
       <div class="container is-widescreen">
         <div class="columns is-mobile is-centered">
           <div class="column is-fullwidth has-text-centered	">
+            <div class="column is-8 is-offset-2">
             <h2 class="title is-1">
               Comisiones
               </h2>
             <h3 class="subtitle is-6">
-              Las comisiones son grupos reducidos de legisladores que estudian con mayor detalle temas específicos de un proyecto. A continuación, te mostramos la conformación de las comisiones ordinarias (permanentes.
+              Las comisiones son grupos reducidos de legisladores que estudian con mayor detalle temas específicos de un proyecto. A continuación, te mostramos la conformación de las comisiones ordinarias. Si bien cada legislador puede integran varias comisiones, en general los integrantes de la Mesa Directiva y la Jucopo no integran comisiones ordinarias.
             </h3>
+
+            <div class="notification is-primary is-light">
+            Pasá el curso sobre las comisiones para ver sus integrantes y los partidos que representan. Los puntos grandes son presidentes y los medianos secretarios de comisión. Al pasar el cursor sobre un legislador se despliega su nombre y se colorea en las demás comisiones que integra.
+          </div>
+          </div>
             <br>
-            <iframe src="dev/abrela2/index.html" width="100%" height="950px"></iframe>
+            <h2 class="title">Comisiones de la camara de Diputados</h2>
+            <div id="comisionesDipus" style=" margin:auto">
+              <iframe src="dev/abrela2/index.html" width="80%" height="950px" style=" margin:auto"></iframe>
+            </div>
+
+            <h2 class="title">Comisiones de la camara de Senadores</h2>
+            <div id="comisionesSenado" style=" margin:auto">
+              <iframe src="dev/abrela2/indexSenado.html" width="80%" height="950px" style=" margin:auto"></iframe>
+            </div>
+            
         
           </div>
         </div>
@@ -278,16 +268,17 @@
             <p>
             Breve descripcion Breve descripcion Breve descripcion Breve descripcion Breve descripcion Breve descripcion 
             </p>
-            <div class="tabs is-centered is-small">
+            <div class="tabs is-centered">
               <ul id="organigramasMenu">
-                <!-- Aqui entra el d3 a meter organigramas -->
+                <li><a>Senado</a></li>
+                <li><a>Diputados</a></li>
               </ul>
-              <div id="organigramas">
-
-              </div>
+              
             </div>
 
-            <br>
+            <div id="organigramas">
+
+              <div class="box"><h3 class="subtitle">Mesa Directiva</h3><div id="mesa-directiva-1"></div></div><div class="box"><h3 class="subtitle">Junta de Coordinación Política</h3><div id="junta-de-coordinación-política-13"></div></div><div class="box"><h3 class="subtitle">Coordinación Técnica</h3><div id="coordinación-técnica-24"></div></div><div class="box"><h3 class="subtitle">Servicios Parlamentarios</h3><div id="servicios-parlamentarios-30"></div></div><div class="box"><h3 class="subtitle">Servicios Administrativos y Financieros</h3><div id="servicios-administrativos-y-financieros-37"></div></div><div class="box"><h3 class="subtitle">Mesa Directiva</h3><div id="mesa-directiva-48"></div></div><div class="box"><h3 class="subtitle">Junta de Coordinación Política</h3><div id="junta-de-coordinación-política-60"></div></div><div class="box"><h3 class="subtitle">Coordinación de Comunicación Social</h3><div id="coordinación-de-comunicación-social-70"></div></div><div class="box"><h3 class="subtitle">Secretaría General</h3><div id="secretaría-general-76"></div></div><div class="box"><h3 class="subtitle">Secretaría de Servicios Parlamentarios</h3><div id="secretaría-de-servicios-parlamentarios-83"></div></div><div class="box"><h3 class="subtitle">Secretaría de Servicios Administrativos y Financieros</h3><div id="secretaría-de-servicios-administrativos-y-financieros-96"></div></div><div class="box"><h3 class="subtitle">Contraloría Interna</h3><div id="contraloría-interna-103"></div></div></div><br>
 
           </div>
         </div>
@@ -312,534 +303,7 @@
             <iframe title="" aria-label="Locator maps" id="datawrapper-chart-lthOV" src="//datawrapper.dwcdn.net/lthOV/1/" scrolling="no" frameborder="0" style="width: 0; min-width: 100% !important; border: none;" height="495"></iframe><script type="text/javascript">!function(){"use strict";window.addEventListener("message",function(a){if(void 0!==a.data["datawrapper-height"])for(var e in a.data["datawrapper-height"]){var t=document.getElementById("datawrapper-chart-"+e)||document.querySelector("iframe[src*='"+e+"']");t&&(t.style.height=a.data["datawrapper-height"][e]+"px")}})}();
             </script>
 
-                        <div id="contents">
-                          <style type="text/css">
-                            ol.lst-kix_5kw6tmen9bj7-1.start {
-                              counter-reset: lst-ctn-kix_5kw6tmen9bj7-1 0
-                            }
-
-                            ol.lst-kix_5kw6tmen9bj7-8.start {
-                              counter-reset: lst-ctn-kix_5kw6tmen9bj7-8 0
-                            }
-
-                            .lst-kix_5kw6tmen9bj7-7>li {
-                              counter-increment: lst-ctn-kix_5kw6tmen9bj7-7
-                            }
-
-                            .lst-kix_5kw6tmen9bj7-1>li {
-                              counter-increment: lst-ctn-kix_5kw6tmen9bj7-1
-                            }
-
-                            .lst-kix_5kw6tmen9bj7-4>li {
-                              counter-increment: lst-ctn-kix_5kw6tmen9bj7-4
-                            }
-
-                            ol.lst-kix_5kw6tmen9bj7-4.start {
-                              counter-reset: lst-ctn-kix_5kw6tmen9bj7-4 0
-                            }
-
-                            .lst-kix_5kw6tmen9bj7-3>li:before {
-                              content: ""counter(lst-ctn-kix_5kw6tmen9bj7-3, decimal) ". "
-                            }
-
-                            ol.lst-kix_5kw6tmen9bj7-2.start {
-                              counter-reset: lst-ctn-kix_5kw6tmen9bj7-2 0
-                            }
-
-                            .lst-kix_5kw6tmen9bj7-4>li:before {
-                              content: ""counter(lst-ctn-kix_5kw6tmen9bj7-4, lower-latin) ". "
-                            }
-
-                            .lst-kix_5kw6tmen9bj7-5>li:before {
-                              content: ""counter(lst-ctn-kix_5kw6tmen9bj7-5, lower-roman) ". "
-                            }
-
-                            ol.lst-kix_5kw6tmen9bj7-7.start {
-                              counter-reset: lst-ctn-kix_5kw6tmen9bj7-7 0
-                            }
-
-                            ol.lst-kix_5kw6tmen9bj7-1 {
-                              list-style-type: none
-                            }
-
-                            ol.lst-kix_5kw6tmen9bj7-0 {
-                              list-style-type: none
-                            }
-
-                            .lst-kix_5kw6tmen9bj7-6>li:before {
-                              content: ""counter(lst-ctn-kix_5kw6tmen9bj7-6, decimal) ". "
-                            }
-
-                            .lst-kix_5kw6tmen9bj7-7>li:before {
-                              content: ""counter(lst-ctn-kix_5kw6tmen9bj7-7, lower-latin) ". "
-                            }
-
-                            .lst-kix_5kw6tmen9bj7-0>li {
-                              counter-increment: lst-ctn-kix_5kw6tmen9bj7-0
-                            }
-
-                            .lst-kix_5kw6tmen9bj7-3>li {
-                              counter-increment: lst-ctn-kix_5kw6tmen9bj7-3
-                            }
-
-                            .lst-kix_5kw6tmen9bj7-2>li:before {
-                              content: ""counter(lst-ctn-kix_5kw6tmen9bj7-2, lower-roman) ". "
-                            }
-
-                            ol.lst-kix_5kw6tmen9bj7-8 {
-                              list-style-type: none
-                            }
-
-                            ol.lst-kix_5kw6tmen9bj7-7 {
-                              list-style-type: none
-                            }
-
-                            ol.lst-kix_5kw6tmen9bj7-6 {
-                              list-style-type: none
-                            }
-
-                            ol.lst-kix_5kw6tmen9bj7-5 {
-                              list-style-type: none
-                            }
-
-                            ol.lst-kix_5kw6tmen9bj7-5.start {
-                              counter-reset: lst-ctn-kix_5kw6tmen9bj7-5 0
-                            }
-
-                            .lst-kix_5kw6tmen9bj7-0>li:before {
-                              content: ""counter(lst-ctn-kix_5kw6tmen9bj7-0, decimal) ". "
-                            }
-
-                            .lst-kix_5kw6tmen9bj7-1>li:before {
-                              content: ""counter(lst-ctn-kix_5kw6tmen9bj7-1, lower-latin) ". "
-                            }
-
-                            ol.lst-kix_5kw6tmen9bj7-4 {
-                              list-style-type: none
-                            }
-
-                            .lst-kix_5kw6tmen9bj7-6>li {
-                              counter-increment: lst-ctn-kix_5kw6tmen9bj7-6
-                            }
-
-                            .lst-kix_5kw6tmen9bj7-8>li:before {
-                              content: ""counter(lst-ctn-kix_5kw6tmen9bj7-8, lower-roman) ". "
-                            }
-
-                            ol.lst-kix_5kw6tmen9bj7-0.start {
-                              counter-reset: lst-ctn-kix_5kw6tmen9bj7-0 0
-                            }
-
-                            ol.lst-kix_5kw6tmen9bj7-3 {
-                              list-style-type: none
-                            }
-
-                            ol.lst-kix_5kw6tmen9bj7-2 {
-                              list-style-type: none
-                            }
-
-                            .lst-kix_5kw6tmen9bj7-5>li {
-                              counter-increment: lst-ctn-kix_5kw6tmen9bj7-5
-                            }
-
-                            .lst-kix_5kw6tmen9bj7-8>li {
-                              counter-increment: lst-ctn-kix_5kw6tmen9bj7-8
-                            }
-
-                            .lst-kix_5kw6tmen9bj7-2>li {
-                              counter-increment: lst-ctn-kix_5kw6tmen9bj7-2
-                            }
-
-                            ol.lst-kix_5kw6tmen9bj7-6.start {
-                              counter-reset: lst-ctn-kix_5kw6tmen9bj7-6 0
-                            }
-
-                            ol.lst-kix_5kw6tmen9bj7-3.start {
-                              counter-reset: lst-ctn-kix_5kw6tmen9bj7-3 0
-                            }
-
-                            ol {
-                              margin: 0;
-                              padding: 0
-                            }
-
-
-                            .c4 {
-                              margin-left: 36pt;
-                              padding-top: 0pt;
-                              padding-left: 0pt;
-                              padding-bottom: 10pt;
-                              line-height: 1.1500000000000001;
-                              orphans: 2;
-                              widows: 2;
-                              text-align: left
-                            }
-
-                            .c1 {
-                              margin-left: 72pt;
-                              padding-top: 0pt;
-                              padding-left: 0pt;
-                              padding-bottom: 10pt;
-                              line-height: 1.1500000000000001;
-                              orphans: 2;
-                              widows: 2;
-                              text-align: left
-                            }
-
-                            .c2 {
-                              margin-left: 108pt;
-                              padding-top: 0pt;
-                              padding-left: 0pt;
-                              padding-bottom: 10pt;
-                              line-height: 1.1500000000000001;
-                              orphans: 2;
-                              widows: 2;
-                              text-align: left
-                            }
-
-                            .c0 {
-                              color: #000000;
-                              font-weight: 400;
-                              text-decoration: none;
-                              vertical-align: baseline;
-                              font-size: 11pt;
-                              font-family: "Calibri";
-                              font-style: normal
-                            }
-
-                            .c5 {
-                              padding-top: 0pt;
-                              padding-bottom: 10pt;
-                              line-height: 1.1500000000000001;
-                              orphans: 2;
-                              widows: 2;
-                              text-align: left;
-                              height: 11pt
-                            }
-
-                            .c6 {
-                              background-color: #ffffff;
-                              max-width: 468pt;
-                              padding: 72pt 72pt 72pt 72pt
-                            }
-
-                            .c3 {
-                              padding: 0;
-                              margin: 0
-                            }
-
-                            
-                          </style>
-                          <ol class="c3 lst-kix_5kw6tmen9bj7-0 start" start="1">
-                            <li class="c4"><span class="c0">PUERTA 1: ENTRADA VISITANTES.<br>Calle Emiliano Zapata.</span></li>
-                            <li class="c4"><span class="c0">PLENO DE LA CÁMARA O SALÓN DE SESIONES.</span></li>
-                            <li class="c4"><span class="c0">EDIFICIO A.</span></li>
-                          </ol>
-                          <ol class="c3 lst-kix_5kw6tmen9bj7-1 start" start="1">
-                            <li class="c1"><span class="c0">P. PRINCIPAL:</span></li>
-                          </ol>
-                          <ol class="c3 lst-kix_5kw6tmen9bj7-2 start" start="1">
-                            <li class="c2"><span class="c0">Salón del Pleno.</span></li>
-                            <li class="c2"><span class="c0">Sala de Prensa.</span></li>
-                            <li class="c2"><span class="c0">&nbsp;Salón de Protocolo.</span></li>
-                            <li class="c2"><span class="c0">&nbsp;Servicio Médico.</span></li>
-                            <li class="c2"><span class="c0">&nbsp;Coordinación de Comunicación Social.</span></li>
-                          </ol>
-                          <ol class="c3 lst-kix_5kw6tmen9bj7-1" start="2">
-                            <li class="c1"><span class="c0">1ER NIVEL:</span></li>
-                          </ol>
-                          <ol class="c3 lst-kix_5kw6tmen9bj7-2 start" start="1">
-                            <li class="c2"><span class="c0">Galería.</span></li>
-                          </ol>
-                          <ol class="c3 lst-kix_5kw6tmen9bj7-1" start="3">
-                            <li class="c1"><span class="c0">2DO NIVEL:</span></li>
-                          </ol>
-                          <ol class="c3 lst-kix_5kw6tmen9bj7-2 start" start="1">
-                            <li class="c2"><span class="c0">Salón Verde.</span></li>
-                            <li class="c2"><span class="c0">Salón Norte.</span></li>
-                            <li class="c2"><span class="c0">Salón Sur.</span></li>
-                            <li class="c2"><span class="c0">Mesa Directiva.</span></li>
-                            <li class="c2"><span class="c0">Videoteca.</span></li>
-                          </ol>
-                          <ol class="c3 lst-kix_5kw6tmen9bj7-1" start="4">
-                            <li class="c1"><span class="c0">3ER NIVEL:</span></li>
-                          </ol>
-                          <ol class="c3 lst-kix_5kw6tmen9bj7-2 start" start="1">
-                            <li class="c2"><span class="c0">Canal del Congreso.</span></li>
-                            <li class="c2"><span class="c0">Auditoría de la Federación.</span></li>
-                          </ol>
-                          <ol class="c3 lst-kix_5kw6tmen9bj7-0" start="4">
-                            <li class="c4"><span class="c0">EDIFICIO B. GRUPO PARLAMENTARIO.</span></li>
-                          </ol>
-                          <ol class="c3 lst-kix_5kw6tmen9bj7-1 start" start="1">
-                            <li class="c1"><span class="c0">P. PRINCIPAL:</span></li>
-                          </ol>
-                          <ol class="c3 lst-kix_5kw6tmen9bj7-2 start" start="1">
-                            <li class="c2"><span class="c0">Grupo parlamentario del Partido Acción Nacional (PAN).</span></li>
-                            <li class="c2"><span class="c0">Grupo parlamentario de Morena.</span></li>
-                          </ol>
-                          <ol class="c3 lst-kix_5kw6tmen9bj7-1" start="2">
-                            <li class="c1"><span class="c0">1ER NIVEL:</span></li>
-                          </ol>
-                          <ol class="c3 lst-kix_5kw6tmen9bj7-2 start" start="1">
-                            <li class="c2"><span class="c0">Grupo parlamentario de Morena.</span></li>
-                          </ol>
-                          <ol class="c3 lst-kix_5kw6tmen9bj7-1" start="3">
-                            <li class="c1"><span class="c0">2DO NIVEL:</span></li>
-                          </ol>
-                          <ol class="c3 lst-kix_5kw6tmen9bj7-2 start" start="1">
-                            <li class="c2"><span class="c0">Grupo parlamentario de Morena.</span></li>
-                          </ol>
-                          <ol class="c3 lst-kix_5kw6tmen9bj7-1" start="4">
-                            <li class="c1"><span class="c0">3ER NIVEL:</span></li>
-                          </ol>
-                          <ol class="c3 lst-kix_5kw6tmen9bj7-2 start" start="1">
-                            <li class="c2"><span class="c0">Grupo parlamentario de Morena.</span></li>
-                            <li class="c2"><span class="c0">Grupo parlamentario del Partido del Trabajo (PT).</span></li>
-                          </ol>
-                          <ol class="c3 lst-kix_5kw6tmen9bj7-0" start="5">
-                            <li class="c4"><span class="c0">EDIFICIO C. BIBLIOTECA Y MUSEO.</span></li>
-                          </ol>
-                          <ol class="c3 lst-kix_5kw6tmen9bj7-1 start" start="1">
-                            <li class="c1"><span class="c0">BASAMENTO:</span></li>
-                          </ol>
-                          <ol class="c3 lst-kix_5kw6tmen9bj7-2 start" start="1">
-                            <li class="c2"><span class="c0">Museo.</span></li>
-                          </ol>
-                          <ol class="c3 lst-kix_5kw6tmen9bj7-1" start="2">
-                            <li class="c1"><span class="c0">P. PRINCIPAL:</span></li>
-                          </ol>
-                          <ol class="c3 lst-kix_5kw6tmen9bj7-2 start" start="1">
-                            <li class="c2"><span class="c0">Salón de Protocolo.</span></li>
-                          </ol>
-                          <ol class="c3 lst-kix_5kw6tmen9bj7-1" start="3">
-                            <li class="c1"><span class="c0">1ER NIVEL:</span></li>
-                          </ol>
-                          <ol class="c3 lst-kix_5kw6tmen9bj7-2 start" start="1">
-                            <li class="c2"><span class="c0">Grupo parlamentario del Partido de la Revolución Democrática (PRD).</span></li>
-                            <li class="c2"><span class="c0">Museo.</span></li>
-                          </ol>
-                          <ol class="c3 lst-kix_5kw6tmen9bj7-1" start="4">
-                            <li class="c1"><span class="c0">2DO NIVEL:</span></li>
-                          </ol>
-                          <ol class="c3 lst-kix_5kw6tmen9bj7-2 start" start="1">
-                            <li class="c2"><span class="c0">Grupo parlamentario del Partido de la Revolución Democrática (PRD).</span></li>
-                            <li class="c2"><span class="c0">Biblioteca.</span></li>
-                          </ol>
-                          <ol class="c3 lst-kix_5kw6tmen9bj7-1" start="5">
-                            <li class="c1"><span class="c0">3ER NIVEL:</span></li>
-                          </ol>
-                          <ol class="c3 lst-kix_5kw6tmen9bj7-2 start" start="1">
-                            <li class="c2"><span class="c0">Grupo parlamentario del Partido Revolucionario Institucional (PRI).</span></li>
-                            <li class="c2"><span class="c0">Biblioteca.</span></li>
-                          </ol>
-                          <ol class="c3 lst-kix_5kw6tmen9bj7-0" start="6">
-                            <li class="c4"><span class="c0">EDIFICIO D. COMISIONES. </span></li>
-                          </ol>
-                          <ol class="c3 lst-kix_5kw6tmen9bj7-1 start" start="1">
-                            <li class="c1"><span class="c0">P. PRINCIPAL:</span></li>
-                          </ol>
-                          <ol class="c3 lst-kix_5kw6tmen9bj7-2 start" start="1">
-                            <li class="c2"><span class="c0">Comisiones.</span></li>
-                          </ol>
-                          <ol class="c3 lst-kix_5kw6tmen9bj7-1" start="2">
-                            <li class="c1"><span class="c0">1ER NIVEL:</span></li>
-                          </ol>
-                          <ol class="c3 lst-kix_5kw6tmen9bj7-2 start" start="1">
-                            <li class="c2"><span class="c0">Comisiones.</span></li>
-                            <li class="c2"><span class="c0">Grupo parlamentario del Partido Revolucionario Institucional (PRI).</span></li>
-                          </ol>
-                          <ol class="c3 lst-kix_5kw6tmen9bj7-1" start="3">
-                            <li class="c1"><span class="c0">2DO NIVEL:</span></li>
-                          </ol>
-                          <ol class="c3 lst-kix_5kw6tmen9bj7-2 start" start="1">
-                            <li class="c2"><span class="c0">Comisiones.</span></li>
-                          </ol>
-                          <ol class="c3 lst-kix_5kw6tmen9bj7-1" start="4">
-                            <li class="c1"><span class="c0">3ER NIVEL:</span></li>
-                          </ol>
-                          <ol class="c3 lst-kix_5kw6tmen9bj7-2 start" start="1">
-                            <li class="c2"><span class="c0">Comisiones.</span></li>
-                            <li class="c2"><span class="c0">Grupo parlamentario de Morena.</span></li>
-                          </ol>
-                          <ol class="c3 lst-kix_5kw6tmen9bj7-1" start="5">
-                            <li class="c1"><span class="c0">4TO NIVEL:</span></li>
-                          </ol>
-                          <ol class="c3 lst-kix_5kw6tmen9bj7-2 start" start="1">
-                            <li class="c2"><span class="c0">Comisiones.</span></li>
-                          </ol>
-                          <ol class="c3 lst-kix_5kw6tmen9bj7-0" start="7">
-                            <li class="c4"><span class="c0">EDIFICIO E. ÁREAS COMERCIALES Y ADMINISTRATIVAS.</span></li>
-                          </ol>
-                          <ol class="c3 lst-kix_5kw6tmen9bj7-1 start" start="1">
-                            <li class="c1"><span class="c0">P. PRINCIPAL:</span></li>
-                          </ol>
-                          <ol class="c3 lst-kix_5kw6tmen9bj7-2 start" start="1">
-                            <li class="c2"><span class="c0">Bancomer.</span></li>
-                            <li class="c2"><span class="c0">Banorte.</span></li>
-                            <li class="c2"><span class="c0">Caja General.</span></li>
-                            <li class="c2"><span class="c0">Atención a Diputados.</span></li>
-                            <li class="c2"><span class="c0">Consejo Editorial.</span></li>
-                            <li class="c2"><span class="c0">Auditorio “Aurora Jiménez".</span></li>
-                            <li class="c2"><span class="c0">Santander.</span></li>
-                            <li class="c2"><span class="c0">Unidad de Transparencia.</span></li>
-                          </ol>
-                          <ol class="c3 lst-kix_5kw6tmen9bj7-1" start="2">
-                            <li class="c1"><span class="c0">1ER NIVEL:</span></li>
-                          </ol>
-                          <ol class="c3 lst-kix_5kw6tmen9bj7-2 start" start="1">
-                            <li class="c2"><span class="c0">Secretaría General.</span></li>
-                            <li class="c2"><span class="c0">Recursos Humanos.</span></li>
-                          </ol>
-                          <ol class="c3 lst-kix_5kw6tmen9bj7-1" start="3">
-                            <li class="c1"><span class="c0">2DO NIVEL:</span></li>
-                          </ol>
-                          <ol class="c3 lst-kix_5kw6tmen9bj7-2 start" start="1">
-                            <li class="c2"><span class="c0">Secretaría de Servicios Administrativos.</span></li>
-                            <li class="c2"><span class="c0">Secretaría de Servicios Parlamentarios.</span></li>
-                            <li class="c2"><span class="c0">Dirección General de Tecnologías.</span></li>
-                            <li class="c2"><span class="c0">Dirección General de Apoyo Parlamentario.</span></li>
-                          </ol>
-                          <ol class="c3 lst-kix_5kw6tmen9bj7-1" start="4">
-                            <li class="c1"><span class="c0">3ER NIVEL:</span></li>
-                          </ol>
-                          <ol class="c3 lst-kix_5kw6tmen9bj7-2 start" start="1">
-                            <li class="c2"><span class="c0">Contraloría Interna.</span></li>
-                            <li class="c2"><span class="c0">Dirección General de Finanzas.</span></li>
-                            <li class="c2"><span class="c0">Dirección General de Programación, Presupuesto y Contabilidad.</span></li>
-                          </ol>
-                          <ol class="c3 lst-kix_5kw6tmen9bj7-1" start="5">
-                            <li class="c1"><span class="c0">4TO NIVEL:</span></li>
-                          </ol>
-                          <ol class="c3 lst-kix_5kw6tmen9bj7-2 start" start="1">
-                            <li class="c2"><span class="c0">Dirección General de Asuntos Jurídicos.</span></li>
-                            <li class="c2"><span class="c0">Comité de Administración.</span></li>
-                            <li class="c2"><span class="c0">Dirección de Protocolo.</span></li>
-                          </ol>
-                          <ol class="c3 lst-kix_5kw6tmen9bj7-0" start="8">
-                            <li class="c4"><span class="c0">&nbsp;EDIFICIO F. GRUPO Y COMISIONES.</span></li>
-                          </ol>
-                          <ol class="c3 lst-kix_5kw6tmen9bj7-1 start" start="1">
-                            <li class="c1"><span class="c0">BASAMENTO:</span></li>
-                          </ol>
-                          <ol class="c3 lst-kix_5kw6tmen9bj7-2 start" start="1">
-                            <li class="c2"><span class="c0">Dirección de Servicios Generales.</span></li>
-                            <li class="c2"><span class="c0">Dirección de Eventos.</span></li>
-                          </ol>
-                          <ol class="c3 lst-kix_5kw6tmen9bj7-1" start="2">
-                            <li class="c1"><span class="c0">P. PRINCIPAL:</span></li>
-                          </ol>
-                          <ol class="c3 lst-kix_5kw6tmen9bj7-2 start" start="1">
-                            <li class="c2"><span class="c0">Dirección General de Servicios a Diputados.</span></li>
-                            <li class="c2"><span class="c0">Estética.</span></li>
-                            <li class="c2"><span class="c0">Centro de Capacitación.</span></li>
-                            <li class="c2"><span class="c0">Comisiones</span></li>
-                            <li class="c2"><span class="c0">Grupo parlamentario de Morena.</span></li>
-                          </ol>
-                          <ol class="c3 lst-kix_5kw6tmen9bj7-1" start="3">
-                            <li class="c1"><span class="c0">1ER NIVEL:</span></li>
-                          </ol>
-                          <ol class="c3 lst-kix_5kw6tmen9bj7-2 start" start="1">
-                            <li class="c2"><span class="c0">Comisión.</span></li>
-                          </ol>
-                          <ol class="c3 lst-kix_5kw6tmen9bj7-1" start="4">
-                            <li class="c1"><span class="c0">2DO NIVEL:</span></li>
-                          </ol>
-                          <ol class="c3 lst-kix_5kw6tmen9bj7-2 start" start="1">
-                            <li class="c2"><span class="c0">Grupo parlamentario de Morena.</span></li>
-                            <li class="c2"><span class="c0">Grupo parlamentario de Movimiento Ciudadano (MC).</span></li>
-                          </ol>
-                          <ol class="c3 lst-kix_5kw6tmen9bj7-1" start="5">
-                            <li class="c1"><span class="c0">3ER NIVEL:</span></li>
-                          </ol>
-                          <ol class="c3 lst-kix_5kw6tmen9bj7-2 start" start="1">
-                            <li class="c2"><span class="c0">Grupo parlamentario de Movimiento Ciudadano (MC).</span></li>
-                          </ol>
-                          <ol class="c3 lst-kix_5kw6tmen9bj7-0" start="9">
-                            <li class="c4"><span class="c0">EDIFICIO G. RESTAURANTE Y ZONA “C”.</span></li>
-                          </ol>
-                          <ol class="c3 lst-kix_5kw6tmen9bj7-1 start" start="1">
-                            <li class="c1"><span class="c0">P. PRINCIPAL:</span></li>
-                          </ol>
-                          <ol class="c3 lst-kix_5kw6tmen9bj7-2 start" start="1">
-                            <li class="c2"><span class="c0">Cafetería.</span></li>
-                            <li class="c2"><span class="c0">Restaurante "Casa Milpa".</span></li>
-                            <li class="c2"><span class="c0">Salón "G".</span></li>
-                          </ol>
-                          <ol class="c3 lst-kix_5kw6tmen9bj7-1" start="2">
-                            <li class="c1"><span class="c0">MEZANINE:</span></li>
-                          </ol>
-                          <ol class="c3 lst-kix_5kw6tmen9bj7-2 start" start="1">
-                            <li class="c2"><span class="c0">Salones del "A-F".</span></li>
-                          </ol>
-                          <ol class="c3 lst-kix_5kw6tmen9bj7-1" start="3">
-                            <li class="c1"><span class="c0">2DO NIVEL:</span></li>
-                          </ol>
-                          <ol class="c3 lst-kix_5kw6tmen9bj7-2 start" start="1">
-                            <li class="c2"><span class="c0">Junta de Coordinación Política.</span></li>
-                            <li class="c2"><span class="c0">Grupo parlamentario de Morena.</span></li>
-                            <li class="c2"><span class="c0">Unidad de Evaluación y Control</span></li>
-                          </ol>
-                          <ol class="c3 lst-kix_5kw6tmen9bj7-1" start="4">
-                            <li class="c1"><span class="c0">3ER NIVEL:</span></li>
-                          </ol>
-                          <ol class="c3 lst-kix_5kw6tmen9bj7-2 start" start="1">
-                            <li class="c2"><span class="c0">Comisiones.</span></li>
-                            <li class="c2"><span class="c0">Reserva Territorial.</span></li>
-                            <li class="c2"><span class="c0">Grupo Parlamentario del Partido Encuentro Social (PES).</span></li>
-                            <li class="c2"><span class="c0">Grupo parlamentario de Movimiento Ciudadano (MC).</span></li>
-                          </ol>
-                          <ol class="c3 lst-kix_5kw6tmen9bj7-0" start="10">
-                            <li class="c4"><span class="c0">EDIFICIO H. GRUPO PARLAMENTARIO.</span></li>
-                          </ol>
-                          <ol class="c3 lst-kix_5kw6tmen9bj7-1 start" start="1">
-                            <li class="c1"><span class="c0">BASAMENTO:</span></li>
-                          </ol>
-                          <ol class="c3 lst-kix_5kw6tmen9bj7-2 start" start="1">
-                            <li class="c2"><span class="c0">Restaurante "La Incondicional".</span></li>
-                            <li class="c2"><span class="c0">Grupo parlamentario del Partido Revolucionario Institucional(PRI).</span></li>
-                          </ol>
-                          <ol class="c3 lst-kix_5kw6tmen9bj7-1" start="2">
-                            <li class="c1"><span class="c0">P. PRINCIPAL:</span></li>
-                          </ol>
-                          <ol class="c3 lst-kix_5kw6tmen9bj7-2 start" start="1">
-                            <li class="c2"><span class="c0">Librería.</span></li>
-                            <li class="c2"><span class="c0">Grupo parlamentario de Morena.</span></li>
-                          </ol>
-                          <ol class="c3 lst-kix_5kw6tmen9bj7-1" start="3">
-                            <li class="c1"><span class="c0">1ER NIVEL:</span></li>
-                          </ol>
-                          <ol class="c3 lst-kix_5kw6tmen9bj7-2 start" start="1">
-                            <li class="c2"><span class="c0">Grupo parlamentario de Morena.</span></li>
-                          </ol>
-                          <ol class="c3 lst-kix_5kw6tmen9bj7-1" start="4">
-                            <li class="c1"><span class="c0">2DO NIVEL:</span></li>
-                          </ol>
-                          <ol class="c3 lst-kix_5kw6tmen9bj7-2 start" start="1">
-                            <li class="c2"><span class="c0">Grupo parlamentario del Partido Acción Nacional (PAN).</span></li>
-                            <li class="c2"><span class="c0">Grupo parlamentario del Partido Revolucionario Institucional(PRI).</span></li>
-                          </ol>
-                          <ol class="c3 lst-kix_5kw6tmen9bj7-1" start="5">
-                            <li class="c1"><span class="c0">3ER NIVEL:</span></li>
-                          </ol>
-                          <ol class="c3 lst-kix_5kw6tmen9bj7-2 start" start="1">
-                            <li class="c2"><span class="c0">Grupo parlamentario del Partido Verde Ecologista de México(PVEM).</span></li>
-                            <li class="c2"><span class="c0">Grupo parlamentario de Morena.</span></li>
-                          </ol>
-                          <ol class="c3 lst-kix_5kw6tmen9bj7-0" start="11">
-                            <li class="c4"><span class="c0">EXPLANADA PRINCIPAL.</span></li>
-                            <li class="c4"><span class="c0">&nbsp;EDIFICIO I.</span></li>
-                          </ol>
-                          <ol class="c3 lst-kix_5kw6tmen9bj7-1 start" start="1">
-                            <li class="c1"><span class="c0">Centros de Estudios.</span></li>
-                            <li class="c1"><span class="c0">Sala Panóptica.</span></li>
-                            <li class="c1"><span class="c0">Sala 3.</span></li>
-                          </ol>
-                          <ol class="c3 lst-kix_5kw6tmen9bj7-0" start="13">
-                            <li class="c4"><span class="c0">CENTRO DE DESARROLLO INFANTIL (CENDI).</span></li>
-                          </ol>
-                          <p class="c5"><span class="c0"></span></p>
-                        </div>
+                       
           </div>
         </div>
       </div>

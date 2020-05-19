@@ -98,10 +98,11 @@
     .style("top", height * 0.2 + "px")
     ;
     
-    var svg = d3.select("#mapaDiputados")
-                .attr("height",height)
-                .attr("width",width);
-    
+  var svg = d3.select("div#mapaDiputados")
+          .append("svg")
+          .attr("preserveAspectRatio", "xMinYMin meet")
+          .attr("viewBox", "0 0 " + width + " " + height)
+          .classed("svg-content", true);
     
     function ready (results){
         var mapTopoJson = results[0]; // acá esta el mapa
