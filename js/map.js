@@ -35,6 +35,42 @@
     'Yucatán':'MEX-2737',
     'Zacatecas':'MEX-2713'
     };
+
+    var estadosCodeInv = {
+      'MEX-2717':'Aguascalientes',
+      'MEX-2706':'Baja California',
+      'MEX-2707':'Baja California Sur',
+      'MEX-2722':'Campeche',
+      'MEX-2735':'Chiapas',
+      'MEX-2709':'Chihuahua',
+      'MEX-2727':'Ciudad De México',
+      'MEX-2708':'Coahuila',
+      'MEX-2718':'Colima',
+      'MEX-2710':'Durango',
+      'MEX-2728':'Guanajuato',
+      'MEX-2729':'Guerrero',
+      'MEX-2730':'Hidalgo',
+      'MEX-2719':'Jalisco',
+      'MEX-2731':'Estado De México',
+      'MEX-2720':'Michoacán',
+      'MEX-2732':'Morelos',
+      'MEX-2721':'Nayarit',
+      'MEX-2714':'Nuevo León',
+      'MEX-2723':'Oaxaca',
+      'MEX-2724':'Puebla',
+      'MEX-2733':'Querétaro',
+      'MEX-2736':'Quintana Roo',
+      'MEX-2715':'San Luis Potosí',
+      'MEX-2711':'Sinaloa',
+      'MEX-2712':'Sonora',
+      'MEX-2725':'Tabasco',
+      'MEX-2716':'Tamaulipas',
+      'MEX-2726':'Tlaxcala',
+      'MEX-2734':'Veracruz',
+      'MEX-2737':'Yucatán',
+      'MEX-2713':'Zacatecas'
+      };
+
     
     var circunscripciones={
     'I Circunscripción':[-114,23],
@@ -63,7 +99,8 @@
     
     var proyeccionMapa = d3.geoMercator()
                     ;
-    
+    var diputados, senadores;
+
     var padding = 1;
     
     var height = 700, width=1000;
@@ -83,7 +120,8 @@
         
       var promises = [
         d3.json("data/mexico.topo.json"),
-        d3.csv("data/congreso.csv")
+        d3.csv("data/congreso.csv"),
+        d3.xml("data/Senado_Mapa_Mexico.svg")
       ]
     
       Promise.all(promises).then(function(data){
@@ -92,13 +130,16 @@
     
     
     // Define the div for the tooltip
-    let div = d3.select("#tooltip")
-    .style("opacity",0)
+    let tooltipDiputados = d3.select("#tooltipDiputados")
     .style("right", "50px")
     .style("top", height * 0.2 + "px")
-    .style("pointer-events", "none")
-    
     ;
+
+    let tooltipSenado = d3.select("#tooltipSenado")
+    .style("right", "50px")
+    .style("top", height * 0.2 + "px")
+;
+    
     
   var svg = d3.select("div#mapaDiputados")
           .append("svg")
@@ -106,15 +147,21 @@
           .attr("viewBox", "0 0 " + width + " " + height)
           .classed("svg-content", true);
     
-    function ready (results){
+
+  //---------- FUNCTION READY----------
+    function ready (results){        
         var mapTopoJson = results[0]; // acá esta el mapa
-        
+        d3.select("#mapaSenado").node().append(results[2].documentElement);
 
         var personas = d3.nest() // acá las personas en csv
                           .key(function (d) { return d.camara; })
                           .object(results[1]);
 
-                          personas = personas["diputados"]
+                          diputados = personas["diputados"];
+                          senadores = personas["senadores"];
+                          
+        dibujaSenado(senadores);
+      
     
     // --------- MAPA
         var mapa = topojson.feature(mapTopoJson, mapTopoJson.objects.mexico);  
@@ -142,7 +189,7 @@
     
     // --------- BUBBLES
 
-        var nodes = personas.map(function(d, i) {
+        var nodes = diputados.map(function(d, i) {
             var centroide;
               if (d.Entidad =="Ciudad De México"){
                 centroide = proyeccionMapa(circunscripciones["Ciudad De México"]);
@@ -231,14 +278,14 @@
     
     
                               if(getDistance(d3.mouse(this), [d.data.x, d.data.y])<distanceLimit){
-                                div.transition()    
+                                tooltipDiputados.transition()    
                                     .duration(200)    
                                     .style("opacity", .9);    
     
-                                    div.select("#title").html(d.data.nombre);
-                                    div.select("#estado").html("Estado:&nbsp;<b>"+d.data.estado+"</b>");
-                                    div.select("#distrito").html("Distrito:&nbsp;<b>"+d.data.distrito+"</b>");
-                                    div.select("#partido").html("Partido:&nbsp;<b>"+d.data.partido+"</b>");
+                                    tooltipDiputados.select("#title").html(d.data.nombre);
+                                    tooltipDiputados.select("#estado").html("Estado:&nbsp;<b>"+d.data.estado+"</b>");
+                                    tooltipDiputados.select("#distrito").html("Distrito:&nbsp;<b>"+d.data.distrito+"</b>");
+                                    tooltipDiputados.select("#partido").html("Partido:&nbsp;<b>"+d.data.partido+"</b>");
     
                                 d3.selectAll(".circulos").filter(function(e){return e.id != d.data.id})
                                               .classed("unselected", true); 
@@ -254,7 +301,7 @@
                                     .duration(100)    
                                     .style("fill", "rgba(0,0,0,0.3")
                                 }else{
-                                  div.transition()
+                                  tooltipDiputados.transition()
                                   .duration(200)
                                   .style("opacity", 0);    
     
@@ -334,15 +381,12 @@
     
     var leyenda = svg.append("g")
         .attr("class", "leyenda")
-      
-      .attr("transform", "translate("+(width-80)+", 20)");
+        .attr("transform", "translate("+(width-80)+", 20)");
     
       leyenda.append("g").attr("class", "legendSize");
-    
-    
       leyenda.append("g")
-        .attr("transform", "translate(0, 50)")
-      .attr("class", "legendOrdinal");
+         .attr("transform", "translate(0, 50)")
+         .attr("class", "legendOrdinal");
       
     
     var legendOrdinal = d3.legendColor()
@@ -358,27 +402,6 @@
       .call(legendOrdinal);
     
     
-    function trimArray(arr)
-    {
-        for(i=0;i<arr.length;i++)
-        {
-            arr[i] = arr[i].replace(/^\s\s*/, '').replace(/\s\s*$/, '');
-        }
-        return arr;
-    }
-    
-    function getDistance(point1, point2) {
-        var xs = 0;
-        var ys = 0;
-    
-        xs = point2[0] - point1[0];
-        xs = xs * xs;
-    
-        ys = point2[1] - point1[1];
-        ys = ys * ys;
-    
-        return Math.sqrt(xs + ys);
-      }
     
     var circle = d3.arc()
     .innerRadius(0)
@@ -388,10 +411,119 @@
     
     
     } // fin de Ready;
-    
-    
-    
-    
-    
 
+
+
+
+
+
+    function dibujaSenado(senadores) { // FUNCION PARA DIBUJAR LAS BANCAS DE SENADORES;
+
+      senadores = d3.nest()
+                    .key(function (d) {return d.Entidad; })
+                          .entries(senadores);
+          
+      var mapaSenadoSVG = d3.select("#mapaSenadoMexico");
+
+          mapaSenadoSVG.style("max-width","650px");
+          var bancas = mapaSenadoSVG.selectAll(".banca");
+                                      
+        
+
+
+          senadores.forEach(d=>{
+             var este = mapaSenadoSVG.select("g#"+estadosCode[d.key]); // selecciona cada group de Estado
+                 este.selectAll("polygon").data(d.values);  // le carga la data de sus tres bancas
+                 este.on("mouseenter", function(e) {
+                  d3.selectAll(".borde").style("opacity",0.5);
+                  d3.select("#o"+estadosCode[d.key]).classed("apaga",true);
+                  })
+                .on("mouseleave", function(e) {
+                  d3.selectAll(".borde").style("opacity",1);
+                  d3.select("#o"+estadosCode[d.key]).classed("apaga",false);
+                  })
+                  ;
+             
+             mapaSenadoSVG.select("#o"+estadosCode[d.key]) // pone los estados enteros del color de la mayoria
+                    .attr("class", "borde " + getMayoria(d.values.map(e=>e.partido)));
+
+
+                    
+          })
+
+          bancas.each(function(d) { // colorea cada banca 
+            this.classList.add(d.partido);
+          });
+      
+
+          bancas.on("mouseover", function(d) {
+                                  d3.select(this)
+                                          .attr("stroke-width", "3px")
+                                          .attr('stroke','#222')
+                                          .raise();
+                                    
+                                    tooltipSenado.transition()    
+                                          .duration(100)    
+                                          .style("opacity", .9);    
+                                          
+                                    tooltipSenado.select("#title").html(d.nombre);
+                                    tooltipSenado.select("#estado").html("Estado:&nbsp;<b>"+d.Entidad+"</b>");
+                                    tooltipSenado.select("#partido").html("Partido:&nbsp;<b>"+d.partido+"</b>");
+                                  })
+                .on("mouseout", function(d) {
+                                  tooltipSenado.transition()    
+                                  .duration(100)    
+                                  .style("opacity", 0); 
+                                    d3.select(this)
+                                            .attr("stroke-width", "0px");
+                                    })
+                    ;
+
+        
+
+          
+
+           
+    }
     
+  
+
+
+
+ // -------------************ ZONA DE FUNCIONES****************------------
+
+
+    function getMayoria(lista) { // De una lista de 3 bancas devuelve la mayoría o "SG" si no hay mayoría
+      lista.sort();
+      if(lista[0] != lista[1] && lista[1] != lista[2]){
+        return "SG";
+      }else if (lista[0]==lista[1]) {
+        return lista[0];
+      }else{
+        return lista[2];
+      }
+  }
+
+
+  
+  function trimArray(arr)
+  {
+      for(i=0;i<arr.length;i++)
+      {
+          arr[i] = arr[i].replace(/^\s\s*/, '').replace(/\s\s*$/, '');
+      }
+      return arr;
+  }
+  
+  function getDistance(point1, point2) {
+      var xs = 0;
+      var ys = 0;
+  
+      xs = point2[0] - point1[0];
+      xs = xs * xs;
+  
+      ys = point2[1] - point1[1];
+      ys = ys * ys;
+  
+      return Math.sqrt(xs + ys);
+    }

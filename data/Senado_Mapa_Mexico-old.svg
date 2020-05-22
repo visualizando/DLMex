@@ -1,0 +1,195 @@
+<svg id="mapaSenadoMexico" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMinYMin meet" viewBox="0 0 900 700" class="svg-content">>
+   <g transform="translate(-8.9227964,-21.9)" id="MEX-2707">
+      <title>Baja California Sur</title>
+      <polygon class="banca1" points="50.8,215.2 64.8,239.3 92.6,239.3 106.5,215.2 92.6,191.1 64.8,191.1 "/>
+      <polygon class="banca2" points="50.8,263.4 64.8,287.5 92.6,287.5 106.5,263.4 92.6,239.3 64.8,239.3 "/>
+      <polygon class="banca3" points="50.8,167 64.8,191.1 92.6,191.1 106.5,167 92.6,142.9 64.8,142.9 "/>
+   </g>
+   <g transform="translate(-8.9227964,-21.9)" id="MEX-2728">
+      <title>Guanajuato</title>
+      <polygon class="banca1" points="384.9,263.4 357.1,263.4 343.2,287.5 357.1,311.6 384.9,311.6 398.8,287.5 "/>
+      <polygon class="banca2" points="426.6,287.5 398.8,287.5 384.9,311.6 398.8,335.7 426.6,335.7 440.6,311.6 "/>
+      <polygon class="banca3" points="384.9,311.6 357.1,311.6 343.2,335.7 357.1,359.8 384.9,359.8 398.8,335.7 "/>
+   </g>
+   <g transform="translate(-8.9227964,-21.9)" id="MEX-2734">
+      <title>Veracruz</title>
+      <polygon class="banca1" points="593.6,432.1 565.8,432.1 551.9,456.2 565.8,480.3 593.6,480.3 607.5,456.2 "/>
+      <polygon class="banca2" points="593.6,480.3 565.8,480.3 551.9,504.4 565.8,528.5 593.6,528.5 607.5,504.4 "/>
+      <polygon class="banca3" points="551.9,408 524,408 510.1,432.1 524,456.2 551.9,456.2 565.8,432.1 "/>
+   </g>
+   <g transform="translate(-8.9227964,-21.9)" id="MEX-2706">
+      <title>Baja California</title>
+      <polygon class="banca1" points="50.8,118.8 64.8,142.9 92.6,142.9 106.5,118.8 92.6,94.7 64.8,94.7 "/>
+      <polygon class="banca2" points="50.8,70.6 64.8,94.7 92.6,94.7 106.5,70.6 92.6,46.5 64.8,46.5 "/>
+      <polygon class="banca3" points="9.5,46.5 23.4,70.6 51.2,70.6 65.2,46.5 51.2,22.4 23.4,22.4 "/>
+   </g>
+   <g transform="translate(-8.9227964,-21.9)" id="MEX-2712">
+      <title>Sonora</title>
+      <polygon class="banca1" points="134.3,22.4 106.5,22.4 92.6,46.5 106.5,70.6 134.3,70.6 148.2,46.5 "/>
+      <polygon class="banca2" points="176.2,46.5 148.3,46.5 134.4,70.6 148.3,94.7 176.2,94.7 190.1,70.6 "/>
+      <polygon class="banca3" points="176.2,94.7 148.3,94.7 134.4,118.8 148.3,142.9 176.2,142.9 190.1,118.8 "/>
+   </g>
+   <g transform="translate(-8.9227964,-21.9)" id="MEX-2711">
+      <title>Sinaloa</title>
+      <polygon class="banca1" points="176.2,142.9 148.3,142.9 134.4,167 148.3,191.1 176.2,191.1 190.1,167 "/>
+      <polygon class="banca2" points="176.2,191.1 148.3,191.1 134.4,215.2 148.3,239.3 176.2,239.3 190.1,215.2 "/>
+      <polygon class="banca3" points="217.9,215.2 190.1,215.2 176.2,239.3 190.1,263.4 217.9,263.4 231.8,239.3 "/>
+   </g>
+   <g transform="translate(-8.9227964,-21.9)" id="MEX-2729">
+      <title>Guerrero</title>
+      <polygon class="banca1" points="384.9,552.6 398.8,576.7 426.6,576.7 440.6,552.6 426.6,528.5 398.8,528.5 "/>
+      <polygon class="banca2" points="301.4,504.4 315.3,528.5 343.2,528.5 357.1,504.4 343.2,480.3 315.3,480.3 "/>
+      <polygon class="banca3" points="343.2,528.5 357.1,552.6 384.9,552.6 398.8,528.5 384.9,504.4 357.1,504.4 "/>
+   </g>
+   <g transform="translate(-8.9227964,-21.9)" id="MEX-2715">
+      <title>San Luis Potosí</title>
+      <polygon class="banca1" points="384.9,167 357.1,167 343.2,191.1 357.1,215.2 384.9,215.2 398.8,191.1 "/>
+      <polygon class="banca2" points="426.6,239.3 398.8,239.3 384.9,263.4 398.8,287.5 426.6,287.5 440.6,263.4 "/>
+      <polygon class="banca3" points="384.9,215.2 357.1,215.2 343.2,239.3 357.1,263.4 384.9,263.4 398.8,239.3 "/>
+   </g>
+   <g transform="translate(-8.9227964,-21.9)" id="MEX-2727">
+      <title>Ciudad De México</title>
+      <polygon class="banca1" points="384.9,456.2 357.1,456.2 343.2,480.3 357.1,504.4 384.9,504.4 398.8,480.3 "/>
+      <polygon class="banca2" points="426.6,480.3 398.8,480.3 384.9,504.4 398.8,528.5 426.6,528.5 440.6,504.4 "/>
+      <polygon class="banca3" points="426.6,432.1 398.8,432.1 384.9,456.2 398.8,480.3 426.6,480.3 440.6,456.2 "/>
+   </g>
+   <g transform="translate(-8.9227964,-21.9)" id="MEX-2720">
+      <title>Michoacán</title>
+      <polygon class="banca1" points="343.2,383.9 357.1,408 384.9,408 398.8,383.9 384.9,359.8 357.1,359.8 "/>
+      <polygon class="banca2" points="301.4,408 315.3,432.1 343.2,432.1 357.1,408 343.2,383.9 315.3,383.9 "/>
+      <polygon class="banca3" points="301.4,359.8 315.3,383.9 343.2,383.9 357.1,359.8 343.2,335.7 315.3,335.7 "/>
+   </g>
+   <g transform="translate(-8.9227964,-21.9)" id="MEX-2718">
+      <title>Colima</title>
+      <polygon class="banca1" points="301.4,359.8 273.6,359.8 259.7,383.9 273.6,408 301.4,408 315.3,383.9 "/>
+      <polygon class="banca2" points="301.4,408 273.6,408 259.7,432.1 273.6,456.2 301.4,456.2 315.3,432.1 "/>
+      <polygon class="banca3" points="259.7,383.9 231.8,383.9 217.9,408 231.8,432.1 259.7,432.1 273.6,408 "/>
+   </g>
+   <g transform="translate(-8.9227964,-21.9)" id="MEX-2722">
+      <title>Campeche</title>
+      <polygon class="banca1" points="677.1,576.7 649.3,576.7 635.4,600.8 649.3,624.9 677.1,624.9 691,600.8 "/>
+      <polygon class="banca2" points="635.4,552.6 607.5,552.6 593.6,576.7 607.5,600.8 635.4,600.8 649.3,576.7 "/>
+      <polygon class="banca3" points="677.1,528.5 649.3,528.5 635.4,552.6 649.3,576.7 677.1,576.7 691,552.6 "/>
+   </g>
+   <g transform="translate(-8.9227964,-21.9)" id="MEX-2710">
+      <title>Durango</title>
+      <polygon class="banca1" points="217.9,118.8 190.1,118.8 176.2,142.9 190.1,167 217.9,167 231.8,142.9 "/>
+      <polygon class="banca2" points="217.9,167 190.1,167 176.2,191.1 190.1,215.2 217.9,215.2 231.8,191.1 "/>
+      <polygon class="banca3" points="259.7,191.1 231.8,191.1 217.9,215.2 231.8,239.3 259.7,239.3 273.6,215.2 "/>
+   </g>
+   <g transform="translate(-8.9227964,-21.9)" id="MEX-2713">
+      <title>Zacatecas</title>
+      <polygon class="banca1" points="259.7,191.1 273.6,167 259.7,142.9 231.8,142.9 217.9,167 231.8,191.1 "/>
+      <polygon class="banca2" points="301.4,215.2 315.3,191.1 301.4,167 273.6,167 259.7,191.1 273.6,215.2 "/>
+      <polygon class="banca3" points="301.4,263.4 315.3,239.3 301.4,215.2 273.6,215.2 259.7,239.3 273.6,263.4 "/>
+   </g>
+   <g transform="translate(-8.9227964,-21.9)" id="MEX-2731">
+      <title>Estado De México</title>
+      <polygon class="banca1" points="343.2,432.1 315.3,432.1 301.4,456.2 315.3,480.3 343.2,480.3 357.1,456.2 "/>
+      <polygon class="banca2" points="384.9,408 357.1,408 343.2,432.1 357.1,456.2 384.9,456.2 398.8,432.1 "/>
+      <polygon class="banca3" points="426.6,383.9 398.8,383.9 384.9,408 398.8,432.1 426.6,432.1 440.6,408 "/>
+   </g>
+   <g transform="translate(-8.9227964,-21.9)" id="MEX-2732">
+      <title>Morelos</title>
+      <polygon class="banca1" points="468.4,552.6 440.6,552.6 426.6,576.7 440.6,600.8 468.4,600.8 482.3,576.7 "/>
+      <polygon class="banca2" points="468.4,504.4 440.6,504.4 426.6,528.5 440.6,552.6 468.4,552.6 482.3,528.5 "/>
+      <polygon class="banca3" points="468.4,456.2 440.6,456.2 426.6,480.3 440.6,504.4 468.4,504.4 482.3,480.3 "/>
+   </g>
+   <g transform="translate(-8.9227964,-21.9)" id="MEX-2714">
+      <title>Nuevo León</title>
+      <polygon class="banca1" points="301.4,167 315.3,142.9 343.2,142.9 357.1,167 343.2,191.1 315.3,191.1 "/>
+      <polygon class="banca2" points="343.2,94.7 357.1,70.6 384.9,70.6 398.8,94.7 384.9,118.8 357.1,118.8 "/>
+      <polygon class="banca3" points="301.4,118.8 315.3,94.7 343.2,94.7 357.1,118.8 343.2,142.9 315.3,142.9 "/>
+   </g>
+   <g transform="translate(-8.9227964,-21.9)" id="MEX-2716">
+      <title>Tamaulipas</title>
+      <polygon class="banca1" points="384.9,167 398.8,142.9 426.6,142.9 440.6,167 426.6,191.1 398.8,191.1 "/>
+      <polygon class="banca2" points="343.2,142.9 357.1,118.8 384.9,118.8 398.8,142.9 384.9,167 357.1,167 "/>
+      <polygon class="banca3" points="384.9,215.2 398.8,191.1 426.6,191.1 440.6,215.2 426.6,239.3 398.8,239.3 "/>
+   </g>
+   <g transform="translate(-8.9227964,-21.9)" id="MEX-2723">
+      <title>Oaxaca</title>
+      <polygon class="banca1" points="426.6,624.9 440.6,600.8 468.4,600.8 482.3,624.9 468.4,649 440.6,649 "/>
+      <polygon class="banca2" points="384.9,600.8 398.8,576.7 426.6,576.7 440.6,600.8 426.6,624.9 398.8,624.9 "/>
+      <polygon class="banca3" points="468.4,600.8 482.3,576.7 510.1,576.7 524,600.8 510.1,624.9 482.3,624.9 "/>
+   </g>
+   <g transform="translate(-8.9227964,-21.9)" id="MEX-2735">
+      <title>Chiapas</title>
+      <polygon class="banca1" points="551.9,649 524,649 510.1,624.9 524,600.8 551.9,600.8 565.8,624.9 "/>
+      <polygon class="banca2" points="593.6,673.1 565.8,673.1 551.9,649 565.8,624.9 593.6,624.9 607.5,649 "/>
+      <polygon class="banca3" points="593.6,624.9 565.8,624.9 551.9,600.8 565.8,576.7 593.6,576.7 607.5,600.8 "/>
+   </g>
+   <g transform="translate(-8.9227964,-21.9)" id="MEX-2730">
+      <title>Hidalgo</title>
+      <polygon class="banca1" points="482.3,335.7 468.4,359.8 482.3,383.9 510.1,383.9 524,359.8 510.1,335.7 "/>
+      <polygon class="banca2" points="482.3,383.9 468.4,408 482.3,432.1 510.1,432.1 524,408 510.1,383.9 "/>
+      <polygon class="banca3" points="440.6,359.8 426.6,383.9 440.6,408 468.4,408 482.3,383.9 468.4,359.8 "/>
+   </g>
+   <g transform="translate(-8.9227964,-21.9)" id="MEX-2736">
+      <title>Quintana Roo</title>
+      <polygon class="banca1" points="774.5,552.6 802.3,552.6 816.3,528.5 802.3,504.4 774.5,504.4 760.6,528.5 "/>
+      <polygon class="banca2" points="732.8,576.7 760.6,576.7 774.5,552.6 760.6,528.5 732.8,528.5 718.9,552.6 "/>
+      <polygon class="banca3" points="691,600.8 718.9,600.8 732.8,576.7 718.9,552.6 691,552.6 677.1,576.7 "/>
+   </g>
+   <g transform="translate(-8.9227964,-21.9)" id="MEX-2724">
+      <title>Puebla</title>
+      <polygon class="banca1" points="524,552.6 551.9,552.6 565.8,528.5 551.9,504.4 524,504.4 510.1,528.5 "/>
+      <polygon class="banca2" points="482.3,528.5 510.1,528.5 524,504.4 510.1,480.3 482.3,480.3 468.4,504.4 "/>
+      <polygon class="banca3" points="482.3,576.7 510.1,576.7 524,552.6 510.1,528.5 482.3,528.5 468.4,552.6 "/>
+   </g>
+   <g transform="translate(-8.9227964,-21.9)" id="MEX-2717">
+      <title>Aguascalientes</title>
+      <polygon class="banca1" points="259.7,287.5 273.6,263.4 301.4,263.4 315.3,287.5 301.4,311.6 273.6,311.6 "/>
+      <polygon class="banca2" points="301.4,263.4 315.3,239.3 343.2,239.3 357.1,263.4 343.2,287.5 315.3,287.5 "/>
+      <polygon class="banca3" points="301.4,215.2 315.3,191.1 343.2,191.1 357.1,215.2 343.2,239.3 315.3,239.3 "/>
+   </g>
+   <g transform="translate(-8.9227964,-21.9)" id="MEX-2737">
+      <title>Yucatán</title>
+      <polygon class="banca1" points="760.6,528.5 732.8,528.5 718.9,504.4 732.8,480.3 760.6,480.3 774.5,504.4 "/>
+      <polygon class="banca2" points="802.3,504.4 774.5,504.4 760.6,480.3 774.5,456.2 802.3,456.2 816.3,480.3 "/>
+      <polygon class="banca3" points="718.9,552.6 691,552.6 677.1,528.5 691,504.4 718.9,504.4 732.8,528.5 "/>
+   </g>
+   <g transform="translate(-8.9227964,-21.9)" id="MEX-2725">
+      <title>Tabasco</title>
+      <polygon class="banca1" points="510.1,576.7 524,552.6 551.9,552.6 565.8,576.7 551.9,600.8 524,600.8 "/>
+      <polygon class="banca2" points="551.9,552.6 565.8,528.5 593.6,528.5 607.5,552.6 593.6,576.7 565.8,576.7 "/>
+      <polygon class="banca3" points="593.6,528.5 607.5,504.4 635.4,504.4 649.3,528.5 635.4,552.6 607.5,552.6 "/>
+   </g>
+   <g transform="translate(-8.9227964,-21.9)" id="MEX-2719">
+      <title>Jalisco</title>
+      <polygon class="banca1" points="301.4,359.8 273.6,359.8 259.7,335.7 273.6,311.6 301.4,311.6 315.3,335.7 "/>
+      <polygon class="banca2" points="343.2,335.7 315.3,335.7 301.4,311.6 315.3,287.5 343.2,287.5 357.1,311.6 "/>
+      <polygon class="banca3" points="259.7,383.9 231.8,383.9 217.9,359.8 231.8,335.7 259.7,335.7 273.6,359.8 "/>
+   </g>
+   <g transform="translate(-8.9227964,-21.9)" id="MEX-2733">
+      <title>Querétaro</title>
+      <polygon class="banca1" points="468.4,311.6 440.6,311.6 426.6,287.5 440.6,263.4 468.4,263.4 482.3,287.5 "/>
+      <polygon class="banca2" points="468.4,359.8 440.6,359.8 426.6,335.7 440.6,311.6 468.4,311.6 482.3,335.7 "/>
+      <polygon class="banca3" points="426.6,383.9 398.8,383.9 384.9,359.8 398.8,335.7 426.6,335.7 440.6,359.8 "/>
+   </g>
+   <g transform="translate(-8.9227964,-21.9)" id="MEX-2708">
+      <title>Coahuila</title>
+      <polygon class="banca1" points="343.2,94.7 315.3,94.7 301.4,70.6 315.3,46.5 343.2,46.5 357.1,70.6 "/>
+      <polygon class="banca2" points="301.4,167 273.6,167 259.7,142.9 273.6,118.8 301.4,118.8 315.3,142.9 "/>
+      <polygon class="banca3" points="301.4,118.8 273.6,118.8 259.7,94.7 273.6,70.6 301.4,70.6 315.3,94.7 "/>
+   </g>
+   <g transform="translate(-8.9227964,-21.9)" id="MEX-2721">
+      <title>Nayarit</title>
+      <polygon class="banca1" points="190.1,311.6 217.9,311.6 231.8,287.5 217.9,263.4 190.1,263.4 176.2,287.5 "/>
+      <polygon class="banca2" points="231.8,335.7 259.7,335.7 273.6,311.6 259.7,287.5 231.8,287.5 217.9,311.6 "/>
+      <polygon class="banca3" points="231.8,287.5 259.7,287.5 273.6,263.4 259.7,239.3 231.8,239.3 217.9,263.4 "/>
+   </g>
+   <g transform="translate(-8.9227964,-21.9)" id="MEX-2726">
+      <title>Tlaxcala</title>
+      <polygon class="banca1" points="482.3,432.1 468.4,408 440.6,408 426.6,432.1 440.6,456.2 468.4,456.2 "/>
+      <polygon class="banca2" points="565.8,480.3 551.9,456.2 524,456.2 510.1,480.3 524,504.4 551.9,504.4 "/>
+      <polygon class="banca3" points="524,456.2 510.1,432.1 482.3,432.1 468.4,456.2 482.3,480.3 510.1,480.3 "/>
+   </g>
+   <g transform="translate(-8.9227964,-21.9)" id="MEX-2709">
+      <title>Chihuahua</title>
+      <polygon class="banca1" points="190.1,70.6 217.9,70.6 231.8,94.7 217.9,118.8 190.1,118.8 176.2,94.7 "/>
+      <polygon class="banca2" points="231.8,46.5 259.7,46.5 273.6,70.6 259.7,94.7 231.8,94.7 217.9,70.6 "/>
+      <polygon class="banca3" points="231.8,94.7 259.7,94.7 273.6,118.8 259.7,142.9 231.8,142.9 217.9,118.8 "/>
+   </g>
+</svg>
+

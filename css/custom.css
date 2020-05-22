@@ -8,6 +8,7 @@ html, .hero.is-info .tabs.is-boxed li.is-active a, .hero.is-info .tabs.is-boxed 
   display: inline-block;
   top: 0;
   left: 0;
+  margin: auto;
 }
 
 
@@ -147,24 +148,6 @@ td.google-visualization-orgchart-node{
 
 
 
-
-
-#tooltip { 
-  position: absolute;     
-  text-align: center;     
-  width: 350px;          
-  padding: 8px 6px;
-  min-height: 130px;       
-  font: 12px sans-serif;    
-  background: white; 
-  border: 1px solid black;    
-  border-radius: 0 8px 8px 8px;     
--webkit-box-shadow: 1px 5px 6px 0px rgba(0,0,0,0.31);
--moz-box-shadow: 1px 5px 6px 0px rgba(0,0,0,0.31);
-box-shadow: 1px 5px 6px 0px rgba(0,0,0,0.31);
-opacity: 0;
-}
-
 .states {
 stroke: #fff;
 stroke-width: 0.5px;
@@ -237,12 +220,39 @@ font-family:  'Karla', sans-serif;
 font-size: 10px;
 }
 
-div#tooltip {
+
+
+
+
+div.tooltip { 
+  position: absolute;     
+  text-align: center;     
+  width: 350px;          
+  padding: 8px 6px;
+  min-height: 130px;       
+  font: 12px sans-serif;    
+  background: white; 
+  border: 1px solid black;    
+  border-radius: 0 8px 8px 8px;     
+-webkit-box-shadow: 1px 5px 6px 0px rgba(0,0,0,0.31);
+-moz-box-shadow: 1px 5px 6px 0px rgba(0,0,0,0.31);
+box-shadow: 1px 5px 6px 0px rgba(0,0,0,0.31);
+opacity: 0;
+pointer-events: none;
+}
+
+#tooltipSenado{ 
+  width: 250px;          
+  
+  
+}
+
+div.tooltip {
   font-family:  'Karla', sans-serif;
   padding: 0px;
 }
 
-div#tooltip h3 {
+div.tooltip h3 {
   margin-top: 0;
   background-color: #c0c0c06b;
   width: 100%;
@@ -255,7 +265,7 @@ div#tooltip h3 {
 
 }
 
-div#tooltip #title {
+div.tooltip #title {
 line-height: 18px;
   display: inline-block;
   vertical-align: middle;
@@ -264,19 +274,19 @@ line-height: 18px;
 
 }
 
-div#tooltip h4 {
+div.tooltip h4 {
   margin: 5px 0px;
   display: inline-flex;
    font-size: 12px;
   font-weight: 500;
 }
 
-div#tooltip #presencia {
+div.tooltip #presencia {
   font-weight: 500;
 }
 
 
-div#tooltip #tamanio,  div#tooltip #link{
+div.tooltip #tamanio,  div.tooltip #link{
   margin: 2px 0px;
   font-weight: 500;
   font-size: 12px;
@@ -300,3 +310,29 @@ textPath{
 .PVEM{ fill:#93c130}
 .PRD{ fill:#ffb31c}
 .SG{ fill:#808080}
+
+
+
+/* ----- SENADO */
+#mapaSenadoMexico .banca{
+  opacity: 0;
+}
+
+#mapaSenadoMexico polygon.borde {
+  stroke-width: 2px;
+  stroke: black;
+  pointer-events: none;
+
+}
+
+#mapaSenadoMexico g:hover .banca {
+  opacity: 1;
+
+}
+
+
+#mapaSenadoMexico:hover .apaga{
+  stroke-width: 5px !important;
+  opacity: 1 !important; 
+  fill: none;
+}
