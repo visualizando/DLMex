@@ -1,5 +1,5 @@
 html, .hero.is-info .tabs.is-boxed li.is-active a, .hero.is-info .tabs.is-boxed li.is-active a:hover{
-    background-color: #f8f9fb;
+    background-color: #e5e6e7;
     color:#060B18;
     ;
 }
@@ -179,7 +179,7 @@ td.google-visualization-orgchart-node{
 
 #organigramas .box {
     box-shadow: 0 4px 10px rgba(0,0,0,0.19), 0 3px 3px rgba(0,0,0,0.23);
-    margin: 50px 30px;
+    margin: 10px;
 }
 
 
@@ -253,7 +253,7 @@ fill:gray;
 .label{
 fill:gray;
 font-family:  'Karla', sans-serif;
-font-size: 10px;
+font-size: 12px;
 }
 
 
@@ -371,4 +371,126 @@ textPath{
   stroke-width: 5px !important;
   opacity: 1 !important; 
   fill: none;
+}
+
+
+
+
+
+#comisiones text {
+  fill: rgba(0, 0, 0, 1);
+  font: 13px "Helvetica Neue", Helvetica, Arial, sans-serif;
+  text-anchor: middle;
+  paint-order: stroke;
+  stroke: #ffffff;
+  stroke-width: 4px;
+  stroke-linecap: butt;
+  stroke-linejoin: round;
+  stroke-opacity: 0.8;
+  pointer-events: none;
+
+}
+
+#comisiones .node {
+  box-sizing: border-box;
+  line-height: 1em;
+  overflow: hidden;
+  position: absolute;
+  white-space: pre;
+  background: #ddd;
+}
+
+#comisiones .comision .child{
+  fill:#00000010;
+  opacity: 0.8;
+ }
+
+ #comisiones .child:hover{
+  stroke: white;
+  paint-order: stroke;
+  stroke-width: 4px;
+  opacity: 1;
+}
+
+#comisiones .padre {
+  stroke:rgb(224, 224, 224);
+  paint-order: stroke;
+  stroke-width: 10px;
+  fill:rgb(224, 224, 224);
+}
+#comisiones .comision:hover .MORENA, #comisiones .MORENA.child.seleccionado{ fill:#8e0000}
+#comisiones .comision:hover .PAN, #comisiones .PAN.child.seleccionado{ fill:#2da2cf}
+#comisiones .comision:hover .PRI, #comisiones .PRI.child.seleccionado{ fill:#066533}
+#comisiones .comision:hover .PT, #comisiones .PT.child.seleccionado{ fill:#ff4343}
+#comisiones .comision:hover .MC, #comisiones .MC.child.seleccionado{ fill:#e86f00}
+#comisiones .comision:hover .PES, #comisiones .PES.child.seleccionado{ fill:#662583}
+#comisiones .comision:hover .PVEM, #comisiones .PVEM.child.seleccionado{ fill:#93c130}
+#comisiones .comision:hover .PRD, #comisiones .PRD.child.seleccionado{ fill:#ffb31c}
+#comisiones .comision:hover .SG, #comisiones .SG.child.seleccionado{ fill:#808080}
+
+#comisiones .comision:hover text{
+  display:none;
+}
+
+
+/* TIPSY */
+
+.tipsy { font-size: 11px; position: absolute; padding: 5px; z-index: 100000;
+    font-family: monospace;
+ }
+
+ .tipsy img{
+  max-width:200px;
+}
+
+  .tipsy-inner { background-color: #777; color: #FFF; width: 200px; padding: 5px 8px 4px 8px; text-align: center; line-height: 18px; }
+  .tipsy-inner #actualtitle{ line-height: 15px; padding:5px; border-radius: 2px;}
+
+  /* Rounded corners */
+  .tipsy-inner { border-radius: 3px; -moz-border-radius: 3px; -webkit-border-radius: 3px; }
+  
+  /* Uncomment for shadow */
+  .tipsy-inner { box-shadow: 3px 3px 5px rgba(0, 0, 0,0.5); -webkit-box-shadow: 3px 3px 5px rgba(0, 0, 0,0.5); -moz-box-shadow: 3px 3px 5px rgba(0, 0, 0,0.5); }
+  
+  .tipsy-arrow { position: absolute; width: 0; height: 0; line-height: 0; border: 5px dashed #000; }
+  
+  /* Rules to colour arrows */
+  .tipsy-arrow-n { border-bottom-color: #000; }
+  .tipsy-arrow-s { border-top-color: #000; }
+  .tipsy-arrow-e { border-left-color: #000; }
+  .tipsy-arrow-w { border-right-color: #000; }
+  
+  .tipsy-n .tipsy-arrow { top: 0px; left: 50%; margin-left: -5px; border-bottom-style: solid; border-top: none; border-left-color: transparent; border-right-color: transparent; }
+    .tipsy-nw .tipsy-arrow { top: 0; left: 10px; border-bottom-style: solid; border-top: none; border-left-color: transparent; border-right-color: transparent;}
+    .tipsy-ne .tipsy-arrow { top: 0; right: 10px; border-bottom-style: solid; border-top: none;  border-left-color: transparent; border-right-color: transparent;}
+  .tipsy-s .tipsy-arrow { bottom: 0; left: 50%; margin-left: -5px; border-top-style: solid; border-bottom: none;  border-left-color: transparent; border-right-color: transparent; }
+    .tipsy-sw .tipsy-arrow { bottom: 0; left: 10px; border-top-style: solid; border-bottom: none;  border-left-color: transparent; border-right-color: transparent; }
+    .tipsy-se .tipsy-arrow { bottom: 0; right: 10px; border-top-style: solid; border-bottom: none; border-left-color: transparent; border-right-color: transparent; }
+  .tipsy-e .tipsy-arrow { right: 0; top: 50%; margin-top: -5px; border-left-style: solid; border-right: none; border-top-color: transparent; border-bottom-color: transparent; }
+  .tipsy-w .tipsy-arrow { left: 0; top: 50%; margin-top: -5px; border-right-style: solid; border-left: none; border-top-color: transparent; border-bottom-color: transparent; }
+
+
+
+   #actualtitle{
+    width:100%;
+    display: block;
+    font-size: 13px;
+    font-weight: 400;
+    background-color: silver;
+    color:black;
+  }
+
+  h3{
+    margin-bottom: 10px;
+  }
+
+
+/* organigrama */
+
+td:nth-child(1) {  
+  font-size: 14px;
+}
+
+td:nth-child(2), td:nth-child(3){  
+  font-size: 12px;
 }

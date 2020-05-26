@@ -1,6 +1,6 @@
 
 
-text {
+#comisiones text {
   fill: rgba(0, 0, 0, 1);
   font: 13px "Helvetica Neue", Helvetica, Arial, sans-serif;
   text-anchor: middle;
@@ -14,24 +14,7 @@ text {
 
 }
 
-.node {
-  cursor: pointer;
-}
-
-circle{
-      outline: none;
-}
-
-
-.buscador{
-  margin:0 auto;
-}
-
-
-
-
-
-.node {
+#comisiones .node {
   box-sizing: border-box;
   line-height: 1em;
   overflow: hidden;
@@ -40,67 +23,40 @@ circle{
   background: #ddd;
 }
 
-
-
-.svg-container {
-    display: inline-block;
-    position: relative;
-    width: 100%;
-    /*padding-bottom: 100%;*/ /* aspect ratio */
-   vertical-align: top;
-    overflow: hidden;
-    max-width: 1280px;
-    margin:0 auto;
-
-}
-.svg-content-responsive {
-    display: block;
-
-}
-
-
-
-.comision .child{
+#comisiones .comision .child{
   fill:#00000010;
   opacity: 0.8;
  }
 
-.child:hover{
+ #comisiones .child:hover{
   stroke: white;
   paint-order: stroke;
   stroke-width: 4px;
   opacity: 1;
 }
 
-.padre {
+#comisiones .padre {
   stroke:rgb(224, 224, 224);
   paint-order: stroke;
   stroke-width: 10px;
   fill:rgb(224, 224, 224);
 }
-.comision:hover .MORENA, .MORENA.child.seleccionado{ fill:#8e0000}
-.comision:hover .PAN, .PAN.child.seleccionado{ fill:#2da2cf}
-.comision:hover .PRI, .PRI.child.seleccionado{ fill:#066533}
-.comision:hover .PT, .PT.child.seleccionado{ fill:#ff4343}
-.comision:hover .MC, .MC.child.seleccionado{ fill:#e86f00}
-.comision:hover .PES, .PES.child.seleccionado{ fill:#662583}
-.comision:hover .PVEM, .PVEM.child.seleccionado{ fill:#93c130}
-.comision:hover .PRD, .PRD.child.seleccionado{ fill:#ffb31c}
-.comision:hover .SG, .SG.child.seleccionado{ fill:#808080}
+#comisiones .comision:hover .MORENA, #comisiones .MORENA.child.seleccionado{ fill:#8e0000}
+#comisiones .comision:hover .PAN, #comisiones .PAN.child.seleccionado{ fill:#2da2cf}
+#comisiones .comision:hover .PRI, #comisiones .PRI.child.seleccionado{ fill:#066533}
+#comisiones .comision:hover .PT, #comisiones .PT.child.seleccionado{ fill:#ff4343}
+#comisiones .comision:hover .MC, #comisiones .MC.child.seleccionado{ fill:#e86f00}
+#comisiones .comision:hover .PES, #comisiones .PES.child.seleccionado{ fill:#662583}
+#comisiones .comision:hover .PVEM, #comisiones .PVEM.child.seleccionado{ fill:#93c130}
+#comisiones .comision:hover .PRD, #comisiones .PRD.child.seleccionado{ fill:#ffb31c}
+#comisiones .comision:hover .SG, #comisiones .SG.child.seleccionado{ fill:#808080}
 
-
-
-
-
- 
-.comision:hover text{
+#comisiones .comision:hover text{
   display:none;
 }
 
 
-
 /* TIPSY */
-
 
 .tipsy { font-size: 11px; position: absolute; padding: 5px; z-index: 100000;
     font-family: monospace;
@@ -137,7 +93,7 @@ circle{
 
 
 
-  #actualtitle{
+  #comisiones #actualtitle{
     width:100%;
     display: block;
     font-size: 13px;

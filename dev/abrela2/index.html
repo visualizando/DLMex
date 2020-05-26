@@ -11,7 +11,6 @@
   <script src="https://d3js.org/d3.v5.min.js"></script>
   <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
   <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery.tipsy/1.0.3/jquery.tipsy.js"></script>
-  <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/tabletop.js/1.5.2/tabletop.min.js"></script>
 </head>
 
 
@@ -81,14 +80,6 @@ var svg = d3.select("svg"),
 
     svg.attr("height",height)
     .attr("width",width);
-
-
-
- 
-      // var colorScale = d3.scaleOrdinal()
-      // .range(["#8e0000","#2da2cf","#066533","#ff4343","#e86f00","#662583","#93c130","#ffb31c","#808080"])
-      //   .domain(["MORENA","PAN","PRI","PT","MC","PES","PVEM","PRD","SG"]);
-
 
 
 var pie = d3.pie()
@@ -165,39 +156,8 @@ const node = svg.select("#main")
            .on("mousemove", hovered()); // esto es para actualizar el titulo en el tipsy
          
   
-  // === TITULO EN CIRCULOS ==============
-  // node.append("path")
-  //     .attr("id", function(d,i) { 
-  //       return "titulo"+i;
-  //         })
-  //     .attr("d", d => circle(d.r + 3))
-  //     .attr("display", "none");
-
-  // node.filter(d => d.depth ===1).append("text")
-  //     .attr("fill", "#555")
-  //   .append("textPath")
-  //     .attr("xlink:href", function(d,i) { 
-  //       return "#titulo"+i;
-  //         })
-  //     .attr("startOffset", "50%")
-  //     .text(function(d) { return  d.data.key;});
-
-    // **** FIN TITULO EN CIRCULOS ==============
-
-
-
-
-
-
 const leaf = node.filter(d => d.depth ===1);
-  
-  // leaf.select("circle")
-  //     .attr("id", d => (d.leafUid = "#node-" + camelize(d.data.key)));
 
-  // leaf.append("clipPath")
-  //     .attr("id", d => (d.clipUid = "clip-" + camelize(d.data.key)))
-  //   .append("use")
-  //     .attr("xlink:href", d => d.leafUid.href);
 
   leaf.append("text")
       //.attr("clip-path", d => d.clipUid)
@@ -213,82 +173,9 @@ const leaf = node.filter(d => d.depth ===1);
       .attr("y", (d, i, nodes) => `${i - nodes.length / 2 + 0.8}em`)
       .text(d => d);
 
-
-// var leaf = node.filter(function(d) { return d.depth == 1});
-
-//     leaf.append("clipPath")
-//         .attr("id", function(d, i) { return "clip-" + camelize(d.data.key); })
-//       .append("use")
-//         .attr("xlink:href", function(d, i) { return "#node-" + camelize(d.data.key) + ""; });
-
-
-
- /*  var textos = svg.append('g').attr("id", "texts").selectAll("g")
-        .data(root.descendants().filter(function(d) { return d.depth ==1}))
-        .enter().append("g")
-          .attr("transform", function(d) { return "translate(" + d.x + "," + d.y + ")"; })
-          .attr("class", function(d) {
-                      return "country"})
-          .attr("id", function(d){ return  'textCountry'+ camelize(d.data.key)   ;})
-        .append("text")
-        .style("font-size", function(d) { return Math.sqrt(d.r) * 2.5 + "px"; })
-        .attr("clip-path", function(d, i) { return "url(#clip-" + camelize(d.data.key) + ")"; })
-      .selectAll("tspan")
-        .data(function(d) { 
-          var words = d.data.key.split(/\s+/g);
-          return words })
-      .enter().append("tspan")
-        .attr("x", 0)
-        .attr("y", function(d, i, nodes) { return 1.3 + (i - nodes.length / 2 - 0.5) + "em"; })
-        .text(function(d) { return d; }); */
-
-
-
   $(document).ready(function() {
 
-  
-
-  // $("input[name='search']").on("input", function(){ 
-
-  //         var value = $(this).val().toLowerCase();
-  //                   $(".child").each(function(index, elem) {
-  //                               var $elem = $(elem);
-  //                               var org = d3.select(elem).data()
-  //                               org = org[0].data.nombre + " " + org[0].data.apellido;
-  //                               if (value.length > 0 && org.toLowerCase().indexOf(value) != -1 ) {
-  //                                   d3.select($elem[0].childNodes[0]).style("fill","#ff4fa7").style("stroke-width","3px").style("stroke","white").style("opacity","1") ;                
-  //                               } else {
-  //                                   d3.select($elem[0].childNodes[0]).style("fill","white").style("opacity","0.3").style("stroke","none")   ;               
-
-
-  //                               }
-  //                           });
-  //           });
-
-
-// $("input").keyup(function() {
-//        var value = $(this).val().toLowerCase();
-//        console.log(value);
-//         $(".depth4, .depth3").each(function(index, elem) {
-//             var $elem = $(elem);
-//             var org = d3.select(elem).data()[0].data.value.others[0].organization_type;
-
-//             if (org.toLowerCase() == value) {
-//                 d3.select($elem[0].childNodes[0]).style("stroke","black").style("stroke-width","2px") ;                
-//             } else {
-//                  d3.select($elem[0].childNodes[0]).style("stroke","none")   ;               
-
-
-//             }
-//         });
-//     }, function() {
-
-      
-//     }
-//   );
-  
-
-         $('.comision').tipsy({ 
+        $('.comision').tipsy({ 
                 gravity: 'n', 
                 html: true, 
                 opacity: 1, 
@@ -298,11 +185,6 @@ const leaf = node.filter(d => d.depth ===1);
                   if(d.depth==1) texto += "<br>Integrantes: " + d.children.length ;
                   return texto;        }
           });
-
-          
-        
-
-
 
   })
          var div = d3.select("body").append("div")

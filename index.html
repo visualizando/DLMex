@@ -10,26 +10,20 @@
 
     <link rel="stylesheet" href="css/bulma.css">
     <link rel="stylesheet" href="css/custom.css">
-    <link rel="stylesheet" href="css/bulma-steps.css">
     <link rel="stylesheet" href="css/instant-definitions.css">
     <link href="css/featherlight.css" type="text/css" rel="stylesheet" />
 
-
-    <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
-    <script src="https://d3js.org/d3.v5.min.js"></script>
+        <script src="https://d3js.org/d3.v5.min.js"></script>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/d3-legend/2.25.6/d3-legend.min.js"></script>
+        <script src="https://d3js.org/topojson.v2.min.js"></script>
 
-    <script src="https://d3js.org/topojson.v2.min.js"></script>
-
-    
-
+        <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+        <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery.tipsy/1.0.3/jquery.tipsy.js"></script>
 
   </head>
 
-
   <body>
-
-    
+  
 
     <section class="hero is-info is-medium">
       <!-- Hero head: will stick at the top -->
@@ -112,7 +106,7 @@
             
             <div class="column is-8 is-offset-2">
               <h2 class="title is-1">
-                Distribución de bancas en la Cámara de Diputados
+                Distribución de curules en la Cámara de Diputados
               </h2>
               <h3 class="subtitle is-6">
                 Mapa de distribución de los diputados por unidad territorial (estados y circunscripciones) por la que fueron electos según el sistema de elección: mayoría relativa o representación proporcional.
@@ -145,21 +139,27 @@
           <div class="column is-fullwidth has-text-centered	">
             <div class="column is-8 is-offset-2">
             <h2 class="title is-1">
-              Distribución de curules en el Senado
+              Distribución de escaños en el Senado
             </h2>
             <h3 class="subtitle is-6">
               Mapa de distribución de los senadores por unidad territorial (estados o lista nacional) por la que fueron electos según el sistema de elección: mayoría relativa y representación proporcional.
             </h3>
+            <div class="notification is-primary is-light">
+
+            Mové el cursor sobre los legisladores para ver el estado que representan y accedé a su perfil haciendo un click en el legislador elegido. Cada estado se encuentra coloreado con el color del grupo parlamentario mayoritario.
+</div>
+
           </div>
               <br>
               <div id="mapaSenado" style="max-width: 900px; margin:auto;position: relative;">
                 <div id="tooltipSenado" class="tooltip">
                   <h3 ><span id="title"></span></h3>
-                  <h4 id="estado"></h4>
-                  <h4 id="distrito"></h4>
                   <h5 id="partido"></h5>
+                  <h5 id="estado"></h5>
+                  <h5 id="mayoria"></h5>
+                  
                 </div> 
-              </div>
+              </div> 
         </div>
      </div>
     </section>
@@ -191,7 +191,7 @@
         <div class="columns is-mobile is-centered">
           <div class="column is-four-fifths-tablet is-two-thirds-desktop has-text-centered		">
             <h2 class="title is-1">
-              Perspectiva de Genero
+              Perspectiva de Género
               </h2>
             <h3 class="subtitle is-6">
               Integración proporcional de las cámaras y análisis sobre la integración de comisiones, participación de mujeres en cargos jerárquicos y formación académica 
@@ -248,16 +248,17 @@
           </div>
           </div>
             <br>
-            <h2 class="title">Comisiones de la camara de Diputados</h2>
-            <div id="comisionesDipus" style=" margin:auto">
-              <iframe src="dev/abrela2/index.html"  height="950px" style=" margin:auto"></iframe>
+            <hr>
+            <h2 class="subtitle is-4">Comisiones de la Cámara de Diputados</h2>
+            <div id="comisionesDipus" class="comisiones" style="max-width: 900px; margin:auto;position: relative;">
+              
             </div>
-
-            <h2 class="title">Comisiones de la camara de Senadores</h2>
-            <div id="comisionesSenado" style=" margin:auto">
-              <iframe src="dev/abrela2/indexSenado.html"  height="950px" style=" margin:auto"></iframe>
+            <hr>
+            <h2 class="subtitle is-4">Comisiones de la Cámara de Senadores</h2>
+            <div id="comisionesSenado" class="comisiones" style="max-width: 900px; margin:auto;position: relative;">
+              
             </div>
-            
+            <br><br>
         
           </div>
         </div>
@@ -274,32 +275,42 @@
             <h2 class="title is-1">
               Organigramas
             </h2>
-            <p>
-            Breve descripcion Breve descripcion Breve descripcion Breve descripcion Breve descripcion Breve descripcion 
-            </p>
-            <div class="tabs is-centered">
-              <ul id="organigramasMenu">
-                <li><a>Senado</a></li>
-                <li><a>Diputados</a></li>
+            <h3>
+              Estos son los principales órganos de cada cámara, que dirigen y organizan su funcionamiento. También gestionan los recursos y proveen servicios a los legisladores, las comisiones y otras áreas del Congreso de la Unión.            </h3>
+            <div class="tabs is-toggle is-toggle-rounded  is-centered">
+              <ul id="organiMenu">
+                <li class="is-active">
+                  <a>
+                    <span>Diputados</span>
+                  </a>
+                </li>
+                <li>
+                  <a>
+                    <span>Senadores</span>
+                  </a>
+                </li>
               </ul>
-              
             </div>
-
+      <!-- <div class="columns is-multiline is-centered">
+                <div class="column is-half-desktop is-half-tablet is-fullwidth-mobile">
+                  <div class="card">
+                    <div class="card-content">
+                      <div class="content">
+                        <p class="subtitle is-7"><b>Actividad pública previa:</b>
+                          <br>1) Ministro de Hacienda y Finanzas de Santa Fe (2003-2007)
+                          <br>2) Secretario de Hacienda en Santa Fe Capital (1999-2003)</p>
+                      </div>
+                    </div>
+                  </div>
+                </div> -->
+            
             <div id="organigramas">
 
-              <div class="box"><h3 class="subtitle">Mesa Directiva</h3><div id="mesa-directiva-1"></div></div>
-              <div class="box"><h3 class="subtitle">Junta de Coordinación Política</h3><div id="junta-de-coordinación-política-13"></div></div>
-              <div class="box"><h3 class="subtitle">Coordinación Técnica</h3><div id="coordinación-técnica-24"></div></div>
-              <div class="box"><h3 class="subtitle">Servicios Parlamentarios</h3><div id="servicios-parlamentarios-30"></div></div>
-              <div class="box"><h3 class="subtitle">Servicios Administrativos y Financieros</h3><div id="servicios-administrativos-y-financieros-37"></div></div>
+        
+            
+              </div>
               
-              <div class="box"><h3 class="subtitle">Mesa Directiva</h3><div id="mesa-directiva-48"></div></div>
-              <div class="box"><h3 class="subtitle">Junta de Coordinación Política</h3><div id="junta-de-coordinación-política-60"></div></div>
-              <div class="box"><h3 class="subtitle">Coordinación de Comunicación Social</h3><div id="coordinación-de-comunicación-social-70"></div></div>
-              <div class="box"><h3 class="subtitle">Secretaría General</h3><div id="secretaría-general-76"></div></div>
-              <div class="box"><h3 class="subtitle">Secretaría de Servicios Parlamentarios</h3><div id="secretaría-de-servicios-parlamentarios-83"></div></div>
-              <div class="box"><h3 class="subtitle">Secretaría de Servicios Administrativos y Financieros</h3><div id="secretaría-de-servicios-administrativos-y-financieros-96"></div></div>
-              <div class="box"><h3 class="subtitle">Contraloría Interna</h3><div id="contraloría-interna-103"></div></div></div><br>
+
 
           </div>
         </div>
@@ -444,7 +455,6 @@
 
 <script src="js/map.js"></script>
 
-  <script src="//code.jquery.com/jquery-latest.js"></script>
   <!-- <script src="js/terms.js"></script>
   <script src="js/instant-definitions.js"></script>
 

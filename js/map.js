@@ -117,41 +117,32 @@
     var angleScale = d3.scaleOrdinal()
           .range([1/9,2/9,3/9,4/9,5/9,6/9,7/9,8/9,1]);
         angleScale.domain = partidosLista;
-        
+    
+
+
+  // CARGA DE DATOS
+
+
       var promises = [
         d3.json("data/mexico.topo.json"),
         d3.csv("data/congreso.csv"),
-        d3.xml("data/Senado_Mapa_Mexico.svg")
+        d3.xml("data/Senado_Mapa_Mexico.svg"),
+        d3.csv("data/comisiones.csv"),
+        d3.csv("data/organigramas.csv")
       ]
-    
       Promise.all(promises).then(function(data){
         ready(data)
       });
     
     
-    // Define the div for the tooltip
-    let tooltipDiputados = d3.select("#tooltipDiputados")
-    .style("right", "50px")
-    .style("top", height * 0.2 + "px")
-    ;
 
-    let tooltipSenado = d3.select("#tooltipSenado")
-    .style("right", "50px")
-    .style("top", height * 0.2 + "px")
-;
-    
-    
-  var svg = d3.select("div#mapaDiputados")
-          .append("svg")
-          .attr("preserveAspectRatio", "xMinYMin meet")
-          .attr("viewBox", "0 0 " + width + " " + height)
-          .classed("svg-content", true);
     
 
   //---------- FUNCTION READY----------
     function ready (results){        
-        var mapTopoJson = results[0]; // acá esta el mapa
-        d3.select("#mapaSenado").node().append(results[2].documentElement);
+
+
+  
 
         var personas = d3.nest() // acá las personas en csv
                           .key(function (d) { return d.camara; })
@@ -160,10 +151,40 @@
                           diputados = personas["diputados"];
                           senadores = personas["senadores"];
                           
-        dibujaSenado(senadores);
-      
+        
+        dibujaDiputados(diputados,results[0]);
+        dibujaSenado(senadores,results[2]);
+
+
+        dibujaComisiones(results[3]);
+
+        dibujaOrganigramas(results[4],"Diputados");
+ 
+}
+
+function dibujaDiputados(diputados,mapaJSON) {
+  
+    // Define the div for the tooltip
+    let tooltipDiputados = d3.select("#tooltipDiputados")
+    .style("right", "50px")
+    .style("top", height * 0.2 + "px")
+    ;
+
+  
+  var svg = d3.select("div#mapaDiputados")
+          .append("svg")
+          .attr("preserveAspectRatio", "xMinYMin meet")
+          .attr("viewBox", "0 0 " + width + " " + height)
+          .classed("svg-content", true);
+
+
     
     // --------- MAPA
+
+
+    
+    var mapTopoJson = mapaJSON; // acá esta el mapa
+
         var mapa = topojson.feature(mapTopoJson, mapTopoJson.objects.mexico);  
     
           proyeccionMapa.fitWidth(width, mapa)
@@ -326,8 +347,8 @@
                             
                             ;
     
-                    cell.append("path")
-                          .attr("d", function(d) { return "M" + d.join("L") + "Z"; });
+                    cell.append("path").attr("d", function(d) {
+                      if(d) return "M" + d.join("L") + "Z"; });
 
                           var circunscripcionesCircles = [];
                           gruposAparteDef.forEach(function(d, i) { 
@@ -373,20 +394,27 @@
       }
     
     
-    var linearSize = d3.scaleLinear().domain([0,10]).range([10, 30]);
-    
-    
-    
+        
     /// LEYENDAS
     
     var leyenda = svg.append("g")
         .attr("class", "leyenda")
         .attr("transform", "translate("+(width-80)+", 20)");
-    
-      leyenda.append("g").attr("class", "legendSize");
-      leyenda.append("g")
+
+        leyenda.append("g").attr("class", "legendSize");
+        leyenda.append("g")
          .attr("transform", "translate(0, 50)")
          .attr("class", "legendOrdinal");
+
+    var leyendaSenado = d3.select("#mapaSenadoMexico").append("g")
+        .attr("class", "leyenda")
+        .attr("transform", "translate("+800+", 20)");
+    
+        leyendaSenado.append("g").attr("class", "legendSize");
+        leyendaSenado.append("g")
+         .attr("transform", "translate(0, 50) scale(1.1)")
+         .attr("class", "legendOrdinal");
+      
       
     
     var legendOrdinal = d3.legendColor()
@@ -401,24 +429,34 @@
     svg.select(".legendOrdinal")
       .call(legendOrdinal);
     
+      d3.select("#mapaSenadoMexico").select(".legendOrdinal")
+      .call(legendOrdinal);
     
     
-    var circle = d3.arc()
+    
+    var circle = d3.arc() // define el circulo para los puntos que no tineen estado
     .innerRadius(0)
     .outerRadius(d => d)
     .startAngle(-Math.PI)
     .endAngle(Math.PI);
     
     
-    } // fin de Ready;
+    } // fin de dibujadiputados;
 
 
 
 
 
 
-    function dibujaSenado(senadores) { // FUNCION PARA DIBUJAR LAS BANCAS DE SENADORES;
+    function dibujaSenado(senadores,svgXML) { // FUNCION PARA DIBUJAR LAS BANCAS DE SENADORES;
 
+      d3.select("#mapaSenado").node().append(svgXML.documentElement);                          
+
+      let tooltipSenado = d3.select("#tooltipSenado")
+      .style("right", "50px")
+      .style("top", height * 0.2 + "px");
+
+      
       senadores = d3.nest()
                     .key(function (d) {return d.Entidad; })
                           .entries(senadores);
@@ -428,15 +466,13 @@
           mapaSenadoSVG.style("max-width","650px");
           var bancas = mapaSenadoSVG.selectAll(".banca");
                                       
-        
-
-
           senadores.forEach(d=>{
              var este = mapaSenadoSVG.select("g#"+estadosCode[d.key]); // selecciona cada group de Estado
                  este.selectAll("polygon").data(d.values);  // le carga la data de sus tres bancas
                  este.on("mouseenter", function(e) {
                   d3.selectAll(".borde").style("opacity",0.5);
                   d3.select("#o"+estadosCode[d.key]).classed("apaga",true);
+                  tooltipSenado.select("#mayoria").html("(Mayoría:&nbsp;<b>"+getMayoria(d.values.map(e=>e.partido))+"</b>)"); // actualiza la mayoria en el tooltip
                   })
                 .on("mouseleave", function(e) {
                   d3.selectAll(".borde").style("opacity",1);
@@ -447,6 +483,7 @@
              mapaSenadoSVG.select("#o"+estadosCode[d.key]) // pone los estados enteros del color de la mayoria
                     .attr("class", "borde " + getMayoria(d.values.map(e=>e.partido)));
 
+                    
 
                     
           })
@@ -467,8 +504,10 @@
                                           .style("opacity", .9);    
                                           
                                     tooltipSenado.select("#title").html(d.nombre);
-                                    tooltipSenado.select("#estado").html("Estado:&nbsp;<b>"+d.Entidad+"</b>");
                                     tooltipSenado.select("#partido").html("Partido:&nbsp;<b>"+d.partido+"</b>");
+                                    tooltipSenado.select("#estado").html("Estado:&nbsp;<b>"+d.Entidad+"</b>");
+                                    
+                                    
                                   })
                 .on("mouseout", function(d) {
                                   tooltipSenado.transition()    
@@ -478,15 +517,226 @@
                                             .attr("stroke-width", "0px");
                                     })
                     ;
-
-        
-
-          
-
-           
-    }
+       
+} /// FIN dibujasenado
     
   
+
+
+function dibujaComisiones(data) {
+
+
+          var circle = d3.arc()
+            .innerRadius(0)
+            .outerRadius(d => d)
+            .startAngle(-Math.PI)
+            .endAngle(Math.PI);
+
+            var actualTitle;
+
+          var height = width = 900;
+
+
+
+          var pack = d3.pack()
+            .size([width - 2, width - 2])
+            .padding(function(d) {
+            if (d.depth == 1 ) return 5;
+            if (d.depth == 0 ) return 17;
+          });
+
+          var nest = d3.nest()
+                .key(function(d) { return d.Camara; })
+                .key(function(d) { return d.Comisiones; })
+                .entries(data);
+
+
+        dibujaComision(nest[0].values, "#comisionesDipus");
+
+        dibujaComision(nest[1].values, "#comisionesSenado");
+
+  
+
+        function dibujaComision(data, divId){
+
+
+                    var root = d3.hierarchy({values: data}, function(d) {return d.values; })
+                      .sum(function(d) {
+                        switch(d["Posición"]){
+                            case 'Integrante':
+                              return 100;
+                            case 'Presidente':
+                              return 500;
+                            case 'Secretario/a':
+                              return 250;
+                            }
+                      })
+                      .sort(function(a, b) { 
+                        return b.value - a.value; 
+                      })
+                      ;
+                  pack(root);
+                
+                
+                
+                    //~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+                    // Start drawing
+
+                    const node = d3.select(divId).append("svg")
+                      .attr("preserveAspectRatio", "xMinYMin meet")
+                      .attr("viewBox", "0 0 900 900")
+                      .classed("svg-content", true)
+                      .append("g").attr("id","#main")
+                        .attr("pointer-events", "all")
+                        .selectAll("g")
+                        .data(root.descendants().filter(d=>d.depth==1))
+                        .enter().append("g").attr("class","comision")
+                        .attr("transform", function(d) { 
+                                return "translate(" + d.x + "," + d.y + ")"; })
+                        // .on("mouseenter", hovered(true))
+                        // .on("mouseleave", hovered(false))
+                        .attr("id", function(d) {
+                            return camelize(d.data.key);
+                              });
+                
+                
+                          
+                                
+                    node.append("circle")
+                        .attr("r",d=>d.r)
+                        .attr("class", "padre")
+                        //.attr("pointer-events", d => d.children ? "all" : "none")
+                        .classed("hovered",d => d.children ? false : true)
+                        .on("mousemove", hovered()); // esto es para actualizar el titulo en el tipsy
+                        ;
+                
+                
+                  var childs = node.append("g").selectAll("circle")
+                        .data(d=>d.children).enter()
+                        .append("circle")
+                        .attr("r",d=>d.r)
+                        .attr("cy",d=>d.y-d.parent.y)
+                        .attr("cx",d=>d.x-d.parent.x)
+                        .attr("class", d => d.height==1 ? d.data.key + " child" : "p"+d.data.id + " " + d.data.partido + " child")
+                        .on("mousemove", hovered()); // esto es para actualizar el titulo en el tipsy
+                      
+                
+                        const leaf = node.filter(d => d.depth ===1);
+                
+                
+                        leaf.append("text")
+                            //.attr("clip-path", d => d.clipUid)
+                          .selectAll("tspan")
+                          .data(d=> { 
+                            v = d.data.key.split(/(?<=(^|\s)[^\s]{3,})\s+/g).filter(el=> {
+                                                                              return el.trim() != "";
+                                                                            });
+                            return v;
+                          })
+                          .join("tspan")
+                            .attr("x", 0)
+                            .attr("y", (d, i, nodes) => `${i - nodes.length / 2 + 0.8}em`)
+                            .text(d => d);
+                
+                            var div = d3.select("body").append("div")
+                                      .attr("class", "tooltip")
+                                      .style("opacity", 1e-6);
+                
+                          function hovered() {
+                                        return function(d) {
+                                          if(d.data.nombre)
+                                            { 
+                                              d3.select("#actualtitle").style("display","block")
+                                              .html("<b>" + d.data.nombre + " "+d.data.apellido + "</b><br>" +d.data["Posición"] )
+                                            } else{
+                                            d3.select("#actualtitle").style("display","none");
+                                          }
+                                          d3.selectAll('.child').classed("seleccionado",false);
+                                          d3.selectAll('.p'+d.data.id).classed("seleccionado",true);
+                                            }
+                                        }
+                
+                
+
+                } // end dibujacomision
+
+                $('.comision').tipsy({ 
+                  gravity: 'n', 
+                  html: true, 
+                  opacity: 1, 
+                  title: function() {
+                    var d = this.__data__;
+                    var texto  = '<span id=actualtitle></span><b style="font-size:13px">'+d.data.key+'</b>';
+                    if(d.depth==1) texto += "<br>Integrantes: " + d.children.length ;
+                    return texto;        }
+                });
+
+
+
+}
+
+
+
+
+function dibujaOrganigramas(data, camara) {
+
+
+        d3.select("#organiMenu").selectAll("a").on("click",function (p) {
+          d3.select(this).select("span").html();
+        })
+
+        /// FALTA HACER QUE CARGUE LOS DEL SENADO
+
+        var nested = d3.nest()
+                       .key(function(d) { return d.Camara; })
+                       .key(function(d) { return d.Seccion; })
+                       .entries(data);
+    
+                       var organi = d3.select("#organigramas");
+
+                          
+
+                       var subitems = organi.append("div").attr("class","columns is-multiline is-centered").selectAll("div")
+                            .data(nested.filter(d=>d.key == camara)[0].values)
+                            .enter()
+                            .append("div").attr("class","column is-half-desktop is-half-tablet is-fullwidth-mobile")
+                            .append("div").attr("class","card")
+                            .append("div").attr("class","card-content")
+                            .append("div").attr("class","content");
+                        
+                       subitems.append("p").attr("class","subtitle is-5")
+                            .html(d=>d.key);
+
+                      var table = subitems.append("table").attr("class","table is-hoverable").append("tbody");
+                          
+                          
+                      var inset = table.selectAll("tr").data(d=>d.values).enter()
+                                .append("tr");
+
+                                inset.append("td").html(e=>e.titular);
+                               // inset.append("td").html(e=>e.direccion);
+                               // inset.append("td").html(e=>e.telefono);
+                          
+
+                            
+                            
+                       
+
+      // nested.forEach(function(d){
+
+      //     d.values.forEach(function(e){
+      //           var subArea = d3.select("#organigramas").append("div").attr("class","box");
+      //                     subArea.append("h3").attr("class","subtitle").html(e.key);
+      //                     subArea.append("div").attr("id",e.values[0].idSlug);
+      //                 ;
+      //                 var tablaContent = e.values.map(function(f){
+      //                     return [{'v':f.idSlug,'f':f.area+":<br><b>"+f.titular+"</b>"},f['depende de'],f.direccion+" "+f.telefono];
+      //                   })
+      //                  //drawChart(tablaContent,e.values[0].idSlug)
+      //                 })                                 
+      //           })
+  
+}
 
 
 
@@ -527,3 +777,35 @@
   
       return Math.sqrt(xs + ys);
     }
+
+
+    
+function getUnique(arr) {
+  var a = [], b = [], prev;
+
+  arr.sort();
+  for ( var i = 0; i < arr.length; i++ ) {
+      if ( arr[i] !== prev ) {
+          a.push(arr[i]);
+          b.push(1);
+      } else {
+          b[b.length-1]++;
+      }
+      prev = arr[i];
+  }
+
+  return [a, b];
+}
+
+
+
+function camelize(str) {
+if(str) return str.replace(/(?:^\w|[A-Z]|\b\w|\s+)/g, function(match, index) {
+  if (+match === 0) return ""; // or if (/\s+/.test(match)) for white spaces
+  return index == 0 ? match.toLowerCase() : match.toUpperCase();
+});
+}
+
+
+
+ 
