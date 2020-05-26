@@ -486,11 +486,15 @@ textPath{
 
 
 /* organigrama */
-
-td:nth-child(1) {  
-  font-size: 14px;
+.tags{
+  justify-content: center;
 }
 
-td:nth-child(2), td:nth-child(3){  
-  font-size: 12px;
+span.tag.is-primary.is-light {
+  font-weight: 700;
+  color: inherit;
+}
+
+.organiHidden{
+  display: none;
 }

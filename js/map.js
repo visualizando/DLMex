@@ -682,7 +682,11 @@ function dibujaOrganigramas(data, camara) {
 
 
         d3.select("#organiMenu").selectAll("a").on("click",function (p) {
-          d3.select(this).select("span").html();
+          var selected = d3.select(this).select("span").html();
+          d3.select("#organigramas").selectAll(".column").classed("organiHidden",true);
+          d3.select("#organigramas").selectAll("."+selected).classed("organiHidden",false);
+          d3.select("#organiMenu").selectAll(".is-active").classed("is-active",false);
+          d3.select("#organiMenu").select("#"+selected).classed("is-active",true)
         })
 
         /// FALTA HACER QUE CARGUE LOS DEL SENADO
@@ -694,47 +698,33 @@ function dibujaOrganigramas(data, camara) {
     
                        var organi = d3.select("#organigramas");
 
-                          
-                       var subitems = organi.append("div").attr("class","columns is-multiline is-centered").selectAll("div")
-                            .data(nested.filter(d=>d.key == camara)[0].values)
-                            .enter()
-                            .append("div").attr("class","column is-half-desktop is-half-tablet is-fullwidth-mobile")
-                            .append("div").attr("class","card")
-                            .append("div").attr("class","card-content")
-                            .append("div").attr("class","content");
-                        
-                       subitems.append("p").attr("class","subtitle is-5")
-                            .html(d=>d.key);
 
-                      var table = subitems.append("div").attr("class","tags");
-                          
-                          
-                      table.selectAll("span").data(d=>d.values).enter()
-                                .append("span")
-                                .attr("class","tag")
-                                .html(e=>e.titular);
-                               // inset.append("td").html(e=>e.direccion);
-                               // inset.append("td").html(e=>e.telefono);
-                          
+                       function creaOrganigramas(camaraSelected, isVisible) {
+                                var subitems = organi.append("div").attr("class","columns is-multiline is-centered").selectAll("div")
+                                      .data(nested.filter(d=>d.key == camaraSelected)[0].values)
+                                      .enter()
+                                      .append("div").attr("class","column is-half-desktop is-half-tablet is-fullwidth-mobile " + camaraSelected + " " +isVisible)
+                                      .append("div").attr("class","card")
+                                      .append("div").attr("class","card-content")
+                                      .append("div").attr("class","content");
+                                  
+                                subitems.append("p").attr("class","subtitle is-5")
+                                      .html(d=>d.key);
 
-                            
-                            
-                       
+                                var table = subitems.append("div").attr("class","tags");
+                                    
+                                    
+                                table.selectAll("span").data(d=>d.values).enter()
+                                          .append("span")
+                                          .attr("class",d=>{return d.nivel==1?'tag is-primary is-light':'tag'})
+                                          .html(e=>e.titular);
+                                    
+                              }
 
-      // nested.forEach(function(d){
+                          creaOrganigramas("Diputados","");
+                          creaOrganigramas("Senado","organiHidden")
 
-      //     d.values.forEach(function(e){
-      //           var subArea = d3.select("#organigramas").append("div").attr("class","box");
-      //                     subArea.append("h3").attr("class","subtitle").html(e.key);
-      //                     subArea.append("div").attr("id",e.values[0].idSlug);
-      //                 ;
-      //                 var tablaContent = e.values.map(function(f){
-      //                     return [{'v':f.idSlug,'f':f.area+":<br><b>"+f.titular+"</b>"},f['depende de'],f.direccion+" "+f.telefono];
-      //                   })
-      //                  //drawChart(tablaContent,e.values[0].idSlug)
-      //                 })                                 
-      //           })
-  
+ 
 }
 
 

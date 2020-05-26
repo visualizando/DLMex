@@ -1,0 +1,20 @@
+ Volume in drive G is Storage
+ Volume Serial Number is E851-06F6
+
+ Directory of G:\_work\DireLegis2019\DLMex\images\orgs
+
+05/26/2020  07:01 AM    <DIR>          MULTIVAC\Andres        .
+05/26/2020  07:01 AM    <DIR>          MULTIVAC\Andres        ..
+05/26/2020  07:01 AM                 0 MULTIVAC\Andres        caca.txt
+03/30/2020  04:41 PM            36,640 MULTIVAC\Andres        CEProjo.PNG
+03/30/2020  04:43 PM            48,969 MULTIVAC\Andres        dl-logo.png
+05/26/2020  07:00 AM            41,392 MULTIVAC\Andres        FACCSPOL.jpg
+03/30/2020  05:07 PM            14,013 MULTIVAC\Andres        Fundar.jpg
+03/30/2020  05:06 PM            27,113 MULTIVAC\Andres        ImpactoLegislativo.jpg
+05/26/2020  07:00 AM            53,768 MULTIVAC\Andres        UNAM.jpg
+05/26/2020  07:00 AM            20,716 MULTIVAC\Andres        VisionLegislativa.png
+               8 File(s)        242,611 bytes
+
+     Total Files Listed:
+               8 File(s)        242,611 bytes
+               2 Dir(s)  661,584,703,488 bytes free
