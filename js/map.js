@@ -695,7 +695,6 @@ function dibujaOrganigramas(data, camara) {
                        var organi = d3.select("#organigramas");
 
                           
-
                        var subitems = organi.append("div").attr("class","columns is-multiline is-centered").selectAll("div")
                             .data(nested.filter(d=>d.key == camara)[0].values)
                             .enter()
@@ -707,13 +706,13 @@ function dibujaOrganigramas(data, camara) {
                        subitems.append("p").attr("class","subtitle is-5")
                             .html(d=>d.key);
 
-                      var table = subitems.append("table").attr("class","table is-hoverable").append("tbody");
+                      var table = subitems.append("div").attr("class","tags");
                           
                           
-                      var inset = table.selectAll("tr").data(d=>d.values).enter()
-                                .append("tr");
-
-                                inset.append("td").html(e=>e.titular);
+                      table.selectAll("span").data(d=>d.values).enter()
+                                .append("span")
+                                .attr("class","tag")
+                                .html(e=>e.titular);
                                // inset.append("td").html(e=>e.direccion);
                                // inset.append("td").html(e=>e.telefono);
                           
