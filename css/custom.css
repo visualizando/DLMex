@@ -311,7 +311,8 @@ line-height: 18px;
   display: inline-block;
   vertical-align: middle;
   padding: 0px 10px;
-
+  font-size: 16px;
+  font-weight: 600;
 
 }
 
@@ -327,11 +328,18 @@ div.tooltip #presencia {
 }
 
 
-div.tooltip #tamanio,  div.tooltip #link{
+div.tooltip #tamanio{
   margin: 2px 0px;
   font-weight: 500;
   font-size: 12px;
 }
+
+div.tooltip #link{
+  font-size: 14px;
+  margin-bottom: 10px;
+  pointer-events: all;
+}
+
 
 .enclosingCircle{
   fill: none;
@@ -507,4 +515,16 @@ span.tag.is-primary.is-light {
 
 .organiHidden{
   display: none;
+}
+
+.media img{
+  display: block;
+  width: auto;
+  height: 100%;
+  margin: auto;
+}
+
+.media .progress.is-small {
+  height: 8px;
+  margin-bottom: 9px;
 }

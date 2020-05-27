@@ -99,7 +99,7 @@
     
     var proyeccionMapa = d3.geoMercator()
                     ;
-    var diputados, senadores;
+    var diputados, senadores, senadoTooltipClicked;
 
     var padding = 1;
     
@@ -107,6 +107,8 @@
     var distanceLimit = 30;
     
     var partidosLista =["MORENA","PAN","PRI","PT","MC","PES","PVEM","PRD","SG"];
+
+    var urlBuscador = "https://legisladores.directoriolegislativo.org/";
 
     var colorScale = d3.scaleOrdinal()
         .domain(partidosLista)
@@ -307,6 +309,7 @@ function dibujaDiputados(diputados,mapaJSON) {
                                     tooltipDiputados.select("#estado").html("Estado:&nbsp;<b>"+d.data.estado+"</b>");
                                     tooltipDiputados.select("#distrito").html("Distrito:&nbsp;<b>"+d.data.distrito+"</b>");
                                     tooltipDiputados.select("#partido").html("Partido:&nbsp;<b>"+d.data.partido+"</b>");
+                                    tooltipDiputados.select("#link").attr("href",urlBuscador + "legislador/"+ d.data.id);
     
                                 d3.selectAll(".circulos").filter(function(e){return e.id != d.data.id})
                                               .classed("unselected", true); 
@@ -470,13 +473,17 @@ function dibujaDiputados(diputados,mapaJSON) {
              var este = mapaSenadoSVG.select("g#"+estadosCode[d.key]); // selecciona cada group de Estado
                  este.selectAll("polygon").data(d.values);  // le carga la data de sus tres bancas
                  este.on("mouseenter", function(e) {
-                  d3.selectAll(".borde").style("opacity",0.5);
-                  d3.select("#o"+estadosCode[d.key]).classed("apaga",true);
-                  tooltipSenado.select("#mayoria").html("(Mayoría:&nbsp;<b>"+getMayoria(d.values.map(e=>e.partido))+"</b>)"); // actualiza la mayoria en el tooltip
+                    if(!senadoTooltipClicked){
+                      d3.selectAll(".borde").style("opacity",0.5);
+                      d3.select("#o"+estadosCode[d.key]).classed("apaga",true);
+                      tooltipSenado.select("#mayoria").html("(Mayoría:&nbsp;<b>"+getMayoria(d.values.map(e=>e.partido))+"</b>)"); // actualiza la mayoria en el tooltip
+                    }
                   })
                 .on("mouseleave", function(e) {
-                  d3.selectAll(".borde").style("opacity",1);
-                  d3.select("#o"+estadosCode[d.key]).classed("apaga",false);
+                    if(!senadoTooltipClicked){
+                      d3.selectAll(".borde").style("opacity",1);
+                      d3.select("#o"+estadosCode[d.key]).classed("apaga",false);
+                    }
                   })
                   ;
              
@@ -494,7 +501,8 @@ function dibujaDiputados(diputados,mapaJSON) {
       
 
           bancas.on("mouseover", function(d) {
-                                  d3.select(this)
+            if(!senadoTooltipClicked){
+                            d3.select(this)
                                           .attr("stroke-width", "3px")
                                           .attr('stroke','#222')
                                           .raise();
@@ -506,16 +514,33 @@ function dibujaDiputados(diputados,mapaJSON) {
                                     tooltipSenado.select("#title").html(d.nombre);
                                     tooltipSenado.select("#partido").html("Partido:&nbsp;<b>"+d.partido+"</b>");
                                     tooltipSenado.select("#estado").html("Estado:&nbsp;<b>"+d.Entidad+"</b>");
+                                    tooltipSenado.select("#link").attr("href",urlBuscador + "legislador/"+ d.id);
+
                                     
-                                    
+            }
                                   })
                 .on("mouseout", function(d) {
-                                  tooltipSenado.transition()    
+                  if(!senadoTooltipClicked){
+                              tooltipSenado.transition()    
                                   .duration(100)    
                                   .style("opacity", 0); 
                                     d3.select(this)
                                             .attr("stroke-width", "0px");
-                                    })
+                            }
+                          })
+                  /* .on("click", function(d) {
+                    if(senadoTooltipClicked != d.id){
+                      senadoTooltipClicked =d.id;
+                      tooltipSenado.select("#title").html(d.nombre);
+                                    tooltipSenado.select("#partido").html("Partido:&nbsp;<b>"+d.partido+"</b>");
+                                    tooltipSenado.select("#estado").html("Estado:&nbsp;<b>"+d.Entidad+"</b>");
+                                    tooltipSenado.select("#link").attr("href",urlBuscador + "legislador/"+ d.id);
+                    } 
+                    
+
+                            })
+      */
+                                    
                     ;
        
 } /// FIN dibujasenado
