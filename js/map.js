@@ -130,7 +130,8 @@
         d3.csv("data/congreso.csv"),
         d3.xml("data/Senado_Mapa_Mexico.svg"),
         d3.csv("data/comisiones.csv"),
-        d3.csv("data/organigramas.csv")
+        d3.csv("data/organigramas.csv"),
+        d3.csv("data/organigramas-descripcion.csv")
       ]
       Promise.all(promises).then(function(data){
         ready(data)
@@ -160,7 +161,7 @@
 
         dibujaComisiones(results[3]);
 
-        dibujaOrganigramas(results[4],"Diputados");
+        dibujaOrganigramas(results[4],results[5]); // data de organigramas, descripciones
  
 }
 
@@ -703,7 +704,7 @@ function dibujaComisiones(data) {
 
 
 
-function dibujaOrganigramas(data, camara) {
+function dibujaOrganigramas(data, descripciones) {
 
 
         d3.select("#organiMenu").selectAll("a").on("click",function (p) {
@@ -729,14 +730,17 @@ function dibujaOrganigramas(data, camara) {
                                       .data(nested.filter(d=>d.key == camaraSelected)[0].values)
                                       .enter()
                                       .append("div").attr("class","column is-half-desktop is-half-tablet is-fullwidth-mobile " + camaraSelected + " " +isVisible)
-                                      .append("div").attr("class","card")
-                                      .append("div").attr("class","card-content")
-                                      .append("div").attr("class","content");
+                                      .append("article").attr("class","message is-dark");
                                   
-                                subitems.append("p").attr("class","subtitle is-5")
+                                subitems.append("div").attr("class","message-header").append("p")
                                       .html(d=>d.key);
 
-                                var table = subitems.append("div").attr("class","tags");
+                                var messageBody = subitems.append("div").attr("class","message-body");
+                                
+                                    messageBody.append("p").attr("class","is-size-7 orgaDesc")
+                                      .html(d=>descripciones.filter(e=>{return e.camara ==camaraSelected && e.seccion==d.key})[0].descripcion);
+
+                                var table = messageBody.append("div").attr("class","tags");
                                     
                                     
                                 table.selectAll("span").data(d=>d.values).enter()

@@ -61,8 +61,8 @@ color: #060B18;
     padding: 2px;
   }
 
-  .box {
-     box-shadow: 0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23);
+  .box, .message {
+     box-shadow:0 6px 13px rgba(0,0,0,0.19), 0 3px 4px rgba(0,0,0,0.23);
   }
 
   .card{
@@ -504,18 +504,57 @@ textPath{
 
 
 /* organigrama */
-.tags{
+#organigramas .tags{
   justify-content: center;
 }
 
-span.tag.is-primary.is-light {
-  font-weight: 700;
-  color: inherit;
+#organigramas .tag{
+  background-color: #DBE1E2;
+  color:#232B34;
+  font-weight: 600;
 }
 
-.organiHidden{
+#organigramas .message-header{
+  background-color: #989EA0;
+}
+
+#organigramas .message-header{
+  padding: 7px 24px 20px 24px;
+}
+
+
+
+#organigramas .message-header p{
+  margin:auto;
+  color:#232B34;
+}
+
+#organigramas .orgaDesc{
+  background-color: #F7FAFA;
+  padding: 3px;
+  line-height: 14px;
+  margin-bottom: 17px;
+}
+
+
+#organigramas span.tag.is-primary.is-light {
+  font-weight: 700;
+  color: inherit;
+  background-color: #69E7BF;
+
+}
+
+#organigramas .organiHidden{
   display: none;
 }
+
+
+#organigramas .columns{
+  margin: 0;
+}
+
+
+/* ---- */
 
 .media img{
   display: block;
@@ -528,3 +567,7 @@ span.tag.is-primary.is-light {
   height: 8px;
   margin-bottom: 9px;
 }
+
+
+
+
