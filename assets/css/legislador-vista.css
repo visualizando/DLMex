@@ -1,0 +1,258 @@
+.wrapper {
+    margin-right: 50px;
+    margin-left: 50px;
+}
+
+hr{
+    margin-top: .6rem !important;
+    margin-bottom: .6rem !important;
+}
+
+.datos-personales {
+
+    /*height: 100%;*/
+    padding: 0;
+    background-color: #ffffff;
+    border-radius: 2px;
+
+}
+
+.datos-personales .containerTitle {
+    width: 100%;
+}
+.datos-personales .containerTitle > .title {
+    height: 100%;
+    display: flex;
+    padding: 20px;
+    justify-content: flex-start;
+    align-items: center;
+    text-transform: uppercase;
+    font-family: Cabin;
+    letter-spacing: 1px;
+    font-size: 18px;
+    color: #212121;
+}
+
+.datos-personales .containerFoto {
+    width: 100%;
+}
+.datos-personales .containerFoto .foto{
+    min-height: 200px;
+    background-image:url(https://picsum.photos/400);
+    margin: 0 0 auto 0;
+}
+
+.datos-personales .containerInfo {
+    width: 100%;
+}
+.datos-personales .info {
+    display: flex;
+    padding: 20px;
+    flex-direction: column;
+    justify-content: flex-start;
+}
+
+
+.datos-personales .info .rowFieldData .field {
+    text-transform: uppercase;
+    font-weight: bold;
+    font-family: Cabin;
+    margin-bottom: 3px;
+    font-size: 13px;
+    color: #F57C00;
+}
+
+.datos-personales .info .rowFieldData .data {
+    font-size: 13px;
+}
+
+.ultimaactividad{color: #F28323; font-weight: 700; text-transform: uppercase}
+
+.datos-principales {
+    display: flex;
+    flex-flow: row wrap;
+    padding: 0 20px;
+}
+
+.datos-principales > div {
+    flex: 1 1 800px;
+    border-radius: 2px;
+    background-color: #FFFFFF;
+}
+
+
+.nombre {
+    /*height: 10%;*/
+    padding: 0 0 20px 0;
+    font-size: 2em;
+    color: #000;
+    font-weight: 500;
+    margin: 0;
+}
+
+.nombre span i {
+    font-size: 15px;
+    letter-spacing: 2px;
+    color: #F57C00;
+    margin-left: 30px;
+}
+
+.datos-actual {
+    margin-top: 15px;
+    padding-top: 10px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+
+
+.actividades {
+    /*height: 76%;*/
+    margin-top: 20px;
+}
+
+
+
+.actividades .container {
+    height: 76vh;
+    padding: 0;
+}
+
+
+.actividades .rowFieldData .field {
+    color: #F57C00;
+    font-weight: 600;
+    text-transform: uppercase;
+    font-size: 14px;
+}
+
+.actividades .rowFieldData .data {
+    font-size: 1em;
+}
+
+.actividades .rowFieldData .data p span.bold{
+    font-weight: bold;
+}
+.actividades .rowFieldData .data p span.light{
+    color: #7b7b7b;
+}
+
+.nav-item.selected {
+    border-bottom: 3px solid orangered;
+}
+
+.shadow-light {
+    box-shadow: 0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23);
+}
+
+.shadow-medium {
+    box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
+}
+
+.datos-contacto, .socialEmbed {
+    padding: 0;
+    background-color: #ffffff;
+    border-radius: 2px;
+
+}
+
+.datos-contacto > .title, .socialEmbed > .title {
+    height: 50px;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-transform: uppercase;
+    font-family: Cabin;
+    letter-spacing: 1px;
+    font-size: 18px;
+    color: #212121;
+}
+
+.datos-contacto > .title span, .socialEmbed > .title span {
+    font-size: 13px;
+    letter-spacing: 1px;
+}
+
+.datos-contacto > hr, .socialEmbed > hr{
+    border: 1px solid #dddddd
+}
+
+.datos-contacto .info, .socialEmbed .info {
+    display: flex;
+    padding: 20px;
+    flex-direction: column;
+    justify-content: flex-start;
+}
+
+.datos-contacto .rowFieldData, .socialEmbed .rowFieldData {
+    text-align: center;
+}
+
+
+.datos-contacto .info .rowFieldData .field, .socialEmbed .info .rowFieldData .field {
+    text-transform: uppercase;
+    font-weight: bold;
+    height: 10%;
+    font-family: Cabin;
+    margin-bottom: 3px;
+    font-size: 13px;
+    color: #F57C00;
+}
+
+.datos-contacto .info .rowFieldData .data, .socialEmbed .info. .rowFieldData .data {
+    font-size: 13px;
+}
+
+.info {
+    padding: 15px;
+}
+
+.mt20 {
+    margin-top: 20px;
+}
+
+@media (max-width: 842px) {
+    .datos-principales {
+        height: 100%;
+        padding: 0;
+    }
+}
+
+.margenSup{
+    margin-bottom: 0px !important;
+}
+
+.PDF{
+    display: block;
+    position: absolute;
+    right: 10px;
+    top: 10px;
+    width: 60px;
+    text-align: center;
+}
+
+.rowFieldData{
+    padding: 5px 0 !important;
+}
+
+.BoxData{
+    padding: 2px 0 !important;
+}
+
+@media (max-width: 500px) {
+
+    .wrapper{
+        margin-right: 15px; !important;
+        margin-left: 15px  !important;;
+    }
+
+    .datos-principales{
+        margin-top: 15px;
+    }
+    .PDF{
+        top: 20px;
+    }
+}

@@ -1,0 +1,144 @@
+/*++++++++++++++++++++++++++++++ NUEVO FORMATO ++++++++++++++++++++++++++++++++++++*/
+
+.FormatoPdf{
+    position: absolute;
+    z-index: initial;
+}
+
+hr{
+    color: black;
+}
+.SideBar{
+    position: absolute;
+    z-index: 2;
+    display: block;
+    float: left;
+    width: 250px;
+    height: 600px;
+    padding-top: 20px !important;
+}
+
+.BoxData{
+    display: block;
+    background-color: transparent;
+    float: left;
+    width: auto;
+    margin-left: 45px;
+    text-align: left;
+    font-size: 11px;
+}
+
+.Important{
+    height: auto;
+    margin-left: auto;
+    margin-top: 2px;
+    margin-bottom: 2px;
+}
+
+.title{
+    margin-bottom: 3px !important;
+    font-weight: bold;
+}
+
+.dataText{
+    margin-left: 1px;
+}
+
+.Personal{
+    display: block;
+    float: left;
+    margin-top: 10px;
+}
+
+.BoxPrincipal{
+    position: absolute;
+    display: block;
+    max-height: 100px;
+    width: 500px;
+    text-align: left;
+    top: 58px;
+    left: 300px;
+    text-space: 1px;
+    font-size: 12px;
+}
+
+
+.title_1{
+    font-size: 13px;
+    font-family: "Arial Black";
+}
+
+.DistritoElectoral{
+    position: absolute;
+    z-index: 3;
+    float: left;
+    width: 210px;
+    height: auto;
+    left: 45px;
+    bottom: 115px;
+}
+
+.CabeceraCuadro{
+    padding: 5px 5px;
+    background-color: #595959;
+}
+/*.CabeceraCuadro{
+    overflow: hidden;
+    background-color: #5c6873;
+    height: auto;
+    padding: 5px;
+    margin-top: 5px;
+}*/
+
+.CuerpoCuadro{
+    background-color: white;
+    padding: 7px;
+    height: auto;
+    /*background-color: white !important;*/
+/*    background-position: bottom;*/
+}
+
+.InfoCuadro{
+    width: auto;
+    text-align: left;
+    margin-top: 1px;
+    margin-right: 1px;
+    font-size: 11px;
+}
+
+.BoxCenter{
+    float: right;
+    width: 460px;
+    height: auto;
+    margin-right: 40px;
+}
+
+
+.Actividades{
+    display: block;
+    width: auto;
+    height: auto;
+}
+
+.Comunicacion{
+    display: block;
+    margin-top: 5px;
+}
+
+.Foto{
+    position: absolute;
+    z-index: 4;
+    top: 40px;
+    left: 70px;
+    height: 150px;
+    width: 150px;
+    border-radius: 50%;
+
+    overflow: hidden;
+
+    background-color: white;
+    background-size: 150px auto;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center top;
+}

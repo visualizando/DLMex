@@ -1,0 +1,657 @@
+
+        <!doctype html>
+        <html class="no-js " lang="en">
+        <head>
+            <meta charset="utf-8">
+            <meta http-equiv="X-UA-Compatible" content="IE=Edge">
+            <meta content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" name="viewport">
+            <title>Directorio legislativo - Buscador legisladores</title>
+            <link rel="icon" href="/favicon.ico" type="image/x-icon"> <!-- Favicon-->
+            <link rel="stylesheet" href="./assets/libs/bootstrap/css/bootstrap.min.css">
+            <!-- Custom Css -->
+            <link href="https://fonts.googleapis.com/css2?family=Karla:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet">
+            <link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&display=swap" rel="stylesheet">
+        
+            <!-- <link rel="stylesheet" href="./assets/css/encabezados.css?v=1.6"> -->
+            <!-- <link href="https://fonts.googleapis.com/css?family=Abel|Open+Sans:300,400,600,700,800&display=swap" rel="stylesheet"> -->
+            <link media="screen" rel="stylesheet" type="text/css" href="./assets/libs/fontawesome/css/all.min.css"  />
+                            <!-- <link rel="stylesheet" href="./assets/css/estilos-buscador.css?v=1.5" /> -->
+                            <link rel="stylesheet" href="./assets/libs/bootstrap-datepicker/css/bootstrap-datepicker3.standalone.min.css" />
+                            <link rel="stylesheet" href="css/bulma.css">
+                            <link rel="stylesheet" href="css/custom.css">			
+        </head>
+        <body>
+
+            <section class="hero is-info is-medium">
+                <!-- Hero head: will stick at the top -->
+                <div class="hero-head">
+                  <header class="navbar">
+                    <div class="container">
+                      <div class="navbar-brand">
+                        <a class="navbar-item">
+                          <!-- <img src="images/DL_LogoHablemosv01.png" alt="Logo"> -->
+                        </a>
+                        <span class="navbar-burger burger" data-target="navbarMenuHeroC">
+                          <span></span>
+                          <span></span>
+                          <span></span>
+                        </span>
+                      </div>
+                      <div id="navbarMenuHeroC" class="navbar-menu">
+                        <div class="navbar-end">
+                          <a class="navbar-item is-active" disabled>
+                            Inicio
+                          </a>
+                          <a class="navbar-item" href="https://directoriolegislativo.org" target="_blank">
+                            Directorio Legislativo
+                          </a>
+                          <a class="navbar-item" href="https://directoriolegislativo.org/contacto/" target="_blank">
+                            Contacto
+                          </a>
+                        </div>
+                      </div>
+                    </div>
+                  </header>
+                </div>
+              
+          
+          
+                <!-- Hero content: will be in the middle -->
+                <div class="hero-body">
+                  <div class="container has-text-centered">
+                    <div class="columns is-mobile is-centered">
+                      <div class="column is-four-fifths-tablet is-half-desktop has-text-left	">
+             
+                      <h2 class="title is-1">
+                        Directorio Legislativo
+                                  </h2><h2 class="subtitle">
+                                    ¿Quiénes son nuestros legisladores y cómo nos representan?
+                      </h2>
+                      </div>
+                    </div>
+                    
+                
+                  </div>
+                </div>
+          
+                          <!-- Hero footer: will stick at the bottom -->
+                      <div class="hero-foot">
+                        <nav class="tabs is-boxed is-fullwidth">
+                          <div class="container">
+                            <ul>
+                              <li class="is-active"><a >BUSCADOR DE LEGISLADORES<br>Ingresá y conocelos</a></li>
+                                <li ><a  href="index.html">INFORMACIÓN GENERAL<br>Una mirada integral sobre el Congreso de la Unión</a></li>
+                            </ul>
+                          </div>
+                        </nav>
+                      </div>
+                      
+             
+              </section>
+
+<section class="contenidoEstructura home">
+<section class="section categorySearch">
+			<div class="columns is-mobile is-centered">
+				<div class="column is-fullwidth is-centered  notification field">
+					<div class="container  control has-text-centered">
+						<form name="formBusqueda" id="formBusqueda" action="javascript:void(0);" method="post">
+                            <h2 class="subtitle is-3"> Ingrese su búsqueda</h2>
+                            <div class="row">
+                            <div class="col-md-6">
+                            <div class="input-group">
+                                <input type="text" autocomplete="false" id="buscadorGral" name="buscadorGral" class="form-control" placeholder="Ingrese nombre del legislador">
+                                <input type="hidden" id="cargo" name="cargo">
+                                <input type="hidden" id="partido" name="partido">
+                                <input type="hidden" id="distrito" name="distrito">
+                                <input type="hidden" id="genero" name="genero">
+                                <input type="hidden" id="fechaDesde" name="fechaDesde">
+                                <input type="hidden" id="fechaHasta" name="fechaHasta">
+                                <input type="hidden" id="grupoparlamentario" name="grupoparlamentario">
+                            </div>
+                            </div>
+                            <div class="col-md-6">
+                                <input type="text" autocomplete="false" id="ActividadParlamentaria" name="ActividadParlamentaria" class="form-control actividad" placeholder="Ingrese comisión/ título académico/ cargos previos">
+                            </div>
+                            </div>
+                            <div class="row justify-content-md-center mt-3">
+                                <div class="col-md-4">
+                                    <div class="text-center">
+                                        <a href="#" class="button is-link"><i class="fas fa-search"></i>&nbsp;Buscar</a>
+                                    </div>
+                                </div>
+                            </div>
+						</form>
+					</div>
+				</div>
+                <div class="Typeahead-menu"></div>
+			</div>
+	</section>
+	<section class="contenido ">
+		<div class="container pt-5 DetalleLegislador">
+            <div class="row" id="lstBuscador">
+
+                <div class="col-md-3 sidebar-left">
+    <div class="bloquebanderea">
+        <img src="./assets/images/bandera-mexico.png"> M&eacute;xico
+    </div>
+    <div class="mt-1"></div>
+    <div class="buscadorGralInfo">
+        <span class="desc">Resultados de b&uacute;squeda</span>
+        <div class="desc count-result" id="totalTexto">629 resultado/s</div>
+        <a class="btnFiltrosVolver hidden-desktop" href="javascript:void(0);"><i class="fas fa-times"></i></a>
+    </div>
+    <div id="lstFiltros">
+
+    <div>
+
+        <span class="filter-category bold">Cargo</span>
+
+		<form action="" id="formFiltrosTiposLegisladores">
+
+            <ul class="filter-menu  TemasListadoBuscador ">
+                <li>
+                    <a class="btnLimpiarTodo hidden-mobile" href="/"><i class="fas fa-times" aria-hidden="true"></i>&nbsp;Limpiar</a>
+                </li>
+                <li>
+
+                    <a href="#" data-value="2" data-field="cargo" data-name="cargo" class="btnFiltroCargo">
+                        <span>Senador/a</span>&nbsp;(128)
+                    </a>
+                </li>
+                <li>
+                    <a href="#" data-value="1" data-field="cargo" data-name="cargo" class="btnFiltroCargo">
+                        <span>Diputado/a</span>&nbsp;(499)
+                    </a>
+                </li>
+            </ul>
+	    </form>
+    </div>
+    <div>
+        <span class="filter-category bold">Género</span>
+        <form action="" id="formFiltrosTiposLegisladores">
+
+            <ul class="filter-menu  TemasListadoBuscador ">
+                <li>
+
+                    <a href="#" data-value="2" data-field="genero" data-name="genero" class="btnFiltroCargo">
+                        <span>Femenino</span>&nbsp;(303)
+                    </a>
+                </li>
+                <li>
+                    <a href="#" data-value="1" data-field="genero" data-name="genero" class="btnFiltroCargo">
+                        <span>Masculino</span>&nbsp;(326)
+                    </a>
+                </li>
+                <li>
+                    <a href="#" data-value="1" data-field="genero" data-name="genero" class="btnFiltroCargo">
+                        <span>Otros</span>&nbsp;(0)
+                    </a>
+                </li>
+            </ul>
+        </form>
+    </div>
+
+    <div>
+        <span class="filter-category bold">Partido por el que fueron electos</span>
+        <form action="" id="formFiltrosTiposLegisladores">
+            <ul class="filter-menu  TemasListadoBuscador ">
+                                        <li>
+                            <a href="#" data-value="1" data-field="partido" data-name="partido" class="btnFiltroCargo" >
+                                <span>Movimiento Ciudadano</span>&nbsp;(26)
+                            </a>
+                        </li>
+                                                <li>
+                            <a href="#" data-value="2" data-field="partido" data-name="partido" class="btnFiltroCargo" >
+                                <span>Movimiento de Regeneración Nacional</span>&nbsp;(445)
+                            </a>
+                        </li>
+                                                <li>
+                            <a href="#" data-value="3" data-field="partido" data-name="partido" class="btnFiltroCargo" >
+                                <span>Partido Acción Nacional</span>&nbsp;(50)
+                            </a>
+                        </li>
+                                                <li>
+                            <a href="#" data-value="4" data-field="partido" data-name="partido" class="btnFiltroCargo" >
+                                <span>Partido Encuentro Social</span>&nbsp;(17)
+                            </a>
+                        </li>
+                                                <li>
+                            <a href="#" data-value="5" data-field="partido" data-name="partido" class="btnFiltroCargo" >
+                                <span>Partido de la Revolución Democrática</span>&nbsp;(14)
+                            </a>
+                        </li>
+                                                <li>
+                            <a href="#" data-value="6" data-field="partido" data-name="partido" class="btnFiltroCargo" >
+                                <span>Partido Revolucionario Institucional</span>&nbsp;(42)
+                            </a>
+                        </li>
+                                                <li>
+                            <a href="#" data-value="7" data-field="partido" data-name="partido" class="btnFiltroCargo" >
+                                <span>Partido Verde Ecológico de México</span>&nbsp;(8)
+                            </a>
+                        </li>
+                                                <li>
+                            <a href="#" data-value="8" data-field="partido" data-name="partido" class="btnFiltroCargo" >
+                                <span>Partido del Trabajo</span>&nbsp;(19)
+                            </a>
+                        </li>
+                                                <li>
+                            <a href="#" data-value="9" data-field="partido" data-name="partido" class="btnFiltroCargo" >
+                                <span>Coalición Juntos Haremos Historia</span>&nbsp;(1)
+                            </a>
+                        </li>
+                                                <li>
+                            <a href="#" data-value="10" data-field="partido" data-name="partido" class="btnFiltroCargo" >
+                                <span>Partido Mexicano de los Trabajadores</span>&nbsp;(7)
+                            </a>
+                        </li>
+                                    </ul>
+        </form>
+    </div>
+    <div>
+        <span class="filter-category bold">Grupo Parlamentario</span>
+        <form action="" id="formFiltrosTiposLegisladores">
+            <ul class="filter-menu  TemasListadoBuscador ">
+                                        <li>
+                            <a href="#" data-value="1" data-field="grupoparlamentario" data-name="grupoparlamentario" class="btnFiltroCargo" >
+                                <span>Movimiento Ciudadano</span>&nbsp;(15)
+                            </a>
+                        </li>
+                                                <li>
+                            <a href="#" data-value="2" data-field="grupoparlamentario" data-name="grupoparlamentario" class="btnFiltroCargo" >
+                                <span>Movimiento de Regeneración Nacional</span>&nbsp;(93)
+                            </a>
+                        </li>
+                                                <li>
+                            <a href="#" data-value="3" data-field="grupoparlamentario" data-name="grupoparlamentario" class="btnFiltroCargo" >
+                                <span>Partido Acción Nacional</span>&nbsp;(21)
+                            </a>
+                        </li>
+                                                <li>
+                            <a href="#" data-value="4" data-field="grupoparlamentario" data-name="grupoparlamentario" class="btnFiltroCargo" >
+                                <span>Partido de la Revolución Democrática</span>&nbsp;(6)
+                            </a>
+                        </li>
+                                                <li>
+                            <a href="#" data-value="5" data-field="grupoparlamentario" data-name="grupoparlamentario" class="btnFiltroCargo" >
+                                <span>Partido del Trabajo</span>&nbsp;(14)
+                            </a>
+                        </li>
+                                                <li>
+                            <a href="#" data-value="6" data-field="grupoparlamentario" data-name="grupoparlamentario" class="btnFiltroCargo" >
+                                <span>Partido Encuentro Social</span>&nbsp;(6)
+                            </a>
+                        </li>
+                                                <li>
+                            <a href="#" data-value="7" data-field="grupoparlamentario" data-name="grupoparlamentario" class="btnFiltroCargo" >
+                                <span>Partido Revolucionario Institucional</span>&nbsp;(25)
+                            </a>
+                        </li>
+                                                <li>
+                            <a href="#" data-value="8" data-field="grupoparlamentario" data-name="grupoparlamentario" class="btnFiltroCargo" >
+                                <span>Partido Verde Ecológico de México</span>&nbsp;(2)
+                            </a>
+                        </li>
+                                                <li>
+                            <a href="#" data-value="9" data-field="grupoparlamentario" data-name="grupoparlamentario" class="btnFiltroCargo" >
+                                <span>Sin Grupo Parlamentario</span>&nbsp;(2)
+                            </a>
+                        </li>
+                                    </ul>
+        </form>
+    </div>
+
+    <div>
+    <span class="filter-category bold">Mandato</span>
+        <form action="" id="formFiltrosTiposLegisladores">
+            <ul id="filter-menu  TemasListadoBuscador" style=" padding: 0px">
+                <li class="filter-menu bold input-group mb-3 TemasListadoBuscador" >
+                    <input type="number"  min="1" max="5" name="FechaDesdeBusqueda" data-id="FechaDesdeBusqueda"  id="FechaDesdeBusqueda" class="form-control input-md">
+                    <div class="input-group-append">
+                        <span class="input-group-text" id="basic-addon1">-</span>
+                    </div>
+                    <input type="number" min="1" max="5" name="FechaHastaBusqueda" data-id="FechaHastaBusqueda" id="FechaHastaBusqueda" class="form-control input-md ">
+                    <div class="input-group-append"><a href="javascript:void(0);"  data-field="Fechas" data-name="Fechas"  class="btn btn-outline-secondary btnFechas" ><i class="fas fa-plus" aria-hidden="true"></i></a></div>
+                </li>
+            </ul>
+        </form>
+    </div>
+
+
+
+
+
+
+</div>
+</div>
+<div class="col-md-9" id="resultadobusqueda">
+        <div class="row">
+                    <div class="col-md-4">
+                <div href="/legislador/1" title="Ver detalles"
+                   class="legislador-tarjeta">
+                    <div class="background">
+                        <a href="/legislador/1" style="display: block;text-align: center; ">
+                            <img src="./assets/images/avatar.png" style="width:100%;text-align: center; margin: auto" />
+                        </a>
+                    </div>
+                    <div class="contenidoBox">
+                        <h2>Pedro Daniel Abasolo Sánchez</h2>
+                        <div class="partido">
+                            Movimiento de Regeneración Nacional                        </div>
+                        <div class="distrito">
+                            Mexico
+                        </div>
+                        <div class="bt-ver-mas">
+                            <a href="/legislador/1" class="btn btn-sm btn-outline-secondary">
+                                <i class="fas fa-plus"></i>&nbsp; info
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+                        <div class="col-md-4">
+                <div href="/legislador/338" title="Ver detalles"
+                   class="legislador-tarjeta">
+                    <div class="background">
+                        <a href="/legislador/338" style="display: block;text-align: center; ">
+                            <img src="./assets/images/avatar.png" style="width:100%;text-align: center; margin: auto" />
+                        </a>
+                    </div>
+                    <div class="contenidoBox">
+                        <h2>Rocío Adriana Abreu Artiñano</h2>
+                        <div class="partido">
+                            Movimiento de Regeneración Nacional                        </div>
+                        <div class="distrito">
+                            Mexico
+                        </div>
+                        <div class="bt-ver-mas">
+                            <a href="/legislador/338" class="btn btn-sm btn-outline-secondary">
+                                <i class="fas fa-plus"></i>&nbsp; info
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+                        <div class="col-md-4">
+                <div href="/legislador/340" title="Ver detalles"
+                   class="legislador-tarjeta">
+                    <div class="background">
+                        <a href="/legislador/340" style="display: block;text-align: center; ">
+                            <img src="./assets/images/avatar.png" style="width:100%;text-align: center; margin: auto" />
+                        </a>
+                    </div>
+                    <div class="contenidoBox">
+                        <h2>Carlos Humberto Aceves Del Olmo</h2>
+                        <div class="partido">
+                            Partido Revolucionario Institucional                        </div>
+                        <div class="distrito">
+                            Mexico
+                        </div>
+                        <div class="bt-ver-mas">
+                            <a href="/legislador/340" class="btn btn-sm btn-outline-secondary">
+                                <i class="fas fa-plus"></i>&nbsp; info
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+                        <div class="col-md-4">
+                <div href="/legislador/290" title="Ver detalles"
+                   class="legislador-tarjeta">
+                    <div class="background">
+                        <a href="/legislador/290" style="display: block;text-align: center; ">
+                            <img src="./assets/images/avatar.png" style="width:100%;text-align: center; margin: auto" />
+                        </a>
+                    </div>
+                    <div class="contenidoBox">
+                        <h2>Brasil Alberto Acosta Peña</h2>
+                        <div class="partido">
+                            Partido Revolucionario Institucional                        </div>
+                        <div class="distrito">
+                            Mexico
+                        </div>
+                        <div class="bt-ver-mas">
+                            <a href="/legislador/290" class="btn btn-sm btn-outline-secondary">
+                                <i class="fas fa-plus"></i>&nbsp; info
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+                        <div class="col-md-4">
+                <div href="/legislador/634" title="Ver detalles"
+                   class="legislador-tarjeta">
+                    <div class="background">
+                        <a href="/legislador/634" style="display: block;text-align: center; ">
+                            <img src="./assets/images/avatar.png" style="width:100%;text-align: center; margin: auto" />
+                        </a>
+                    </div>
+                    <div class="contenidoBox">
+                        <h2>Miguel Acundo González</h2>
+                        <div class="partido">
+                            No responde                        </div>
+                        <div class="distrito">
+                            Mexico
+                        </div>
+                        <div class="bt-ver-mas">
+                            <a href="/legislador/634" class="btn btn-sm btn-outline-secondary">
+                                <i class="fas fa-plus"></i>&nbsp; info
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+                        <div class="col-md-4">
+                <div href="/legislador/635" title="Ver detalles"
+                   class="legislador-tarjeta">
+                    <div class="background">
+                        <a href="/legislador/635" style="display: block;text-align: center; ">
+                            <img src="./assets/images/avatar.png" style="width:100%;text-align: center; margin: auto" />
+                        </a>
+                    </div>
+                    <div class="contenidoBox">
+                        <h2>Marco Antonio Adame Castillo</h2>
+                        <div class="partido">
+                            Partido Acción Nacional                        </div>
+                        <div class="distrito">
+                            Mexico
+                        </div>
+                        <div class="bt-ver-mas">
+                            <a href="/legislador/635" class="btn btn-sm btn-outline-secondary">
+                                <i class="fas fa-plus"></i>&nbsp; info
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+                        <div class="col-md-4">
+                <div href="/legislador/639" title="Ver detalles"
+                   class="legislador-tarjeta">
+                    <div class="background">
+                        <a href="/legislador/639" style="display: block;text-align: center; ">
+                            <img src="./assets/images/avatar.png" style="width:100%;text-align: center; margin: auto" />
+                        </a>
+                    </div>
+                    <div class="contenidoBox">
+                        <h2>Heriberto Marcelo Aguilar Castillo</h2>
+                        <div class="partido">
+                            No responde                        </div>
+                        <div class="distrito">
+                            Mexico
+                        </div>
+                        <div class="bt-ver-mas">
+                            <a href="/legislador/639" class="btn btn-sm btn-outline-secondary">
+                                <i class="fas fa-plus"></i>&nbsp; info
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+                        <div class="col-md-4">
+                <div href="/legislador/641" title="Ver detalles"
+                   class="legislador-tarjeta">
+                    <div class="background">
+                        <a href="/legislador/641" style="display: block;text-align: center; ">
+                            <img src="./assets/images/avatar.png" style="width:100%;text-align: center; margin: auto" />
+                        </a>
+                    </div>
+                    <div class="contenidoBox">
+                        <h2>Ricardo Aguilar Castillo</h2>
+                        <div class="partido">
+                            No responde                        </div>
+                        <div class="distrito">
+                            Mexico
+                        </div>
+                        <div class="bt-ver-mas">
+                            <a href="/legislador/641" class="btn btn-sm btn-outline-secondary">
+                                <i class="fas fa-plus"></i>&nbsp; info
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+                        <div class="col-md-4">
+                <div href="/legislador/643" title="Ver detalles"
+                   class="legislador-tarjeta">
+                    <div class="background">
+                        <a href="/legislador/643" style="display: block;text-align: center; ">
+                            <img src="./assets/images/avatar.png" style="width:100%;text-align: center; margin: auto" />
+                        </a>
+                    </div>
+                    <div class="contenidoBox">
+                        <h2>Bonifacio Aguilar Linda</h2>
+                        <div class="partido">
+                            Movimiento de Regeneración Nacional                        </div>
+                        <div class="distrito">
+                            Mexico
+                        </div>
+                        <div class="bt-ver-mas">
+                            <a href="/legislador/643" class="btn btn-sm btn-outline-secondary">
+                                <i class="fas fa-plus"></i>&nbsp; info
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            </div>
+    
+
+        <div class="text-center mx-auto">
+        <div class="mt-4"></div>
+        <nav class="mx-auto text-center">
+            <ul class="pagination">
+                <li class="page-item disabled">
+                    <a class="page-link" href="/?page=0"  data-id="0" tabindex="-1">Anterior</a>
+                </li>
+                                    <li class="page-item active" >
+                        <a class="page-link" href="/?page=1" tabindex="-1"  data-id="1">1</a>
+                    </li>
+                                    <li class="page-item " >
+                        <a class="page-link" href="/?page=2" tabindex="-1"  data-id="2">2</a>
+                    </li>
+                                    <li class="page-item " >
+                        <a class="page-link" href="/?page=3" tabindex="-1"  data-id="3">3</a>
+                    </li>
+                                    <li class="page-item " >
+                        <a class="page-link" href="/?page=4" tabindex="-1"  data-id="4">4</a>
+                    </li>
+                                    <li class="page-item " >
+                        <a class="page-link" href="/?page=5" tabindex="-1"  data-id="5">5</a>
+                    </li>
+                                    <li class="page-item " >
+                        <a class="page-link" href="/?page=6" tabindex="-1"  data-id="6">6</a>
+                    </li>
+                                    <li class="page-item " >
+                        <a class="page-link" href="/?page=7" tabindex="-1"  data-id="7">7</a>
+                    </li>
+                                    <li class="page-item " >
+                        <a class="page-link" href="/?page=8" tabindex="-1"  data-id="8">8</a>
+                    </li>
+                                <li class="page-item " >
+                    <a class="page-link" href="/?page=2" data-id="2">Siguiente</a>
+                </li>
+            </ul>
+        </nav>
+    </div>
+    </div>
+
+
+            </div>
+  
+	    </div>
+	</section>
+    <script id="result-template" type="text/x-handlebars-template">
+        <div class="ProfileCard u-cf">
+            <img class="ProfileCard-avatar" src="{{foto}}">
+
+            <div class="ProfileCard-details">
+                <div class="ProfileCard-realName">{{apellido}}</div>
+                <div class="ProfileCard-screenName">{{nombre}}</div>
+            </div>
+
+        </div>
+    </script>
+    </section>
+    <footer class="footer has-background-grey-lighter"> <!-- Footer -->
+        <div class="container has-text-centered">
+          <nav class="level">
+            <div class="level-item has-text-centered">
+              <p>
+          <strong>Directorio Legislativo Mexico</strong> es un proyecto de <a href="https://directoriolegislativo.org" target="_blank">Directorio
+            Legislativo</a>.
+            </p>
+            </div>
+            <div class="level-item has-text-centered">
+      <div class="field is-grouped is-grouped-multiline">
+        <div class="control">
+          <div class="tags is-large">
+            <a href="https://www.facebook.com/DireLegislativo/" class="tag " target="_blank"><i class="fa fa-facebook"></i></a>
+          </div>
+        </div>
+      
+        <div class="control">
+          <div class="tags is-large">
+            <a href="https://twitter.com/DireLegislativo" class="tag " target="_blank"><i class="fa fa-twitter"></i></a>
+          </div>
+        </div>
+      
+        <div class="control">
+          <div class="tags is-large">
+            <a href="mailto:info@directoriolegislativo.org" class="tag " target="_blank"><i class="fa fa-envelope"></i></a>
+          </div>
+        </div>
+      </div>
+            </div>
+          
+          
+          </nav>
+          
+           
+          <nav class="level">
+           
+            <div class="level-item has-text-centered">
+            <figure class="image is-centered">
+              <img src="images/DL_LOGO_DL_2020v01.png" style="max-width:200px ;">
+            </figure>
+            </div>
+            
+            
+          </nav>
+        </div>
+      </footer>
+    
+        <script type="text/javascript" src="./assets/plugins/jquery/jquery-v3.2.1.min.js"></script>
+        <script type="text/javascript" src="./assets/plugins/bootstrap/js/bootstrap.js"></script>
+        <script type="text/javascript" src="./assets/plugins/sweetalert/sweetalert.min.js"></script>
+        <script type="text/javascript" src="./assets/plugins/jquery.blockUI.js"></script>
+
+	        <script type="text/javascript" src="./modulos/buscador/js/buscador.js?v=1.3"></script>
+	        <script type="text/javascript" src="./assets/libs/typehead/handlebars.js"></script>
+	        <script type="text/javascript" src="./assets/libs/typehead/typehead.js"></script>
+	        <script type="text/javascript" src="./assets/libs/bootstrap-datepicker/js/bootstrap-datepicker.min.js"></script>
+	        <script type="text/javascript" src="./assets/libs/bootstrap-datepicker/locales/bootstrap-datepicker.es.min.js"></script>
+	        <script src="./assets/plugins/chartjs/Chart.js"></script>
+        <script type="text/javascript" src="./assets/libs/slick-1.8.1/slick/slick.min.js"></script>
+		        </body>
+        </html>
+		
