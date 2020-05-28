@@ -171,6 +171,7 @@ td.google-visualization-orgchart-node{
 
 .container {
     background-color: white;
+    padding-bottom: 50px;
 }
 
 .notification .container {
@@ -518,7 +519,7 @@ textPath{
   background-color: #989EA0;
 }
 
-#organigramas .message-header{
+#organigramas .message-body{
   padding: 7px 24px 20px 24px;
 }
 
@@ -549,7 +550,7 @@ textPath{
 }
 
 
-#organigramas .columns{
+.columns{
   margin: 0;
 }
 
