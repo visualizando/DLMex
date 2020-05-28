@@ -131,7 +131,7 @@
         d3.xml("data/Senado_Mapa_Mexico.svg"),
         d3.csv("data/comisiones.csv"),
         d3.csv("data/organigramas.csv"),
-        d3.csv("data/organigramas-descripcion.csv")
+        d3.csv("data/organigramas-descripcion.csv"),
       ]
       Promise.all(promises).then(function(data){
         ready(data)
@@ -143,26 +143,19 @@
 
   //---------- FUNCTION READY----------
     function ready (results){        
-
-
-  
-
         var personas = d3.nest() // acá las personas en csv
                           .key(function (d) { return d.camara; })
                           .object(results[1]);
 
-                          diputados = personas["diputados"];
-                          senadores = personas["senadores"];
-                          
+            diputados = personas["diputados"];
+            senadores = personas["senadores"];
         
         dibujaDiputados(diputados,results[0]);
         dibujaSenado(senadores,results[2]);
-
-
         dibujaComisiones(results[3]);
-
         dibujaOrganigramas(results[4],results[5]); // data de organigramas, descripciones
  
+
 }
 
 function dibujaDiputados(diputados,mapaJSON) {

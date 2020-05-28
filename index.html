@@ -10,8 +10,8 @@
 
     <link rel="stylesheet" href="css/bulma.css">
     <link rel="stylesheet" href="css/custom.css">
-    <link rel="stylesheet" href="css/instant-definitions.css">
-    <link href="css/featherlight.css" type="text/css" rel="stylesheet" />
+<!--     <link rel="stylesheet" href="css/instant-definitions.css">
+ -->    <link href="css/featherlight.css" type="text/css" rel="stylesheet" />
 
         <script src="https://d3js.org/d3.v5.min.js"></script>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/d3-legend/2.25.6/d3-legend.min.js"></script>
@@ -174,14 +174,13 @@
               </h2>
             <h3 class="subtitle is-6">
               Visualización sobre la formación académica alcanzada y actividades públicas, partidarias y privadas que llevaron adelante los legisladores de la Legislatura actual antes de ocupar sus cargos actuales.
-
             </h3>
 
             <div class="columns is-centered">
                   <div class="column is-half has-text-centered">
                     <h2 class="subtitle is-4">Carreras (Diputados)</h2>
                     <figure class="image ">
-                      <a href="images/formacion-carreras-diputados.png" data-featherlight="image">
+                      <a href="images/formacion-carreras-diputados.png" data-featherlight="image" id=carrerasDiputados>
                         <img src="images/formacion-carreras-diputados.png" style="width: inherit; margin:auto" alt="carreras">
                       </a>
                     </figure>
@@ -190,16 +189,17 @@
                 <div class="column is-half has-text-centered">
                 <h2 class="subtitle is-4">Carreras (Senadores)</h2>
                 <figure class="image ">
-                  <a href="images/formacion-carreras-senadores.png" data-featherlight="image">
+                  <a href="images/formacion-carreras-senadores.png" data-featherlight="image" id=carrerasDiputados>
                     <img src="images/formacion-carreras-senadores.png" style="width: inherit; margin:auto" alt="carreras">
                   </a>
                 </figure>
               </div>
             
           </div>
+          <hr>
 
           
-          <div class="columns is-centered">
+          <div class="columns is-centered is-multiline">
             <div class="column is-half has-text-centered">
                 <div class="box">
                   <article class="media">
@@ -209,14 +209,67 @@
                       </figure>
                     </div>
                     <div class="media-content">
-                      <div class="content">
+                      <div class="content bargraph">
                         <p>
                           <strong>Sector Público</strong>
                           <br>
-                          Diputados <b>35%</b>
-                          <progress class="progress is-small is-link" value="35" max="100"></progress>
-                          Senadores <b>15%</b>
-                          <progress class="progress is-small is-info" value="15" max="100"></progress>
+
+                          Regidor/a
+                          <span>
+                          Diputados <b>13%</b>
+                          <progress class="progress is-small diputados" value="13" max="100"></progress>
+                          Senadores <b>11%</b>
+                          <progress class="progress is-small senadores" value="11" max="100"></progress>
+                          </span>
+
+                          Diputada/o Local
+                          <span>
+                          Diputados <b>25%</b>
+                          <progress class="progress is-small diputados" value="25" max="100"></progress>
+                          Senadores <b>40%</b>
+                          <progress class="progress is-small senadores" value="40" max="100"></progress>
+                          </span>
+
+                          Diputada/o Federal
+                          <span>
+                          Diputados <b>13%</b>
+                          <progress class="progress is-small diputados" value="13" max="100"></progress>
+                          Senadores <b>36%</b>
+                          <progress class="progress is-small senadores" value="36" max="100"></progress>
+                          </span>
+
+                          Senador/a de la República
+                          <span>
+                          Diputados <b>7%</b>
+                          <progress class="progress is-small diputados" value="7" max="100"></progress>
+                          Senadores <b>9%</b>
+                          <progress class="progress is-small senadores" value="9" max="100"></progress>
+                          </span>
+
+                          Gobernador/a
+                          <span>
+                          Diputados <b>1%</b>
+                          <progress class="progress is-small diputados" value="1" max="100"></progress>
+                          Senadores <b>4%</b>
+                          <progress class="progress is-small senadores" value="4" max="100"></progress>
+                          </span>
+
+                          Presidente Municipal
+                          <span>
+                          Diputados <b>13%</b>
+                          <progress class="progress is-small diputados" value="13" max="100"></progress>
+                          Senadores <b>13%</b>
+                          <progress class="progress is-small senadores" value="13" max="100"></progress>
+                          </span>
+
+                          No responde
+                          <span>
+                          Diputados <b>23%</b>
+                          <progress class="progress is-small diputados" value="23" max="100"></progress>
+                          Senadores <b>20%</b>
+                          <progress class="progress is-small senadores" value="20" max="100"></progress>
+                          </span>
+
                         </p>
                       </div>
                   
@@ -233,14 +286,36 @@
                     <img src="images/icons/sectorPrivado.svg">
                 </div>
                 <div class="media-content">
-                  <div class="content">
+                  <div class="content bargraph">
                     <p>
                       <strong>Sector Privado</strong>
                       <br>
-                      Diputados <b>35%</b>
-                      <progress class="progress is-small is-link" value="35" max="100"></progress>
-                      Senadores <b>15%</b>
-                      <progress class="progress is-small is-info" value="15" max="100"></progress>
+                      Diputados <b>27%</b>
+                      <progress class="progress is-small diputados" value="27" max="100"></progress>
+                      Senadores <b>23%</b>
+                      <progress class="progress is-small senadores" value="23" max="100"></progress>
+                    </p>
+                  </div>
+              
+                </div>
+              </article>
+            </div>
+            <div class="box">
+              <article class="media">
+                <div class="media-left">
+                  <figure class="image is-64x64">
+                    <img src="images/icons/actividadPartidaria.svg" alt="Image">
+                  </figure>
+                </div>
+                <div class="media-content">
+                  <div class="content bargraph">
+                    <p>
+                      <strong>Actividad Partidaria</strong>
+                      <br>
+                      Diputados <b>28%</b>
+                      <progress class="progress is-small diputados" value="28" max="100"></progress>
+                      Senadores <b>30%</b>
+                      <progress class="progress is-small senadores" value="30" max="100"></progress>
                     </p>
                   </div>
               
@@ -248,38 +323,10 @@
               </article>
             </div>
       </div>
-        </div>
-
-        <div class="columns is-centered">
-          <div class="column is-half has-text-centered">
-              <div class="box">
-                <article class="media">
-                  <div class="media-left">
-                    <figure class="image is-64x64">
-                      <img src="images/icons/actividadPartidaria.svg" alt="Image">
-                    </figure>
-                  </div>
-                  <div class="media-content">
-                    <div class="content">
-                      <p>
-                        <strong>Actividad Partidaria</strong>
-                        <br>
-                        Diputados <b>65%</b>
-                        <progress class="progress is-small is-link" value="65" max="100"></progress>
-                        Senadores <b>37%</b>
-                        <progress class="progress is-small is-info" value="37" max="100"></progress>
-                      </p>
-                    </div>
-                
-                  </div>
-                </article>
-              </div>
-        </div>
-
+        
  
       </div>
 
-          <hr>
 
         </div>
       </div>
@@ -290,7 +337,7 @@
     <section id="genero" class="section is-medium" > <!-- Perspectiva de genero -->
       <div class="container is-widescreen">
         <div class="columns is-mobile is-centered">
-          <div class="column is-four-fifths-tablet is-two-thirds-desktop has-text-centered		">
+          <div class="column is-four-fifths-tablet is-fullwidth-desktop has-text-centered		">
             <h2 class="title is-1">
               Perspectiva de Género
               </h2>
@@ -298,7 +345,160 @@
               Integración proporcional de las cámaras y análisis sobre la integración de comisiones, participación de mujeres en cargos jerárquicos y formación académica 
 
             </h3>
-    
+             <div class="columns is-centered">
+                  <div class="column is-half has-text-centered">
+                    <h2 class="subtitle is-4">Porcentaje de Diputadas por Estado</h2>
+                    <figure class="image ">
+                      <a href="images/mapa_genero_diputados.png" data-featherlight="image" id=carrerasDiputados>
+                        <img src="images/mapa_genero_diputados.png" style="width: inherit; margin:auto" alt="carreras">
+                      </a>
+                    </figure>
+                </div>
+                
+                <div class="column is-half has-text-centered">
+                <h2 class="subtitle is-4">Porcentaje de Senadoras por Estado</h2>
+                <figure class="image ">
+                  <a href="images/mapa_genero_senado.png" data-featherlight="image" id=carrerasDiputados>
+                    <img src="images/mapa_genero_senado.png" style="width: inherit; margin:auto" alt="carreras">
+                  </a>
+                </figure>
+              </div>
+            
+          </div>
+            <div class="columns is-centered is-multiline">
+              <div class="column is-half has-text-centered">
+                <div class="box">
+                  <article class="media">
+                    <div class="media-left">
+                      <figure class="image is-64x64">
+                        <img src="images/icons/paridad.svg">
+                    </div>
+                    <div class="media-content">
+                      <div class="content bargraph">
+                        <p>
+                          <strong>Porcentaje de mujeres</strong>
+                          <br>
+                          Diputadas <b>47.8%</b>
+                          <progress class="progress is-small diputados" value="48" max="100"></progress>
+                          Senadoras <b>49%</b>
+                          <progress class="progress is-small senadores" value="49" max="100"></progress>
+                        </p>
+                      </div>
+                  
+                    </div>
+                  </article>
+                </div>
+                <!-- <div class="box">
+                  <article class="media">
+                    <div class="media-left">
+                      <figure class="image is-64x64">
+                        <img src="images/icons/actividadPartidaria.svg" alt="Image">
+                      </figure>
+                    </div>
+                    <div class="media-content">
+                      <div class="content bargraph">
+                        <p>
+                          <strong>Actividad Partidaria</strong>
+                          <br>
+                          Diputados <b>28%</b>
+                          <progress class="progress is-small diputados" value="28" max="100"></progress>
+                          Senadores <b>30%</b>
+                          <progress class="progress is-small senadores" value="30" max="100"></progress>
+                        </p>
+                      </div>
+                  
+                    </div>
+                  </article>
+                </div> -->
+              </div>
+
+              <div class="column is-half has-text-centered">
+                <div class="box">
+                  <article class="media">
+                    <div class="media-left">
+                      <figure class="image is-64x64">
+                        <img src="images/icons/actividadPartidaria.svg" alt="Image">
+                      </figure>
+                    </div>
+                    <div class="media-content">
+                      <div class="content bargraph">
+                        <p>
+                          <strong>Mujeres por Partido</strong>
+                          <br>
+
+                          MC
+                          <span>
+                          Diputados <b>56%</b>
+                          <progress class="progress is-small diputados" value="56" max="100"></progress>
+                          Senadores <b>33%</b>
+                          <progress class="progress is-small senadores" value="33" max="100"></progress>
+                          </span>
+
+                          MORENA
+                          <span>
+                          Diputados <b>49%</b>
+                          <progress class="progress is-small diputados" value="49" max="100"></progress>
+                          Senadores <b>47%</b>
+                          <progress class="progress is-small senadores" value="47" max="100"></progress>
+                          </span>
+
+                          PAN
+                          <span>
+                          Diputados <b>42%</b>
+                          <progress class="progress is-small diputados" value="42" max="100"></progress>
+                          Senadores <b>54%</b>
+                          <progress class="progress is-small senadores" value="54" max="100"></progress>
+                          </span>
+
+                          PES
+                          <span>
+                          Diputados <b>52%</b>
+                          <progress class="progress is-small diputados" value="52" max="100"></progress>
+                          Senadores <b>100%</b>
+                          <progress class="progress is-small senadores" value="100" max="100"></progress>
+                          </span>
+
+                          PRD
+                          <span>
+                          Diputados <b>73%</b>
+                          <progress class="progress is-small diputados" value="73" max="100"></progress>
+                          Senadores <b>0%</b>
+                          <progress class="progress is-small senadores" value="0" max="100"></progress>
+                          </span>
+
+                          PRI
+                          <span>
+                          Diputados <b>46%</b>
+                          <progress class="progress is-small diputados" value="46" max="100"></progress>
+                          Senadores <b>50%</b>
+                          <progress class="progress is-small senadores" value="50" max="100"></progress>
+                          </span>
+
+                          PT
+                          <span>
+                          Diputados <b>44%</b>
+                          <progress class="progress is-small diputados" value="44" max="100"></progress>
+                          Senadores <b>67%</b>
+                          <progress class="progress is-small senadores" value="67" max="100"></progress>
+                          </span>
+
+                          PVEM
+                          <span>
+                          Diputados <b>31%</b>
+                          <progress class="progress is-small diputados" value="31" max="100"></progress>
+                          Senadores <b>57%</b>
+                          <progress class="progress is-small senadores" value="57" max="100"></progress>
+                          </span>
+                        </p>
+                      </div>
+                  
+                    </div>
+                  </article>
+                </div>
+          </div>
+          
+   
+        </div>
         
           </div>
         </div>

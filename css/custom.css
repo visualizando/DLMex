@@ -563,11 +563,37 @@ textPath{
   margin: auto;
 }
 
-.media .progress.is-small {
+.bargraph .progress.is-small {
   height: 8px;
   margin-bottom: 9px;
 }
 
+.bargraph span{
+  display: block;
+  margin-left: 32px;
+  margin-bottom: 10px;
+  font-size: 14px;
+}
+
+.bargraph span .progress.is-small{
+  margin-bottom: 3px;
+}
 
 
+.progress.senadores::-webkit-progress-value {
+  background-color: #FEE466; }
+.progress.senadores::-moz-progress-bar {
+  background-color: #FEE466; }
+.progress.senadores::-ms-fill {
+  background-color: #FEE466;
+  border: none; }
 
+
+  .progress.diputados::-webkit-progress-value {
+    background-color: #8ADEF3; }
+  .progress.diputados::-moz-progress-bar {
+    background-color: #8ADEF3; }
+  .progress.diputados::-ms-fill {
+    background-color: #8ADEF3;
+    border: none; }
+  
