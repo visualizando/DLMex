@@ -108,7 +108,7 @@
     
     var partidosLista =["MORENA","PAN","PRI","PT","MC","PES","PVEM","PRD","SG"];
 
-    var urlBuscador = "https://legisladores.directoriolegislativo.org/";
+    var urlBuscador = "mx.legisladores.directoriolegislativo.org/Home/Diputado/ID";
 
     var colorScale = d3.scaleOrdinal()
         .domain(partidosLista)
@@ -303,7 +303,7 @@ function dibujaDiputados(diputados,mapaJSON) {
                                     tooltipDiputados.select("#estado").html("Estado:&nbsp;<b>"+d.data.estado+"</b>");
                                     tooltipDiputados.select("#distrito").html("Distrito:&nbsp;<b>"+d.data.distrito+"</b>");
                                     tooltipDiputados.select("#partido").html("Partido:&nbsp;<b>"+d.data.partido+"</b>");
-                                    tooltipDiputados.select("#link").attr("href",urlBuscador + "legislador/"+ d.data.id);
+                                    tooltipDiputados.select("#link").attr("href",urlBuscador + d.data.id);
     
                                 d3.selectAll(".circulos").filter(function(e){return e.id != d.data.id})
                                               .classed("unselected", true); 
