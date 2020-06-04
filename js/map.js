@@ -108,7 +108,7 @@
     
     var partidosLista =["MORENA","PAN","PRI","PT","MC","PES","PVEM","PRD","SG"];
 
-    var urlBuscador = "mx.legisladores.directoriolegislativo.org/Home/Diputado/ID";
+    var urlBuscador = "http://mx.legisladores.directoriolegislativo.org/Home/Diputado/";
 
     var colorScale = d3.scaleOrdinal()
         .domain(partidosLista)
