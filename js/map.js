@@ -585,6 +585,7 @@ function dibujaComisiones(data) {
                             case 'Integrante':
                               return 100;
                             case 'Presidente':
+                            case 'Presidente/a':
                               return 500;
                             case 'Secretario/a':
                               return 250;
@@ -686,6 +687,7 @@ function dibujaComisiones(data) {
                   title: function() {
                     var d = this.__data__;
                     var texto  = '<span id=actualtitle></span><b style="font-size:13px">'+d.data.key+'</b>';
+
                     if(d.depth==1) texto += "<br>Integrantes: " + d.children.length ;
                     return texto;        }
                 });
