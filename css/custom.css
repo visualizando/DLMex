@@ -608,3 +608,22 @@ textPath{
     background-color: #8ADEF3;
     border: none; }
   
+
+
+
+    #navbarMenuInterna{
+      font-family: "Karla", serif;
+      font-size: 1em;
+    font-weight: 400;
+    }
+
+    .navbar-brand{
+           padding-top: 0;
+           padding-bottom: 0;
+  }
+  
+
+    .navbar-brand a:hover{
+        text-decoration: none;
+        background-color: #0f9985;
+    }
